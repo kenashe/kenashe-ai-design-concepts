@@ -1,0 +1,8 @@
+/* Round 2 "concept only" notice. Included on every page of every Round 2 direction. */
+.concept-flag{position:relative;z-index:9999;display:flex;gap:.75rem;justify-content:center;align-items:center;flex-wrap:wrap;padding:.4rem 1rem;font:500 12px/1.3 ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;letter-spacing:.02em;background:#111;color:#f5f5f5;text-align:center}
+.concept-flag strong{font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:11px}
+.concept-flag a{color:#f5f5f5;text-decoration:underline;text-underline-offset:2px}
+.concept-flag a:focus-visible{outline:2px solid #fff;outline-offset:2px}
+/* Enlarge the tap target to at least 44px without making the bar taller */
+.concept-flag a{position:relative;display:inline-block;padding:.15rem .25rem}
+.concept-flag a::before{content:"";position:absolute;left:-8px;right:-8px;top:50%;height:44px;transform:translateY(-50%)}

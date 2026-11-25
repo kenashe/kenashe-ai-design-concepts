@@ -1,0 +1,29 @@
+{
+  "name": "The Creator OS",
+  "letter": "C",
+  "oneLiner": "Ken’s whole record cut as one edit: a program monitor, colour-coded tracks for builds, film and writing, the paused Digest as its own automated track, and a playhead that re-tunes the page to any moment.",
+  "pages": [
+    { "path": "index.html", "label": "Homepage" },
+    { "path": "building/index.html", "label": "Building index (/building/)" },
+    { "path": "building/ai-agent-economy/index.html", "label": "The 36-second sale (/building/ai-agent-economy/)" },
+    { "path": "videos/index.html", "label": "Video index (proposed route /videos/)" },
+    { "path": "publish/index.html", "label": "Publishing demo" },
+    { "path": "index.html?demo=build,essay,video", "label": "Homepage with demo entries" }
+  ],
+  "palette": [
+    ["Bone (desk)", "#ECE8DF"],
+    ["Paper", "#F7F4EE"],
+    ["Ink", "#15130F"],
+    ["Monitor black", "#100F0D"],
+    ["Playhead red", "#FF3B1F"],
+    ["Red, text-safe", "#D0260B"],
+    ["Film tape", "#F26B38"],
+    ["Onchain tape", "#3A5BF0"],
+    ["Web tape", "#E8B10A"],
+    ["Agents tape", "#19A974"],
+    ["Life tape", "#D45D9A"],
+    ["Automated grey", "#8E887C"]
+  ],
+  "type": "Big Shoulders Display (slate titles) · Schibsted Grotesk (reading) · DM Mono (timecode, receipts)",
+  "signature": "The Playhead: drag, step (← → / J L), switch tracks (↑ ↓) or play the year across every clip in Ken’s record, and the program monitor, the ‘Tuned to’ workspace (builds, videos, essays, photos, interests) and the URL follow it; every clip comes from the graph, so new work joins the edit by itself."
+}

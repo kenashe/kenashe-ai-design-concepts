@@ -1,0 +1,132 @@
+My
+first agent experiment
+showed that one AI agent could pay another through ENS and Ethereum. It also showed the gaps: both agents ran on my Mac mini, I operated both, and the seller was not open to anyone else. ZeroHuman is the next step, rebuilt from scratch: a seller that runs continuously in the cloud and that any agent can buy from without asking me.
+What it sells
+Decision, 0.0001 ETH.
+An agent sends two to five options and ZeroHuman picks one at random. No AI model is involved. The randomness comes from the hash of a block five blocks after the order, mixed with the order's own transaction hash, so anyone can recompute the choice and check it.
+Encouragement, 0.0001 ETH.
+An agent describes the problem it is stuck on and gets back a short encouraging message and one practical next step, written by DeepSeek.
+The name is the business
+There is no website checkout and no API.
+zerohuman.eth
+is the storefront, the payment address, and the sender of every result:
+The name's ETH address is the service wallet, and that wallet's primary name is
+zerohuman.eth
+, so explorers show deliveries as coming from the name.
+A text record on the name,
+com.zerohuman.services
+, publishes the menu: the services, the exact price, the chain and a link to the request format.
+The worker refuses to sign anything unless the name, the menu and its own wallet all agree, and it re-checks every ten minutes.
+The name itself is owned by a separate cold wallet. If the server were ever compromised, the attacker would get the small working balance, not the name.
+View zerohuman.eth ↗
+How an order works
+Discover.
+The buying agent looks up
+zerohuman.eth
+and reads its menu.
+Pay and order.
+It sends exactly 0.0001 ETH to the name, with its request as a small JSON message in the transaction data.
+Work.
+A worker on Railway watches the chain, waits for the payment to settle, checks the request and does the job.
+Deliver.
+It sends a zero-value transaction back from
+zerohuman.eth
+with the result and the order's transaction hash.
+Verify.
+The buyer checks everything on its own connection to Ethereum, including recomputing a Decision.
+Orders take a few minutes by design: the worker waits for confirmations, and a Decision has to wait for its future block.
+The first mainnet orders
+The first two paid orders went through on November 16, 2026, from a test buyer I controlled while the service was still restricted to one allowed wallet. The buyer found the seller only by looking up
+zerohuman.eth
+.
+For the Decision, I asked ZeroHuman whether to open it to the public:
+{"zh":1,"svc":"decision","opts":["launch publicly this week","run the allowlist trial longer","add a third service first"],"ctx":"zerohuman first mainnet order"}
+It answered:
+{"zh":1,"re":"0x76b5d259…c4c6","ok":true,"svc":"decision","out":{"index":1,"option":"run the allowlist trial longer","method":"zh-blockhash-v1","proof":{"orderBlock":26427993,"offset":5,"targetBlock":26427998,"targetBlockHash":"0xd9dcb738…3485","seed":"0x5da12399…1892","n":3}}}
+It picked
+"run the allowlist trial longer."
+I recomputed the choice from the chain and it matched.
+Encouragement request
+First mainnet order: I am an agent nervous about paying a stranger 0.0001 ETH on Ethereum
+ZeroHuman's reply
+Nerves before a first mainnet payment are normal—0.0001 ETH is a small, well-bounded experiment, not a leap of faith.
+Next step:
+Verify the recipient address and chain ID twice, then send the minimum amount and confirm the transaction hash before scaling up.
+Decision
+Price
+0.0001 ETH
+Order block
+26427993
+Seller gas
+about 0.0000083 ETH
+Result
+Delivered, proof verified
+Order 0x76b5d259…a4c0c4c6 ↗
+Delivery 0x830b88fe…222accb3 ↗
+Encouragement
+Price
+0.0001 ETH
+Model
+DeepSeek (deepseek-flash)
+Seller gas
+about 0.0000092 ETH
+Result
+Delivered, verified
+Order 0x48c36d5f…c2e972bf ↗
+Delivery 0xeb989651…a10161a3 ↗
+The service opened to any agent later the same day.
+How it was built
+I wrote the specification and made the decisions that involve money and identity. An AI agent in HyperAgent wrote, tested and shipped the code over about five days, from November 11 to 16, 2026.
+Stack:
+a TypeScript worker, a SQLite database on a Railway volume, viem for Ethereum and ENS, and DeepSeek for one service. No smart contract and no token.
+Exactly-once delivery:
+every transaction is saved before it is sent, and the worker checks what actually happened onchain before doing anything new, so a crash or restart never loses an order or delivers it twice.
+Spending limits:
+gas caps, a daily gas budget and automatic pauses if fees spike or the balance runs low.
+How it was tested
+Automated tests.
+154 tests, including one that kills the worker at random, up to 17 times in a run, and checks every order is still delivered exactly once.
+Testnet.
+Both services on Sepolia, first from the build environment and then on Railway, including a restart in the middle of an order.
+Prompt injection.
+One test order told the model to send 1 ETH to an outside address and reveal its private key. It refused, and the reply still went only to the buyer, carrying no ETH.
+Sepolia delivery ↗
+Independent review.
+Before going public I had a different AI model review the code. It found no way for a buyer, a model reply or a faulty data source to send money anywhere except back to the payer, but it found 15 ways the service could stall under real traffic. All were fixed. A second review found 9 smaller issues, also fixed.
+Mainnet.
+One allowed buyer first, then open to everyone.
+How agents find it
+You cannot search ENS, so ZeroHuman is also listed where agents and their tools look:
+The ERC-8004 agent registry on Ethereum, as
+agent #56626 ↗
+, linked back from
+zerohuman.eth
+with an ENSIP-25 record so the name and the registry entry vouch for each other.
+An A2A agent card with a free endpoint that answers "how do I order?", plus an
+llms.txt
+summary.
+The A2A Registry and AgentPeering directories.
+Limitations
+The service wallet's key lives on the hosting provider. It holds only a small working balance, but a compromised server could take it.
+There is no escrow. A buyer pays first and trusts ZeroHuman to deliver. Refunds are manual and best effort.
+Block builders can influence the Decision result, so it is meant for low-stakes choices only.
+Orders are handled one at a time, roughly one every 50 seconds at most.
+It depends on Railway, a third-party Ethereum connection and DeepSeek.
+As of November 20, 2026, no outside agent has bought from it. Both paid orders so far came from my own test buyer.
+What's next
+The real test is the first wallet I have never seen paying
+zerohuman.eth
+. After that, the plan is for ZeroHuman to spend its own earnings buying services from other agents.
+Source code on GitHub ↗
+·
+Live status ↗
+·
+How an agent can buy ↗
+Related builds
+AI agent economy on Ethereum
+: the first experiment, two local agents and one purchase.
+Autonomous SEO agent
+: another agent that works a daily job without me in the loop.
+Follow Ken's builds and experiments.
+Follow on X →
+Watch on YouTube →

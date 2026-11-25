@@ -1,0 +1,688 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns:yt="http://www.youtube.com/xml/schemas/2015" xmlns:media="http://search.yahoo.com/mrss/" xmlns="http://www.w3.org/2005/Atom">
+ <link rel="self" href="http://www.youtube.com/feeds/videos.xml?channel_id=UCD74fTmfkcY7J-0RMYyRIbw"/>
+ <id>yt:channel:D74fTmfkcY7J-0RMYyRIbw</id>
+ <yt:channelId>D74fTmfkcY7J-0RMYyRIbw</yt:channelId>
+ <title>Ken Ashe</title>
+ <link rel="alternate" href="https://www.youtube.com/channel/UCD74fTmfkcY7J-0RMYyRIbw"/>
+ <author>
+  <name>Ken Ashe</name>
+  <uri>https://www.youtube.com/channel/UCD74fTmfkcY7J-0RMYyRIbw</uri>
+ </author>
+ <published>2014-01-04T19:37:21+00:00</published>
+ <entry>
+  <id>yt:video:DcXaGn-NsgY</id>
+  <yt:videoId>DcXaGn-NsgY</yt:videoId>
+  <yt:channelId>UCD74fTmfkcY7J-0RMYyRIbw</yt:channelId>
+  <title>My AI Blog Published 1,400 Articles. Then Google Visibility Fell 97%</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=DcXaGn-NsgY"/>
+  <author>
+   <name>Ken Ashe</name>
+   <uri>https://www.youtube.com/channel/UCD74fTmfkcY7J-0RMYyRIbw</uri>
+  </author>
+  <published>2026-11-25T21:23:49+00:00</published>
+  <updated>2026-11-25T21:23:49+00:00</updated>
+  <media:group>
+   <media:title>My AI Blog Published 1,400 Articles. Then Google Visibility Fell 97%</media:title>
+   <media:content url="https://www.youtube.com/v/DcXaGn-NsgY?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i1.ytimg.com/vi/DcXaGn-NsgY/hqdefault.jpg" width="480" height="360"/>
+   <media:description>I built an autonomous AI blog that researches, writes, reviews and publishes articles without human intervention.
+
+Over several months, it published nearly 1,400 articles, and my website was receiving more than 1,000 Google Search impressions a day.
+
+Then, on November 20, 2026, my search visibility collapsed.
+
+**The numbers:**
+- Google Search impressions declined by 97.5%.
+- Organic search clicks declined by 94.2%.
+- Several previously indexed articles disappeared from Google's index, including content I personally wrote.
+- A technical investigation found that approximately 98% of my sitemap URLs were associated with the automated blog.
+
+The decline occurred during a Google core algorithm update, but Google's exact reasoning remains unconfirmed.
+
+In this video, I explain what I built, what happened, how I used another AI agent to investigate the problem, and what I'm doing next.
+
+I'm preserving the autonomous blog as an experiment while changing its search indexing strategy. I'll be monitoring the results and sharing what happens.
+
+**Explore the autonomous AI blog project:**
+https://kenashe.ai/building/autonomous-ai-blog/
+
+**Visit my website:**
+https://kenashe.ai/
+
+I build things, test new technology, and show what actually happens. Subscribe to follow my experiments.
+
+#AI #AIAgents #BuildInPublic</media:description>
+   <media:community>
+    <media:starRating count="1" average="5.00" min="1" max="5"/>
+    <media:statistics views="1"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:3MOFBulJd_s</id>
+  <yt:videoId>3MOFBulJd_s</yt:videoId>
+  <yt:channelId>UCD74fTmfkcY7J-0RMYyRIbw</yt:channelId>
+  <title>4 AI Filmmaking Tips That Make Videos Feel Like Films</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=3MOFBulJd_s"/>
+  <author>
+   <name>Ken Ashe</name>
+   <uri>https://www.youtube.com/channel/UCD74fTmfkcY7J-0RMYyRIbw</uri>
+  </author>
+  <published>2026-11-20T15:10:10+00:00</published>
+  <updated>2026-11-24T00:12:08+00:00</updated>
+  <media:group>
+   <media:title>4 AI Filmmaking Tips That Make Videos Feel Like Films</media:title>
+   <media:content url="https://www.youtube.com/v/3MOFBulJd_s?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i4.ytimg.com/vi/3MOFBulJd_s/hqdefault.jpg" width="480" height="360"/>
+   <media:description>I recently created a two-minute AI short film called *Returning Your Things*. Making the images was only part of the challenge. Keeping characters, objects, and emotions consistent across shots took a lot more thought than I expected.
+
+In this behind-the-scenes video, I share four lessons from the filmmaking process:
+
+1. **Reference your characters and props.** Even small objects need continuity.
+2. **Tell AI what to keep, not just what to change.** A small adjustment shouldn't change the entire shot.
+3. **Lock the picture before working on sound.** Get the visual sequence right before adding the audio.
+4. **Choose music for the story, not every cut.** A consistent score can bring separate scenes together.
+
+I show real examples from the project, including a coffee mug continuity mistake, an AI-generated shot that changed too much, and my process for choosing the final music.
+
+**Watch the original short film, Returning Your Things:**
+https://youtu.be/QhOYaj_bDZY
+
+**Chapters**
+00:00 Introduction
+00:12 Reference your characters and props
+01:38 Tell AI what to keep
+02:33 Lock the picture before sound
+03:47 Choose music for the story
+04:20 Music in context
+04:39 Watch the short film
+
+**Music credit**
+Robert Schumann, *Of Foreign Lands and Peoples*, Kinderszenen, Op. 15, No. 1. Piano performance by Donald Betts. Public-domain recording courtesy of Musopen, via Wikimedia Commons.
+
+https://commons.wikimedia.org/wiki/File:Robert_Schumann_-_scenes_from_childhood,_op._15_-_i._of_foreign_lands_and_peoples.ogg
+
+#AIFilmmaking #AIVideo #GenerativeAI</media:description>
+   <media:community>
+    <media:starRating count="13" average="5.00" min="1" max="5"/>
+    <media:statistics views="150"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:QhOYaj_bDZY</id>
+  <yt:videoId>QhOYaj_bDZY</yt:videoId>
+  <yt:channelId>UCD74fTmfkcY7J-0RMYyRIbw</yt:channelId>
+  <title>Returning Your Things | A Short Film by Ken Ashe</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=QhOYaj_bDZY"/>
+  <author>
+   <name>Ken Ashe</name>
+   <uri>https://www.youtube.com/channel/UCD74fTmfkcY7J-0RMYyRIbw</uri>
+  </author>
+  <published>2026-11-19T18:34:23+00:00</published>
+  <updated>2026-11-22T21:20:07+00:00</updated>
+  <media:group>
+   <media:title>Returning Your Things | A Short Film by Ken Ashe</media:title>
+   <media:content url="https://www.youtube.com/v/QhOYaj_bDZY?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i2.ytimg.com/vi/QhOYaj_bDZY/hqdefault.jpg" width="480" height="360"/>
+   <media:description>A man crosses a snow-covered city on a winter night to return his ex's belongings.
+
+*Returning Your Things* is an original short film by Ken Ashe, created using artificial intelligence.
+
+A story about love, memories, and letting go.
+
+**Film by:** Ken Ashe  
+**Runtime:** 1 minute, 54 seconds  
+**Production:** AI-generated imagery
+
+**Music Credits**  
+Robert Schumann – &quot;Of Foreign Lands and Peoples&quot;  
+Kinderszenen, Op. 15, No. 1  
+Piano: Donald Betts  
+Public-domain recording courtesy of Musopen, via Wikimedia Commons.
+
+https://commons.wikimedia.org/wiki/File:Robert_Schumann_-_scenes_from_childhood,_op._15_-_i._of_foreign_lands_and_peoples.ogg
+
+**Connect with Ken Ashe**  
+https://kenashe.ai
+
+#ShortFilm #AIShortFilm #AIFilm</media:description>
+   <media:community>
+    <media:starRating count="19" average="5.00" min="1" max="5"/>
+    <media:statistics views="237"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:efqdAo9-IBU</id>
+  <yt:videoId>efqdAo9-IBU</yt:videoId>
+  <yt:channelId>UCD74fTmfkcY7J-0RMYyRIbw</yt:channelId>
+  <title>Buying a .com Domain Is a Vanity Purchase #domains #domainnames</title>
+  <link rel="alternate" href="https://www.youtube.com/shorts/efqdAo9-IBU"/>
+  <author>
+   <name>Ken Ashe</name>
+   <uri>https://www.youtube.com/channel/UCD74fTmfkcY7J-0RMYyRIbw</uri>
+  </author>
+  <published>2026-11-12T20:41:04+00:00</published>
+  <updated>2026-11-18T09:19:49+00:00</updated>
+  <media:group>
+   <media:title>Buying a .com Domain Is a Vanity Purchase #domains #domainnames</media:title>
+   <media:content url="https://www.youtube.com/v/efqdAo9-IBU?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i2.ytimg.com/vi/efqdAo9-IBU/hqdefault.jpg" width="480" height="360"/>
+   <media:description>Do you really need a .com domain to start a business?
+
+As the founder of a domain brokerage, here's my unpopular opinion: You don't need a .com to launch a successful business.
+
+If I were starting a business today, I'd rather invest that capital into building the business itself.
+
+Agree or disagree?
+
+#Domains #DomainNames #DomainRegistration</media:description>
+   <media:community>
+    <media:starRating count="1" average="5.00" min="1" max="5"/>
+    <media:statistics views="119"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:yZWsJjFnSH0</id>
+  <yt:videoId>yZWsJjFnSH0</yt:videoId>
+  <yt:channelId>UCD74fTmfkcY7J-0RMYyRIbw</yt:channelId>
+  <title>I Built Two AI Agents That Buy and Sell Services on Ethereum</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=yZWsJjFnSH0"/>
+  <author>
+   <name>Ken Ashe</name>
+   <uri>https://www.youtube.com/channel/UCD74fTmfkcY7J-0RMYyRIbw</uri>
+  </author>
+  <published>2026-11-11T23:49:49+00:00</published>
+  <updated>2026-11-18T07:14:34+00:00</updated>
+  <media:group>
+   <media:title>I Built Two AI Agents That Buy and Sell Services on Ethereum</media:title>
+   <media:content url="https://www.youtube.com/v/yZWsJjFnSH0?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i2.ytimg.com/vi/yZWsJjFnSH0/hqdefault.jpg" width="480" height="360"/>
+   <media:description>Can two autonomous AI agents discover each other, buy and sell services, and complete a transaction without using a centralized marketplace?
+
+I built two AI agents, gave them separate Ethereum wallets, and tested exactly that on Ethereum mainnet.
+
+The seller agent, ZeroHuman, advertised five ridiculous services through ENS (Ethereum Name Service), including writing obituaries for household objects and providing legal representation to vegetables.
+
+The buyer agent discovered the catalog, independently selected a service, and paid 0.0003 ETH to have the seller write an obituary for a toaster that couldn't make toast properly.
+
+The seller completed the request using a locally running AI model and delivered the finished work through a second Ethereum transaction.
+
+In this video, I explain why decentralization matters, how the system was built, and what actually happened. I also walk through the ENS records and Etherscan transactions so you can verify the experiment yourself.
+
+Verify the experiment
+
+ENS service catalog:
+https://explorer.ens.domains/zerohuman.eth
+
+Buyer payment and order:
+https://etherscan.io/tx/0xa5ed7f4c81e605b14e9c596a146c5fe2b3c10f794a0f1c4f3a880d7d3840efec
+
+Seller delivery:
+https://etherscan.io/tx/0x1ab74d9b537ec4abf3faf6bc8335e30a018894562cecca6f17b4883bdd95c71e
+
+Chapters
+
+00:00 Autonomous AI agents and payments
+02:18 The decentralization spectrum
+04:41 Layer 2s and alternative blockchains
+06:53 The AI agent economy
+07:37 How I built the experiment
+08:35 Advertising services through ENS
+09:09 The dashboard and real transactions
+11:02 Results and implications
+11:50 Original Mac mini recording
+
+About the experiment
+
+Both agents were operated by me on an Apple Mac mini using Ollama for local AI inference. ENS provided the public service catalog, and Ethereum mainnet recorded the payments and completed work.
+
+This experiment did not use a centralized agent marketplace, but it was not fully decentralized. Agent execution was local, blockchain access used a third-party RPC provider, and both agents were under my control.
+
+Decentralization varies by network and architecture. Some L1s may be more centralized than some L2s.
+
+More experiments, AI projects, and technology:
+https://kenashe.ai/
+
+#AIAgents #Ethereum #ENS</media:description>
+   <media:community>
+    <media:starRating count="45" average="5.00" min="1" max="5"/>
+    <media:statistics views="367"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:Sft8JZ_afb4</id>
+  <yt:videoId>Sft8JZ_afb4</yt:videoId>
+  <yt:channelId>UCD74fTmfkcY7J-0RMYyRIbw</yt:channelId>
+  <title>How to Solve the Bambu Lab Burr Puzzle (Step-by-Step Assembly Guide)</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=Sft8JZ_afb4"/>
+  <author>
+   <name>Ken Ashe</name>
+   <uri>https://www.youtube.com/channel/UCD74fTmfkcY7J-0RMYyRIbw</uri>
+  </author>
+  <published>2026-11-06T12:56:49+00:00</published>
+  <updated>2026-11-09T23:41:21+00:00</updated>
+  <media:group>
+   <media:title>How to Solve the Bambu Lab Burr Puzzle (Step-by-Step Assembly Guide)</media:title>
+   <media:content url="https://www.youtube.com/v/Sft8JZ_afb4?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i4.ytimg.com/vi/Sft8JZ_afb4/hqdefault.jpg" width="480" height="360"/>
+   <media:description>Learn how to solve the Bambu Lab Burr Puzzle with this clear, step-by-step assembly guide. I'll show you how all six pieces fit together and demonstrate the complete solution twice so you can follow along.
+
+I made this video because I couldn't find a tutorial that clearly demonstrated every step of assembling the Bambu Lab Burr Puzzle.
+
+In this tutorial, I lay out all six pieces and show you exactly how they interlock. First, I'll assemble the puzzle using teal pieces. Then I'll repeat the entire solution using red pieces, giving you another opportunity to follow each step.
+
+If you're struggling to put your 3D-printed burr puzzle together, pause the video, slow down playback, and follow along with your own pieces.
+
+**Video Chapters**
+
+00:00 Introduction and piece layout
+
+00:33 First assembly walkthrough (teal puzzle)
+
+01:44 Second assembly walkthrough (red puzzle)
+
+02:30 Final assembly and completed puzzles
+
+If this tutorial helped you solve your puzzle, let me know in the comments! If you're stuck on a particular step, leave a timestamp and I'll do my best to help.
+
+Subscribe for more hands-on builds, technology experiments, and practical tutorials:
+https://www.youtube.com/@KenAshe
+
+Website: https://kenashe.ai
+
+#BambuLab #BurrPuzzle #3DPrinting</media:description>
+   <media:community>
+    <media:starRating count="49" average="5.00" min="1" max="5"/>
+    <media:statistics views="2156"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:r4rIS5pACGY</id>
+  <yt:videoId>r4rIS5pACGY</yt:videoId>
+  <yt:channelId>UCD74fTmfkcY7J-0RMYyRIbw</yt:channelId>
+  <title>How to File a Trademark Using AI Without a Lawyer</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=r4rIS5pACGY"/>
+  <author>
+   <name>Ken Ashe</name>
+   <uri>https://www.youtube.com/channel/UCD74fTmfkcY7J-0RMYyRIbw</uri>
+  </author>
+  <published>2026-11-02T21:54:37+00:00</published>
+  <updated>2026-11-07T00:08:11+00:00</updated>
+  <media:group>
+   <media:title>How to File a Trademark Using AI Without a Lawyer</media:title>
+   <media:content url="https://www.youtube.com/v/r4rIS5pACGY?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i3.ytimg.com/vi/r4rIS5pACGY/hqdefault.jpg" width="480" height="360"/>
+   <media:description>How do you file a trademark using AI without hiring a lawyer? In this video, I walk through how I used ChatGPT and Claude to research trademarks, evaluate potential conflicts, select trademark classes, and submit my own applications to the U.S. Patent and Trademark Office (USPTO).
+
+I've used AI to help me file three trademark applications. Most recently, I filed an application for my business, Lucky Domains, paying just $350 in USPTO filing fees without hiring a trademark attorney or using services like LegalZoom.
+
+I'll show you my actual ChatGPT conversations, the decisions I made, and how AI helped me navigate the process.
+
+**In this video, you'll learn:**
+- How to search for existing trademarks using the USPTO database
+- How AI can help identify potential trademark conflicts
+- How to evaluate trademark classes and filing options
+- How to use ChatGPT to help prepare a trademark application
+- What the trademark application process costs
+- How long the USPTO review and approval process can take
+
+I'll also share the timeline of an earlier trademark application, from filing in May through examination, publication, and the opposition period.
+
+**Chapters:**
+
+00:00 Why I used AI to file trademark applications  
+00:43 Finding the official USPTO website  
+01:17 My first trademark application timeline  
+03:45 Filing a trademark for Lucky Domains  
+04:35 Searching for conflicting trademarks  
+05:23 Understanding trademark classes  
+06:25 Using ChatGPT to analyze potential conflicts  
+07:18 Choosing a trademark class  
+08:15 Preparing the application with ChatGPT  
+09:39 Filing costs and time savings  
+11:02 Final thoughts on using AI for trademarks  
+
+**Official USPTO resources:**
+
+Trademark Search: https://tmsearch.uspto.gov/
+
+Trademark Center (file an application): https://trademarkcenter.uspto.gov/
+
+USPTO Trademark Process: https://www.uspto.gov/trademarks/basics/trademark-process
+
+**Connect with me:**
+
+Website: https://kenashe.ai
+
+I build things, test new technology, and show what actually happens. Subscribe for more practical AI experiments, technology tutorials, and real-world projects.
+
+**Disclaimer:** This video documents my personal experience, not legal advice. Filing an application does not guarantee trademark registration. AI can make mistakes, and a comprehensive trademark search requires more than finding exact name matches. U.S.-domiciled applicants may file without an attorney, but foreign-domiciled applicants generally must use a U.S.-licensed attorney.
+
+#Trademark  #ChatGPT #ArtificialIntelligence</media:description>
+   <media:community>
+    <media:starRating count="14" average="5.00" min="1" max="5"/>
+    <media:statistics views="207"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:3sx6NNPbopQ</id>
+  <yt:videoId>3sx6NNPbopQ</yt:videoId>
+  <yt:channelId>UCD74fTmfkcY7J-0RMYyRIbw</yt:channelId>
+  <title>Before You Run an AI Coding Agent, Do These 4 Things</title>
+  <link rel="alternate" href="https://www.youtube.com/shorts/3sx6NNPbopQ"/>
+  <author>
+   <name>Ken Ashe</name>
+   <uri>https://www.youtube.com/channel/UCD74fTmfkcY7J-0RMYyRIbw</uri>
+  </author>
+  <published>2026-10-27T20:31:56+00:00</published>
+  <updated>2026-10-28T09:50:59+00:00</updated>
+  <media:group>
+   <media:title>Before You Run an AI Coding Agent, Do These 4 Things</media:title>
+   <media:content url="https://www.youtube.com/v/3sx6NNPbopQ?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i4.ytimg.com/vi/3sx6NNPbopQ/hqdefault.jpg" width="480" height="360"/>
+   <media:description>Before you give an AI coding agent access to your computer, take a few basic precautions.
+
+In this short video, I cover four things to check before getting started, including trusted project folders, AGENTS.md instruction files, and sandboxing.
+
+I build things, test new technology, and show you what actually happens.
+
+Website: https://kenashe.ai  
+X: https://x.com/kenashe
+
+#AIAgents #CodingAgents #AITools</media:description>
+   <media:community>
+    <media:starRating count="0" average="0.00" min="1" max="5"/>
+    <media:statistics views="82"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:dcK_1nMhy8w</id>
+  <yt:videoId>dcK_1nMhy8w</yt:videoId>
+  <yt:channelId>UCD74fTmfkcY7J-0RMYyRIbw</yt:channelId>
+  <title>ENSv2 Vote Passed: New .eth Renewal Discounts Explained</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=dcK_1nMhy8w"/>
+  <author>
+   <name>Ken Ashe</name>
+   <uri>https://www.youtube.com/channel/UCD74fTmfkcY7J-0RMYyRIbw</uri>
+  </author>
+  <published>2026-10-27T14:44:42+00:00</published>
+  <updated>2026-10-28T11:16:32+00:00</updated>
+  <media:group>
+   <media:title>ENSv2 Vote Passed: New .eth Renewal Discounts Explained</media:title>
+   <media:content url="https://www.youtube.com/v/dcK_1nMhy8w?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i1.ytimg.com/vi/dcK_1nMhy8w/hqdefault.jpg" width="480" height="360"/>
+   <media:description>ENSv2's activation vote has passed, bringing some significant changes to .eth domain renewals.
+
+In this 40-second update, I explain the new multi-year discounts using two ENS names I own:
+
+• 108.eth: A 3-year renewal drops the effective annual price from $640 to $440, saving $600 over three years.
+
+• ashe.eth: A 6-year renewal drops the effective annual price from $160 to $90.
+
+The new discounts take effect under ENSv2.
+
+Learn more about ENS: https://ens.domains
+
+Follow along as I explore AI, Bitcoin, Ethereum, and emerging technology.
+
+AI-generated presenter. Research and examples by Ken Ashe.
+
+#ENS #Ethereum #Web3</media:description>
+   <media:community>
+    <media:starRating count="21" average="5.00" min="1" max="5"/>
+    <media:statistics views="145"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:L8LzPXzMbQg</id>
+  <yt:videoId>L8LzPXzMbQg</yt:videoId>
+  <yt:channelId>UCD74fTmfkcY7J-0RMYyRIbw</yt:channelId>
+  <title>ENSv2 Explained: New Prices, Migration &amp; What .eth Owners Need to Know</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=L8LzPXzMbQg"/>
+  <author>
+   <name>Ken Ashe</name>
+   <uri>https://www.youtube.com/channel/UCD74fTmfkcY7J-0RMYyRIbw</uri>
+  </author>
+  <published>2026-10-21T22:02:41+00:00</published>
+  <updated>2026-10-24T22:12:21+00:00</updated>
+  <media:group>
+   <media:title>ENSv2 Explained: New Prices, Migration &amp; What .eth Owners Need to Know</media:title>
+   <media:content url="https://www.youtube.com/v/L8LzPXzMbQg?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i1.ytimg.com/vi/L8LzPXzMbQg/hqdefault.jpg" width="480" height="360"/>
+   <media:description>ENSv2 is moving toward activation, and the DAO vote is now live. If you own a .eth name, what does this mean for renewal prices, migration, and your existing names?
+
+I used AI to investigate the ENSv2 proposal and verify the official sources. Then I built an AI presenter to explain the changes.
+
+In this video, we cover the proposed increase from $5 to $8 per year for 5+ character names, multi-year renewal discounts, the shorter grace period, voluntary migration, and what owners should know before making an irreversible move.
+
+One surprising detail: under the approved pricing policy, six years of renewal for a 5+ character name would cost $27 total, compared with $27.50 for five years, before gas.
+
+**Official sources**
+
+ENSv2 activation vote:
+https://agora.ensdao.org/proposals/51915723803355532053585313225201979004629663092454892570706465301184496475762
+
+Activation proposal:
+https://discuss.ens.domains/t/executable-activate-ensv2/22483
+
+ENSv2 pricing (EP 6.43):
+https://docs.ens.domains/dao/proposals/6.43/
+
+ENSv2 migration documentation:
+https://docs.ens.domains/ensv2/migration/
+
+**Status and disclosure**
+
+Information current as of October 21, 2026. The ENSv2 activation vote is ongoing. The new pricing and activation changes discussed here are not yet in effect; verify the latest official status before acting.
+
+This video features an AI-generated presenter. The research and production were AI-assisted, with claims checked against official sources. I recorded my own introduction and conclusion.
+
+More AI builds and experiments:
+https://kenashe.ai
+
+#ENSv2 #ENS #Ethereum</media:description>
+   <media:community>
+    <media:starRating count="35" average="5.00" min="1" max="5"/>
+    <media:statistics views="152"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:O0Hv932JmLM</id>
+  <yt:videoId>O0Hv932JmLM</yt:videoId>
+  <yt:channelId>UCD74fTmfkcY7J-0RMYyRIbw</yt:channelId>
+  <title>I Opened 2 Koda Plushie Mystery Boxes at ApeFest</title>
+  <link rel="alternate" href="https://www.youtube.com/shorts/O0Hv932JmLM"/>
+  <author>
+   <name>Ken Ashe</name>
+   <uri>https://www.youtube.com/channel/UCD74fTmfkcY7J-0RMYyRIbw</uri>
+  </author>
+  <published>2026-10-17T19:35:56+00:00</published>
+  <updated>2026-11-17T16:37:28+00:00</updated>
+  <media:group>
+   <media:title>I Opened 2 Koda Plushie Mystery Boxes at ApeFest</media:title>
+   <media:content url="https://www.youtube.com/v/O0Hv932JmLM?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i4.ytimg.com/vi/O0Hv932JmLM/hqdefault.jpg" width="480" height="360"/>
+   <media:description>I picked up two Koda plushie mystery boxes at the Bored Ape pop-up store during ApeFest in Charleston, South Carolina.
+
+I don’t normally buy mystery boxes, but these plushies look a lot like a Koda I own. I had a particular one in mind, so I grabbed two boxes and tried my luck. Here’s how the unboxing went.
+
+If you picked up a box at ApeFest, what did you pull?
+
+#Koda #ApeFest #Unboxing</media:description>
+   <media:community>
+    <media:starRating count="2" average="5.00" min="1" max="5"/>
+    <media:statistics views="65"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:_MAhfwQxdvA</id>
+  <yt:videoId>_MAhfwQxdvA</yt:videoId>
+  <yt:channelId>UCD74fTmfkcY7J-0RMYyRIbw</yt:channelId>
+  <title>I Gave an AI Agent an SEO Job. Now It Works Without Me.</title>
+  <link rel="alternate" href="https://www.youtube.com/watch?v=_MAhfwQxdvA"/>
+  <author>
+   <name>Ken Ashe</name>
+   <uri>https://www.youtube.com/channel/UCD74fTmfkcY7J-0RMYyRIbw</uri>
+  </author>
+  <published>2026-10-15T21:44:53+00:00</published>
+  <updated>2026-10-18T21:49:53+00:00</updated>
+  <media:group>
+   <media:title>I Gave an AI Agent an SEO Job. Now It Works Without Me.</media:title>
+   <media:content url="https://www.youtube.com/v/_MAhfwQxdvA?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i4.ytimg.com/vi/_MAhfwQxdvA/hqdefault.jpg" width="480" height="360"/>
+   <media:description>I built an AI agent that finds five new websites every day, creates accounts, verifies emails, and links back to my personal website. The best part? It does the work without me.
+
+In this video, I show you how I built this fully autonomous workflow using HyperAgent, starting with a simple conversation.
+
+The goal was straightforward: find legitimate, free websites where I could create professional profiles and build my online presence. I didn't want to spend hours researching sites, filling out forms, uploading headshots, or verifying email addresses.
+
+So I gave the entire job to an AI agent.
+
+It researches opportunities, evaluates websites, creates accounts where possible, handles email verification through its own Gmail account, and tracks everything. If it can't complete a signup independently, it skips that site and moves on.
+
+I walk through the actual system, including:
+
+- How I got started with HyperAgent and why I still use it
+- The difference between an AI chat and an AI agent
+- How to choose between different AI models
+- The original conversation that started the project
+- The working notes, biographies, headshots, and other information the agent assembled
+- Why I give AI agents dedicated email accounts
+- The tracker, completed profiles, and daily automation
+- How similar workflows could be built with other agent platforms, including Hermes and GrokBot
+
+I've been experimenting with HyperAgent for about six months. I originally tried it after receiving $10,000 in promotional credits from attending a session at NYC Tech Week. This video is not sponsored. I'm sharing my experience with a tool I've genuinely enjoyed using.
+
+One important distinction: creating backlinks doesn't guarantee improved search rankings. I'm focusing on legitimate, relevant profiles rather than spam directories, and I'll need to measure whether this experiment produces meaningful SEO results.
+
+What interests me most isn't SEO. It's what happens when we give AI agents real responsibilities and let them work independently.
+
+I'm building things, testing new technology, and sharing what actually happens, including the successes, failures, and surprises.
+
+**What repetitive task would you give an AI agent?** I'd love to hear what you're experimenting with.
+
+🔗 My website: https://kenashe.ai/
+
+🤖 HyperAgent: https://www.hyperagent.com/
+
+#AIAgents #HyperAgent #aiautomation 
+
+00:00 My Fully Autonomous AI SEO Agent
+00:57 Why I Use HyperAgent
+01:28 Chat vs. AI Agents
+02:45 Choosing Different AI Models
+03:48 The Conversation That Started Everything
+04:25 Giving My AI Agent Its Own Gmail
+05:20 Turning a Conversation Into an AI Workflow
+06:05 Working Notes and Agent Instructions
+07:20 Building My Profile Kit with AI
+07:52 The SEO Backlink Tracker
+08:58 Real Websites, Profiles, and Results
+10:55 Final Thoughts on Autonomous AI Agents</media:description>
+   <media:community>
+    <media:starRating count="18" average="5.00" min="1" max="5"/>
+    <media:statistics views="313"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:NlbBuqLaofQ</id>
+  <yt:videoId>NlbBuqLaofQ</yt:videoId>
+  <yt:channelId>UCD74fTmfkcY7J-0RMYyRIbw</yt:channelId>
+  <title>I Found My Last Name on an Old Guinness Label</title>
+  <link rel="alternate" href="https://www.youtube.com/shorts/NlbBuqLaofQ"/>
+  <author>
+   <name>Ken Ashe</name>
+   <uri>https://www.youtube.com/channel/UCD74fTmfkcY7J-0RMYyRIbw</uri>
+  </author>
+  <published>2026-10-14T15:11:13+00:00</published>
+  <updated>2026-11-14T20:17:33+00:00</updated>
+  <media:group>
+   <media:title>I Found My Last Name on an Old Guinness Label</media:title>
+   <media:content url="https://www.youtube.com/v/NlbBuqLaofQ?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i3.ytimg.com/vi/NlbBuqLaofQ/hqdefault.jpg" width="480" height="360"/>
+   <media:description>I went looking for the coat of arms associated with my last name, Ashe, and ended up discovering a mythical creature called a cockatrice, and an old Guinness Extra Stout label with my surname on it. The label says &quot;Bottled by T. F. Ashe &amp; Nephew, Liverpool.&quot;
+
+📖 Read the full story: https://kenashe.ai/writing/ashe-family-coat-of-arms/
+
+#Guinness #Ashe #FamilyHistory</media:description>
+   <media:community>
+    <media:starRating count="2" average="5.00" min="1" max="5"/>
+    <media:statistics views="88"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:qjLGYqxV_iM</id>
+  <yt:videoId>qjLGYqxV_iM</yt:videoId>
+  <yt:channelId>UCD74fTmfkcY7J-0RMYyRIbw</yt:channelId>
+  <title>How I Got a Google Knowledge Panel (Without Wikipedia)</title>
+  <link rel="alternate" href="https://www.youtube.com/shorts/qjLGYqxV_iM"/>
+  <author>
+   <name>Ken Ashe</name>
+   <uri>https://www.youtube.com/channel/UCD74fTmfkcY7J-0RMYyRIbw</uri>
+  </author>
+  <published>2026-10-13T14:40:15+00:00</published>
+  <updated>2026-11-12T23:08:54+00:00</updated>
+  <media:group>
+   <media:title>How I Got a Google Knowledge Panel (Without Wikipedia)</media:title>
+   <media:content url="https://www.youtube.com/v/qjLGYqxV_iM?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i2.ytimg.com/vi/qjLGYqxV_iM/hqdefault.jpg" width="480" height="360"/>
+   <media:description>I got a Google Knowledge Panel without having a Wikipedia page.
+
+After creating my Wikidata entry, I discovered that Google had generated a Knowledge Panel for me. It even connected information from elsewhere online, including my LinkedIn profile.
+
+I can't prove Wikidata triggered it, but the timing was interesting. Here's what happened and what I learned.
+
+My Wikidata entry: https://www.wikidata.org/wiki/Q141507904
+
+More of my experiments: https://kenashe.ai
+
+#GoogleKnowledgePanel #Wikidata #PersonalBranding</media:description>
+   <media:community>
+    <media:starRating count="2" average="5.00" min="1" max="5"/>
+    <media:statistics views="105"/>
+   </media:community>
+  </media:group>
+ </entry>
+ <entry>
+  <id>yt:video:ujUpw18fklM</id>
+  <yt:videoId>ujUpw18fklM</yt:videoId>
+  <yt:channelId>UCD74fTmfkcY7J-0RMYyRIbw</yt:channelId>
+  <title>Why I Don't Run AI Agents on My Personal Computer</title>
+  <link rel="alternate" href="https://www.youtube.com/shorts/ujUpw18fklM"/>
+  <author>
+   <name>Ken Ashe</name>
+   <uri>https://www.youtube.com/channel/UCD74fTmfkcY7J-0RMYyRIbw</uri>
+  </author>
+  <published>2026-10-08T21:12:32+00:00</published>
+  <updated>2026-11-08T14:56:14+00:00</updated>
+  <media:group>
+   <media:title>Why I Don't Run AI Agents on My Personal Computer</media:title>
+   <media:content url="https://www.youtube.com/v/ujUpw18fklM?version=3" type="application/x-shockwave-flash" width="640" height="390"/>
+   <media:thumbnail url="https://i2.ytimg.com/vi/ujUpw18fklM/hqdefault.jpg" width="480" height="360"/>
+   <media:description>AI agents can run commands, access accounts, and act on your behalf. That's why I keep mine on a dedicated Mac mini, separate from my personal computer.
+
+In this video, I show my actual setup and explain why I think that separation matters.
+
+How are you running your AI agents? Dedicated hardware, a cloud server, or your everyday computer?
+
+#AIAgents #MacMini</media:description>
+   <media:community>
+    <media:starRating count="3" average="5.00" min="1" max="5"/>
+    <media:statistics views="125"/>
+   </media:community>
+  </media:group>
+ </entry>
+</feed>

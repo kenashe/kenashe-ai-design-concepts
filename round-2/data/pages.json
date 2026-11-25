@@ -1,0 +1,331 @@
+{
+ "_meta": {
+  "what": "Page copy that production keeps inside .astro pages (about, newsroom, work, homepage) rather than data files. Extracted verbatim from the live site and production repo on 2026-11-25 (Lucky Domains wording matches production after PR #155).",
+  "maintenance": "In production this copy stays in the pages where it lives today. Only the prototypes read it from here."
+ },
+ "identity": {
+  "name": "Ken Ashe",
+  "site": "KenAshe.ai",
+  "liveUrl": "https://kenashe.ai/",
+  "logoText": "{ ken ashe }",
+  "tagline": "I build things, test new technology, and show what actually happened.",
+  "subline": "Right now, that\u2019s mostly AI and crypto. Experiments, software, wins, failures, and weird detours.",
+  "title": "AI application builder",
+  "trustLine": "AI application builder \u00b7 CPA \u00b7 PMP \u00b7 Building with AI in public",
+  "footerLine": "Building with AI in public. No hype, no doom. Receipts only.",
+  "approach": "I work at the AI application layer, turning existing models, APIs, coding tools, and automation platforms into working systems. Build first, test what actually happens, document the failures alongside the wins, and keep evidence separate from claims.",
+  "email": "hello@kenashe.ai",
+  "location": "New Jersey, USA",
+  "currentPalette": {
+   "bg": "#16130e",
+   "surface": "#201b13",
+   "border": "#322a1e",
+   "fg": "#f3eee3",
+   "muted": "#a89f8c",
+   "accent": "#ffb300",
+   "accent2": "#c8ff4d"
+  },
+  "currentFonts": {
+   "display": "Bricolage Grotesque",
+   "sans": "Hanken Grotesk",
+   "mono": "JetBrains Mono"
+  }
+ },
+ "whatIBring": [
+  {
+   "title": "AI application builder",
+   "body": "Ships agents, automations, and AI-assisted sites at the application layer, then documents what shipped and what broke."
+  },
+  {
+   "title": "CPA & PMP operator",
+   "body": "Proof, controls, and delivery. Strict financial discipline and decades of scoping, sequencing, and shipping real projects."
+  },
+  {
+   "title": "Domains & SEO operator",
+   "body": "Founder of Lucky Domains, a digital presence studio for the AI era."
+  }
+ ],
+ "socials": [
+  {
+   "id": "youtube",
+   "label": "YouTube",
+   "handle": "@KenAshe",
+   "url": "https://www.youtube.com/@KenAshe"
+  },
+  {
+   "id": "x",
+   "label": "X",
+   "handle": "@kenashe",
+   "url": "https://x.com/kenashe"
+  },
+  {
+   "id": "tiktok",
+   "label": "TikTok",
+   "handle": "@ken.ashe",
+   "url": "https://www.tiktok.com/@ken.ashe"
+  },
+  {
+   "id": "instagram",
+   "label": "Instagram",
+   "handle": "@ken.ashe",
+   "url": "https://www.instagram.com/ken.ashe/"
+  },
+  {
+   "id": "linkedin",
+   "label": "LinkedIn",
+   "handle": "in/kenashe",
+   "url": "https://www.linkedin.com/in/kenashe"
+  },
+  {
+   "id": "github",
+   "label": "GitHub",
+   "handle": "kenashe",
+   "url": "https://github.com/kenashe"
+  },
+  {
+   "id": "facebook",
+   "label": "Facebook",
+   "handle": "kenasheai",
+   "url": "https://www.facebook.com/kenasheai/"
+  },
+  {
+   "id": "rss",
+   "label": "Writing RSS",
+   "handle": "",
+   "url": "https://kenashe.ai/writing/rss.xml"
+  }
+ ],
+ "about": {
+  "bio": "Ken Ashe is a builder, entrepreneur, CPA and PMP who documents what he builds, tests, and learns at KenAshe.ai. Much of his current work explores AI, automation, crypto, and emerging technology. He combines existing models, APIs, coding tools, and automation platforms to build agents, websites, and workflows. He is also the founder of Lucky Domains and is based in New Jersey.",
+  "background": [
+   "Ashe started his career in accounting and finance, earning his CPA and working in financial reporting before moving into project, product, and program leadership. Over roughly two decades, his career included roles at S&P Global, EY, Noom, and Prudential Financial, where he ultimately served as Director of Project and Product Management.",
+   "Alongside that work, he built digital businesses, including Lucky Domains, which he still runs. He later left corporate work to focus on entrepreneurship and building practical AI applications, evaluating what they actually do and publishing the evidence here, failures included."
+  ],
+  "technicalBackground": "About 20 years working with HTML, CSS, websites and WordPress, and more recently AI-assisted development. Never describe this as 20 years of professional software engineering.",
+  "veteran": "Army National Guard veteran",
+  "speaking": [
+   {
+    "year": "2026",
+    "event": "TechRound100",
+    "role": "Judge",
+    "detail": "Selected as a judge for TechRound100 2026, evaluating startups and emerging businesses based on product viability, market opportunity, competitive advantages, and execution.",
+    "links": [
+     {
+      "label": "Official judging announcement",
+      "url": "https://techround.co.uk/startups/enter-techrounds-techround100-2026/"
+     },
+     {
+      "label": "TechRound interview",
+      "url": "https://techround.co.uk/interviews/a-chat-with-ken-ashe-founder-of-lucky-domains-and-expert-judge-in-the-techround100-2026/"
+     }
+    ]
+   },
+   {
+    "year": "2025",
+    "event": "NFT.NYC",
+    "role": "Speaker / Panelist",
+    "detail": "Participated in a panel discussing the future of digital identity.",
+    "links": [
+     {
+      "label": "NFT.NYC 2025 schedule",
+      "url": "https://nftnyc2025.sessionize.com/schedule/room/59118"
+     }
+    ]
+   },
+   {
+    "year": "2024",
+    "event": "NFT.NYC",
+    "role": "Speaker",
+    "detail": "Presented an overview of NFT domain providers and their capabilities.",
+    "links": [
+     {
+      "label": "NFT.NYC 2024 approved speakers",
+      "url": "https://web.archive.org/web/20260113132605/https://www.nft.nyc/blog/nft.nyc2024-round3-approved-speakers-0-1-0-0"
+     }
+    ]
+   }
+  ],
+  "credentials": [
+   {
+    "name": "Certified Public Accountant (CPA)",
+    "issuer": "State of New Jersey",
+    "status": "Active"
+   },
+   {
+    "name": "Chartered Global Management Accountant (CGMA)",
+    "issuer": "AICPA",
+    "status": "Active"
+   },
+   {
+    "name": "Project Management Professional (PMP)",
+    "issuer": "Project Management Institute",
+    "status": "Active"
+   },
+   {
+    "name": "PMI Agile Certified Practitioner (PMI-ACP)",
+    "issuer": "Project Management Institute",
+    "status": "Active"
+   }
+  ],
+  "credentialsRule": "Never attach 'verify' links to credentials. Homepage shows CPA and PMP only; full list on About.",
+  "memberships": [
+   "Forbes Business Council Member (2026\u2013Present)"
+  ],
+  "availableForComment": [
+   "AI agents, workflow automation, and practical AI applications",
+   "AI adoption for operators and small businesses",
+   "Bitcoin, digital identity, domains, and internet ownership",
+   "Entrepreneurship, career reinvention, and leaving corporate work",
+   "Project, product, and program leadership",
+   "AI in finance, accounting, and financial services"
+  ],
+  "portraits": [
+   {
+    "src": "assets/portrait/ken-black-polo-1280.webp",
+    "alt": "Ken Ashe smiling, wearing a black polo, in a bright office.",
+    "note": "Preferred headshot, portrait 4:5"
+   },
+   {
+    "src": "assets/portrait/ken-hoodie-1280.webp",
+    "alt": "Ken Ashe in a navy hoodie, near a window.",
+    "note": "Casual, near-square"
+   },
+   {
+    "src": "assets/portrait/ken-closeup-1280.webp",
+    "alt": "Close-up of Ken Ashe smiling.",
+    "note": "Landscape 4:3 close-up"
+   }
+  ],
+  "portraitsRule": "Use ken-black-polo (current headshot, the Person schema image) first; hoodie is the official alternate. Production's AGENTS.md retires the office photos from current use, so they are not included. Never generate, edit or upscale Ken's likeness with AI."
+ },
+ "press": {
+  "profiles": [
+   {
+    "date": "February 1, 2017",
+    "outlet": "Journal of Accountancy",
+    "title": "Find a mentor, land a new job",
+    "summary": "A career feature profiling Ken Ashe's move from financial reporting into project management at Prudential.",
+    "pinned": true
+   },
+   {
+    "date": "November 11, 2026",
+    "outlet": "TechRound",
+    "title": "A Chat With Ken Ashe, Founder Of Lucky Domains And Expert Judge In The TechRound100 2026",
+    "summary": "Domain names, digital identity, AI-powered search, and the future of entrepreneurship."
+   },
+   {
+    "date": "October 13, 2026",
+    "outlet": "NJBIZ",
+    "title": "Berkeley Heights Founder Left Noom After Lucky Domains Passed His Income Test",
+    "summary": "Ashe\u2019s move from Noom to full-time entrepreneurship."
+   },
+   {
+    "date": "September 30, 2026",
+    "outlet": "MyCentralJersey",
+    "title": "Fanwood resident left a job he loved. The second act is a few minutes away.",
+    "summary": "Ashe\u2019s transition from a 25-year corporate career to full-time entrepreneurship."
+   },
+   {
+    "date": "September 25, 2026",
+    "outlet": "OCNJ Daily",
+    "title": "What New Jersey Small Businesses Get Wrong About Starting With AI",
+    "summary": "Start with a repetitive task, verify results, retain human judgment."
+   },
+   {
+    "date": "September 18, 2026",
+    "outlet": "London Loves Business",
+    "title": "What building AI applications in public can teach other builders",
+    "summary": "Documented builds, the AI Digest, and multi-agent experiments as examples."
+   },
+   {
+    "date": "July 8, 2026",
+    "outlet": "Explore New Jersey",
+    "title": "New Jersey Operator Ken Ashe Launches KenAshe.ai, a Public Build Log for Real AI Projects",
+    "summary": "KenAshe.ai, applied AI work, background, and Lucky Domains."
+   }
+  ],
+  "commentary": [
+   {
+    "date": "September 30, 2026",
+    "outlet": "TechRound",
+    "title": "Do Domain Names Still Matter In An Age Of AI-First Internet?"
+   },
+   {
+    "date": "February 2017",
+    "outlet": "U.S. News & World Report (syndicated)",
+    "title": "7 Smart Ways to Spend a $1,000 Tax Refund"
+   },
+   {
+    "date": "March 22, 2017",
+    "outlet": "Smartsheet",
+    "title": "How Can a PMP Study Plan Help You Pass the Exam?"
+   },
+   {
+    "date": "May 16, 2016",
+    "outlet": "CertWise",
+    "title": "5 Project Management Fundamentals Learned the Hard Way (So You Don't Have To)"
+   }
+  ],
+  "forbesRule": "Forbes Business Council Expert Panel responses: Ken is a contributor, never the author. Never write 'Featured in Forbes'.",
+  "newsroomUrl": "https://kenashe.ai/newsroom/"
+ },
+ "work": {
+  "headline": "Sponsor an honest test or build.",
+  "subhead": "A real tool. A real task. An honest account of what happened.",
+  "intro": "I build agents, automations, and AI-assisted websites. If your product fits that work, we can agree on a practical experiment and document the results, including the limits.",
+  "includes": [
+   "One agreed task, workflow, or build that puts the product to use.",
+   "A hands-on test and one original article on this site, with evidence of what worked and what did not.",
+   "One factual-review round before publication. Conclusions stay independent.",
+   "Clear sponsorship disclosure near the beginning of the article."
+  ],
+  "doesNotBuy": "Payment covers the agreed work, not a positive review. I do not guarantee views, sales, search rankings, or links that pass ranking credit. Paid links are marked as sponsored.",
+  "notInDigest": "This is not a placement in the automated Digest.",
+  "rules": "No public prices. No paid placement in the Digest.",
+  "url": "https://kenashe.ai/work/"
+ },
+ "luckyDomains": {
+  "name": "Lucky Domains",
+  "url": "https://luckydomains.io/",
+  "description": "Lucky Domains is a digital presence studio for the AI era, offering website design and development, SEO, AI visibility, digital identity, and domain acquisition and brokerage.",
+  "short": "A digital presence studio for the AI era.",
+  "role": "Ken is the founder.",
+  "rule": "Lucky Domains is Ken's separate commercial company. Do not describe his personal experiments (ZeroHuman etc.) as Lucky Domains ventures."
+ },
+ "futureVentures": {
+  "note": "Do NOT invent future ventures. Acceptable framing only: an empty-state such as 'Next experiments are logged here when they ship.' ZeroHuman's documented next step: the first outside wallet paying zerohuman.eth, then ZeroHuman spending its own earnings buying services from other agents."
+ },
+ "films": {
+  "returningYourThings": {
+   "title": "Returning Your Things",
+   "logline": "On a snowy winter night, a man crosses the city to return his ex\u2019s belongings. A dialogue-free short film about love, memory, and letting go.",
+   "runtime": "1:54",
+   "released": "2026-11-19",
+   "youtubeId": "QhOYaj_bDZY",
+   "directorsNote": "I made Returning Your Things with AI-generated imagery. I wanted to see if I could tell a whole story without dialogue, using only images and music. The film needed to stand on its own, whether or not you knew how I made it.",
+   "credits": [
+    [
+     "Film by",
+     "Ken Ashe"
+    ],
+    [
+     "Music",
+     "Robert Schumann, \u201cOf Foreign Lands and Peoples,\u201d Kinderszenen, Op. 15, No. 1"
+    ],
+    [
+     "Piano",
+     "Donald Betts. Public-domain recording courtesy of Musopen, via Wikimedia Commons."
+    ]
+   ],
+   "stills": [
+    "assets/frames/QhOYaj_bDZY-1.webp",
+    "assets/frames/QhOYaj_bDZY-2.webp",
+    "assets/frames/QhOYaj_bDZY-3.webp",
+    "assets/video/QhOYaj_bDZY.webp",
+    "assets/build/returning-your-things.webp"
+   ],
+   "behindTheScenes": "https://kenashe.ai/writing/4-tips-for-making-ai-videos-that-feel-like-films/",
+   "framing": "Present it as a film first, not an AI demo."
+  }
+ }
+}

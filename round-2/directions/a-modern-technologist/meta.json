@@ -1,0 +1,26 @@
+{
+  "name": "The Modern Technologist",
+  "letter": "A",
+  "oneLiner": "Ken's face is the fixed centre of a precise instrument: everything he has made orbits him at the angle of its theme and the distance of its age, so the newest work sits closest to him and the site re-draws itself every time he publishes.",
+  "pages": [
+    { "path": "index.html", "label": "Homepage" },
+    { "path": "about/index.html", "label": "About" },
+    { "path": "building/zerohuman/index.html", "label": "ZeroHuman (flagship build)" },
+    { "path": "building/returning-your-things/index.html", "label": "Returning Your Things (film)" },
+    { "path": "publish/index.html", "label": "Publishing demo" },
+    { "path": "index.html?demo=build,essay,video", "label": "Homepage with demo entries" }
+  ],
+  "palette": [
+    ["Ink", "#0c0d0f"],
+    ["Carbon", "#131518"],
+    ["Graphite", "#1a1d21"],
+    ["Line", "#262a30"],
+    ["Bone", "#f2eee6"],
+    ["Mist", "#9ba0a7"],
+    ["Steel (automated)", "#858b93"],
+    ["Signal", "#ff6a2b"],
+    ["Paper", "#eeeae2"]
+  ],
+  "type": "Mona Sans (variable width 75–125 and weight, display and text) · JetBrains Mono (data, labels, the automated Digest) · Instrument Serif Italic (Ken's own voice: quotes and director's note). All self-hosted woff2, 84 KB total.",
+  "signature": "The Orbit: Ken's portrait at the centre of a radial instrument where every build, essay, video and short is placed by theme (angle) and age (distance), documented links are drawn as threads that light up on hover, and a month scrubber rewinds the whole body of work so you can watch it grow outward from him."
+}

@@ -1,0 +1,319 @@
+{
+ "round-2/": {
+  "errors": [],
+  "failed": [],
+  "hosts": [],
+  "overflow": {
+   "1440": 0,
+   "768": 0,
+   "390": 0
+  },
+  "broken": [],
+  "robots": "noindex, nofollow, noarchive",
+  "flag": true,
+  "h1": 1,
+  "height": 30972,
+  "height_mobile": 41595,
+  "nojs_text": 35825,
+  "nojs_links": 115,
+  "unexpected_hosts": []
+ },
+ "round-2/directions/a-modern-technologist/": {
+  "errors": [],
+  "failed": [],
+  "hosts": [],
+  "overflow": {
+   "1440": 0,
+   "768": 0,
+   "390": 0
+  },
+  "broken": [],
+  "robots": "noindex, nofollow, noarchive",
+  "flag": true,
+  "h1": 1,
+  "height": 5582,
+  "height_mobile": 8197,
+  "nojs_text": 6147,
+  "nojs_links": 130,
+  "unexpected_hosts": []
+ },
+ "round-2/directions/a-modern-technologist/about/": {
+  "errors": [],
+  "failed": [],
+  "hosts": [],
+  "overflow": {
+   "1440": 0,
+   "768": 0,
+   "390": 0
+  },
+  "broken": [],
+  "robots": "noindex, nofollow, noarchive",
+  "flag": true,
+  "h1": 1,
+  "height": 5170,
+  "height_mobile": 8728,
+  "nojs_text": 8937,
+  "nojs_links": 73,
+  "unexpected_hosts": []
+ },
+ "round-2/directions/a-modern-technologist/building/returning-your-things/": {
+  "errors": [],
+  "failed": [],
+  "hosts": [],
+  "overflow": {
+   "1440": 0,
+   "768": 0,
+   "390": 0
+  },
+  "broken": [],
+  "robots": "noindex, nofollow, noarchive",
+  "flag": true,
+  "h1": 1,
+  "height": 3148,
+  "height_mobile": 3081,
+  "nojs_text": 1572,
+  "nojs_links": 17,
+  "unexpected_hosts": []
+ },
+ "round-2/directions/a-modern-technologist/building/zerohuman/": {
+  "errors": [],
+  "failed": [],
+  "hosts": [
+   "zerohuman-production.up.railway.app"
+  ],
+  "overflow": {
+   "1440": 0,
+   "768": 0,
+   "390": 0
+  },
+  "broken": [],
+  "robots": "noindex, nofollow, noarchive",
+  "flag": true,
+  "h1": 1,
+  "height": 7868,
+  "height_mobile": 10874,
+  "nojs_text": 9090,
+  "nojs_links": 40,
+  "unexpected_hosts": []
+ },
+ "round-2/directions/a-modern-technologist/publish/": {
+  "errors": [],
+  "failed": [],
+  "hosts": [],
+  "overflow": {
+   "1440": 0,
+   "768": 0,
+   "390": 0
+  },
+  "broken": [],
+  "robots": "noindex, nofollow, noarchive",
+  "flag": true,
+  "h1": 1,
+  "height": 2421,
+  "height_mobile": 7114,
+  "nojs_text": 5700,
+  "nojs_links": 109,
+  "unexpected_hosts": []
+ },
+ "round-2/directions/b-living-universe/": {
+  "errors": [],
+  "failed": [],
+  "hosts": [],
+  "overflow": {
+   "1440": 0,
+   "768": 0,
+   "390": 0
+  },
+  "broken": [],
+  "robots": "noindex, nofollow, noarchive",
+  "flag": true,
+  "h1": 1,
+  "height": 5305,
+  "height_mobile": 6316,
+  "nojs_text": 9297,
+  "nojs_links": 160,
+  "unexpected_hosts": []
+ },
+ "round-2/directions/b-living-universe/building/autonomous-ai-blog/": {
+  "errors": [],
+  "failed": [],
+  "hosts": [],
+  "overflow": {
+   "1440": 0,
+   "768": 0,
+   "390": 0
+  },
+  "broken": [],
+  "robots": "noindex, nofollow, noarchive",
+  "flag": true,
+  "h1": 1,
+  "height": 11522,
+  "height_mobile": 13895,
+  "nojs_text": 15451,
+  "nojs_links": 127,
+  "unexpected_hosts": []
+ },
+ "round-2/directions/b-living-universe/building/returning-your-things/": {
+  "errors": [],
+  "failed": [],
+  "hosts": [],
+  "overflow": {
+   "1440": 0,
+   "768": 0,
+   "390": 0
+  },
+  "broken": [],
+  "robots": "noindex, nofollow, noarchive",
+  "flag": true,
+  "h1": 1,
+  "height": 3950,
+  "height_mobile": 4802,
+  "nojs_text": 1729,
+  "nojs_links": 24,
+  "unexpected_hosts": []
+ },
+ "round-2/directions/b-living-universe/publish/": {
+  "errors": [],
+  "failed": [],
+  "hosts": [],
+  "overflow": {
+   "1440": 0,
+   "768": 0,
+   "390": 0
+  },
+  "broken": [],
+  "robots": "noindex, nofollow, noarchive",
+  "flag": true,
+  "h1": 1,
+  "height": 5107,
+  "height_mobile": 5392,
+  "nojs_text": 8399,
+  "nojs_links": 134,
+  "unexpected_hosts": []
+ },
+ "round-2/directions/b-living-universe/universe/": {
+  "errors": [],
+  "failed": [],
+  "hosts": [],
+  "overflow": {
+   "1440": 0,
+   "768": 0,
+   "390": 0
+  },
+  "broken": [],
+  "robots": "noindex, nofollow, noarchive",
+  "flag": true,
+  "h1": 1,
+  "height": 4421,
+  "height_mobile": 7926,
+  "nojs_text": 9689,
+  "nojs_links": 204,
+  "unexpected_hosts": []
+ },
+ "round-2/directions/c-creator-os/": {
+  "errors": [],
+  "failed": [],
+  "hosts": [
+   "api.github.com",
+   "zerohuman-production.up.railway.app"
+  ],
+  "overflow": {
+   "1440": 0,
+   "768": 0,
+   "390": 0
+  },
+  "broken": [],
+  "robots": "noindex, nofollow, noarchive",
+  "flag": true,
+  "h1": 1,
+  "height": 5419,
+  "height_mobile": 8343,
+  "nojs_text": 9581,
+  "nojs_links": 144,
+  "unexpected_hosts": []
+ },
+ "round-2/directions/c-creator-os/building/": {
+  "errors": [],
+  "failed": [],
+  "hosts": [
+   "api.github.com"
+  ],
+  "overflow": {
+   "1440": 0,
+   "768": 0,
+   "390": 0
+  },
+  "broken": [],
+  "robots": "noindex, nofollow, noarchive",
+  "flag": true,
+  "h1": 1,
+  "height": 4659,
+  "height_mobile": 6037,
+  "nojs_text": 13496,
+  "nojs_links": 110,
+  "unexpected_hosts": []
+ },
+ "round-2/directions/c-creator-os/building/ai-agent-economy/": {
+  "errors": [],
+  "failed": [],
+  "hosts": [
+   "api.github.com"
+  ],
+  "overflow": {
+   "1440": 0,
+   "768": 0,
+   "390": 0
+  },
+  "broken": [],
+  "robots": "noindex, nofollow, noarchive",
+  "flag": true,
+  "h1": 1,
+  "height": 5951,
+  "height_mobile": 10324,
+  "nojs_text": 8943,
+  "nojs_links": 82,
+  "unexpected_hosts": []
+ },
+ "round-2/directions/c-creator-os/publish/": {
+  "errors": [],
+  "failed": [],
+  "hosts": [
+   "api.github.com"
+  ],
+  "overflow": {
+   "1440": 0,
+   "768": 0,
+   "390": 0
+  },
+  "broken": [],
+  "robots": "noindex, nofollow, noarchive",
+  "flag": true,
+  "h1": 1,
+  "height": 5147,
+  "height_mobile": 7059,
+  "nojs_text": 9202,
+  "nojs_links": 114,
+  "unexpected_hosts": []
+ },
+ "round-2/directions/c-creator-os/videos/": {
+  "errors": [],
+  "failed": [],
+  "hosts": [
+   "api.github.com"
+  ],
+  "overflow": {
+   "1440": 0,
+   "768": 0,
+   "390": 0
+  },
+  "broken": [],
+  "robots": "noindex, nofollow, noarchive",
+  "flag": true,
+  "h1": 1,
+  "height": 2922,
+  "height_mobile": 7366,
+  "nojs_text": 5301,
+  "nojs_links": 48,
+  "unexpected_hosts": []
+ }
+}

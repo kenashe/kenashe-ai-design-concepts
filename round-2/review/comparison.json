@@ -1,0 +1,154 @@
+{
+ "accents": {
+  "A": "#ff6a2b",
+  "B": "#ffb300",
+  "C": "#ff3b1f"
+ },
+ "columns": [
+  "A \u00b7 The Modern Technologist",
+  "B \u00b7 The Living Universe",
+  "C \u00b7 The Creator OS"
+ ],
+ "intro": "Experience and maintainability are weighed side by side. All three share the same content pipeline, so the differences below are about the experience layer and what it costs to keep. No winner is selected.",
+ "rows": [
+  {
+   "group": "Experience",
+   "label": "Core idea",
+   "values": [
+    "Ken's face at the centre of a precise radial instrument; everything he made orbits him by theme (angle) and age (distance).",
+    "A data-placed sky: every build, essay, video and short is a light; documented links are threads; the Digest is a separate dust lane.",
+    "A film editor's cutting room: a program monitor over colour-coded tracks, with one playhead running through Ken's whole record."
+   ]
+  },
+  {
+   "label": "Signature interaction",
+   "values": [
+    "**The Orbit.** Hover or tap to light up threads; month scrubber and *Play the year* replay growth outward from Ken; Receipts toggle shows the source file and theme rule behind every item.",
+    "**Fly, follow, replay.** Select a light and the camera flies to it; *Follow a thread* carries a light along a real link; *Replay growth* rebuilds the sky month by month.",
+    "**The Playhead.** Drag or step (\u2190 \u2192 / J K L, \u2191 \u2193) through time; the monitor, nearby items, threads and the whole *Tuned to* workspace (builds, uploads, essays, photos, interests) follow; positions are linkable."
+   ]
+  },
+  {
+   "label": "Personality first",
+   "values": [
+    "Strongest. Ken's portrait is literally the centre of the site; first-person voice; premium and contemporary.",
+    "The work is the protagonist; Ken appears in the voice, the about section and interior pages rather than as the image.",
+    "Strong. Headshot beside a huge slate title; personal photography in the contact sheet; the edit reads as one person's record."
+   ]
+  },
+  {
+   "label": "\u201cNever seen this before\u201d factor",
+   "values": [
+    "High: a personal site as an instrument with the person at its centre is unusual and immediately legible.",
+    "Highest: atmospheric, explorable, and every light is real data. Most shareable; also most dependent on a good GPU for full effect.",
+    "High: the editing-room metaphor is ownable and genuinely useful for discovery rather than decorative."
+   ]
+  },
+  {
+   "label": "Videos and recent builds",
+   "values": [
+    "Newest item under the headline; Watch section leads with the film then a 16-item rail; Builds section.",
+    "*Newest light* list beside the universe; builds, videos, shorts and writing as plain prerendered lists below.",
+    "The monitor opens on the newest video; newest builds and uploads sit in the hero; a screening room and a proposed /videos/ index."
+   ]
+  },
+  {
+   "label": "Digest (automated, paused)",
+   "values": [
+    "Grey band with derived status, per-day histogram, last-post marker and Ken's explainer video; grey disc in the orbit stops growing at the pause.",
+    "Ash-grey, perfectly still dust lane of 1,399 grains placed by real day; warm when publishing resumes; explorable day by day on the Autonomous AI Blog page.",
+    "Its own hatched AUTOMATED track: a grey per-day waveform that goes flat at \u201cPaused \u00b7 Nov 24, 2026\u201d; Digest desk panel."
+   ]
+  },
+  {
+   "label": "Homepage length (desktop / mobile)",
+   "values": [
+    "\u2248 6.2 / 9.7 viewports",
+    "\u2248 5.9 / 7.5 viewports",
+    "\u2248 6.0 / 9.9 viewports"
+   ]
+  },
+  {
+   "group": "Maintainability",
+   "label": "Adding a project / article / video",
+   "values": [
+    "Identical for all three: one entry in builds.ts \u00b7 writing.ts entry + page + image (today's workflow) \u00b7 upload to YouTube. Demonstrated on each publish page.",
+    "Identical (see A). New lights are born in their computed positions with their threads.",
+    "Identical (see A). New clips join the edit and the index facets by themselves."
+   ]
+  },
+  {
+   "label": "Direction-specific manual upkeep",
+   "values": [
+    "ZeroHuman fallback snapshot values in HTML; film detected via a heuristic (metric mentions \u201cruntime\u201d), should become an explicit flag.",
+    "Camera framing presets (only if the universe's shape changes a lot, e.g. a new theme); film-still alt text.",
+    "photos.js (in-essay photos and frame list; should move into derive.mjs); thumbs/ copies (replaced by astro:assets); ZeroHuman fallback snapshot."
+   ]
+  },
+  {
+   "label": "Dependencies / ongoing cost",
+   "values": [
+    "None. Vanilla JS, self-hosted fonts. $0 added.",
+    "None. Raw WebGL light layer of 3.2 KB, no library, lazy-loaded on capable devices only. $0 added.",
+    "None. Vanilla JS, self-hosted fonts. $0 added."
+   ]
+  },
+  {
+   "label": "Homepage weight (gzipped, before interaction)",
+   "values": [
+    "\u2248 421 KB (16 requests)",
+    "\u2248 315 KB (20 requests)",
+    "\u2248 592 KB (42 requests) desktop, \u2248 480 KB mobile"
+   ]
+  },
+  {
+   "label": "Graceful degradation",
+   "values": [
+    "JS off: complete, orbit prerendered as SVG with working links; only the scrubber hides.",
+    "Three tiers: SVG poster (JS off) \u2192 Canvas 2D \u2192 WebGL. Low-power and Save-Data start calm or paused.",
+    "JS off: complete, edit prerendered; playhead, palette and replay are enhancements."
+   ]
+  },
+  {
+   "label": "Browser support",
+   "values": [
+    "Safari 15.4+, Chrome/Edge/Firefox 98+.",
+    "Evergreen Chromium, Firefox, Safari; WebGL optional.",
+    "Safari 16.4+, Chrome/Edge current, Firefox 113+ (color-mix, container units)."
+   ]
+  },
+  {
+   "group": "Risk and migration",
+   "label": "Long-term risks",
+   "values": [
+    "Orbit density past ~150 dated items (plan: fade oldest rings); homepage HTML grows ~1.5 KB gzipped per item.",
+    "Label legibility at several hundred items (needs cluster labels); dense centre; inline poster size if the Digest resumes for a year; two render tiers to keep visually aligned.",
+    "Timeline crowding after several years (plan: year switcher); helper files drift if not regenerated (fail soft); largest CSS."
+   ]
+  },
+  {
+   "label": "Migration from current Astro site",
+   "values": [
+    "Moderate \u00b7 \u2248 4\u20136 days",
+    "Moderate \u00b7 \u2248 6\u20139 days (the universe island is the extra)",
+    "Moderate \u00b7 \u2248 5\u20137 days"
+   ]
+  },
+  {
+   "label": "Reuse of production",
+   "values": [
+    "Data files, URLs, page copy, Digest pipeline unchanged. New fonts (Mona Sans, Instrument Serif) replace Bricolage.",
+    "Keeps production's Hanken Grotesk and JetBrains Mono; adds Instrument Serif.",
+    "Data files, URLs, page copy unchanged; new type system; proposes one new route (/videos/)."
+   ]
+  },
+  {
+   "label": "Prototype issues to know",
+   "values": [
+    "Escape may not close the video dialog while focus is inside the YouTube frame (Close button works).",
+    "Headless/2-core machines get the Canvas tier by default (?tier=webgl to force); occasional label blink while orbiting; debug hook to remove.",
+    "Touch drag scrolls the timeline rather than scrubbing (tap jumps); heaviest homepage of the three."
+   ]
+  }
+ ]
+}
