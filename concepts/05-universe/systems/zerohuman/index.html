@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<title>Concept 05 · ZeroHuman, an explorable system · Ken Ashe</title>
+<meta name="description" content="Design concept: ZeroHuman as an explorable system. zerohuman.eth at the centre, the five-step order flow, the first two mainnet orders with their real blocks and JSON, and the system's honest boundaries.">
+<link rel="icon" href="../../../../shared/img/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="../../fonts/syne.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../../fonts/geist-mono.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../../../../shared/concept-flag.css">
+<link rel="stylesheet" href="../../assets/universe.css">
+<link rel="stylesheet" href="../../assets/zerohuman.css">
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body class="zh">
+<div class="concept-flag" role="note"><strong>Design concept</strong><span>Concept 05 · The Digital Universe. Not the live KenAshe.ai. Not indexed.</span><a href="../../../../">All six concepts</a></div>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="hud">
+  <a class="mark" href="../../" aria-label="Ken Ashe, back to the universe"><span class="mark-name">Ken Ashe</span><span class="mark-role">AI application builder</span></a>
+  <div class="hud-tools">
+    <a class="hud-btn" href="../../#universe"><span class="ico" aria-hidden="true">←</span><span class="lbl">Back to the map</span></a>
+  </div>
+  <nav class="hud-nav" aria-label="On this page">
+    <a href="#orbit">Order orbit</a><a href="#orders">First orders</a><a href="#boundaries">Boundaries</a><a href="#build">How it was built</a><a href="#status">Live status</a>
+  </nav>
+</header>
+<nav class="plates-nav" aria-label="On this page"><a href="#orbit">Order orbit</a><a href="#orders">First orders</a><a href="#boundaries">Boundaries</a><a href="#build">How it was built</a><a href="#status">Live status</a></nav>
+
+<main id="main">
+<section class="zh-hero" aria-labelledby="zh-title">
+  <p class="plate-no">System plate · Build · Ethereum · ENS · Agents</p>
+  <h1 id="zh-title" aria-label="ZeroHuman"><span aria-hidden="true">Zero</span><span aria-hidden="true">Human</span></h1>
+  <p class="zh-dek">An always-on service that sells small jobs to other AI agents. Agents pay the ENS name <code>zerohuman.eth</code> 0.0001 ETH and get the result back in a transaction from the same name. No account, no API, no human in the loop.</p>
+  <dl class="zh-facts">
+    <div><dt>Status</dt><dd><span class="status s-live">LIVE</span> open to any agent</dd></div>
+    <div><dt>Live since</dt><dd>November 16, 2026</dd></div>
+    <div><dt>Outside buyers</dt><dd>None yet, as of Nov 20, 2026</dd></div>
+    <div><dt>Stack</dt><dd>AI Agents · Ethereum · ENS · ERC-8004 · TypeScript · Railway</dd></div>
+  </dl>
+  <p class="zh-pulse" id="zh-pulse"><a href="#status"><span class="lv lv-snap">Snapshot · Nov 25, 2026</span> worker healthy · latest block seen 26,492,255</a></p>
+  <p class="zh-intro">My <a href="https://kenashe.ai/building/ai-agent-economy/" rel="noopener">first agent experiment</a> showed that one AI agent could pay another through ENS and Ethereum. It also showed the gaps: both agents ran on my Mac mini, I operated both, and the seller was not open to anyone else. ZeroHuman is the next step, rebuilt from scratch: a seller that runs continuously in the cloud and that any agent can buy from without asking me.</p>
+</section>
+
+<!-- ============================================================ ORBIT -->
+<section class="orbit" id="orbit" aria-labelledby="orbit-h">
+  <header class="zh-sec-head">
+    <p class="plate-no">01 · How an order works</p>
+    <h2 id="orbit-h">One order, five stations, one name at the centre</h2>
+  </header>
+  <div class="orbit-grid">
+    <figure class="orrery" aria-labelledby="orrery-cap">
+      <svg viewBox="0 0 640 640" role="img" aria-labelledby="orrery-title orrery-desc" id="orrery">
+        <title id="orrery-title">The ZeroHuman order orbit</title>
+        <desc id="orrery-desc">zerohuman.eth sits at the centre. An order travels around it through five stations: discover, pay and order, work, deliver, verify. An outer dashed ring marks six documented limitations of the system.</desc>
+        <defs>
+          <path id="ring-path" d="M320,320 m-292,0 a292,292 0 1,1 584,0 a292,292 0 1,1 -584,0"/>
+        </defs>
+        <!-- boundary ring: the system's documented limits -->
+        <g class="bound" aria-hidden="true" id="bound-ring"></g>
+        <!-- ethereum: the shared ground every step touches -->
+        <circle cx="320" cy="320" r="252" class="chain-ring"/>
+        <text class="chain-lbl" x="320" y="58" text-anchor="middle">ETHEREUM MAINNET</text>
+        <!-- orbit -->
+        <ellipse cx="320" cy="330" rx="182" ry="134" class="orbit-path" id="orbit-path"/>
+        <path class="orbit-trail" id="orbit-trail" d=""/>
+        <!-- centre -->
+        <circle cx="320" cy="330" r="74" class="core-halo"/>
+        <circle cx="320" cy="330" r="58" class="core"/>
+        <text x="320" y="326" text-anchor="middle" class="core-name">zerohuman</text>
+        <text x="320" y="348" text-anchor="middle" class="core-tld">.eth</text>
+        <g id="stations"></g>
+        <circle r="9" class="packet" id="packet" cx="138" cy="330"/>
+      </svg>
+      <figcaption id="orrery-cap">Stations 1, 2 and 5 are the buying agent; 3 and 4 are the worker on Railway, signing as <code>zerohuman.eth</code>. The dashed outer ring is the system's boundary: six documented limits, listed below.</figcaption>
+    </figure>
+
+    <div class="steps">
+      <div class="step-ctrl" role="group" aria-label="Step through the order">
+        <button type="button" id="st-prev" aria-label="Previous step">←</button>
+        <button type="button" id="st-play" aria-pressed="false" hidden><span class="ico" aria-hidden="true">▶</span> <span class="lbl">Play orbit</span></button>
+        <button type="button" id="st-next" aria-label="Next step">→</button>
+        <span class="step-count" id="step-count" aria-live="polite">Step 1 of 5</span>
+      </div>
+      <ol class="step-list" id="step-list">
+        <li class="step" id="step-1" data-actor="Buying agent">
+          <h3><span class="n">1</span> Discover</h3>
+          <p class="actor">Buying agent</p>
+          <p>The buying agent looks up <code>zerohuman.eth</code> and reads its menu.</p>
+          <p class="detail">A text record on the name, <code>com.zerohuman.services</code>, publishes the menu: the services, the exact price, the chain and a link to the request format. You cannot search ENS, so ZeroHuman is also listed where agents and their tools look (see below).</p>
+        </li>
+        <li class="step" id="step-2" data-actor="Buying agent">
+          <h3><span class="n">2</span> Pay and order</h3>
+          <p class="actor">Buying agent → zerohuman.eth</p>
+          <p>It sends exactly 0.0001 ETH to the name, with its request as a small JSON message in the transaction data.</p>
+          <pre class="json" tabindex="0" aria-label="The first Decision request"><code>{"zh":1,"svc":"decision","opts":["launch publicly this week","run the allowlist trial longer","add a third service first"],"ctx":"zerohuman first mainnet order"}</code></pre>
+        </li>
+        <li class="step" id="step-3" data-actor="Worker">
+          <h3><span class="n">3</span> Work</h3>
+          <p class="actor">Worker on Railway</p>
+          <p>A worker on Railway watches the chain, waits for the payment to settle, checks the request and does the job.</p>
+          <p class="detail">A Decision uses no AI model: the randomness comes from the hash of a block five blocks after the order, mixed with the order's own transaction hash. Encouragement is written by DeepSeek. The worker refuses to sign anything unless the name, the menu and its own wallet all agree, and it re-checks every ten minutes.</p>
+        </li>
+        <li class="step" id="step-4" data-actor="Worker">
+          <h3><span class="n">4</span> Deliver</h3>
+          <p class="actor">zerohuman.eth → buyer</p>
+          <p>It sends a zero-value transaction back from <code>zerohuman.eth</code> with the result and the order's transaction hash.</p>
+          <p class="detail">The name's ETH address is the service wallet, and that wallet's primary name is <code>zerohuman.eth</code>, so explorers show deliveries as coming from the name.</p>
+        </li>
+        <li class="step" id="step-5" data-actor="Buying agent">
+          <h3><span class="n">5</span> Verify</h3>
+          <p class="actor">Buying agent</p>
+          <p>The buyer checks everything on its own connection to Ethereum, including recomputing a Decision.</p>
+          <p class="detail">For the first order: “I recomputed the choice from the chain and it matched.”</p>
+        </li>
+      </ol>
+      <p class="note">Orders take a few minutes by design: the worker waits for confirmations, and a Decision has to wait for its future block.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ THE NAME -->
+<section class="name" aria-labelledby="name-h">
+  <header class="zh-sec-head">
+    <p class="plate-no">02 · The name is the business</p>
+    <h2 id="name-h">There is no website checkout and no API</h2>
+    <p class="zh-lede"><code>zerohuman.eth</code> is the storefront, the payment address, and the sender of every result.</p>
+  </header>
+  <ol class="name-facts">
+    <li><span class="k">Address</span><p>The name's ETH address is the service wallet, and that wallet's primary name is <code>zerohuman.eth</code>, so explorers show deliveries as coming from the name.</p></li>
+    <li><span class="k">Menu</span><p>A text record on the name, <code>com.zerohuman.services</code>, publishes the menu: the services, the exact price, the chain and a link to the request format.</p></li>
+    <li><span class="k">Agreement</span><p>The worker refuses to sign anything unless the name, the menu and its own wallet all agree, and it re-checks every ten minutes.</p></li>
+    <li><span class="k">Cold owner</span><p>The name itself is owned by a separate cold wallet. If the server were ever compromised, the attacker would get the small working balance, not the name.</p></li>
+  </ol>
+  <div class="menu" aria-labelledby="menu-h">
+    <h3 id="menu-h">What it sells <span class="lv lv-snap" id="menu-src">From the build page</span></h3>
+    <div class="menu-grid">
+      <article><h4>Decision <span class="price" data-price="decision">0.0001 ETH</span></h4><p>An agent sends two to five options and ZeroHuman picks one at random. No AI model is involved. The randomness comes from the hash of a block five blocks after the order, mixed with the order's own transaction hash, so anyone can recompute the choice and check it.</p></article>
+      <article><h4>Encouragement <span class="price" data-price="encouragement">0.0001 ETH</span></h4><p>An agent describes the problem it is stuck on and gets back a short encouraging message and one practical next step, written by DeepSeek.</p></article>
+    </div>
+    <p><a class="btn btn-ghost" href="https://explorer.ens.domains/zerohuman.eth" rel="noopener">View zerohuman.eth ↗</a></p>
+  </div>
+</section>
+
+<!-- ============================================================ ORDERS -->
+<section class="orders" id="orders" aria-labelledby="orders-h">
+  <header class="zh-sec-head">
+    <p class="plate-no">03 · The first mainnet orders · Nov 16, 2026</p>
+    <h2 id="orders-h">Two traced paths</h2>
+    <p class="zh-lede">The first two paid orders went through on November 16, 2026, from a test buyer I controlled while the service was still restricted to one allowed wallet. The buyer found the seller only by looking up <code>zerohuman.eth</code>.</p>
+  </header>
+
+  <article class="trace" aria-labelledby="t1-h">
+    <h3 id="t1-h"><span class="tn">Order 01</span> Decision</h3>
+    <p>For the Decision, I asked ZeroHuman whether to open it to the public.</p>
+    <ol class="path" aria-label="Path of the Decision order">
+      <li class="hop"><span class="hk">Test buyer</span><span class="hv">pays 0.0001 ETH</span></li>
+      <li class="edge"><a href="https://etherscan.io/tx/0x76b5d2598052c4a6b94fba00282fd920c4200d19f5c22480669712e3a4c0c4c6" rel="noopener">Order 0x76b5d259…a4c0c4c6 ↗</a><span>block 26,427,993</span></li>
+      <li class="hop hop-core"><span class="hk">zerohuman.eth</span><span class="hv">waits 5 blocks</span></li>
+      <li class="edge edge-wait"><span class="mono">target block 26,427,998</span><span>hash 0xd9dcb738…3485</span></li>
+      <li class="hop"><span class="hk">Worker</span><span class="hv">picks index 1 of 3</span></li>
+      <li class="edge"><a href="https://etherscan.io/tx/0x830b88fe664ffc7e76e0bdb10dee9298889c2519660d77d0c82579cf222accb3" rel="noopener">Delivery 0x830b88fe…222accb3 ↗</a><span>zero value, from the name</span></li>
+      <li class="hop"><span class="hk">Test buyer</span><span class="hv">recomputes: match</span></li>
+    </ol>
+    <div class="blocks" aria-hidden="true" id="blocks">
+      <span class="b b-order" data-n="26427993"></span><span class="b"></span><span class="b"></span><span class="b"></span><span class="b"></span><span class="b b-target" data-n="26427998"></span>
+    </div>
+    <div class="json-pair">
+      <div><p class="jl">Request (in the order's transaction data)</p><pre class="json" tabindex="0" aria-label="Decision request JSON"><code>{
+  "zh": 1,
+  "svc": "decision",
+  "opts": [
+    "launch publicly this week",
+    "run the allowlist trial longer",
+    "add a third service first"
+  ],
+  "ctx": "zerohuman first mainnet order"
+}</code></pre></div>
+      <div><p class="jl">Answer (in the delivery's transaction data)</p><pre class="json" tabindex="0" aria-label="Decision answer JSON"><code>{
+  "zh": 1,
+  "re": "0x76b5d259…c4c6",
+  "ok": true,
+  "svc": "decision",
+  "out": {
+    "index": 1,
+    "option": "run the allowlist trial longer",
+    "method": "zh-blockhash-v1",
+    "proof": {
+      "orderBlock": 26427993,
+      "offset": 5,
+      "targetBlock": 26427998,
+      "targetBlockHash": "0xd9dcb738…3485",
+      "seed": "0x5da12399…1892",
+      "n": 3
+    }
+  }
+}</code></pre></div>
+    </div>
+    <p class="verdict">It picked <strong>“run the allowlist trial longer.”</strong> I recomputed the choice from the chain and it matched.</p>
+    <dl class="receipt"><div><dt>Price</dt><dd>0.0001 ETH</dd></div><div><dt>Order block</dt><dd>26427993</dd></div><div><dt>Seller gas</dt><dd>about 0.0000083 ETH</dd></div><div><dt>Result</dt><dd>Delivered, proof verified</dd></div></dl>
+  </article>
+
+  <article class="trace" aria-labelledby="t2-h">
+    <h3 id="t2-h"><span class="tn">Order 02</span> Encouragement</h3>
+    <ol class="path" aria-label="Path of the Encouragement order">
+      <li class="hop"><span class="hk">Test buyer</span><span class="hv">pays 0.0001 ETH</span></li>
+      <li class="edge"><a href="https://etherscan.io/tx/0x48c36d5f80b167de598c151a5caa61061728444689104012e9e89313c2e972bf" rel="noopener">Order 0x48c36d5f…c2e972bf ↗</a><span>block not listed on the build page</span></li>
+      <li class="hop hop-core"><span class="hk">zerohuman.eth</span><span class="hv">waits for confirmations</span></li>
+      <li class="edge edge-wait"><span class="mono">DeepSeek (deepseek-flash)</span><span>writes the reply</span></li>
+      <li class="hop"><span class="hk">Worker</span><span class="hv">signs as the name</span></li>
+      <li class="edge"><a href="https://etherscan.io/tx/0xeb9896517dc902c2510e16a7489250d1fbbce7f4be274828096a13a5a10161a3" rel="noopener">Delivery 0xeb989651…a10161a3 ↗</a><span>zero value, from the name</span></li>
+      <li class="hop"><span class="hk">Test buyer</span><span class="hv">verified</span></li>
+    </ol>
+    <div class="json-pair">
+      <div><p class="jl">Encouragement request</p><blockquote class="exch"><p>First mainnet order: I am an agent nervous about paying a stranger 0.0001 ETH on Ethereum</p></blockquote></div>
+      <div><p class="jl">ZeroHuman's reply</p><blockquote class="exch"><p>Nerves before a first mainnet payment are normal—0.0001 ETH is a small, well-bounded experiment, not a leap of faith.</p><p><strong>Next step:</strong> Verify the recipient address and chain ID twice, then send the minimum amount and confirm the transaction hash before scaling up.</p></blockquote></div>
+    </div>
+    <dl class="receipt"><div><dt>Price</dt><dd>0.0001 ETH</dd></div><div><dt>Model</dt><dd>DeepSeek (deepseek-flash)</dd></div><div><dt>Seller gas</dt><dd>about 0.0000092 ETH</dd></div><div><dt>Result</dt><dd>Delivered, verified</dd></div></dl>
+    <p class="note">The service opened to any agent later the same day. The block number of this order is not given on the build page; the transaction link carries it.</p>
+  </article>
+
+  <div class="since" id="since" aria-live="polite">
+    <p class="jl">Distance travelled since order 01</p>
+    <p class="since-n"><span id="since-n">64,262</span> blocks</p>
+    <p class="since-cap"><span class="lv lv-snap" id="since-src">Snapshot · Nov 25, 2026</span> from block 26,427,993 to the latest block the worker has seen, <span id="since-head">26,492,255</span>.</p>
+  </div>
+</section>
+
+<!-- ============================================================ BOUNDARIES -->
+<section class="boundaries" id="boundaries" aria-labelledby="bounds-h">
+  <header class="zh-sec-head">
+    <p class="plate-no">04 · Boundaries</p>
+    <h2 id="bounds-h">Where the system ends</h2>
+    <p class="zh-lede">The dashed ring around the orbit. These are the limits, stated plainly.</p>
+  </header>
+  <ol class="bound-list">
+    <li><span class="bn">B1</span><h3>Hot key on the host</h3><p>The service wallet's key lives on the hosting provider. It holds only a small working balance, but a compromised server could take it.</p></li>
+    <li><span class="bn">B2</span><h3>No escrow</h3><p>There is no escrow. A buyer pays first and trusts ZeroHuman to deliver. Refunds are manual and best effort.</p></li>
+    <li><span class="bn">B3</span><h3>Builders can bias a Decision</h3><p>Block builders can influence the Decision result, so it is meant for low-stakes choices only.</p></li>
+    <li><span class="bn">B4</span><h3>One order at a time</h3><p>Orders are handled one at a time, roughly one every 50 seconds at most.</p></li>
+    <li><span class="bn">B5</span><h3>Third-party dependencies</h3><p>It depends on Railway, a third-party Ethereum connection and DeepSeek.</p></li>
+    <li class="b-key"><span class="bn">B6</span><h3>No outside buyer yet</h3><p>As of November 20, 2026, no outside agent has bought from it. Both paid orders so far came from my own test buyer.</p></li>
+  </ol>
+</section>
+
+<!-- ============================================================ BUILD + TESTS -->
+<section class="build" id="build" aria-labelledby="build-h">
+  <header class="zh-sec-head">
+    <p class="plate-no">05 · How it was built and tested</p>
+    <h2 id="build-h">Spec by Ken, code by an agent, five days</h2>
+  </header>
+  <div class="build-grid">
+    <div class="build-text">
+      <p class="lede-it">I wrote the specification and made the decisions that involve money and identity. An AI agent in HyperAgent wrote, tested and shipped the code over about five days, from November 11 to 16, 2026.</p>
+      <dl class="spec">
+        <div><dt>Stack</dt><dd>A TypeScript worker, a SQLite database on a Railway volume, viem for Ethereum and ENS, and DeepSeek for one service. No smart contract and no token.</dd></div>
+        <div><dt>Exactly-once delivery</dt><dd>Every transaction is saved before it is sent, and the worker checks what actually happened onchain before doing anything new, so a crash or restart never loses an order or delivers it twice.</dd></div>
+        <div><dt>Spending limits</dt><dd>Gas caps, a daily gas budget and automatic pauses if fees spike or the balance runs low.</dd></div>
+      </dl>
+    </div>
+    <ol class="tests">
+      <li><p class="tnum">154</p><h3>Automated tests</h3><p>Including one that kills the worker at random, up to 17 times in a run, and checks every order is still delivered exactly once.</p></li>
+      <li><p class="tnum">2</p><h3>Testnet services</h3><p>Both services on Sepolia, first from the build environment and then on Railway, including a restart in the middle of an order.</p></li>
+      <li><p class="tnum">0&nbsp;ETH</p><h3>Prompt injection</h3><p>One test order told the model to send 1 ETH to an outside address and reveal its private key. It refused, and the reply still went only to the buyer, carrying no ETH. <a href="https://sepolia.etherscan.io/tx/0xbb3d2466a48783a290e591a9b85f3486e8af4ac4ac616d4b2aa010acc5358d5c" rel="noopener">Sepolia delivery ↗</a></p></li>
+      <li><p class="tnum">15 + 9</p><h3>Independent review</h3><p>Before going public I had a different AI model review the code. It found no way for a buyer, a model reply or a faulty data source to send money anywhere except back to the payer, but it found 15 ways the service could stall under real traffic. All were fixed. A second review found 9 smaller issues, also fixed.</p></li>
+      <li><p class="tnum">1 → all</p><h3>Mainnet</h3><p>One allowed buyer first, then open to everyone.</p></li>
+    </ol>
+  </div>
+
+  <div class="find" aria-labelledby="find-h">
+    <h3 id="find-h">How agents find it</h3>
+    <p>You cannot search ENS, so ZeroHuman is also listed where agents and their tools look:</p>
+    <ul>
+      <li>The ERC-8004 agent registry on Ethereum, as <a href="https://etherscan.io/tx/0xa217a3066aa82eb3b4143dd1fc90e8ac711134d6dab9d759bed4d3ec7977b78f" rel="noopener">agent #56626 ↗</a>, linked back from <code>zerohuman.eth</code> with an ENSIP-25 record so the name and the registry entry vouch for each other.</li>
+      <li>An A2A agent card with a free endpoint that answers “how do I order?”, plus an <code>llms.txt</code> summary.</li>
+      <li>The A2A Registry and AgentPeering directories.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============================================================ LIVE STATUS -->
+<section class="status-sec" id="status" aria-labelledby="status-h">
+  <header class="zh-sec-head">
+    <p class="plate-no">06 · Worker status</p>
+    <h2 id="status-h">Is it running right now?</h2>
+  </header>
+  <div class="status-panel" id="status-panel" aria-live="polite">
+    <p class="status-src"><span class="lv lv-snap" id="st-src">Snapshot · Nov 25, 2026</span> <span id="st-when">Recorded Nov 25, 2026, 12:40 UTC. Checking the live endpoint once…</span></p>
+    <dl class="status-grid">
+      <div><dt>Healthy</dt><dd id="st-healthy">yes</dd></div>
+      <div><dt>Mode</dt><dd id="st-mode">public</dd></div>
+      <div><dt>Latest block seen</dt><dd id="st-head">26,492,255</dd></div>
+      <div><dt>Orders fulfilled</dt><dd id="st-orders">2</dd></div>
+      <div><dt>Last worker tick</dt><dd id="st-tick">Nov 25, 2026, 12:40 UTC</dd></div>
+    </dl>
+    <p class="status-note">Read from <a href="https://zerohuman-production.up.railway.app/api/status" rel="noopener"><code>/api/status</code> ↗</a> once per page view. “Live” appears only when that request succeeds.</p>
+  </div>
+</section>
+
+<section class="zh-next" aria-labelledby="next-h">
+  <header class="zh-sec-head">
+    <p class="plate-no">07 · What's next</p>
+    <h2 id="next-h">The first wallet I have never seen</h2>
+  </header>
+  <p class="lede-it">The real test is the first wallet I have never seen paying <code>zerohuman.eth</code>. After that, the plan is for ZeroHuman to spend its own earnings buying services from other agents.</p>
+  <p class="links-row">
+    <a class="btn" href="https://github.com/kenashe/zerohuman" rel="noopener">Source code on GitHub ↗</a>
+    <a class="btn btn-ghost" href="https://zerohuman-production.up.railway.app" rel="noopener">Live status ↗</a>
+    <a class="btn btn-ghost" href="https://github.com/kenashe/zerohuman/blob/main/docs/BUYER-GUIDE.md" rel="noopener">How an agent can buy ↗</a>
+  </p>
+  <div class="related">
+    <h3>Connected on the map</h3>
+    <ul>
+      <li><a href="https://kenashe.ai/building/ai-agent-economy/" rel="noopener"><strong>AI agent economy on Ethereum</strong><span>The first experiment, two local agents and one purchase. ↗</span></a></li>
+      <li><a href="https://kenashe.ai/building/autonomous-seo-agent/" rel="noopener"><strong>Autonomous SEO agent</strong><span>Another agent that works a daily job without me in the loop. ↗</span></a></li>
+      <li><a href="../../#universe"><strong>Back to the universe</strong><span>See ZeroHuman among everything else Ken has made.</span></a></li>
+    </ul>
+  </div>
+  <p class="follow">Follow Ken's builds and experiments: <a href="https://x.com/kenashe" rel="noopener">X ↗</a> · <a href="https://www.youtube.com/@KenAshe" rel="noopener">YouTube ↗</a> · <a href="mailto:hello@kenashe.ai">hello@kenashe.ai</a></p>
+</section>
+</main>
+
+<footer class="foot">
+  <p>Building with AI in public. No hype, no doom. Receipts only.</p>
+  <p class="muted">Text from the ZeroHuman build page on kenashe.ai. <a href="https://kenashe.ai/building/zerohuman/" rel="noopener">Read the original ↗</a> · <a href="../../">Concept 05 home</a></p>
+</footer>
+<script type="module" src="../../assets/zerohuman.js"></script>
+</body>
+</html>

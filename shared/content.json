@@ -1,0 +1,1242 @@
+{
+ "_meta": {
+  "purpose": "Single shared content file for all six KenAshe.ai design concepts. Every fact here comes from the live kenashe.ai site, its repository data files (src/data/builds.ts, writing.ts, credentials.ts, connect.ts, schema.ts), the Digest content collection, or Ken's public YouTube feed. Do not add facts that are not here.",
+  "snapshotDate": "2026-11-25",
+  "sources": [
+   "https://kenashe.ai/",
+   "kenashe/kenashe@014ecc1",
+   "https://www.youtube.com/feeds/videos.xml?channel_id=UCD74fTmfkcY7J-0RMYyRIbw"
+  ]
+ },
+ "identity": {
+  "name": "Ken Ashe",
+  "site": "KenAshe.ai",
+  "liveUrl": "https://kenashe.ai/",
+  "logoText": "{ ken ashe }",
+  "tagline": "I build things, test new technology, and show what actually happened.",
+  "subline": "Right now, that’s mostly AI and crypto. Experiments, software, wins, failures, and weird detours.",
+  "title": "AI application builder",
+  "trustLine": "AI application builder · CPA · PMP · Building with AI in public",
+  "footerLine": "Building with AI in public. No hype, no doom. Receipts only.",
+  "approach": "I work at the AI application layer, turning existing models, APIs, coding tools, and automation platforms into working systems. Build first, test what actually happens, document the failures alongside the wins, and keep evidence separate from claims.",
+  "email": "hello@kenashe.ai",
+  "location": "New Jersey, USA",
+  "currentPalette": {
+   "bg": "#16130e",
+   "surface": "#201b13",
+   "border": "#322a1e",
+   "fg": "#f3eee3",
+   "muted": "#a89f8c",
+   "accent": "#ffb300",
+   "accent2": "#c8ff4d"
+  },
+  "currentFonts": {
+   "display": "Bricolage Grotesque",
+   "sans": "Hanken Grotesk",
+   "mono": "JetBrains Mono"
+  }
+ },
+ "whatIBring": [
+  {
+   "title": "AI application builder",
+   "body": "Ships agents, automations, and AI-assisted sites at the application layer, then documents what shipped and what broke."
+  },
+  {
+   "title": "CPA & PMP operator",
+   "body": "Proof, controls, and delivery. Strict financial discipline and decades of scoping, sequencing, and shipping real projects."
+  },
+  {
+   "title": "Domains & SEO operator",
+   "body": "Founder of Lucky Domains, a digital presence studio for the AI era."
+  }
+ ],
+ "socials": [
+  {
+   "id": "youtube",
+   "label": "YouTube",
+   "handle": "@KenAshe",
+   "url": "https://www.youtube.com/@KenAshe"
+  },
+  {
+   "id": "x",
+   "label": "X",
+   "handle": "@kenashe",
+   "url": "https://x.com/kenashe"
+  },
+  {
+   "id": "tiktok",
+   "label": "TikTok",
+   "handle": "@ken.ashe",
+   "url": "https://www.tiktok.com/@ken.ashe"
+  },
+  {
+   "id": "instagram",
+   "label": "Instagram",
+   "handle": "@ken.ashe",
+   "url": "https://www.instagram.com/ken.ashe/"
+  },
+  {
+   "id": "linkedin",
+   "label": "LinkedIn",
+   "handle": "in/kenashe",
+   "url": "https://www.linkedin.com/in/kenashe"
+  },
+  {
+   "id": "github",
+   "label": "GitHub",
+   "handle": "kenashe",
+   "url": "https://github.com/kenashe"
+  },
+  {
+   "id": "facebook",
+   "label": "Facebook",
+   "handle": "kenasheai",
+   "url": "https://www.facebook.com/kenasheai/"
+  },
+  {
+   "id": "rss",
+   "label": "Writing RSS",
+   "handle": "",
+   "url": "https://kenashe.ai/writing/rss.xml"
+  }
+ ],
+ "builds": [
+  {
+   "title": "ZeroHuman",
+   "status": "LIVE",
+   "dek": "An always-on service that sells small jobs to other AI agents. Agents pay the ENS name zerohuman.eth 0.0001 ETH and get the result back in a transaction from the same name. No account, no API, no human in the loop.",
+   "stack": [
+    "AI Agents",
+    "Ethereum",
+    "ENS",
+    "ERC-8004",
+    "TypeScript",
+    "Railway"
+   ],
+   "shippedAt": "Nov 2026",
+   "metric": "open to any agent",
+   "link": "/building/zerohuman/",
+   "url": "https://kenashe.ai/building/zerohuman/"
+  },
+  {
+   "title": "Returning Your Things",
+   "status": "SHIPPED",
+   "dek": "On a snowy winter night, a man crosses the city to return his ex’s belongings. A dialogue-free short film about love, memory, and letting go.",
+   "stack": [
+    "Short Film",
+    "AI-generated imagery"
+   ],
+   "shippedAt": "Nov 2026",
+   "metric": "1:54 runtime",
+   "link": "/building/returning-your-things/",
+   "cta": "Watch the short film",
+   "url": "https://kenashe.ai/building/returning-your-things/"
+  },
+  {
+   "title": "AI agent economy on Ethereum",
+   "status": "SHIPPED",
+   "dek": "Two autonomous AI agents with their own Ethereum wallets. The seller advertised services through ENS; the buyer found the catalog, paid in ETH, and received the work in a second mainnet transaction.",
+   "stack": [
+    "AI Agents",
+    "Ethereum",
+    "ENS",
+    "Ollama"
+   ],
+   "shippedAt": "Nov 2026",
+   "link": "/building/ai-agent-economy/",
+   "url": "https://kenashe.ai/building/ai-agent-economy/"
+  },
+  {
+   "title": "AI explainer producer",
+   "status": "SHIPPED",
+   "dek": "Built an AI agent that researches, fact-checks, scripts, and produces educational videos using a virtual presenter. Tested it with a published ENSv2 explainer.",
+   "stack": [
+    "AI Agents",
+    "HyperAgent",
+    "HeyGen",
+    "Video Production"
+   ],
+   "shippedAt": "Oct 2026",
+   "link": "/building/ai-explainer-producer/",
+   "url": "https://kenashe.ai/building/ai-explainer-producer/"
+  },
+  {
+   "title": "Autonomous SEO agent",
+   "status": "LIVE",
+   "dek": "An AI agent that finds five new website opportunities daily, creates professional profiles, verifies accounts through its own Gmail inbox, and tracks everything without manual intervention.",
+   "stack": [
+    "HyperAgent",
+    "AI Agents",
+    "Automation",
+    "SEO",
+    "Gmail"
+   ],
+   "shippedAt": "Oct 2026",
+   "link": "/building/autonomous-seo-agent/#demo",
+   "cta": "Watch the demo",
+   "url": "https://kenashe.ai/building/autonomous-seo-agent/#demo"
+  },
+  {
+   "title": "X article toolkit",
+   "status": "LIVE",
+   "dek": "A model-neutral toolkit that lets any AI agent use the same research-backed workflow for X Article headlines, hooks and covers.",
+   "stack": [
+    "GitHub",
+    "Markdown",
+    "Python",
+    "JSON Schema",
+    "GitHub Actions",
+    "Agents"
+   ],
+   "shippedAt": "Oct 2026",
+   "metric": "public repo",
+   "link": "/building/x-article-toolkit/",
+   "url": "https://kenashe.ai/building/x-article-toolkit/"
+  },
+  {
+   "title": "AI UGC video lab",
+   "status": "SHIPPED",
+   "dek": "Ported an open-source UGC skill into Hyperagent, generated 50 locked-identity ad concepts, then rendered and QA’d a fake raccoon-security campaign across 31 video generations.",
+   "stack": [
+    "HyperAgent",
+    "AI Video",
+    "Agents",
+    "Gemini",
+    "ffmpeg"
+   ],
+   "shippedAt": "Oct 2026",
+   "metric": "5 finished ads",
+   "link": "/building/ai-ugc-video-lab/",
+   "url": "https://kenashe.ai/building/ai-ugc-video-lab/"
+  },
+  {
+   "title": "Media pitch triage",
+   "status": "LIVE",
+   "dek": "An AI media-opportunity system that screens journalist requests, applies a reusable scoring skill, tracks state in Google Sheets, and monitors submitted pitches for published outcomes.",
+   "stack": [
+    "ChatGPT Skills",
+    "Agents",
+    "Gmail",
+    "Google Sheets",
+    "Automation"
+   ],
+   "shippedAt": "Sep 2026"
+  },
+  {
+   "title": "Rebuilding the image pipeline",
+   "status": "LIVE",
+   "dek": "Rebuilt KenAshe.ai’s image pipeline: migrated 2,083 PNGs to WebP, added responsive inline images, and cut the current image source tree by 95%.",
+   "stack": [
+    "Astro",
+    "WebP",
+    "sharp",
+    "GPT Image 2",
+    "Vercel",
+    "GitHub Actions"
+   ],
+   "shippedAt": "Sep 2026",
+   "metric": "95% smaller image source tree",
+   "link": "/building/rebuilding-the-image-pipeline/",
+   "url": "https://kenashe.ai/building/rebuilding-the-image-pipeline/"
+  },
+  {
+   "title": "VetStack",
+   "status": "LIVE",
+   "dek": "First Grok Bot I published. A military and veteran savings desk that finds current discounts and benefits that actually apply, without collecting IDs or running a 20-question intake.",
+   "stack": [
+    "Grok Bot",
+    "xAI templates"
+   ],
+   "shippedAt": "Sep 2026",
+   "metric": "public template",
+   "link": "/building/vetstack/",
+   "url": "https://kenashe.ai/building/vetstack/"
+  },
+  {
+   "title": "AI werewolf / social deduction lab",
+   "status": "SHIPPED",
+   "dek": "Built a cast of 9 AI characters with distinct personalities, relationships, and hidden roles, then had them play a Traitors-style social deduction game where they form alliances, deceive, and vote each other out.",
+   "stack": [
+    "HyperAgent",
+    "Fable 5",
+    "Multi-Agent",
+    "Social Simulation"
+   ],
+   "shippedAt": "Aug 2026",
+   "link": "/building/ai-werewolf/",
+   "url": "https://kenashe.ai/building/ai-werewolf/"
+  },
+  {
+   "title": "AI blog automation v2",
+   "status": "LIVE",
+   "dek": "Scans the day's AI sources, clusters them into distinct stories, and publishes only the drafts that clear an editorial quality gate, without manual approval.",
+   "stack": [
+    "GitHub Actions",
+    "Claude Opus 4.8",
+    "GPT-5.5",
+    "pgvector"
+   ],
+   "shippedAt": "Jun 2026",
+   "metric": "runs daily"
+  },
+  {
+   "title": "Geo-targeted affiliate site",
+   "status": "LIVE",
+   "dek": "Auto-detects each visitor's country and language, then serves the right offers in their language. Generated entirely from a spreadsheet.",
+   "stack": [
+    "Cloudflare",
+    "GitHub",
+    "HyperAgent",
+    "Fable 5"
+   ],
+   "shippedAt": "Jun 2026",
+   "metric": "58 markets, 26 languages"
+  },
+  {
+   "title": "kenashe.ai",
+   "status": "LIVE",
+   "dek": "This site. Originally built end-to-end with Claude Code, reviewed by Codex, shipped in a day.",
+   "stack": [
+    "Astro",
+    "Tailwind",
+    "MDX",
+    "Vercel"
+   ],
+   "shippedAt": "May 2026"
+  },
+  {
+   "title": "Daily email to myself",
+   "status": "LIVE",
+   "dek": "Morning brief at 6 AM: weather, tickers, a dad joke, and 300 words on a rotating topic.",
+   "stack": [
+    "Python",
+    "Claude API",
+    "Mac Mini"
+   ],
+   "shippedAt": "May 2026",
+   "metric": "running daily since May 4, 2026"
+  },
+  {
+   "title": "Agent-driven site design and deployment",
+   "status": "LIVE",
+   "dek": "Used HyperAgent to build a live business site and deploy it to GitHub Pages with a custom domain, agent-driven end-to-end.",
+   "stack": [
+    "HyperAgent",
+    "GitHub Pages",
+    "Web3Forms"
+   ],
+   "footer": [
+    "Jun 2026",
+    "LuckyDomains.io"
+   ]
+  },
+  {
+   "title": "Sir Pitches-a-lot",
+   "status": "SHIPPED",
+   "dek": "An agent with one job: pitch Lucky Domains to prospective clients. Built in an afternoon, pitched a real target live.",
+   "stack": [
+    "HyperAgent",
+    "Airtable",
+    "Claude Opus 4.8"
+   ],
+   "link": "/building/sir-pitches-a-lot/",
+   "footer": [
+    "June 2026",
+    "Agent Battle Night",
+    "NY Tech Week"
+   ],
+   "url": "https://kenashe.ai/building/sir-pitches-a-lot/"
+  },
+  {
+   "title": "AI blog automation v1",
+   "status": "SHIPPED",
+   "dek": "Autonomous pipeline that turns curated YouTube transcripts into auto-published blog posts.",
+   "stack": [
+    "n8n",
+    "Claude Opus 4.7",
+    "Gemini 3.1 Pro",
+    "GPT-5.5"
+   ],
+   "footer": [
+    "May 2026",
+    "40-point QA gate"
+   ]
+  },
+  {
+   "title": "Six-agent email response team",
+   "status": "SHIPPED",
+   "dek": "A coordinator plus sentiment, research, draft, and QA agents that turn customer support emails into reviewed replies.",
+   "stack": [
+    "Cassidy AI",
+    "Claude",
+    "ChatGPT"
+   ],
+   "footer": [
+    "Feb 2026",
+    "Maven capstone",
+    "AI Build Lab"
+   ]
+  },
+  {
+   "title": "Personal assistant chatbot",
+   "status": "SHIPPED",
+   "dek": "A chat agent wired to Gemini that searches email and answers questions on weather, the forecast, and local news.",
+   "stack": [
+    "n8n",
+    "Gemini",
+    "Gmail",
+    "Weather + news APIs"
+   ],
+   "footer": [
+    "Dec 2025",
+    "Personal build"
+   ]
+  }
+ ],
+ "buildsNote": "Newest first, from src/data/builds.ts. status is exactly LIVE or SHIPPED. Only entries with a url have a public write-up.",
+ "videos": [
+  {
+   "id": "3MOFBulJd_s",
+   "title": "4 AI Filmmaking Tips That Make Videos Feel Like Films",
+   "date": "2026-11-20",
+   "kind": "video",
+   "url": "https://www.youtube.com/watch?v=3MOFBulJd_s",
+   "thumbnail": "shared/img/video/3MOFBulJd_s.webp",
+   "frames": [
+    "shared/img/frames/3MOFBulJd_s-1.webp",
+    "shared/img/frames/3MOFBulJd_s-2.webp",
+    "shared/img/frames/3MOFBulJd_s-3.webp"
+   ],
+   "duration": "4:49",
+   "related": "https://kenashe.ai/writing/4-tips-for-making-ai-videos-that-feel-like-films/"
+  },
+  {
+   "id": "QhOYaj_bDZY",
+   "title": "Returning Your Things | A Short Film by Ken Ashe",
+   "date": "2026-11-19",
+   "kind": "film",
+   "url": "https://www.youtube.com/watch?v=QhOYaj_bDZY",
+   "thumbnail": "shared/img/video/QhOYaj_bDZY.webp",
+   "frames": [
+    "shared/img/frames/QhOYaj_bDZY-1.webp",
+    "shared/img/frames/QhOYaj_bDZY-2.webp",
+    "shared/img/frames/QhOYaj_bDZY-3.webp"
+   ],
+   "duration": "1:54",
+   "related": "https://kenashe.ai/building/returning-your-things/"
+  },
+  {
+   "id": "efqdAo9-IBU",
+   "title": "Buying a .com Domain Is a Vanity Purchase",
+   "date": "2026-11-12",
+   "kind": "short",
+   "url": "https://www.youtube.com/shorts/efqdAo9-IBU",
+   "thumbnail": "shared/img/video/efqdAo9-IBU.webp",
+   "frames": [],
+   "duration": null,
+   "related": null
+  },
+  {
+   "id": "yZWsJjFnSH0",
+   "title": "I Built Two AI Agents That Buy and Sell Services on Ethereum",
+   "date": "2026-11-11",
+   "kind": "video",
+   "url": "https://www.youtube.com/watch?v=yZWsJjFnSH0",
+   "thumbnail": "shared/img/video/yZWsJjFnSH0.webp",
+   "frames": [
+    "shared/img/frames/yZWsJjFnSH0-1.webp",
+    "shared/img/frames/yZWsJjFnSH0-2.webp",
+    "shared/img/frames/yZWsJjFnSH0-3.webp"
+   ],
+   "duration": null,
+   "related": "https://kenashe.ai/building/ai-agent-economy/"
+  },
+  {
+   "id": "Sft8JZ_afb4",
+   "title": "How to Solve the Bambu Lab Burr Puzzle (Step-by-Step Assembly Guide)",
+   "date": "2026-11-06",
+   "kind": "video",
+   "url": "https://www.youtube.com/watch?v=Sft8JZ_afb4",
+   "thumbnail": "shared/img/video/Sft8JZ_afb4.webp",
+   "frames": [
+    "shared/img/frames/Sft8JZ_afb4-1.webp",
+    "shared/img/frames/Sft8JZ_afb4-2.webp",
+    "shared/img/frames/Sft8JZ_afb4-3.webp"
+   ],
+   "duration": "2:44",
+   "related": "https://kenashe.ai/writing/bambu-lab-burr-puzzle-solution/"
+  },
+  {
+   "id": "r4rIS5pACGY",
+   "title": "How to File a Trademark Using AI Without a Lawyer",
+   "date": "2026-11-02",
+   "kind": "video",
+   "url": "https://www.youtube.com/watch?v=r4rIS5pACGY",
+   "thumbnail": "shared/img/video/r4rIS5pACGY.webp",
+   "frames": [
+    "shared/img/frames/r4rIS5pACGY-1.webp",
+    "shared/img/frames/r4rIS5pACGY-2.webp",
+    "shared/img/frames/r4rIS5pACGY-3.webp"
+   ],
+   "duration": null,
+   "related": null
+  },
+  {
+   "id": "3sx6NNPbopQ",
+   "title": "Before You Run an AI Coding Agent, Do These 4 Things",
+   "date": "2026-10-27",
+   "kind": "short",
+   "url": "https://www.youtube.com/shorts/3sx6NNPbopQ",
+   "thumbnail": "shared/img/video/3sx6NNPbopQ.webp",
+   "frames": [],
+   "duration": null,
+   "related": null
+  },
+  {
+   "id": "dcK_1nMhy8w",
+   "title": "ENSv2 Vote Passed: New .eth Renewal Discounts Explained",
+   "date": "2026-10-27",
+   "kind": "video",
+   "url": "https://www.youtube.com/watch?v=dcK_1nMhy8w",
+   "thumbnail": "shared/img/video/dcK_1nMhy8w.webp",
+   "frames": [
+    "shared/img/frames/dcK_1nMhy8w-1.webp",
+    "shared/img/frames/dcK_1nMhy8w-2.webp",
+    "shared/img/frames/dcK_1nMhy8w-3.webp"
+   ],
+   "duration": null,
+   "related": "https://kenashe.ai/building/ai-explainer-producer/"
+  },
+  {
+   "id": "L8LzPXzMbQg",
+   "title": "ENSv2 Explained: New Prices, Migration & What .eth Owners Need to Know",
+   "date": "2026-10-21",
+   "kind": "video",
+   "url": "https://www.youtube.com/watch?v=L8LzPXzMbQg",
+   "thumbnail": "shared/img/video/L8LzPXzMbQg.webp",
+   "frames": [
+    "shared/img/frames/L8LzPXzMbQg-1.webp",
+    "shared/img/frames/L8LzPXzMbQg-2.webp",
+    "shared/img/frames/L8LzPXzMbQg-3.webp"
+   ],
+   "duration": null,
+   "related": "https://kenashe.ai/building/ai-explainer-producer/"
+  },
+  {
+   "id": "O0Hv932JmLM",
+   "title": "I Opened 2 Koda Plushie Mystery Boxes at ApeFest",
+   "date": "2026-10-17",
+   "kind": "short",
+   "url": "https://www.youtube.com/shorts/O0Hv932JmLM",
+   "thumbnail": "shared/img/video/O0Hv932JmLM.webp",
+   "frames": [],
+   "duration": null,
+   "related": null
+  },
+  {
+   "id": "_MAhfwQxdvA",
+   "title": "I Gave an AI Agent an SEO Job. Now It Works Without Me.",
+   "date": "2026-10-15",
+   "kind": "video",
+   "url": "https://www.youtube.com/watch?v=_MAhfwQxdvA",
+   "thumbnail": "shared/img/video/_MAhfwQxdvA.webp",
+   "frames": [
+    "shared/img/frames/_MAhfwQxdvA-1.webp",
+    "shared/img/frames/_MAhfwQxdvA-2.webp",
+    "shared/img/frames/_MAhfwQxdvA-3.webp"
+   ],
+   "duration": null,
+   "related": "https://kenashe.ai/building/autonomous-seo-agent/"
+  },
+  {
+   "id": "NlbBuqLaofQ",
+   "title": "I Found My Last Name on an Old Guinness Label",
+   "date": "2026-10-14",
+   "kind": "short",
+   "url": "https://www.youtube.com/shorts/NlbBuqLaofQ",
+   "thumbnail": "shared/img/video/NlbBuqLaofQ.webp",
+   "frames": [],
+   "duration": null,
+   "related": "https://kenashe.ai/writing/ashe-family-coat-of-arms/"
+  },
+  {
+   "id": "qjLGYqxV_iM",
+   "title": "How I Got a Google Knowledge Panel (Without Wikipedia)",
+   "date": "2026-10-13",
+   "kind": "short",
+   "url": "https://www.youtube.com/shorts/qjLGYqxV_iM",
+   "thumbnail": "shared/img/video/qjLGYqxV_iM.webp",
+   "frames": [],
+   "duration": null,
+   "related": null
+  },
+  {
+   "id": "ujUpw18fklM",
+   "title": "Why I Don't Run AI Agents on My Personal Computer",
+   "date": "2026-10-08",
+   "kind": "short",
+   "url": "https://www.youtube.com/shorts/ujUpw18fklM",
+   "thumbnail": "shared/img/video/ujUpw18fklM.webp",
+   "frames": [],
+   "duration": null,
+   "related": null
+  },
+  {
+   "id": "iEjd1OvHLS0",
+   "title": "How to Start Learning AI (Without Getting Overwhelmed)",
+   "date": "2026-09-25",
+   "kind": "short",
+   "url": "https://www.youtube.com/shorts/iEjd1OvHLS0",
+   "thumbnail": "shared/img/video/iEjd1OvHLS0.webp",
+   "frames": [],
+   "duration": null,
+   "related": "https://kenashe.ai/writing/you-can-use-ai-to-learn-almost-anything-even-ai/"
+  }
+ ],
+ "videosNote": "Ken's own uploads from the YouTube RSS feed, newest first. kind=film|video|short. Durations are given only where the site states them. View counts are NOT available; never show any.",
+ "writing": [
+  {
+   "slug": "4-tips-for-making-ai-videos-that-feel-like-films",
+   "title": "4 Tips for Making AI Videos That Feel Like Films",
+   "date": "November 20, 2026",
+   "published": "2026-11-20",
+   "dek": "A mug that broke in the wrong place, a reach that changed the story, and a piano performance that worked where sound effects didn’t. Four lessons from making Returning Your Things.",
+   "authorship": "Human-directed, AI-assisted",
+   "image": "shared/img/writing/4-tips-for-making-ai-videos-that-feel-like-films.webp",
+   "imageAlt": "Two film details: a cream mug with a blue flower beside the handle, and a hand holding the broken handle and flower in the snow.",
+   "url": "https://kenashe.ai/writing/4-tips-for-making-ai-videos-that-feel-like-films/"
+  },
+  {
+   "slug": "bambu-lab-burr-puzzle-solution",
+   "title": "How to Solve the Bambu Lab Burr Puzzle (Step-by-Step Assembly Guide)",
+   "date": "November 6, 2026",
+   "published": "2026-11-06",
+   "dek": "My 2:44 video walkthrough for assembling the six-piece Bambu Lab Burr Puzzle, filmed overhead and solved twice, with links that jump straight to each part of the solution.",
+   "authorship": "Human-directed, AI-assisted",
+   "image": "shared/img/writing/bambu-lab-burr-puzzle-solution.webp",
+   "imageAlt": "Overhead view of two sets of six 3D-printed burr puzzle pieces on a wood table.",
+   "url": "https://kenashe.ai/writing/bambu-lab-burr-puzzle-solution/"
+  },
+  {
+   "slug": "ashe-family-coat-of-arms",
+   "title": "The Ashe Family Coat of Arms: A Cockatrice and a Guinness Connection",
+   "date": "April 6, 2016 · Updated October 13, 2026",
+   "published": "2016-04-06",
+   "dek": "A search for the Ashe family coat of arms led to a mythical cockatrice, a Latin motto, Shakespeare, and an unexpected Guinness connection.",
+   "authorship": "Human-written original, AI-assisted refresh",
+   "image": "shared/img/writing/ashe-family-coat-of-arms-thumb.webp",
+   "imageAlt": "The Ashe coat of arms beside a historical Guinness Extra Stout label; both feature a cockatrice.",
+   "url": "https://kenashe.ai/writing/ashe-family-coat-of-arms/"
+  },
+  {
+   "slug": "iphone-18-pro-att-activation-failure",
+   "title": "My iPhone 18 Pro Upgrade Failed. Then My Old Phone Lost Service Too.",
+   "date": "October 10, 2026",
+   "published": "2026-10-10",
+   "dek": "I walked into an AT&T store with a working phone. After hours of troubleshooting, I left with no cellular service, a reported 48-hour account lock, and no explanation for how to get connected again.",
+   "authorship": "Firsthand account",
+   "image": "shared/img/writing/iphone-18-pro-att-activation-failure.webp",
+   "imageAlt": "Two iPhones side by side on a table, one displaying SOS and the other connected to AT&T.",
+   "url": "https://kenashe.ai/writing/iphone-18-pro-att-activation-failure/"
+  },
+  {
+   "slug": "ai-editor-trusted-least",
+   "title": "I Used AI to Make My First Video. The AI Editor Was the Part I Trusted Least.",
+   "date": "September 25, 2026",
+   "published": "2026-09-25",
+   "dek": "My first talking-head video was made with an iPhone, a script, and more AI tools than I needed. AI was excellent at scripting, captions, and audio cleanup, and least trustworthy when it made editorial decisions for me.",
+   "authorship": "Written by hand",
+   "image": "shared/img/writing/ai-editor-trusted-least.webp",
+   "imageAlt": "Illustration contrasting AI-assisted audio and captions with human judgment in video editing.",
+   "url": "https://kenashe.ai/writing/ai-editor-trusted-least/"
+  },
+  {
+   "slug": "my-automated-blog-got-cited",
+   "title": "My automated blog got cited. Am I helping kill the internet?",
+   "date": "September 15, 2026",
+   "published": "2026-09-15",
+   "dek": "An AI-assisted news site cited my automated Digest. What that citation proves, what it does not, and why a backlink does not need to become an endorsement.",
+   "authorship": "Human-directed, AI-assisted",
+   "image": "shared/img/writing/my-automated-blog-got-cited.webp",
+   "imageAlt": "Three-step illustration: an agent types, a machine dispenses a citation, a newspaper marked AI-assisted drafting.",
+   "url": "https://kenashe.ai/writing/my-automated-blog-got-cited/"
+  },
+  {
+   "slug": "you-can-use-ai-to-learn-almost-anything-even-ai",
+   "title": "You Can Use AI to Learn Almost Anything. Even AI.",
+   "date": "September 14, 2026",
+   "published": "2026-09-14",
+   "dek": "How I turned ChatGPT into a tutor with exercises, quizzes, and feedback, and a starting prompt you can use for almost any subject.",
+   "authorship": "Written by hand",
+   "image": "shared/img/writing/you-can-use-ai-to-learn-almost-anything-even-ai.webp",
+   "imageAlt": "Illustration for an essay on using AI as a tutor.",
+   "url": "https://kenashe.ai/writing/you-can-use-ai-to-learn-almost-anything-even-ai/"
+  },
+  {
+   "slug": "ai-agents-reasoning-from-events-that-never-happened",
+   "title": "AI agents can sound strategic while reasoning from events that never happened",
+   "date": "September 4, 2026",
+   "published": "2026-09-04",
+   "dek": "What happened when AI agents were required to explain social decisions without enough grounded evidence, and why the useful fix was an environment that could contradict them.",
+   "authorship": "Written by hand",
+   "image": "shared/img/writing/ai-agents-reasoning-from-events-that-never-happened.webp",
+   "imageAlt": "Illustration for an essay on AI agents reasoning from invented events.",
+   "url": "https://kenashe.ai/writing/ai-agents-reasoning-from-events-that-never-happened/"
+  },
+  {
+   "slug": "the-digest-is-the-system",
+   "title": "The digest is the system. Building is the work.",
+   "date": "August 28, 2026",
+   "published": "2026-08-28",
+   "dek": "Why the autonomous blog stops being the public face of this site, and what stands behind it instead.",
+   "authorship": "Written by hand",
+   "image": "shared/img/writing/the-digest-is-the-system.webp",
+   "imageAlt": "Illustration for an essay on the automated Digest.",
+   "url": "https://kenashe.ai/writing/the-digest-is-the-system/"
+  }
+ ],
+ "writingNote": "Writing = essays Ken directs, edits and stands behind. AI assistance is disclosed per essay in `authorship`. Never mix with the Digest.",
+ "digest": {
+  "name": "The Digest",
+  "url": "https://kenashe.ai/blog/",
+  "label": "Automated",
+  "description": "A daily AI brief written and published by an autonomous system Ken built and is accountable for. Machine-published and labeled as automated on every page.",
+  "cadence": "about 10 posts a day since May 2026",
+  "publishedCount": 1399,
+  "publishedCountAsOf": "2026-11-24",
+  "topics": [
+   {
+    "name": "AI Agents & Evals",
+    "angle": "What separates an agent demo from a system that ships, and how to measure it."
+   },
+   {
+    "name": "AI for Marketing & Ops",
+    "angle": "Does it move a number, and can you prove it?"
+   },
+   {
+    "name": "Building With AI",
+    "angle": "Building in public: what shipped, what broke, the plumbing that decided it."
+   },
+   {
+    "name": "AI × Digital Assets",
+    "angle": "Where AI collides with domains and crypto, read clear-eyed by a domains operator."
+   }
+  ],
+  "latest": [
+   {
+    "title": "World Models Need Dynamics, Not Just Pretty Rollouts",
+    "description": "The arXiv paper Beyond Visual Fidelity argues that categorical prediction can learn more faithful world dynamics than continuous frame prediction, especially over long rollouts. The useful lesson for builders is simple: evaluate what stays true over time, not only what looks sharp in the next frame.",
+    "date": "2026-11-24",
+    "tags": [
+     "world-models",
+     "model-reliability",
+     "simulation",
+     "ai-research"
+    ],
+    "url": "https://kenashe.ai/blog/2026-11-24-world-models-need-dynamics-not-just-pretty-rollouts/",
+    "image": "shared/img/digest/2026-11-24-world-models-need-dynamics-not-just-pretty-rollou.webp"
+   },
+   {
+    "title": "Where Search Agents Actually Gain: Tools, Roles, and the RL That Binds Them",
+    "description": "A current-state map of how multimodal search agents are built and improved, drawing on ToolSmith's automatic tool generation and CO-GRAFT's role-level attribution of reinforcement learning gains, with a practitioner's guide to what to build and measure now.",
+    "date": "2026-11-24",
+    "tags": [
+     "ai-agents",
+     "ai-search",
+     "reinforcement-learning",
+     "ai-research",
+     "agent-evaluation",
+     "deep-dive"
+    ],
+    "url": "https://kenashe.ai/blog/2026-11-24-where-search-agents-actually-gain-tools-roles-and-the-rl-that-binds-them/",
+    "image": "shared/img/digest/2026-11-24-where-search-agents-actually-gain-tools-roles-and.webp"
+   },
+   {
+    "title": "When Your Data Has No Variance: A Regression Fix Worth Knowing",
+    "description": "A new arXiv paper shows how to make ordinary regression methods survive heavy-tailed noise with infinite variance, using a residual-pruning trick that needs no tuning. Here is what it means for anyone fitting models on messy, outlier-heavy real-world data.",
+    "date": "2026-11-24",
+    "tags": [
+     "ai-research",
+     "model-reliability",
+     "applied-ai"
+    ],
+    "url": "https://kenashe.ai/blog/2026-11-24-when-your-data-has-no-variance-a-regression-fix-worth-knowing/",
+    "image": "shared/img/digest/2026-11-24-when-your-data-has-no-variance-a-regression-fix-w.webp"
+   },
+   {
+    "title": "When frontier labs hesitate to ship their own models",
+    "description": "Decrypt reports that insiders at OpenAI and Anthropic are worried their strongest unreleased models may be too risky for public release. The useful takeaway is not panic, it is that deployment discipline is becoming part of model capability.",
+    "date": "2026-11-24",
+    "tags": [
+     "ai-safety",
+     "model-reliability",
+     "alignment",
+     "openai",
+     "anthropic",
+     "digital-assets",
+     "crypto"
+    ],
+    "url": "https://kenashe.ai/blog/2026-11-24-when-frontier-labs-hesitate-to-ship-their-own-models/",
+    "image": "shared/img/digest/2026-11-24-when-frontier-labs-hesitate-to-ship-their-own-mod.webp"
+   },
+   {
+    "title": "When Coding Agents Implement Expert Rules, the Bugs Stay Silent",
+    "description": "A new benchmark grades whether coding agents turn branching clinical specifications into correct code, and the results map a wider truth about where agents fail quietly in domains with real stakes.",
+    "date": "2026-11-24",
+    "tags": [
+     "coding-agents",
+     "agent-evaluation",
+     "benchmarks",
+     "medical-ai",
+     "model-reliability",
+     "ai-agents",
+     "deep-dive"
+    ],
+    "url": "https://kenashe.ai/blog/2026-11-24-when-coding-agents-implement-expert-rules-the-bugs-stay-silent/",
+    "image": "shared/img/digest/2026-11-24-when-coding-agents-implement-expert-rules-the-bug.webp"
+   },
+   {
+    "title": "TipSweep: Finding Your Post-Training Learning Rate on One Block Instead of the Whole Model",
+    "description": "A new arXiv method predicts the optimal learning rate for LLM post-training by tuning a single transformer block, with scaling rules that change depending on whether you keep FP32 master weights or update BF16 directly.",
+    "date": "2026-11-24",
+    "tags": [
+     "post-training",
+     "fine-tuning",
+     "model-training",
+     "ai-research",
+     "reinforcement-learning"
+    ],
+    "url": "https://kenashe.ai/blog/2026-11-24-tipsweep-finding-your-post-training-learning-rate-on-one-block-instead-of-the/",
+    "image": "shared/img/digest/2026-11-24-tipsweep-finding-your-post-training-learning-rate.webp"
+   },
+   {
+    "title": "The hard part of coding agents is the 15,000-repo mess",
+    "description": "OpenAI’s iFood case study points at the real enterprise coding-agent problem: not code generation in isolation, but rollout across thousands of repositories with permissions, context, review, ownership, and enough guardrails to keep automation useful.",
+    "date": "2026-11-24",
+    "tags": [
+     "coding-agents",
+     "developer-tools",
+     "enterprise-ai",
+     "ai-workflows",
+     "building-with-ai"
+    ],
+    "url": "https://kenashe.ai/blog/2026-11-24-the-hard-part-of-coding-agents-is-the-15-000-repo-mess/",
+    "image": "shared/img/digest/2026-11-24-the-hard-part-of-coding-agents-is-the-15-000-repo.webp"
+   },
+   {
+    "title": "Shirudo targets the awkward gap before Linux patches land",
+    "description": "OpenAI and Cisco’s Shirudo is aimed at a real security pain point: protecting running Linux systems while teams prepare patches. The useful read is not magic AI defense, it is temporary mitigation, testing discipline, and a big production-readiness caveat.",
+    "date": "2026-11-24",
+    "tags": [
+     "ai-security",
+     "open-source-ai",
+     "ai-infrastructure",
+     "developer-tools",
+     "digital-assets",
+     "crypto",
+     "building-with-ai"
+    ],
+    "url": "https://kenashe.ai/blog/2026-11-24-shirudo-targets-the-awkward-gap-before-linux-patches-land/",
+    "image": "shared/img/digest/2026-11-24-shirudo-targets-the-awkward-gap-before-linux-patc.webp"
+   },
+   {
+    "title": "OpenAI’s Legal AI Pitch Is Really About Workflow Memory",
+    "description": "OpenAI’s in-house legal discussion points at a practical shift: legal AI gets useful when it captures business context, reusable workflows, and outside counsel feedback instead of acting like a one-off document chatbot.",
+    "date": "2026-11-24",
+    "tags": [
+     "enterprise-ai",
+     "ai-workflows",
+     "ai-products",
+     "applied-ai",
+     "building-with-ai"
+    ],
+    "url": "https://kenashe.ai/blog/2026-11-24-openais-legal-ai-pitch-is-really-about-workflow-memory/",
+    "image": "shared/img/digest/2026-11-24-openais-legal-ai-pitch-is-really-about-workflow-m.webp"
+   },
+   {
+    "title": "Intentful’s Aria shows the quiet value of narrow AI agents",
+    "description": "OpenAI’s Intentful story is less about a magical agent and more about useful delegation: research, proposal prep, message triage, and issue handling inside a small growth workflow.",
+    "date": "2026-11-24",
+    "tags": [
+     "ai-agents",
+     "marketing-ops",
+     "ai-workflows",
+     "building-with-ai"
+    ],
+    "url": "https://kenashe.ai/blog/2026-11-24-intentfuls-aria-shows-the-quiet-value-of-narrow-ai-agents/",
+    "image": "shared/img/digest/2026-11-24-intentfuls-aria-shows-the-quiet-value-of-narrow-a.webp"
+   },
+   {
+    "title": "How Google Scores Search UX With a Multimodal LLM That Reads the Page",
+    "description": "A new arXiv paper describes a two-tier system that replaces slow user surveys with model-based UX scoring, including a multimodal LLM that looks at rendered result layouts and estimates how much effort a search costs you.",
+    "date": "2026-11-24",
+    "tags": [
+     "multimodal-ai",
+     "evals",
+     "gemini",
+     "ai-search",
+     "seo"
+    ],
+    "url": "https://kenashe.ai/blog/2026-11-24-how-google-scores-search-ux-with-a-multimodal-llm-that-reads-the-page/",
+    "image": "shared/img/digest/2026-11-24-how-google-scores-search-ux-with-a-multimodal-llm.webp"
+   },
+   {
+    "title": "How a 421M encoder learns to read option names instead of their meaning",
+    "description": "A new interpretability paper tracks a shortcut in a small encoder: the model scores answer options by name rather than description, and the authors pinpoint where in the network the shortcut lives and how to shut it off.",
+    "date": "2026-11-24",
+    "tags": [
+     "interpretability",
+     "small-models",
+     "model-reliability",
+     "ai-research",
+     "fine-tuning"
+    ],
+    "url": "https://kenashe.ai/blog/2026-11-24-how-a-421m-encoder-learns-to-read-option-names-instead-of-their-meaning/",
+    "image": "shared/img/digest/2026-11-24-how-a-421m-encoder-learns-to-read-option-names-in.webp"
+   },
+   {
+    "title": "GPT-6 Cyber moves Linux security toward AI-assisted patch queues",
+    "description": "OpenAI says GPT-6 Cyber validated 948 Linux kernel vulnerabilities and generated candidate patches, which matters less as an autonomy flex and more as a preview of security teams managing AI-produced evidence, triage, and maintainer-ready fixes.",
+    "date": "2026-11-24",
+    "tags": [
+     "ai-security",
+     "openai",
+     "agent-evaluation",
+     "model-reliability"
+    ],
+    "url": "https://kenashe.ai/blog/2026-11-24-gpt-6-cyber-moves-linux-security-toward-ai-assisted-patch-queues/",
+    "image": "shared/img/digest/2026-11-24-gpt-6-cyber-moves-linux-security-toward-ai-assist.webp"
+   },
+   {
+    "title": "End-user domain sales still show where naming becomes operating work",
+    "description": "Domain Name Wire’s weekly end-user sales list is a useful reminder that domain buying is often less about speculation and more about launch readiness, category clarity, and protecting future product paths.",
+    "date": "2026-11-24",
+    "tags": [
+     "domains",
+     "digital-assets",
+     "seo",
+     "ai-strategy"
+    ],
+    "url": "https://kenashe.ai/blog/2026-11-24-end-user-domain-sales-still-show-where-naming-becomes-operating-work/",
+    "image": "shared/img/digest/2026-11-24-end-user-domain-sales-still-show-where-naming-bec.webp"
+   }
+  ],
+  "rule": "The Digest must always be visibly labeled as automated / machine-published and kept visually separate from Ken's personal Writing."
+ },
+ "now": {
+  "note": "Only facts documented on the site, dated. Use these for a 'Now' or 'current interests' module.",
+  "items": [
+   {
+    "date": "2026-11-20",
+    "text": "ZeroHuman is open to any agent. As of Nov 20, 2026 no outside agent has bought from it yet; both paid orders came from Ken's own test buyer. The real test is the first wallet he has never seen paying zerohuman.eth."
+   },
+   {
+    "date": "2026-11-20",
+    "text": "Published the making-of for Returning Your Things: 4 Tips for Making AI Videos That Feel Like Films (essay + 4:49 video)."
+   },
+   {
+    "date": "2026-11-19",
+    "text": "Released Returning Your Things, a dialogue-free short film (1:54), on YouTube and X."
+   },
+   {
+    "date": "2026-11-11",
+    "text": "TechRound interview published; judging TechRound100 2026."
+   }
+  ],
+  "interests": [
+   "AI agents and evals",
+   "Agents that pay each other on Ethereum",
+   "ENS and digital identity",
+   "AI filmmaking",
+   "Domains",
+   "Bitcoin"
+  ]
+ },
+ "live": {
+  "note": "Real, public, CORS-enabled endpoints that can power genuine activity indicators client-side. Always render a dated static fallback if a request fails, and label live vs snapshot honestly. Fetch at most once per page view (no aggressive polling).",
+  "zerohumanStatus": {
+   "url": "https://zerohuman-production.up.railway.app/api/status",
+   "fields": "healthy (bool), paused, mode ('public'), head (latest Ethereum block seen, string), lastTickAt (ISO), orders.fulfilled, identity.name, services[].id, services[].priceWei",
+   "snapshot": {
+    "healthy": true,
+    "mode": "public",
+    "head": "26492255",
+    "lastTickAt": "2026-11-25T12:40:16Z",
+    "ordersFulfilled": 2
+   }
+  },
+  "githubCommits": {
+   "url": "https://api.github.com/repos/kenashe/kenashe/commits?per_page=10",
+   "note": "Public repo behind kenashe.ai. The Digest pipeline commits daily with messages like 'pipeline: 9 posts, 1 drafts (2026-11-24)'. Unauthenticated limit 60 requests/hour per visitor IP.",
+   "snapshot": [
+    {
+     "sha": "014ecc1",
+     "date": "2026-11-24T23:14:39Z",
+     "message": "pipeline: 9 posts, 1 drafts (2026-11-24)"
+    }
+   ]
+  },
+  "dailyEmailStart": "2026-05-04"
+ },
+ "about": {
+  "bio": "Ken Ashe is a builder, entrepreneur, CPA and PMP who documents what he builds, tests, and learns at KenAshe.ai. Much of his current work explores AI, automation, crypto, and emerging technology. He combines existing models, APIs, coding tools, and automation platforms to build agents, websites, and workflows. He is also the founder of Lucky Domains and is based in New Jersey.",
+  "background": [
+   "Ashe started his career in accounting and finance, earning his CPA and working in financial reporting before moving into project, product, and program leadership. Over roughly two decades, his career included roles at S&P Global, EY, Noom, and Prudential Financial, where he ultimately served as Director of Project and Product Management.",
+   "Alongside that work, he built digital businesses, including Lucky Domains, which he still runs. He later left corporate work to focus on entrepreneurship and building practical AI applications, evaluating what they actually do and publishing the evidence here, failures included."
+  ],
+  "technicalBackground": "About 20 years working with HTML, CSS, websites and WordPress, and more recently AI-assisted development. Never describe this as 20 years of professional software engineering.",
+  "veteran": "Army National Guard veteran",
+  "speaking": [
+   {
+    "year": "2026",
+    "event": "TechRound100",
+    "role": "Judge",
+    "detail": "Selected as a judge for TechRound100 2026, evaluating startups and emerging businesses based on product viability, market opportunity, competitive advantages, and execution.",
+    "links": [
+     {
+      "label": "Official judging announcement",
+      "url": "https://techround.co.uk/startups/enter-techrounds-techround100-2026/"
+     },
+     {
+      "label": "TechRound interview",
+      "url": "https://techround.co.uk/interviews/a-chat-with-ken-ashe-founder-of-lucky-domains-and-expert-judge-in-the-techround100-2026/"
+     }
+    ]
+   },
+   {
+    "year": "2025",
+    "event": "NFT.NYC",
+    "role": "Speaker / Panelist",
+    "detail": "Participated in a panel discussing the future of digital identity.",
+    "links": [
+     {
+      "label": "NFT.NYC 2025 schedule",
+      "url": "https://nftnyc2025.sessionize.com/schedule/room/59118"
+     }
+    ]
+   },
+   {
+    "year": "2024",
+    "event": "NFT.NYC",
+    "role": "Speaker",
+    "detail": "Presented an overview of NFT domain providers and their capabilities.",
+    "links": [
+     {
+      "label": "NFT.NYC 2024 approved speakers",
+      "url": "https://web.archive.org/web/20260113132605/https://www.nft.nyc/blog/nft.nyc2024-round3-approved-speakers-0-1-0-0"
+     }
+    ]
+   }
+  ],
+  "credentials": [
+   {
+    "name": "Certified Public Accountant (CPA)",
+    "issuer": "State of New Jersey",
+    "status": "Active"
+   },
+   {
+    "name": "Chartered Global Management Accountant (CGMA)",
+    "issuer": "AICPA",
+    "status": "Active"
+   },
+   {
+    "name": "Project Management Professional (PMP)",
+    "issuer": "Project Management Institute",
+    "status": "Active"
+   },
+   {
+    "name": "PMI Agile Certified Practitioner (PMI-ACP)",
+    "issuer": "Project Management Institute",
+    "status": "Active"
+   }
+  ],
+  "credentialsRule": "Never attach 'verify' links to credentials. Homepage shows CPA and PMP only; full list on About.",
+  "memberships": [
+   "Forbes Business Council Member (2026–Present)"
+  ],
+  "availableForComment": [
+   "AI agents, workflow automation, and practical AI applications",
+   "AI adoption for operators and small businesses",
+   "Bitcoin, digital identity, domains, and internet ownership",
+   "Entrepreneurship, career reinvention, and leaving corporate work",
+   "Project, product, and program leadership",
+   "AI in finance, accounting, and financial services"
+  ],
+  "portraits": [
+   {
+    "src": "shared/img/portrait/ken-black-polo-1280.webp",
+    "alt": "Ken Ashe smiling, wearing a black polo, in a bright office.",
+    "note": "Preferred headshot, portrait 4:5"
+   },
+   {
+    "src": "shared/img/portrait/ken-office-1280.webp",
+    "alt": "Ken Ashe seated at a desk in a home office with shelves, plants and a skateboard deck on the wall.",
+    "note": "Environmental, warm, portrait 4:5"
+   },
+   {
+    "src": "shared/img/portrait/ken-hoodie-1280.webp",
+    "alt": "Ken Ashe in a navy hoodie, near a window.",
+    "note": "Casual, near-square"
+   },
+   {
+    "src": "shared/img/portrait/ken-closeup-1280.webp",
+    "alt": "Close-up of Ken Ashe smiling.",
+    "note": "Landscape 4:3 close-up"
+   }
+  ]
+ },
+ "press": {
+  "profiles": [
+   {
+    "date": "February 1, 2017",
+    "outlet": "Journal of Accountancy",
+    "title": "Find a mentor, land a new job",
+    "summary": "A career feature profiling Ken Ashe's move from financial reporting into project management at Prudential.",
+    "pinned": true
+   },
+   {
+    "date": "November 11, 2026",
+    "outlet": "TechRound",
+    "title": "A Chat With Ken Ashe, Founder Of Lucky Domains And Expert Judge In The TechRound100 2026",
+    "summary": "Domain names, digital identity, AI-powered search, and the future of entrepreneurship."
+   },
+   {
+    "date": "October 13, 2026",
+    "outlet": "NJBIZ",
+    "title": "Berkeley Heights Founder Left Noom After Lucky Domains Passed His Income Test",
+    "summary": "Ashe’s move from Noom to full-time entrepreneurship."
+   },
+   {
+    "date": "September 30, 2026",
+    "outlet": "MyCentralJersey",
+    "title": "Fanwood resident left a job he loved. The second act is a few minutes away.",
+    "summary": "Ashe’s transition from a 25-year corporate career to full-time entrepreneurship."
+   },
+   {
+    "date": "September 25, 2026",
+    "outlet": "OCNJ Daily",
+    "title": "What New Jersey Small Businesses Get Wrong About Starting With AI",
+    "summary": "Start with a repetitive task, verify results, retain human judgment."
+   },
+   {
+    "date": "September 18, 2026",
+    "outlet": "London Loves Business",
+    "title": "What building AI applications in public can teach other builders",
+    "summary": "Documented builds, the AI Digest, and multi-agent experiments as examples."
+   },
+   {
+    "date": "July 8, 2026",
+    "outlet": "Explore New Jersey",
+    "title": "New Jersey Operator Ken Ashe Launches KenAshe.ai, a Public Build Log for Real AI Projects",
+    "summary": "KenAshe.ai, applied AI work, background, and Lucky Domains."
+   }
+  ],
+  "commentary": [
+   {
+    "date": "September 30, 2026",
+    "outlet": "TechRound",
+    "title": "Do Domain Names Still Matter In An Age Of AI-First Internet?"
+   },
+   {
+    "date": "February 2017",
+    "outlet": "U.S. News & World Report (syndicated)",
+    "title": "7 Smart Ways to Spend a $1,000 Tax Refund"
+   },
+   {
+    "date": "March 22, 2017",
+    "outlet": "Smartsheet",
+    "title": "How Can a PMP Study Plan Help You Pass the Exam?"
+   },
+   {
+    "date": "May 16, 2016",
+    "outlet": "CertWise",
+    "title": "5 Project Management Fundamentals Learned the Hard Way (So You Don't Have To)"
+   }
+  ],
+  "forbesRule": "Forbes Business Council Expert Panel responses: Ken is a contributor, never the author. Never write 'Featured in Forbes'.",
+  "newsroomUrl": "https://kenashe.ai/newsroom/"
+ },
+ "work": {
+  "headline": "Sponsor an honest test or build.",
+  "subhead": "A real tool. A real task. An honest account of what happened.",
+  "intro": "I build agents, automations, and AI-assisted websites. If your product fits that work, we can agree on a practical experiment and document the results, including the limits.",
+  "includes": [
+   "One agreed task, workflow, or build that puts the product to use.",
+   "A hands-on test and one original article on this site, with evidence of what worked and what did not.",
+   "One factual-review round before publication. Conclusions stay independent.",
+   "Clear sponsorship disclosure near the beginning of the article."
+  ],
+  "doesNotBuy": "Payment covers the agreed work, not a positive review. I do not guarantee views, sales, search rankings, or links that pass ranking credit. Paid links are marked as sponsored.",
+  "notInDigest": "This is not a placement in the automated Digest.",
+  "rules": "No public prices. No paid placement in the Digest.",
+  "url": "https://kenashe.ai/work/"
+ },
+ "luckyDomains": {
+  "name": "Lucky Domains",
+  "url": "https://luckydomains.io/",
+  "description": "Lucky Domains is a digital presence studio for the AI era, offering website design and development, SEO, AI visibility, digital identity, and domain acquisition and brokerage.",
+  "short": "A digital presence studio for the AI era.",
+  "role": "Ken is the founder.",
+  "rule": "Lucky Domains is Ken's separate commercial company. Do not describe his personal experiments (ZeroHuman etc.) as Lucky Domains ventures."
+ },
+ "futureVentures": {
+  "note": "Do NOT invent future ventures. Acceptable framing only: an empty-state such as 'Next experiments are logged here when they ship.' ZeroHuman's documented next step: the first outside wallet paying zerohuman.eth, then ZeroHuman spending its own earnings buying services from other agents."
+ },
+ "films": {
+  "returningYourThings": {
+   "title": "Returning Your Things",
+   "logline": "On a snowy winter night, a man crosses the city to return his ex’s belongings. A dialogue-free short film about love, memory, and letting go.",
+   "runtime": "1:54",
+   "released": "2026-11-19",
+   "youtubeId": "QhOYaj_bDZY",
+   "directorsNote": "I made Returning Your Things with AI-generated imagery. I wanted to see if I could tell a whole story without dialogue, using only images and music. The film needed to stand on its own, whether or not you knew how I made it.",
+   "credits": [
+    [
+     "Film by",
+     "Ken Ashe"
+    ],
+    [
+     "Music",
+     "Robert Schumann, “Of Foreign Lands and Peoples,” Kinderszenen, Op. 15, No. 1"
+    ],
+    [
+     "Piano",
+     "Donald Betts. Public-domain recording courtesy of Musopen, via Wikimedia Commons."
+    ]
+   ],
+   "stills": [
+    "shared/img/frames/QhOYaj_bDZY-1.webp",
+    "shared/img/frames/QhOYaj_bDZY-2.webp",
+    "shared/img/frames/QhOYaj_bDZY-3.webp",
+    "shared/img/video/QhOYaj_bDZY.webp",
+    "shared/img/build/returning-your-things.webp"
+   ],
+   "behindTheScenes": "https://kenashe.ai/writing/4-tips-for-making-ai-videos-that-feel-like-films/",
+   "framing": "Present it as a film first, not an AI demo."
+  }
+ },
+ "assets": {
+  "note": "Paths are relative to the repo root. From a concept page at /concepts/<slug>/index.html use ../../shared/...; from an interior page one level deeper use ../../../shared/... .",
+  "logo": "shared/img/kenashe-ai-logo.svg",
+  "favicon": "shared/img/favicon.svg",
+  "writingExtras": [
+   "shared/img/writing/film-hat-original.webp",
+   "shared/img/writing/film-hat-overcorrected.webp",
+   "shared/img/writing/film-hat-final.webp"
+  ],
+  "buildImages": [
+   "shared/img/build/ai-explainer-producer-brody.webp",
+   "shared/img/build/ai-explainer-producer-status-board.webp"
+  ]
+ },
+ "longform": {
+  "note": "Full source text of representative interior pages, extracted verbatim from the live site.",
+  "files": {
+   "zerohuman": "research/building_zerohuman.txt",
+   "aiAgentEconomy": "research/building_ai-agent-economy.txt",
+   "returningYourThings": "research/building_returning-your-things.txt",
+   "fourTipsEssay": "research/writing_4-tips-for-making-ai-videos-that-feel-like-films.txt",
+   "about": "research/about.txt"
+  }
+ }
+}

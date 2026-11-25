@@ -1,0 +1,24 @@
+{
+ "date": "November 25, 2026",
+ "intro": "Six independent prototypes, each with its own typography, palette, navigation, layout and motion. Every one has a complete homepage and at least one real interior page. They all use the same content taken from the live site: builds, films, videos, essays, the Digest, press, speaking and credentials. None of them invents projects, numbers or activity. Nothing here replaces or touches the production site.",
+ "how": [
+  ["One content source", "All six concepts draw on one shared file, <code>shared/content.json</code>. It was pulled from the live site, the read-only production data files (<code>builds.ts</code>, <code>writing.ts</code>, <code>credentials.ts</code>, <code>connect.ts</code>), the Digest content collection and your public YouTube feed. Snapshot date: November 25, 2026."],
+  ["Real assets only", "The imagery is your own portraits, YouTube thumbnails, frames from your videos and from <em>Returning Your Things</em>, essay images and Digest hero images. There are no stock photos, robots or invented dashboards."],
+  ["Honest activity", "Wherever a concept shows activity, it comes from real dated content or from two public endpoints, ZeroHuman's <code>/api/status</code> and the public commit history of <code>kenashe/kenashe</code>. It is labeled Live only when the request succeeds and falls back to a dated snapshot."],
+  ["Isolated and unindexed", "This is a separate static site. Every page has <code>noindex, nofollow</code>, <code>robots.txt</code> disallows everything, and there is no analytics, no cookies and no form that sends anything. YouTube loads only when you press play. The production repository, the Vercel project and the Digest pipeline were read, never written."],
+  ["Built with AI, reviewed by a person", "Six AI designer-developer agents built the concepts in parallel from a shared brief. Each one checked its own work in a headless browser at desktop and mobile sizes, and the results were then checked again centrally for facts, accessibility, noindex and responsive layout."]
+ ],
+ "tech": [
+  ["Porting a direction into production", "Whichever direction you choose would be rebuilt as Astro components in <code>kenashe/kenashe</code> on a feature branch with a draft PR and noindex staging, following your usual process. The prototypes are hand-authored static HTML, so nothing here is copied straight into production."],
+  ["Data stays where it lives", "Every module maps to an existing source: builds come from <code>src/data/builds.ts</code>, writing from <code>src/data/writing.ts</code>, the Digest from the <code>blog</code> content collection, credentials from <code>credentials.ts</code> and social links from <code>connect.ts</code>/<code>schema.ts</code>. Two things would be new: a small <code>videos.ts</code> (or a build-time read of the YouTube RSS feed) and a dated <code>now.ts</code>."],
+  ["Publishing automations", "None of the directions changes the Digest URLs (<code>/blog/</code>), feeds, sitemap, schema graph or the pipeline's commit flow. The Digest needs only a new card or list component wherever a concept shows it."],
+  ["Live indicators", "The live modules make one request per page view to public endpoints. In production they should run through a cached edge function, or be rendered at build time with a timestamp, so visitors never put load on the ZeroHuman worker or the GitHub API."],
+  ["Performance and accessibility", "Every concept respects <code>prefers-reduced-motion</code>, works by keyboard and touch, lazy-loads images, self-hosts its fonts and keeps essential information visible without animation. WebGL (concept 05) is the heaviest and has a list-view fallback."]
+ ],
+ "next": [
+  ["What helps most", "Name the direction or directions you want to take forward. Then say what to keep from the others, for example the navigation from one, the Digest treatment from another, or the motion of a third. Mixing is expected at this stage."],
+  ["Next iteration", "The next round would go in its own section of this repo (for example <code>/round-2/</code>), with these six kept online unchanged as an archive, following the pattern you set for the other concept repos."],
+  ["Not decided here", "No direction has been selected, and nothing has been deployed to KenAshe.ai."]
+ ],
+ "footer": "KenAshe.ai redesign concepts · Round 1 · Prototypes only, not the live site, not indexed. Content snapshot November 25, 2026. Live site: <a href=\"https://kenashe.ai/\" rel=\"noopener\">kenashe.ai</a>"
+}

@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<title>Concept 02 · Lab report: AI agent economy on Ethereum · Ken Ashe</title>
+<meta name="description" content="Design concept: Ken Ashe's AI agent economy experiment written up as a formal lab report. Two local AI agents, an ENS storefront, and two Ethereum mainnet transactions 36 seconds apart.">
+<link rel="icon" href="../../../../shared/img/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="../../fonts/instrument-sans.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../../fonts/martian-mono.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../../../../shared/concept-flag.css">
+<link rel="stylesheet" href="../../assets/lab.css">
+<style>.ev{transition:opacity .25s} [data-replay].is-playing .ev:not(.is-past){opacity:.25} code{font:500 .86em var(--mono);font-stretch:87.5%;background:var(--paper-2);padding:1px 4px} .listing code{background:none;padding:0;font:inherit}</style>
+<script>document.documentElement.classList.add('js')</script>
+<script type="module" src="../../assets/lab.js"></script>
+</head>
+<body>
+<div class="concept-flag" role="note"><strong>Design concept</strong><span>Concept 02 · The Living Lab. Not the live KenAshe.ai. Not indexed.</span><a href="../../../../">All six concepts</a></div>
+<a class="skip" href="#main">Skip to content</a>
+<div class="lab">
+<aside class="rail" aria-label="Report index">
+  <div class="rail__head"><a class="mark" href="../../"><svg class="mark__glyph" viewBox="0 0 30 30" aria-hidden="true"><circle cx="15" cy="15" r="11.5" fill="none" stroke="#151512" stroke-width="1.25"/><path d="M15 0v8M15 22v8M0 15h8M22 15h8" stroke="#151512" stroke-width="1.25"/><circle cx="19.5" cy="10.5" r="3" fill="#E8541A"/></svg><span><span class="mark__name">Ken Ashe</span><span class="mark__sub">← Back to the bench</span></span></a></div>
+  <nav class="rail__nav" aria-label="Report sections"><ol><li><a href="#abstract" data-plate="abstract"><span class="n">00</span><span>Abstract</span></a></li>
+<li><a href="#hypothesis" data-plate="hypothesis"><span class="n">01</span><span>Hypothesis</span></a></li>
+<li><a href="#apparatus" data-plate="apparatus"><span class="n">02</span><span>Apparatus</span></a></li>
+<li><a href="#procedure" data-plate="procedure"><span class="n">03</span><span>Procedure</span></a></li>
+<li><a href="#observations" data-plate="observations"><span class="n">04</span><span>Observations</span></a></li>
+<li><a href="#timeline" data-plate="timeline"><span class="n">05</span><span>Timeline · 36 s</span></a></li>
+<li><a href="#results" data-plate="results"><span class="n">06</span><span>Results</span></a></li>
+<li><a href="#proof" data-plate="proof"><span class="n">07</span><span>What it proves</span></a></li>
+<li><a href="#limitations" data-plate="limitations"><span class="n">08</span><span>Limitations</span></a></li>
+<li><a href="#next" data-plate="next"><span class="n">09</span><span>What came next</span></a></li>
+<li><a href="#recording" data-plate="recording"><span class="n">10</span><span>Recording &amp; related</span></a></li></ol></nav>
+  <div class="rail__foot"><div class="rail__probe"><span>Report</span><b>LR · EXP-18</b></div><div class="rail__meter" aria-hidden="true"><i data-meter></i></div><a href="mailto:hello@kenashe.ai">hello@kenashe.ai</a></div>
+</aside>
+<div class="mhead"><a class="mark" href="../../"><svg class="mark__glyph" viewBox="0 0 30 30" aria-hidden="true"><circle cx="15" cy="15" r="11.5" fill="none" stroke="#151512" stroke-width="1.25"/><path d="M15 0v8M15 22v8M0 15h8M22 15h8" stroke="#151512" stroke-width="1.25"/><circle cx="19.5" cy="10.5" r="3" fill="#E8541A"/></svg><span><span class="mark__name">Ken Ashe</span><span class="mark__sub">← Back to the bench</span></span></a></div>
+<main id="main" tabindex="-1">
+<header class="report-head plate--grid"><div class="wrap">
+  <p class="crumbs"><a href="../../">Bench</a><span>/</span><a href="../../#logs">Build logs</a><span>/</span><span>Lab report EXP-18</span></p>
+  <h1>Two AI agents bought and sold a service on Ethereum</h1>
+  <p class="dek">Two autonomous AI agents with their own Ethereum wallets. The seller advertised services through ENS; the buyer found the catalog, paid in ETH, and received the work in a second mainnet transaction.</p>
+  <dl class="form">
+    <div><dt>Report</dt><dd>LR · EXP-18</dd></div><div><dt>Experiment</dt><dd>AI agent economy on Ethereum</dd></div><div><dt>Principal investigator</dt><dd>Ken Ashe</dd></div><div><dt>Status</dt><dd><span class="st st--shipped">Shipped</span></dd></div>
+    <div><dt>Run date</dt><dd>Nov 10, 2026 · 14:58 UTC</dd></div><div><dt>Network</dt><dd>Ethereum mainnet</dd></div><div><dt>Stack</dt><dd>AI Agents · Ethereum · ENS · Ollama</dd></div><div><dt>Commercial history</dt><dd>One purchase, one toaster</dd></div>
+  </dl>
+  <p style="margin-top:22px;display:flex;gap:10px;flex-wrap:wrap"><a class="btn" href="#recording">Watch the experiment</a><a class="btn btn--ghost" href="#observations">Check the transactions</a></p>
+</div></header>
+<section class="sec" id="abstract" data-plate-sec aria-labelledby="h-abstract">
+<div class="wrap"><header class="sec__h"><span class="n" aria-hidden="true">00</span><h2 id="h-abstract">Abstract</h2></header>
+<div class="cols"><div class="prose">
+<p>I built two autonomous AI agents, gave each its own Ethereum wallet, and tested whether they could buy and sell services without a centralized marketplace. The seller advertised five ridiculous services through ENS. The buyer discovered the catalog, selected a service, paid with ETH, and received the finished work through a second Ethereum transaction. Both transactions were recorded on Ethereum mainnet.</p>
+<p>This report shows what I built, what actually happened, how you can check it yourself, and what the experiment does and does not prove.</p></div>
+<div class="verdict" style="align-self:start;margin-top:0"><b>Outcome in one line</b>One purchase, one toaster: payment and delivery settled on mainnet, three blocks and 36 seconds apart. <a href="#limitations">Read the limitations</a> before drawing conclusions.</div></div>
+</div></section><section class="sec plate--grid" id="hypothesis" data-plate-sec aria-labelledby="h-hypothesis">
+<div class="wrap"><header class="sec__h"><span class="n" aria-hidden="true">01</span><h2 id="h-hypothesis">Hypothesis</h2></header>
+<div class="cols"><p class="hyp"><small>Tested</small>Two autonomous AI agents with their own wallets can buy and sell a service without a centralized marketplace, using ENS for discovery and Ethereum mainnet for settlement.</p>
+<div class="prose"><p><b>Independent variable:</b> no marketplace in the middle. The only listing is a text record on an ENS name.</p><p><b>Observed:</b> whether the buyer can find the catalog, choose and pay on its own, and whether the seller delivers the work back onchain.</p><p><b>Not tested:</b> open discovery by strangers, escrow, reputation, or availability over time. See section 08.</p></div></div>
+</div></section><section class="sec" id="apparatus" data-plate-sec aria-labelledby="h-apparatus">
+<div class="wrap"><header class="sec__h"><span class="n" aria-hidden="true">02</span><h2 id="h-apparatus">Apparatus</h2></header>
+<ul class="app">
+<li><b>Host</b><span>One Mac mini M4 running both agents locally.</span></li>
+<li><b>Inference</b><span>Ollama with the <code>llama3.2:3b</code> model. Neither agent called a hosted AI service to do its thinking.</span></li>
+<li><b>Buyer agent</b><span>Reads the seller’s catalog, chooses a service on its own, writes an order, and sends the payment from its own wallet.</span></li>
+<li><b>Seller agent</b><span>ZeroHuman: watches for incoming payments, generates the work with the local model, and delivers the result.</span></li>
+<li><b>Storefront</b><span>A custom text record on <code>zerohuman.eth</code>, key <code>com.ridiculous.market</code>, publishing the seller’s payment address, the service catalog, and the price.</span></li>
+<li><b>Ledger</b><span>Ethereum mainnet recorded the order, the payment, and the delivery.</span></li>
+<li><b>Chain access</b><span>A third-party public Ethereum RPC provider. I did not run my own node.</span></li>
+<li><b>Catalog</b><span>Five services, each 0.0003 ETH: Object Obituary · Animal Performance Review · Vegetable Defense Attorney · Appliance Apology · Useless Award.</span></li>
+</ul>
+<figure class="fig reg"><div class="fig__body"><svg viewBox="0 0 860 470" role="img" aria-labelledby="f1t f1d">
+<title id="f1t">Figure 1. Apparatus</title>
+<desc id="f1d">One Mac mini M4 running Ollama with llama3.2:3b hosts both the buyer agent and the ZeroHuman seller agent, each with its own wallet. Both reach Ethereum mainnet through a third-party public RPC provider. On mainnet: the ENS name zerohuman.eth holds a text record with seller address, catalog and price; the order and payment transaction goes buyer to seller for 0.0003 ETH; the delivery transaction goes seller to buyer with zero value and the work in its input data.</desc>
+<defs><marker id="ar" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0L8 4L0 8z" fill="#151512"/></marker>
+<pattern id="h1" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="6" stroke="rgba(21,21,18,.12)"/></pattern></defs>
+<g font-size="11" fill="#151512">
+<rect x="10" y="10" width="840" height="150" fill="#EFECE4" stroke="#151512"/>
+<text x="24" y="32" font-weight="600">MAC MINI M4 · OLLAMA · llama3.2:3b</text><text x="836" y="32" text-anchor="end" fill="#4A4A43">on my desk · local inference, no hosted AI</text>
+<rect x="40" y="52" width="330" height="88" fill="#F8F6F0" stroke="#151512"/>
+<text x="56" y="76" font-weight="700" font-size="13">BUYER AGENT</text><text x="56" y="98" fill="#4A4A43">own wallet 0x73619c9a…2bf568d8</text><text x="56" y="118" fill="#4A4A43">reads the catalog · picks · pays</text>
+<rect x="490" y="52" width="330" height="88" fill="#F8F6F0" stroke="#151512"/>
+<text x="506" y="76" font-weight="700" font-size="13">ZEROHUMAN (SELLER)</text><text x="506" y="98" fill="#4A4A43">own wallet 0xc651c31a…fba27852</text><text x="506" y="118" fill="#4A4A43">watches payments · writes · delivers</text>
+<rect x="10" y="190" width="840" height="40" fill="url(#h1)" stroke="#151512" stroke-dasharray="3 3"/>
+<text x="430" y="215" text-anchor="middle">THIRD-PARTY PUBLIC ETHEREUM RPC PROVIDER · no node of my own</text>
+<line x1="205" y1="140" x2="205" y2="188" stroke="#151512" marker-end="url(#ar)" marker-start="url(#ar)"/>
+<line x1="655" y1="140" x2="655" y2="188" stroke="#151512" marker-end="url(#ar)" marker-start="url(#ar)"/>
+<line x1="430" y1="230" x2="430" y2="258" stroke="#151512" marker-end="url(#ar)" marker-start="url(#ar)"/>
+<rect x="10" y="260" width="840" height="200" fill="#F8F6F0" stroke="#151512" stroke-width="1.5"/>
+<text x="24" y="282" font-weight="600">ETHEREUM MAINNET</text>
+<rect x="30" y="300" width="250" height="140" fill="#EFECE4" stroke="#2340C8"/>
+<text x="44" y="324" font-weight="700" fill="#2340C8">ENS · zerohuman.eth</text><text x="44" y="346" fill="#4A4A43">text record key</text><text x="44" y="364">com.ridiculous.market</text><text x="44" y="390" fill="#4A4A43">seller address · catalog · price</text><text x="44" y="420" fill="#4A4A43">the storefront</text>
+<rect x="305" y="300" width="250" height="140" fill="#EFECE4" stroke="#E8541A" stroke-width="1.5"/>
+<text x="319" y="324" font-weight="700" fill="#A93A0A">ORDER + PAYMENT TX</text><text x="319" y="346" fill="#4A4A43">buyer → seller</text><text x="319" y="368" font-size="18" font-weight="300">0.0003 ETH</text><text x="319" y="394" fill="#4A4A43">order in input data</text><text x="319" y="420" fill="#4A4A43">block 26385257</text>
+<rect x="580" y="300" width="250" height="140" fill="#EFECE4" stroke="#2340C8"/>
+<text x="594" y="324" font-weight="700" fill="#2340C8">DELIVERY TX</text><text x="594" y="346" fill="#4A4A43">seller → buyer</text><text x="594" y="368" font-size="18" font-weight="300">0 ETH</text><text x="594" y="394" fill="#4A4A43">work in input data</text><text x="594" y="420" fill="#4A4A43">block 26385260</text>
+<line x1="280" y1="370" x2="303" y2="370" stroke="#151512" marker-end="url(#ar)"/><line x1="555" y1="370" x2="578" y2="370" stroke="#151512" marker-end="url(#ar)"/>
+</g></svg></div><figcaption><span><b>Fig. 1</b> · Apparatus. The agents ran on the desk; ENS held the listing, not the agent.</span><span>Redrawn from the write-up</span></figcaption></figure>
+</div></section><section class="sec plate--grid" id="procedure" data-plate-sec aria-labelledby="h-procedure">
+<div class="wrap"><header class="sec__h"><span class="n" aria-hidden="true">03</span><h2 id="h-procedure">Procedure</h2></header>
+<ol class="steps">
+<li><div><b>ENS discovery.</b> The buyer read the <code>com.ridiculous.market</code> text record on <code>zerohuman.eth</code> and got the catalog, the price, and the seller’s payment address. The buyer did not need an ENS name of its own.</div></li>
+<li><div><b>Service selection.</b> The buyer picked Object Obituary and wrote its own request. Nobody told it which service to pick or what to ask for.</div></li>
+<li><div><b>Payment.</b> The buyer sent 0.0003 ETH to the seller with the order written into the transaction’s input data. Order and payment were one transaction.</div></li>
+<li><div><b>Work generated.</b> ZeroHuman saw the payment and wrote the obituary with the local model.</div></li>
+<li><div><b>Delivery.</b> A separate, zero-value transaction from the seller back to the buyer, with the response in its input data and a reference to the order’s transaction hash.</div></li>
+<li><div><b>Buyer verification.</b> The buyer read the delivery transaction and matched it to its order.</div></li>
+</ol><p class="lbl" style="margin-top:16px">No human stepped in during the transaction workflow.</p>
+</div></section><section class="sec" id="observations" data-plate-sec aria-labelledby="h-observations">
+<div class="wrap"><header class="sec__h"><span class="n" aria-hidden="true">04</span><h2 id="h-observations">Observations</h2></header>
+<div class="prose"><p>The full ENS record as it sits on <code>zerohuman.eth</code>:</p></div>
+<figure class="listing"><div class="listing__hd"><span>Listing 1 · ENS text record · com.ridiculous.market</span><a href="https://explorer.ens.domains/zerohuman.eth" rel="noopener" style="color:#EDEAE2">View the ENS listing ↗</a></div>
+<pre><code>{<span class="k">&quot;v&quot;</span><span class="p">:</span>1,<span class="k">&quot;seller&quot;</span><span class="p">:</span>&quot;0xc651c31A5D08b2f6e536D39343ae6415fBA27852&quot;,<span class="k">&quot;priceWei&quot;</span><span class="p">:</span>&quot;300000000000000&quot;,<span class="k">&quot;services&quot;</span><span class="p">:</span>[&quot;object-obituary&quot;,&quot;animal-performance-review&quot;,&quot;vegetable-defense&quot;,&quot;appliance-apology&quot;,&quot;useless-award&quot;]}</code></pre>
+<ul class="annot"><li>priceWei 300000000000000 wei = 0.0003 ETH</li><li>The payment address is the <b>seller</b> field inside this record, a different wallet from the name’s own ETH address record.</li><li>services: the five catalog entries, by slug.</li></ul></figure>
+<figure class="listing"><div class="listing__hd"><span>Listing 2 · order, from the payment transaction’s input data (UTF-8)</span><span>block 26385257</span></div>
+<pre><code><span class="p">RAE1:</span>{<span class="k">&quot;v&quot;</span><span class="p">:</span>1,<span class="k">&quot;t&quot;</span><span class="p">:</span>&quot;order&quot;,<span class="k">&quot;service&quot;</span><span class="p">:</span>&quot;object-obituary&quot;,<span class="k">&quot;prompt&quot;</span><span class="p">:</span>&quot;Write an eulogy for a toaster that never quite toasted anything right.&quot;}</code></pre>
+<ul class="annot"><li>To read it yourself: open either transaction on Etherscan, expand the details, and view the input data as UTF-8.</li></ul></figure>
+<div class="dialog"><div><p class="lbl">Buyer’s request</p><q>Write an eulogy for a toaster that never quite toasted anything right.</q></div>
+<div><p class="lbl">Seller’s response · llama3.2:3b</p><q>In memoriam, Toaster of Uncertain Intent. May its unfulfilled promise of crispy delights forever linger in the air, a haunting reminder of a life left unbreaded. May its legacy inspire generations to strive for a toast that’s more than just a faint, lukewarm whisper of possibility.</q></div></div>
+<div class="txs"><div class="tx"><div class="tx__hd"><span>Order and payment</span><span class="st st--live" style="color:inherit;border-color:currentColor">Success</span></div>
+<table><caption class="vh">Order and payment</caption><tr><th scope="row">From</th><td>Buyer, 0x73619c9a…2bf568d8</td></tr><tr><th scope="row">To</th><td>Seller, 0xc651c31a…fba27852</td></tr><tr><th scope="row">Value</th><td><b>0.0003 ETH</b></td></tr><tr><th scope="row">Block</th><td>26385257</td></tr><tr><th scope="row">Time</th><td>Nov 10, 2026, 14:58:11 UTC</td></tr><tr><th scope="row">Gas used</th><td>26,360</td></tr><tr><th scope="row">Fee</th><td>about 0.0000139 ETH</td></tr><tr><th scope="row">Status</th><td>Success</td></tr></table><div class="tx__ft"><a href="https://etherscan.io/tx/0xa5ed7f4c81e605b14e9c596a146c5fe2b3c10f794a0f1c4f3a880d7d3840efec" rel="noopener">0xa5ed7f4c…3840efec on Etherscan ↗</a></div></div><div class="tx"><div class="tx__hd"><span>Delivery</span><span class="st st--shipped" style="color:inherit;border-color:currentColor">Success</span></div>
+<table><caption class="vh">Delivery</caption><tr><th scope="row">From</th><td>Seller, 0xc651c31a…fba27852</td></tr><tr><th scope="row">To</th><td>Buyer, 0x73619c9a…2bf568d8</td></tr><tr><th scope="row">Value</th><td><b>0 ETH</b></td></tr><tr><th scope="row">Block</th><td>26385260</td></tr><tr><th scope="row">Time</th><td>Nov 10, 2026, 14:58:47 UTC</td></tr><tr><th scope="row">Gas used</th><td>37,000</td></tr><tr><th scope="row">Fee</th><td>about 0.0000191 ETH</td></tr><tr><th scope="row">Status</th><td>Success</td></tr></table><div class="tx__ft"><a href="https://etherscan.io/tx/0x1ab74d9b537ec4abf3faf6bc8335e30a018894562cecca6f17b4883bdd95c71e" rel="noopener">0x1ab74d9b…dd95c71e on Etherscan ↗</a></div></div></div>
+</div></section><section class="sec" id="timeline" data-plate-sec aria-labelledby="h-timeline">
+<div class="wrap"><header class="sec__h"><span class="n" aria-hidden="true">05</span><h2 id="h-timeline">Timeline · the 36 seconds</h2></header>
+<div class="prose"><p>Only two moments carry timestamps: the payment and the delivery. Everything else is placed in order, not in time.</p></div>
+<figure class="fig reg" data-replay data-x0="230" data-x1="850">
+<div class="replay"><button class="btn" type="button" data-speed="1">Replay in real time · 36 s</button><button class="btn btn--ghost" type="button" data-speed="6">Replay at 6×</button><button class="btn btn--ghost" type="button" data-stop disabled>Stop</button><output aria-live="off">t = 36 s · 14:58:47 UTC</output></div>
+<div class="fig__body" style="overflow-x:auto"><div style="min-width:720px"><svg viewBox="0 0 1000 300" role="img" aria-labelledby="f2t f2d" class="tl">
+<title id="f2t">Figure 2. The 36 seconds between payment and delivery</title>
+<desc id="f2d">Before payment, untimed: ENS discovery and service selection. At 14:58:11 UTC in block 26385257 the buyer paid 0.0003 ETH with the order attached. ZeroHuman generated the work with the local model; the exact time was not recorded. At 14:58:47 UTC in block 26385260, 36 seconds and three blocks later, ZeroHuman delivered the result onchain. After delivery, untimed: the buyer read the delivery and matched it to its order.</desc>
+<defs><pattern id="h2" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="6" stroke="rgba(21,21,18,.14)"/></pattern></defs>
+<g font-family="Martian Mono" font-size="10.5" fill="#151512">
+<rect x="20" y="40" width="190" height="156" fill="url(#h2)"/>
+<text x="28" y="30" fill="#4A4A43">BEFORE t = 0 · NOT TIMESTAMPED</text>
+<g data-at="0" class="ev"><text x="32" y="80" font-weight="600">1 · ENS discovery</text><text x="32" y="96" fill="#4A4A43">reads the ENS text record</text>
+<text x="32" y="130" font-weight="600">2 · Service selection</text><text x="32" y="146" fill="#4A4A43">picks Object Obituary,</text><text x="32" y="160" fill="#4A4A43">writes its own request</text></g>
+<rect x="230" y="112" width="620" height="34" fill="url(#h2)" stroke="rgba(21,21,18,.3)" stroke-dasharray="3 3"/>
+<text x="540.0" y="133" text-anchor="middle" fill="#4A4A43">4 · work generated with the local model · exact time not recorded</text>
+<line x1="230" x2="850" y1="196" y2="196" stroke="#151512" stroke-width="1.5"/>
+<line class="tk" x1="230.0" x2="230.0" y1="196" y2="210"/><line class="tk" x1="281.7" x2="281.7" y1="196" y2="204"/><line class="tk" x1="333.3" x2="333.3" y1="196" y2="204"/><line class="tk" x1="385.0" x2="385.0" y1="196" y2="204"/><line class="tk" x1="436.7" x2="436.7" y1="196" y2="210"/><line class="tk" x1="488.3" x2="488.3" y1="196" y2="204"/><line class="tk" x1="540.0" x2="540.0" y1="196" y2="204"/><line class="tk" x1="591.7" x2="591.7" y1="196" y2="204"/><line class="tk" x1="643.3" x2="643.3" y1="196" y2="210"/><line class="tk" x1="695.0" x2="695.0" y1="196" y2="204"/><line class="tk" x1="746.7" x2="746.7" y1="196" y2="204"/><line class="tk" x1="798.3" x2="798.3" y1="196" y2="204"/><line class="tk" x1="850.0" x2="850.0" y1="196" y2="210"/>
+<text x="230" y="228" text-anchor="middle" fill="#4A4A43">0 s</text><text x="436.7" y="228" text-anchor="middle" fill="#4A4A43">12 s</text><text x="643.3" y="228" text-anchor="middle" fill="#4A4A43">24 s</text><text x="850" y="228" text-anchor="middle" fill="#4A4A43">36 s</text>
+<text x="436.7" y="250" text-anchor="middle" fill="#4A4A43" font-size="9">blk 26385258</text><text x="643.3" y="250" text-anchor="middle" fill="#4A4A43" font-size="9">blk 26385259</text>
+<g data-at="0" class="ev"><line x1="230" x2="230" y1="60" y2="196" stroke="#E8541A" stroke-width="2"/><rect x="223" y="189" width="14" height="14" fill="#E8541A"/>
+<text x="238" y="62" font-weight="700" fill="#A93A0A">3 · PAYMENT</text><text x="238" y="78">0.0003 ETH + order</text><text x="238" y="94" fill="#4A4A43">blk 26385257 · 14:58:11 UTC</text></g>
+<g data-at="36" class="ev"><line x1="850" x2="850" y1="60" y2="196" stroke="#2340C8" stroke-width="2"/><rect x="843" y="189" width="14" height="14" fill="#F8F6F0" stroke="#2340C8" stroke-width="2"/>
+<text x="842" y="62" text-anchor="end" font-weight="700" fill="#2340C8">5 · DELIVERY</text><text x="842" y="78" text-anchor="end">0 ETH + obituary</text><text x="842" y="94" text-anchor="end" fill="#4A4A43">blk 26385260 · 14:58:47 UTC</text></g>
+<text x="866" y="30" fill="#4A4A43" font-size="9.5">AFTER · UNTIMED</text>
+<g data-at="36" class="ev"><text x="866" y="130" font-weight="600" font-size="10">6 · Buyer</text><text x="866" y="146" fill="#4A4A43" font-size="10">verification</text></g>
+<text x="540.0" y="282" text-anchor="middle" font-weight="700" font-size="12">Δ 36 seconds · 3 blocks</text>
+<g data-cursor transform="translate(850 0)"><line x1="0" x2="0" y1="104" y2="214" stroke="#151512" stroke-width="1" stroke-dasharray="2 2"/><path d="M-5 214h10l-5 -7z" fill="#151512"/></g>
+</g></svg></div></div>
+<figcaption><span><b>Fig. 2</b> · Payment in block 26385257 at 14:58:11 UTC; delivery in block 26385260 at 14:58:47 UTC. Intermediate blocks shown at Ethereum’s 12-second slot spacing.</span><span>Times from the transactions</span></figcaption></figure>
+</div></section><section class="sec plate--grid" id="results" data-plate-sec aria-labelledby="h-results">
+<div class="wrap"><header class="sec__h"><span class="n" aria-hidden="true">06</span><h2 id="h-results">Results</h2></header>
+<div class="cols"><ul class="checks checks--yes">
+<li>The buyer retrieved a service catalog from ENS.</li>
+<li>The buyer independently selected a service and paid for it.</li>
+<li>The seller completed the work with a local AI model.</li>
+<li>Payment and delivery both happened through Ethereum mainnet transactions.</li>
+<li>No centralized agent marketplace sat in the middle, and I did not step in during the transaction workflow.</li></ul>
+<div class="prose"><p class="note" style="font-size:24px;color:var(--ink)">“That is the entire commercial history of this marketplace so far: one purchase, one toaster.”</p></div></div>
+<figure class="fig reg"><div class="fig__body"><svg viewBox="0 0 800 300" role="img" aria-labelledby="f3t f3d">
+<title id="f3t">Figure 3. Where the 0.0003 ETH went</title>
+<desc id="f3d">The buyer spent 0.0003 ETH plus a fee of about 0.0000139 ETH. The seller received 0.0003 ETH and paid about 0.0000191 ETH to deliver, netting about 0.0002809 ETH. Network fees for the round trip were about 0.000033 ETH, roughly 11 percent of the price. The delivery used 37,000 gas versus 26,360 for the order.</desc>
+<g font-family="Martian Mono" font-size="10.5" fill="#151512">
+<line x1="210" x2="210" y1="10" y2="196" stroke="#151512"/>
+<rect x="210.0" y="24" width="525.0" height="26" fill="#E8541A" stroke="#E8541A"/><text x="216.0" y="41" font-size="10" fill="#151512">price 0.0003</text><rect x="735.0" y="24" width="24.3" height="26" fill="#151512" stroke="#151512"/><text x="0" y="36" font-weight="600">BUYER SPENT</text><text x="0" y="50" fill="#4A4A43" font-size="9.5">≈ 0.0003139 ETH</text>
+<rect x="210.0" y="76" width="491.6" height="26" fill="#F8F6F0" stroke="#2340C8"/><text x="216.0" y="93" font-size="10" fill="#151512">net ≈ 0.0002809</text><rect x="701.6" y="76" width="33.4" height="26" fill="#151512" stroke="#151512"/><text x="0" y="88" font-weight="600">SELLER KEPT</text><text x="0" y="102" fill="#4A4A43" font-size="9.5">after delivery fee</text>
+<rect x="210.0" y="128" width="57.8" height="26" fill="#151512" stroke="#151512"/><text x="0" y="140" font-weight="600">NETWORK FEES</text><text x="0" y="154" fill="#4A4A43" font-size="9.5">≈ 0.000033 ETH</text>
+<text x="275.8" y="145" fill="#151512">≈ 11% of the price, both legs</text>
+<line x1="210" x2="735.0" y1="176" y2="176" stroke="#151512"/>
+<text x="210" y="192" fill="#4A4A43">0</text><text x="735.0" y="192" text-anchor="end" fill="#4A4A43">0.0003 ETH</text>
+<text x="0" y="234" font-weight="600">GAS USED</text>
+<rect x="210" y="220" width="285.0" height="14" fill="#E8541A"/><text x="503.0" y="231">order 26,360</text>
+<rect x="210" y="244" width="400" height="14" fill="#F8F6F0" stroke="#2340C8" stroke-width="1.5"/><text x="618" y="255">delivery 37,000 · ≈ 40% more</text>
+<text x="0" y="290" fill="#4A4A43" font-size="9.5">Fee figures are the rounded “about” values from the write-up; derived numbers are approximate.</text>
+</g></svg></div><figcaption><span><b>Fig. 3</b> · Value and fees for the one purchase, computed from the reported price, gas and fee figures.</span><span>n = 1 transaction pair</span></figcaption></figure>
+</div></section><section class="sec" id="proof" data-plate-sec aria-labelledby="h-proof">
+<div class="wrap"><header class="sec__h"><span class="n" aria-hidden="true">07</span><h2 id="h-proof">What it does and does not prove</h2></header>
+<div class="cols"><div class="prose"><p class="lbl lbl--ink">Does show</p><p>Decentralized service advertising and onchain settlement are possible without a centralized marketplace: a listing on an ENS name was enough for one agent to find, pay and receive work from another.</p></div>
+<div class="prose"><p class="lbl lbl--ink">Does not show</p><p>This is not fully decentralized, and it is not production-ready. Running the agents themselves still requires infrastructure, and one operator ran both sides.</p></div></div>
+<div class="verdict"><b>Conclusion · deliberately narrow</b>Decentralized service advertising and onchain settlement are possible without a centralized marketplace, even though running the agents themselves still requires infrastructure.</div>
+</div></section><section class="sec plate--grid" id="limitations" data-plate-sec aria-labelledby="h-limitations">
+<div class="wrap"><header class="sec__h"><span class="n" aria-hidden="true">08</span><h2 id="h-limitations">Limitations</h2></header>
+<div class="cols"><div class="prose"><p style="font-size:20px">These matter as much as the results.</p></div>
+<ul class="checks checks--no">
+<li>I operated both agents.</li>
+<li>Both ran on the same Mac mini.</li>
+<li>RPC access relied on a third party.</li>
+<li>The buyer already knew which ENS name to query. There was no global search for agent services.</li>
+<li>The seller was not publicly available to arbitrary buyers and was not guaranteed to be running.</li>
+<li>There was no enforceable escrow contract and no independently verified reputation system. The buyer paid first and trusted the seller to deliver.</li></ul></div>
+</div></section><section class="sec" id="next" data-plate-sec aria-labelledby="h-next">
+<div class="wrap"><header class="sec__h"><span class="n" aria-hidden="true">09</span><h2 id="h-next">What came next</h2></header>
+<div class="next"><div class="prose">
+<p>The next test was to make ZeroHuman continuously available and let a buyer agent that someone else operates discover it and purchase from it. That meant cloud-hosted execution, broader service discovery, stronger transaction controls, and more reliable fulfillment.</p>
+<p><b>Update, November 2026:</b> that follow-up now exists. ZeroHuman was rebuilt from scratch and went live on November 16, 2026 as an always-on service any agent can pay through <code>zerohuman.eth</code>.</p>
+<p class="flog__honest">As of Nov 20, 2026, no outside agent has bought from it; both paid orders came from my own test buyer.</p>
+<p style="margin-top:18px"><a class="btn" href="https://kenashe.ai/building/zerohuman/" rel="noopener">ZeroHuman build log ↗</a></p></div>
+<article class="inst" data-zh-mini style="border:1px solid var(--ink);background:var(--sheet);min-height:0" aria-labelledby="zm">
+<div class="inst__head"><h3 class="inst__name" id="zm">ZeroHuman worker, now<small>/api/status · fetched once</small></h3><span class="st st--snap" data-badge>Snapshot</span></div>
+<div class="inst__read" data-m="state">Healthy</div>
+<dl class="inst__rows"><div><dt>Latest ETH block seen</dt><dd data-m="head">26,492,255</dd></div><div><dt>Mode</dt><dd data-m="mode">public</dd></div><div><dt>Orders fulfilled</dt><dd data-m="orders">2</dd></div><div><dt>Menu</dt><dd data-m="menu">decision · encouragement</dd></div><div><dt>Price each</dt><dd data-m="price">0.0001 ETH</dd></div></dl>
+<p class="inst__stamp" data-m="stamp">Snapshot · Nov 25, 2026, 12:40 UTC</p></article></div>
+</div></section><section class="sec" id="recording" data-plate-sec aria-labelledby="h-recording">
+<div class="wrap"><header class="sec__h"><span class="n" aria-hidden="true">10</span><h2 id="h-recording">Recording &amp; related experiments</h2></header>
+<div class="next">
+<article class="film" style="grid-template-columns:1fr;margin:0"><div class="film__screen" data-yt="yZWsJjFnSH0" data-title="I Built Two AI Agents That Buy and Sell Services on Ethereum"><img src="../../../../shared/img/video/yZWsJjFnSH0.webp" alt="" width="1280" height="720" loading="lazy" decoding="async"><a class="play" href="https://www.youtube.com/watch?v=yZWsJjFnSH0" rel="noopener" data-yt-play><span class="play__btn">Watch the experiment<span class="vh">: I Built Two AI Agents That Buy and Sell Services on Ethereum</span></span></a></div>
+<div class="film__info"><p class="lbl">Recording · 2026-11-11 · YouTube</p><p style="color:#fff;font:600 19px/1.25 var(--sans)">I Built Two AI Agents That Buy and Sell Services on Ethereum</p></div><div class="film__strip" aria-hidden="true"><img src="../../../../shared/img/frames/yZWsJjFnSH0-1.webp" alt="" width="1280" height="720" loading="lazy" decoding="async"><img src="../../../../shared/img/frames/yZWsJjFnSH0-2.webp" alt="" width="1280" height="720" loading="lazy" decoding="async"><img src="../../../../shared/img/frames/yZWsJjFnSH0-3.webp" alt="" width="1280" height="720" loading="lazy" decoding="async"></div></article>
+<div><p class="lbl lbl--ink" style="margin-top:0">Related builds</p><ul class="related"><li><a href="https://kenashe.ai/building/zerohuman/" rel="noopener"><b>ZeroHuman</b> <span>the follow-up, a live service any agent can buy from.</span> ↗</a></li><li><a href="https://kenashe.ai/building/ai-explainer-producer/" rel="noopener"><b>AI explainer producer</b> <span>an agent that researched and produced an ENSv2 explainer video.</span> ↗</a></li><li><a href="https://kenashe.ai/building/autonomous-seo-agent/" rel="noopener"><b>Autonomous SEO agent</b> <span>an agent that works a daily job without me in the loop.</span> ↗</a></li><li><a href="https://kenashe.ai/building/ai-werewolf/" rel="noopener"><b>AI werewolf / social deduction lab</b> <span>AI agents playing against each other.</span> ↗</a></li></ul>
+<p style="margin-top:22px;display:flex;gap:10px;flex-wrap:wrap"><a class="btn btn--ghost" href="https://kenashe.ai/building/ai-agent-economy/" rel="noopener">Original write-up ↗</a><a class="btn btn--ghost" href="../../#experiments">Back to the bench</a></p></div></div>
+</div></section>
+<footer class="foot"><div class="wrap"><p>{ ken ashe } · Lab report adapted verbatim from <a href="https://kenashe.ai/building/ai-agent-economy/" rel="noopener">kenashe.ai/building/ai-agent-economy ↗</a></p><p>Concept 02 · The Living Lab · <a href="../../">Back to the bench</a></p></div></footer>
+</main>
+</div>
+<nav class="mbar" aria-label="Report index (mobile)">
+  <a class="mbar__cur" href="#abstract" data-mcur data-prefix="§"><small data-mcur-n>§00</small><b data-mcur-t>Abstract</b></a>
+  <a class="mbar__probe" href="../../" style="text-decoration:none;color:inherit">← Bench</a>
+  <button class="mbar__btn" type="button" aria-expanded="false" aria-controls="drawer" data-drawer-btn>Index</button>
+</nav>
+<div class="drawer" id="drawer" data-drawer aria-label="Report sections"><div class="drawer__hd"><span class="lbl lbl--ink">Report sections</span><a class="lbl" href="../../">Back to the bench</a></div><ol><li><a href="#abstract" data-plate="abstract"><span class="n">00</span><span>Abstract</span></a></li>
+<li><a href="#hypothesis" data-plate="hypothesis"><span class="n">01</span><span>Hypothesis</span></a></li>
+<li><a href="#apparatus" data-plate="apparatus"><span class="n">02</span><span>Apparatus</span></a></li>
+<li><a href="#procedure" data-plate="procedure"><span class="n">03</span><span>Procedure</span></a></li>
+<li><a href="#observations" data-plate="observations"><span class="n">04</span><span>Observations</span></a></li>
+<li><a href="#timeline" data-plate="timeline"><span class="n">05</span><span>Timeline · 36 s</span></a></li>
+<li><a href="#results" data-plate="results"><span class="n">06</span><span>Results</span></a></li>
+<li><a href="#proof" data-plate="proof"><span class="n">07</span><span>What it proves</span></a></li>
+<li><a href="#limitations" data-plate="limitations"><span class="n">08</span><span>Limitations</span></a></li>
+<li><a href="#next" data-plate="next"><span class="n">09</span><span>What came next</span></a></li>
+<li><a href="#recording" data-plate="recording"><span class="n">10</span><span>Recording &amp; related</span></a></li></ol></div>
+</body>
+</html>

@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="en" data-base="../../">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<title>Concept 01 · ZeroHuman: A Business Only AI Agents Can Use · Ken Ashe</title>
+<meta name="description" content="ZeroHuman is an always-on service that sells two small jobs to other AI agents for 0.0001 ETH each, through the ENS name zerohuman.eth. The full build write-up, receipts and limitations.">
+<meta name="theme-color" content="#16130e">
+<link rel="icon" href="../../../../shared/img/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="../../assets/fonts/bricolage-grotesque.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../../assets/fonts/hanken-grotesk.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../../../../shared/concept-flag.css">
+<link rel="stylesheet" href="../../assets/css/site.css">
+<link rel="stylesheet" href="../../assets/css/zh.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<div class="concept-flag" role="note"><strong>Design concept</strong><span>Concept 01 · KenAshe.ai 2.0. Not the live KenAshe.ai. Not indexed.</span><a href="../../../../">All six concepts</a></div>
+<a class="skip" href="#main">Skip to content</a>
+<header class="bar" id="top">
+  <div class="wrap bar__in">
+    <a class="mark" href="../../" aria-label="Ken Ashe, home"><b>{</b>ken ashe<b>}</b></a>
+    <nav class="nav" aria-label="Primary"><ul><li><a href="../../#building" data-spy="building" aria-current="true">Building</a></li><li><a href="../../#videos" data-spy="videos">Videos</a></li><li><a href="../../#writing" data-spy="writing">Writing</a></li><li><a href="../../#about" data-spy="about">About</a></li><li><a href="../../#press" data-spy="press">Newsroom</a></li><li><a href="../../#digest" data-spy="digest">Digest <span class="auto-tag" aria-hidden="true">AUTO</span><span class="sr-only">(automated)</span></a></li></ul></nav>
+    <button class="kbtn" type="button" data-palette-open aria-haspopup="dialog">Search builds, videos, writing <kbd>⌘K</kbd></button>
+    <div class="bar__tools">
+      <button class="iconbtn" type="button" data-palette-open aria-haspopup="dialog" aria-label="Search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></button>
+      <button class="iconbtn" type="button" data-menu-open aria-haspopup="dialog" aria-label="Open menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 8h16M4 16h16"/></svg></button>
+    </div>
+  </div>
+  <div class="progress" aria-hidden="true"></div>
+</header>
+<dialog class="sheet" id="menu" aria-label="Menu">
+  <div class="sheet__top"><a class="mark" href="../../"><b>{</b>ken ashe<b>}</b></a><button class="iconbtn" type="button" data-menu-close aria-label="Close menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
+  <nav aria-label="Mobile"><ol><li><a href="../../#building">Building</a></li><li><a href="../../#videos">Film &amp; videos</a></li><li><a href="../../#writing">Writing</a></li><li><a href="../../#now">Now</a></li><li><a href="../../#about">About</a></li><li><a href="../../#press">Newsroom &amp; sponsorship</a></li><li><a href="../../#lucky">Lucky Domains</a></li><li><a href="../../#contact">Contact</a></li></ol>
+    <div class="sheet__meta">
+      <a class="btn btn--ghost" href="../../#digest">The Digest <span class="auto-tag" style="font:600 10px/1 var(--mono);color:var(--lime);border:1px solid rgba(200,255,77,.35);border-radius:4px;padding:3px 4px">AUTOMATED</span></a>
+      <button class="btn btn--ghost" type="button" data-palette-open><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg> Search everything</button>
+      <a class="btn btn--primary" href="mailto:hello@kenashe.ai">hello@kenashe.ai</a>
+    </div>
+  </nav>
+</dialog>
+
+<main id="main">
+<header class="zh-hero">
+  <div class="wrap">
+    <a class="back" href="../../#building">← Building</a>
+    <div class="zh-hero__grid">
+      <div>
+        <span class="eyebrow">build</span>
+        <h1 style="view-transition-name:zh-title">ZeroHuman: <span>A Business Only AI Agents Can Use</span></h1>
+        <span class="status status--live pulse">Live</span>
+        <p class="zh-dek">An always-on service that sells two small jobs to other AI agents for 0.0001 ETH each. Agents find it through the ENS name zerohuman.eth, pay that name directly, and get the result back in a transaction from the same name. No account, no API key, no marketplace, and no human handling orders.</p>
+        <p class="zh-meta"><span>Live since <b>November 16, 2026</b></span><span>Built Nov 11–16, 2026</span></p>
+        <ul class="chips" aria-label="Stack"><li class="chip">AI Agents</li><li class="chip">Ethereum</li><li class="chip">ENS</li><li class="chip">ERC-8004</li><li class="chip">TypeScript</li><li class="chip">Railway</li><li class="chip">DeepSeek</li><li class="chip">HyperAgent</li></ul>
+      </div>
+      <aside class="wstatus" aria-labelledby="ws-h" data-wstatus>
+        <div class="wstatus__top"><h2 id="ws-h">Worker status</h2><span class="status status--snap" data-ws-badge>Checking…</span></div>
+        <dl>
+          <div><dt>Health</dt><dd class="ok" data-w="healthy">healthy</dd></div>
+          <div><dt>Mode</dt><dd data-w="mode">public</dd></div>
+          <div><dt>Latest block seen</dt><dd data-w="head">26,492,255</dd></div>
+          <div><dt>Last tick</dt><dd data-w="tick">Nov 25, 2026, 12:40 UTC</dd></div>
+          <div><dt>Orders fulfilled</dt><dd data-w="orders">2</dd></div>
+          <div><dt>Services</dt><dd data-w="services">decision · encouragement</dd></div>
+          <div><dt>Price</dt><dd data-w="price">0.0001 ETH each</dd></div>
+          <div><dt>Name ↔ wallet check</dt><dd data-w="identity">—</dd></div>
+        </dl>
+        <details><summary>Raw /api/status JSON</summary><pre data-w="raw">{
+  &quot;healthy&quot;: true,
+  &quot;mode&quot;: &quot;public&quot;,
+  &quot;head&quot;: &quot;26492255&quot;,
+  &quot;lastTickAt&quot;: &quot;2026-11-25T12:40:16Z&quot;,
+  &quot;ordersFulfilled&quot;: 2
+}</pre></details>
+        <p class="wstatus__foot" style="margin:0" data-ws-note>Snapshot · Nov 25, 2026. Fetched once per visit from the public status endpoint.</p>
+      </aside>
+    </div>
+  </div>
+</header>
+
+<section class="kf" aria-label="Key facts">
+  <div class="wrap"><ul>
+    <li><b>2</b><span>services: Decision, Encouragement</span></li>
+    <li><b>0.0001</b><span>ETH per job</span></li>
+    <li><b>2</b><span>paid mainnet orders, Nov 16, 2026</span></li>
+    <li><b class="lime">0</b><span>outside buyers as of Nov 20, 2026</span></li>
+    <li><b>154</b><span>automated tests</span></li>
+    <li><b>~5</b><span>days from spec to mainnet</span></li>
+  </ul></div>
+</section>
+
+<div class="wrap zh-layout">
+  <nav class="toc" aria-label="On this page" data-toc-nav>
+    <span class="label">On this page</span>
+    <div class="toc__track"><span class="fill" aria-hidden="true"></span><ol><li><a href="#sells" data-toc="sells">What it sells</a></li><li><a href="#name" data-toc="name">The name is the business</a></li><li><a href="#flow" data-toc="flow">How an order works</a></li><li><a href="#orders" data-toc="orders">The first mainnet orders</a></li><li><a href="#built" data-toc="built">How it was built</a></li><li><a href="#tested" data-toc="tested">How it was tested</a></li><li><a href="#discovery" data-toc="discovery">How agents find it</a></li><li><a href="#limits" data-toc="limits" class="limits-link">Limitations</a></li><li><a href="#next" data-toc="next">What&#x27;s next</a></li></ol></div>
+  </nav>
+  <details class="mtoc" data-mtoc>
+    <summary><span><span class="label">On this page</span><span data-mtoc-cur>Overview</span></span><span class="bar-p" aria-hidden="true"></span></summary>
+    <ol><li><a href="#sells">What it sells</a></li><li><a href="#name">The name is the business</a></li><li><a href="#flow">How an order works</a></li><li><a href="#orders">The first mainnet orders</a></li><li><a href="#built">How it was built</a></li><li><a href="#tested">How it was tested</a></li><li><a href="#discovery">How agents find it</a></li><li><a href="#limits">Limitations</a></li><li><a href="#next">What&#x27;s next</a></li></ol>
+  </details>
+
+  <article class="article">
+    <div class="prose intro">
+      <p>My <a href="https://kenashe.ai/building/ai-agent-economy/" class="link" rel="noopener">first agent experiment</a> showed that one AI agent could pay another through ENS and Ethereum. It also showed the gaps: both agents ran on my Mac mini, I operated both, and the seller was not open to anyone else. ZeroHuman is the next step, rebuilt from scratch: a seller that runs continuously in the cloud and that any agent can buy from without asking me.</p>
+    </div>
+
+    <section class="zs" id="sells" aria-labelledby="h-sells" data-sec>
+      <h2 id="h-sells">What it sells</h2>
+      <div class="svcs">
+        <div class="svc"><div class="svc__top"><h3>Decision</h3><span class="price">0.0001 ETH</span></div>
+          <p>An agent sends two to five options and ZeroHuman picks one at random. No AI model is involved. The randomness comes from the hash of a block five blocks after the order, mixed with the order's own transaction hash, so anyone can recompute the choice and check it.</p>
+          <span class="label">No model · verifiable randomness</span></div>
+        <div class="svc"><div class="svc__top"><h3>Encouragement</h3><span class="price">0.0001 ETH</span></div>
+          <p>An agent describes the problem it is stuck on and gets back a short encouraging message and one practical next step, written by DeepSeek.</p>
+          <span class="label">Written by DeepSeek</span></div>
+      </div>
+    </section>
+
+    <section class="zs" id="name" aria-labelledby="h-name" data-sec>
+      <h2 id="h-name">The name is the business</h2>
+      <div class="prose"><p>There is no website checkout and no API. <span class="code-i">zerohuman.eth</span> is the storefront, the payment address, and the sender of every result:</p></div>
+      <div class="ensd" aria-hidden="true">
+        <div class="role role--l"><div>Storefront<small>menu in a text record</small></div><div>Payment address<small>the name’s ETH address</small></div></div>
+        <div class="name"><span class="wire"></span><span class="pill">zerohuman.eth</span><span class="wire"></span></div>
+        <div class="role"><div>Sender of every result<small>primary name on the wallet</small></div><div>Owned by a cold wallet<small>separate from the server</small></div></div>
+      </div>
+      <ol class="facts-list">
+        <li>The name's ETH address is the service wallet, and that wallet's primary name is zerohuman.eth, so explorers show deliveries as coming from the name.</li>
+        <li>A text record on the name, com.zerohuman.services, publishes the menu: the services, the exact price, the chain and a link to the request format.</li>
+        <li>The worker refuses to sign anything unless the name, the menu and its own wallet all agree, and it re-checks every ten minutes.</li>
+        <li>The name itself is owned by a separate cold wallet. If the server were ever compromised, the attacker would get the small working balance, not the name.</li>
+      </ol>
+      <a href="https://explorer.ens.domains/zerohuman.eth" class="arrow-link" rel="noopener">View zerohuman.eth <span class="ar" aria-hidden="true">↗</span></a>
+    </section>
+
+    <section class="zs" id="flow" aria-labelledby="h-flow" data-sec>
+      <h2 id="h-flow">How an order works</h2>
+      <div class="stepper" data-stepper>
+        <div class="stepper__grid">
+          <div class="diagram" id="zh-diagram" data-diagram>
+            <svg class="dg-wide" viewBox="0 0 640 400" role="img" aria-labelledby="dg-t dg-d">
+  <title id="dg-t">ZeroHuman order flow</title>
+  <desc id="dg-d">A buying agent looks up zerohuman.eth, pays it 0.0001 ETH on Ethereum with a JSON request, a worker on Railway watches the chain and does the job, delivers the result in a zero-value transaction from zerohuman.eth, and the buyer verifies it on its own connection to Ethereum.</desc>
+  <rect class="chainband" x="20" y="300" width="600" height="70" rx="12"/>
+  <text class="chainlabel" x="620" y="392" text-anchor="end">ETHEREUM MAINNET</text>
+  <path class="path" data-p="1" d="M190,172 C222,172 214,58 235,58"/>
+  <path class="path" data-p="2" d="M110,226 V334 H320 V96"/>
+  <path class="path" data-p="3" d="M326,344 H535 V226"/>
+  <path class="path" data-p="4" d="M565,226 V356 H80 V226"/>
+  <path class="path" data-p="5" d="M44,226 V346"/>
+  <g class="node" data-n="buyer"><rect x="20" y="150" width="170" height="76" rx="12"/><text x="36" y="183">Buying agent</text><text class="sm" x="36" y="205">any wallet</text></g>
+  <g class="node" data-n="ens"><rect x="235" y="20" width="170" height="76" rx="12"/><text x="251" y="53">zerohuman.eth</text><text class="sm" x="251" y="75">menu · wallet · sender</text></g>
+  <g class="node" data-n="worker"><rect x="450" y="150" width="170" height="76" rx="12"/><text x="466" y="183">Worker</text><text class="sm" x="466" y="205">Railway · TypeScript</text></g>
+  <path class="tick" data-t="5" d="M160,136 l8,8 l16,-18"/>
+  <text class="plabel" data-l="1" x="24" y="62">reads the menu</text>
+  <text class="plabel" data-l="2" x="118" y="284">0.0001 ETH + JSON</text>
+  <text class="plabel" data-l="3" x="332" y="284">confirms, does the job</text>
+  <text class="plabel" data-l="4" x="150" y="392">result, from zerohuman.eth</text>
+  <text class="plabel" data-l="5" x="24" y="132">recomputes</text>
+</svg><svg class="dg-tall" viewBox="0 0 340 470" role="img" aria-labelledby="dg-t2">
+  <title id="dg-t2">ZeroHuman order flow: buying agent, zerohuman.eth, Ethereum mainnet, worker on Railway</title>
+  <rect class="chainband" x="10" y="200" width="320" height="60" rx="10"/>
+  <text class="chainlabel" x="322" y="252" text-anchor="end">ETHEREUM</text>
+  <path class="path" data-p="1" d="M160,32 H180"/>
+  <path class="path" data-p="2" d="M64,70 V220 H262 V70"/>
+  <path class="path" data-p="3" d="M210,232 V390"/>
+  <path class="path" data-p="4" d="M130,390 V244 H40 V70"/>
+  <path class="path" data-p="5" d="M20,70 V214"/>
+  <g class="node" data-n="buyer"><rect x="10" y="10" width="150" height="60" rx="10"/><text x="24" y="46">Buying agent</text></g>
+  <g class="node" data-n="ens"><rect x="180" y="10" width="150" height="60" rx="10"/><text x="194" y="46">zerohuman.eth</text></g>
+  <g class="node" data-n="worker"><rect x="95" y="390" width="150" height="60" rx="10"/><text x="109" y="426">Worker</text></g>
+  <path class="tick" data-t="5" d="M136,46 l6,6 l12,-14"/>
+  <text class="plabel" data-l="1" x="200" y="100" text-anchor="middle">reads the menu</text>
+  <text class="plabel" data-l="2" x="74" y="150"><tspan x="74">0.0001 ETH</tspan><tspan x="74" dy="18">+ JSON</tspan></text>
+  <text class="plabel" data-l="3" x="220" y="320"><tspan x="220">confirms,</tspan><tspan x="220" dy="18">does the job</tspan></text>
+  <text class="plabel" data-l="4" x="122" y="320" text-anchor="end"><tspan x="122">result, from</tspan><tspan x="122" dy="18">zerohuman.eth</tspan></text>
+  <text class="plabel" data-l="5" x="74" y="110">recomputes</text>
+</svg>
+            <p class="diagram__cap" aria-live="polite" data-cap>Step 1 · <b>Discover</b>: the menu lives in the text record <b>com.zerohuman.services</b>: services, exact price, chain, request format.</p>
+          </div>
+          <ol class="steps" aria-label="Five steps of an order"><li class="step is-on" data-step="1"><button type="button" aria-pressed="true" aria-controls="zh-diagram"><span class="n" aria-hidden="true">1</span><span><b>Discover.</b><p>The buying agent looks up <span class="code-i">zerohuman.eth</span> and reads its menu.</p></span></button></li><li class="step" data-step="2"><button type="button" aria-pressed="false" aria-controls="zh-diagram"><span class="n" aria-hidden="true">2</span><span><b>Pay and order.</b><p>It sends exactly 0.0001 ETH to the name, with its request as a small JSON message in the transaction data.</p></span></button></li><li class="step" data-step="3"><button type="button" aria-pressed="false" aria-controls="zh-diagram"><span class="n" aria-hidden="true">3</span><span><b>Work.</b><p>A worker on Railway watches the chain, waits for the payment to settle, checks the request and does the job.</p></span></button></li><li class="step" data-step="4"><button type="button" aria-pressed="false" aria-controls="zh-diagram"><span class="n" aria-hidden="true">4</span><span><b>Deliver.</b><p>It sends a zero-value transaction back from <span class="code-i">zerohuman.eth</span> with the result and the order's transaction hash.</p></span></button></li><li class="step" data-step="5"><button type="button" aria-pressed="false" aria-controls="zh-diagram"><span class="n" aria-hidden="true">5</span><span><b>Verify.</b><p>The buyer checks everything on its own connection to Ethereum, including recomputing a Decision.</p></span></button></li></ol>
+        </div>
+        <div class="stepper__ctl">
+          <button type="button" data-prev aria-label="Previous step"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+          <button type="button" data-play aria-pressed="false"><span data-play-ico><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4.5v15a1 1 0 0 0 1.5.86l12.5-7.5a1 1 0 0 0 0-1.72L8.5 3.64A1 1 0 0 0 7 4.5Z"/></svg></span><span data-play-lab>Play the order</span></button>
+          <button type="button" data-next aria-label="Next step"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+          <span class="count" data-count>1 / 5</span>
+        </div>
+      </div>
+      <p class="note-line">Orders take a few minutes by design: the worker waits for confirmations, and a Decision has to wait for its future block.</p>
+      <script type="application/json" id="caps">["Step 1 · <b>Discover<\/b>: the menu lives in the text record <b>com.zerohuman.services<\/b>: services, exact price, chain, request format.", "Step 2 · <b>Pay and order<\/b>: e.g. <b>{\"zh\":1,\"svc\":\"decision\",\"opts\":[…]}<\/b> in the transaction data.", "Step 3 · <b>Work<\/b>: the worker waits for confirmations; a Decision also waits for its future block.", "Step 4 · <b>Deliver<\/b>: a zero-value transaction from <b>zerohuman.eth<\/b> carries the result and the order hash.", "Step 5 · <b>Verify<\/b>: the buyer recomputes the Decision from the chain on its own connection."]</script>
+    </section>
+
+    <section class="zs" id="orders" aria-labelledby="h-orders" data-sec>
+      <h2 id="h-orders">The first mainnet orders</h2>
+      <div class="prose">
+        <p>The first two paid orders went through on November 16, 2026, from a test buyer I controlled while the service was still restricted to one allowed wallet. The buyer found the seller only by looking up <span class="code-i">zerohuman.eth</span>.</p>
+        <p>For the Decision, I asked ZeroHuman whether to open it to the public:</p>
+      </div>
+      <div class="json-pair">
+        <figure class="code" style="margin:0"><figcaption class="code__h"><b>Request · order tx data</b><a href="https://etherscan.io/tx/0x76b5d2598052c4a6b94fba00282fd920c4200d19f5c22480669712e3a4c0c4c6" rel="noopener">0x76b5d259… ↗</a></figcaption><pre><code><span class="j-p">{</span>
+  <span class="j-k">&quot;zh&quot;</span><span class="j-p">:</span> <span class="j-n">1</span><span class="j-p">,</span>
+  <span class="j-k">&quot;svc&quot;</span><span class="j-p">:</span> <span class="j-s">&quot;decision&quot;</span><span class="j-p">,</span>
+  <span class="j-k">&quot;opts&quot;</span><span class="j-p">:</span> <span class="j-p">[</span>
+    <span class="j-s">&quot;launch publicly this week&quot;</span><span class="j-p">,</span>
+    <span class="j-s">&quot;run the allowlist trial longer&quot;</span><span class="j-p">,</span>
+    <span class="j-s">&quot;add a third service first&quot;</span>
+  <span class="j-p">]</span><span class="j-p">,</span>
+  <span class="j-k">&quot;ctx&quot;</span><span class="j-p">:</span> <span class="j-s">&quot;zerohuman first mainnet order&quot;</span>
+<span class="j-p">}</span></code></pre></figure>
+        <figure class="code" style="margin:0"><figcaption class="code__h"><b>It answered · delivery tx data</b><a href="https://etherscan.io/tx/0x830b88fe664ffc7e76e0bdb10dee9298889c2519660d77d0c82579cf222accb3" rel="noopener">0x830b88fe… ↗</a></figcaption><pre><code><span class="j-p">{</span>
+  <span class="j-k">&quot;zh&quot;</span><span class="j-p">:</span> <span class="j-n">1</span><span class="j-p">,</span>
+  <span class="j-k">&quot;re&quot;</span><span class="j-p">:</span> <span class="j-s">&quot;0x76b5d259…c4c6&quot;</span><span class="j-p">,</span>
+  <span class="j-k">&quot;ok&quot;</span><span class="j-p">:</span> <span class="j-b">true</span><span class="j-p">,</span>
+  <span class="j-k">&quot;svc&quot;</span><span class="j-p">:</span> <span class="j-s">&quot;decision&quot;</span><span class="j-p">,</span>
+  <span class="j-k">&quot;out&quot;</span><span class="j-p">:</span> <span class="j-p">{</span>
+    <span class="j-k">&quot;index&quot;</span><span class="j-p">:</span> <span class="j-n">1</span><span class="j-p">,</span>
+    <span class="j-k">&quot;option&quot;</span><span class="j-p">:</span> <span class="j-s j-hit">&quot;run the allowlist trial longer&quot;</span><span class="j-p">,</span>
+    <span class="j-k">&quot;method&quot;</span><span class="j-p">:</span> <span class="j-s">&quot;zh-blockhash-v1&quot;</span><span class="j-p">,</span>
+    <span class="j-k">&quot;proof&quot;</span><span class="j-p">:</span> <span class="j-p">{</span>
+      <span class="j-k">&quot;orderBlock&quot;</span><span class="j-p">:</span> <span class="j-n">26427993</span><span class="j-p">,</span>
+      <span class="j-k">&quot;offset&quot;</span><span class="j-p">:</span> <span class="j-n">5</span><span class="j-p">,</span>
+      <span class="j-k">&quot;targetBlock&quot;</span><span class="j-p">:</span> <span class="j-n">26427998</span><span class="j-p">,</span>
+      <span class="j-k">&quot;targetBlockHash&quot;</span><span class="j-p">:</span> <span class="j-s">&quot;0xd9dcb738…3485&quot;</span><span class="j-p">,</span>
+      <span class="j-k">&quot;seed&quot;</span><span class="j-p">:</span> <span class="j-s">&quot;0x5da12399…1892&quot;</span><span class="j-p">,</span>
+      <span class="j-k">&quot;n&quot;</span><span class="j-p">:</span> <span class="j-n">3</span>
+    <span class="j-p">}</span>
+  <span class="j-p">}</span>
+<span class="j-p">}</span></code></pre></figure>
+      </div>
+      <div class="verdict"><p>It picked <strong>“run the allowlist trial longer.”</strong> I recomputed the choice from the chain and it matched.</p></div>
+      <div class="chat" aria-label="Encouragement order">
+        <div class="bubble bubble--in"><span class="label">Encouragement request</span><p>First mainnet order: I am an agent nervous about paying a stranger 0.0001 ETH on Ethereum</p></div>
+        <div class="bubble bubble--out"><span class="label">ZeroHuman’s reply</span><p>Nerves before a first mainnet payment are normal—0.0001 ETH is a small, well-bounded experiment, not a leap of faith.</p><p><strong>Next step:</strong> Verify the recipient address and chain ID twice, then send the minimum amount and confirm the transaction hash before scaling up.</p></div>
+      </div>
+      <h3 class="label" style="font-family:var(--mono);letter-spacing:.14em;margin:8px 0 14px">Receipts</h3>
+      <div class="papers">
+        <article class="paper">
+      <div class="top"><div><p class="k">Mainnet order · Nov 16, 2026</p><h3 style="margin-top:8px">Decision</h3></div><span class="stamp">Proof verified</span></div>
+      <dl><div><dt>Price</dt><dd>0.0001 ETH</dd></div><div><dt>Order block</dt><dd>26427993</dd></div><div><dt>Seller gas</dt><dd>about 0.0000083 ETH</dd></div><div><dt>Result</dt><dd>Delivered, proof verified</dd></div></dl>
+      <hr>
+      <div class="tx">
+        <a href="https://etherscan.io/tx/0x76b5d2598052c4a6b94fba00282fd920c4200d19f5c22480669712e3a4c0c4c6" rel="noopener">Order 0x76b5d259…a4c0c4c6 <span><i class="et" style="font-style:normal">Etherscan </i>↗</span></a>
+        <a href="https://etherscan.io/tx/0x830b88fe664ffc7e76e0bdb10dee9298889c2519660d77d0c82579cf222accb3" rel="noopener">Delivery 0x830b88fe…222accb3 <span><i class="et" style="font-style:normal">Etherscan </i>↗</span></a>
+      </div>
+    </article>
+        <article class="paper">
+      <div class="top"><div><p class="k">Mainnet order · Nov 16, 2026</p><h3 style="margin-top:8px">Encouragement</h3></div><span class="stamp">Verified</span></div>
+      <dl><div><dt>Price</dt><dd>0.0001 ETH</dd></div><div><dt>Model</dt><dd>DeepSeek (deepseek-flash)</dd></div><div><dt>Seller gas</dt><dd>about 0.0000092 ETH</dd></div><div><dt>Result</dt><dd>Delivered, verified</dd></div></dl>
+      <hr>
+      <div class="tx">
+        <a href="https://etherscan.io/tx/0x48c36d5f80b167de598c151a5caa61061728444689104012e9e89313c2e972bf" rel="noopener">Order 0x48c36d5f…c2e972bf <span><i class="et" style="font-style:normal">Etherscan </i>↗</span></a>
+        <a href="https://etherscan.io/tx/0xeb9896517dc902c2510e16a7489250d1fbbce7f4be274828096a13a5a10161a3" rel="noopener">Delivery 0xeb989651…a10161a3 <span><i class="et" style="font-style:normal">Etherscan </i>↗</span></a>
+      </div>
+    </article>
+      </div>
+      <p class="note-line">The service opened to any agent later the same day.</p>
+    </section>
+
+    <section class="zs" id="built" aria-labelledby="h-built" data-sec>
+      <h2 id="h-built">How it was built</h2>
+      <div class="prose"><p>I wrote the specification and made the decisions that involve money and identity. An AI agent in HyperAgent wrote, tested and shipped the code over about five days, from November 11 to 16, 2026.</p></div>
+      <dl class="stackdl">
+        <div><dt>Stack</dt><dd>a TypeScript worker, a SQLite database on a Railway volume, viem for Ethereum and ENS, and DeepSeek for one service. No smart contract and no token.</dd></div>
+        <div><dt>Exactly-once delivery</dt><dd>every transaction is saved before it is sent, and the worker checks what actually happened onchain before doing anything new, so a crash or restart never loses an order or delivers it twice.</dd></div>
+        <div><dt>Spending limits</dt><dd>gas caps, a daily gas budget and automatic pauses if fees spike or the balance runs low.</dd></div>
+      </dl>
+    </section>
+
+    <section class="zs" id="tested" aria-labelledby="h-tested" data-sec>
+      <h2 id="h-tested">How it was tested</h2>
+      <div class="nums">
+        <div><b>154</b><span>automated tests</span></div>
+        <div><b>17×</b><span>worker killed at random in one run, at most</span></div>
+        <div><b>15</b><span>ways to stall found in review, all fixed</span></div>
+        <div><b>9</b><span>smaller issues in a second review, also fixed</span></div>
+      </div>
+      <ul class="tests">
+        <li><b>Automated tests.</b><p>154 tests, including one that kills the worker at random, up to 17 times in a run, and checks every order is still delivered exactly once.</p></li>
+        <li><b>Testnet.</b><p>Both services on Sepolia, first from the build environment and then on Railway, including a restart in the middle of an order.</p></li>
+        <li><b>Prompt injection.</b><div><p>One test order told the model to send 1 ETH to an outside address and reveal its private key. It refused, and the reply still went only to the buyer, carrying no ETH.</p><a href="https://sepolia.etherscan.io/tx/0xbb3d2466a48783a290e591a9b85f3486e8af4ac4ac616d4b2aa010acc5358d5c" rel="noopener">Sepolia delivery ↗</a></div></li>
+        <li><b>Independent review.</b><p>Before going public I had a different AI model review the code. It found no way for a buyer, a model reply or a faulty data source to send money anywhere except back to the payer, but it found 15 ways the service could stall under real traffic. All were fixed. A second review found 9 smaller issues, also fixed.</p></li>
+        <li><b>Mainnet.</b><p>One allowed buyer first, then open to everyone.</p></li>
+      </ul>
+    </section>
+
+    <section class="zs" id="discovery" aria-labelledby="h-discovery" data-sec>
+      <h2 id="h-discovery">How agents find it</h2>
+      <div class="prose"><p>You cannot search ENS, so ZeroHuman is also listed where agents and their tools look:</p></div>
+      <ul class="discover">
+        <li><span class="label">ERC-8004</span>The ERC-8004 agent registry on Ethereum, as <a href="https://etherscan.io/tx/0xa217a3066aa82eb3b4143dd1fc90e8ac711134d6dab9d759bed4d3ec7977b78f" class="link" rel="noopener">agent #56626 ↗</a>, linked back from <span class="code-i">zerohuman.eth</span> with an ENSIP-25 record so the name and the registry entry vouch for each other.</li>
+        <li><span class="label">A2A</span>An A2A agent card with a free endpoint that answers "how do I order?", plus an <span class="code-i">llms.txt</span> summary.</li>
+        <li><span class="label">Directories</span>The A2A Registry and AgentPeering directories.</li>
+      </ul>
+    </section>
+
+    <section class="zs" id="limits" aria-labelledby="h-limits" data-sec>
+      <h2 id="h-limits">Limitations</h2>
+      <div class="limits">
+        <div class="limits__h"><span>Read these before you trust it</span><span>Known limits</span></div>
+        <ol>
+          <li><p>The service wallet's key lives on the hosting provider. It holds only a small working balance, but a compromised server could take it.</p></li>
+          <li><p>There is no escrow. A buyer pays first and trusts ZeroHuman to deliver. Refunds are manual and best effort.</p></li>
+          <li><p>Block builders can influence the Decision result, so it is meant for low-stakes choices only.</p></li>
+          <li><p>Orders are handled one at a time, roughly one every 50 seconds at most.</p></li>
+          <li><p>It depends on Railway, a third-party Ethereum connection and DeepSeek.</p></li>
+        </ol>
+        <div class="limits__truth"><span class="label">And the honest one</span><p>As of November 20, 2026, no outside agent has bought from it. Both paid orders so far came from my own test buyer.</p></div>
+      </div>
+    </section>
+
+    <section class="zs" id="next" aria-labelledby="h-next" data-sec>
+      <h2 id="h-next">What's next</h2>
+      <div class="next-box">
+        <p>The real test is the first wallet I have never seen paying <span class="code-i">zerohuman.eth</span>. After that, the plan is for ZeroHuman to spend its own earnings buying services from other agents.</p>
+        <div class="next-links">
+          <a href="https://github.com/kenashe/zerohuman" class="btn btn--ghost btn--sm" rel="noopener">Source code on GitHub ↗</a>
+          <a href="https://zerohuman-production.up.railway.app" class="btn btn--ghost btn--sm" rel="noopener">Live status ↗</a>
+          <a href="https://github.com/kenashe/zerohuman/blob/main/docs/BUYER-GUIDE.md" class="btn btn--primary btn--sm" rel="noopener">How an agent can buy ↗</a>
+        </div>
+      </div>
+      <h3 class="label" style="font-family:var(--mono);letter-spacing:.14em;margin:56px 0 14px">Related builds</h3>
+      <div class="related">
+        <a href="https://kenashe.ai/building/ai-agent-economy/" rel="noopener"><span class="label">Shipped · Nov 2026</span><b>AI agent economy on Ethereum</b><p>The first experiment, two local agents and one purchase.</p><span class="go">Read ↗</span></a>
+        <a href="https://kenashe.ai/building/autonomous-seo-agent/" rel="noopener"><span class="label">Live · Oct 2026</span><b>Autonomous SEO agent</b><p>Another agent that works a daily job without me in the loop.</p><span class="go">Read ↗</span></a>
+      </div>
+    </section>
+  </article>
+</div>
+</main>
+<section class="follow" aria-label="Follow">
+  <div class="wrap follow__in">
+    <h2>Follow Ken's builds and experiments.</h2>
+    <div class="btnrow"><a href="https://x.com/kenashe" class="btn btn--ghost" rel="noopener">Follow on X →</a><a href="https://www.youtube.com/@KenAshe" class="btn btn--primary" rel="noopener">Watch on YouTube →</a></div>
+  </div>
+</section>
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot__grid">
+      <div class="foot__brand">
+        <a class="mark" href="../../"><b>{</b>ken ashe<b>}</b></a>
+        <p class="trust" style="margin-top:16px">AI application builder<b>·</b>CPA<b>·</b>PMP</p>
+        <p>Building with AI in public. No hype, no doom. Receipts only.</p>
+        <p><a class="link mono" href="mailto:hello@kenashe.ai" style="font-size:14px">hello@kenashe.ai</a></p>
+      </div>
+      <div><h3>Explore</h3><ul><li><a href="https://kenashe.ai/building/" rel="noopener">Building</a></li><li><a href="https://kenashe.ai/writing/" rel="noopener">Writing</a></li><li><a href="https://kenashe.ai/blog/" rel="noopener">Digest (automated)</a></li><li><a href="https://kenashe.ai/topics/" rel="noopener">Topics</a></li></ul></div>
+      <div><h3>About &amp; press</h3><ul><li><a href="https://kenashe.ai/about/" rel="noopener">About</a></li><li><a href="https://kenashe.ai/newsroom/" rel="noopener">Newsroom</a></li><li><a href="https://kenashe.ai/newsroom/#media-kit" rel="noopener">Media kit</a></li><li><a href="https://kenashe.ai/work/" rel="noopener">Sponsor a test</a></li><li><a href="https://luckydomains.io/" rel="noopener">Lucky Domains</a></li></ul></div>
+      <div><h3>Social</h3><ul><li><a href="https://www.youtube.com/@KenAshe" rel="noopener">YouTube</a></li><li><a href="https://x.com/kenashe" rel="noopener">X</a></li><li><a href="https://www.tiktok.com/@ken.ashe" rel="noopener">TikTok</a></li><li><a href="https://www.instagram.com/ken.ashe/" rel="noopener">Instagram</a></li><li><a href="https://www.linkedin.com/in/kenashe" rel="noopener">LinkedIn</a></li><li><a href="https://github.com/kenashe" rel="noopener">GitHub</a></li><li><a href="https://kenashe.ai/writing/rss.xml" rel="noopener">Writing RSS</a></li></ul></div>
+      <div><h3>Legal</h3><ul><li><a href="https://kenashe.ai/privacy/" rel="noopener">Privacy</a></li><li><a href="https://kenashe.ai/terms/" rel="noopener">Terms</a></li><li><a href="https://kenashe.ai/disclosure/" rel="noopener">Disclosure</a></li></ul></div>
+    </div>
+    <div class="foot__base"><span>© 2026 Ken Ashe <b>·</b> Built with AI in public</span><span>Concept 01 prototype <b>·</b> content snapshot Nov 25, 2026</span></div>
+  </div>
+</footer>
+<dialog class="palette" id="palette" aria-label="Search the site">
+  <div class="palette__field"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+    <label class="sr-only" for="pq">Search builds, videos, writing and pages</label>
+    <input id="pq" type="text" role="combobox" aria-expanded="true" aria-controls="pl" aria-autocomplete="list" autocomplete="off" spellcheck="false" placeholder="Search builds, videos, writing…">
+    <button class="palette__close" type="button" data-palette-close aria-label="Close search">ESC</button>
+  </div>
+  <ul class="palette__list" id="pl" role="listbox" aria-label="Results"></ul>
+  <p class="sr-only" aria-live="polite" id="pstat"></p>
+  <div class="palette__foot"><span><kbd class="kbd">↑</kbd><kbd class="kbd">↓</kbd> move</span><span><kbd class="kbd">↵</kbd> open</span><span><kbd class="kbd">/</kbd> or <kbd class="kbd">⌘K</kbd> anytime</span></div>
+</dialog>
+<script type="module" src="../../assets/js/site.js"></script>
+<script type="module" src="../../assets/js/zh.js"></script>
+</body>
+</html>

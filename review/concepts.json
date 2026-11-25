@@ -1,0 +1,486 @@
+[
+ {
+  "slug": "01-kenashe-2",
+  "name": "KenAshe.ai 2.0",
+  "accent": "#ffb300",
+  "mode": "Dark · evolution",
+  "oneLiner": "The site you already have, rebuilt as its 2027 version: same identity, much more confident.",
+  "tags": "Warm black · amber receipts · command palette · live worker status",
+  "philosophy": "This is the lowest-risk direction and the most refined. The warm black, amber and lime, the { ken ashe } mark and the three existing typefaces all stay, so the site is recognizably yours. The type scale, the layouts and the way evidence is shown all move up a level. The homepage leads with your name and the tagline next to a “latest receipt”, a printed-ticket card showing ZeroHuman’s real worker status and its first mainnet order. Builds become a filterable index rather than identical stacked cards, and the Digest gets a machine-styled band so nobody mistakes it for your own writing.",
+  "type": "Bricolage Grotesque (display, pushed to heavier and tighter settings), Hanken Grotesk (text), JetBrains Mono (labels, receipts, data). These are the existing families, self-hosted.",
+  "palette": [
+   [
+    "bg",
+    "#16130e"
+   ],
+   [
+    "deep",
+    "#0f0c08"
+   ],
+   [
+    "surface",
+    "#231d15"
+   ],
+   [
+    "fg",
+    "#f3eee3"
+   ],
+   [
+    "muted",
+    "#a89f8c"
+   ],
+   [
+    "amber",
+    "#ffb300"
+   ],
+   [
+    "lime",
+    "#c8ff4d"
+   ]
+  ],
+  "nav": "Refined sticky top bar with scroll-spy, a full-screen menu on mobile, and a command palette (Ctrl/⌘ K or “/”) that searches every real build, essay and video.",
+  "layout": "The existing 60rem rhythm widened into an asymmetric hero (identity left, receipt right), then featured-plus-index build layouts, horizontal video rails and a two-column Digest band.",
+  "live": "ZeroHuman /api/status (worker health, mode, latest block, last tick, orders fulfilled) and the latest kenashe/kenashe commit plus the latest Digest pipeline run. Badges read “Live” only after a successful fetch, otherwise “Snapshot · Nov 25, 2026”.",
+  "motion": [
+   "A command palette with full keyboard support (arrow keys, Enter, Esc) and a tap-to-open search button on mobile. It searches the real content index.",
+   "A latest-receipt ticket that fills in from the live ZeroHuman status endpoint.",
+   "Build index filters by status and stack, with view transitions between filter states where the browser supports them.",
+   "A subtle cursor-aware light on cards. It is decorative only, and keyboard focus shows the same highlight centred.",
+   "Scroll reveals that rise in once and never repeat.",
+   "ZeroHuman page: a sticky section progress rail, an interactive five-step order stepper (arrow keys move between steps, and auto-play stops when it is off screen or the tab is hidden), real order and delivery JSON set as receipts with copy buttons, and a live worker-status panel with the raw JSON one click away.",
+   "Click-to-load YouTube players. Nothing from YouTube loads until you press play."
+  ],
+  "reducedMotion": "Reveals, view transitions, the cursor light and stepper auto-play are switched off. Every piece of content and every interaction still works.",
+  "maintenance": [
+   "Easiest to port. The tokens and fonts match the current Astro theme, so this is mostly new components (ReceiptCard, BuildIndex, VideoRail, CommandPalette) rather than a new theme.",
+   "The command palette index would be generated at build time from builds.ts, writing.ts and a new videos.ts. The prototype uses a hand-built search-index.js of about 19 KB.",
+   "The receipt card needs one small field per build, such as a “receipt” object in builds.ts, so each new build can bring its own evidence.",
+   "Live status should be cached at the edge or rendered at build time in production."
+  ],
+  "strengths": [
+   "Keeps the brand equity and the receipts-only voice",
+   "Lowest migration risk and effort",
+   "Command palette scales well as content grows"
+  ],
+  "tradeoffs": [
+   "The least surprising of the six",
+   "Dark and amber is still a familiar developer look",
+   "Less face and personality up front"
+  ],
+  "effort": "Low to moderate: a theme refresh plus about four new components.",
+  "known": [
+   "The command-palette index is hand-built for the prototype."
+  ],
+  "interiors": [
+   "building/zerohuman/"
+  ],
+  "interiorLabels": [
+   "ZeroHuman build page"
+  ],
+  "weight": "about 560 KB uncompressed (fonts 237 KB)"
+ },
+ {
+  "slug": "02-living-lab",
+  "name": "The Living Lab",
+  "accent": "#e8541a",
+  "mode": "Light · instrumented",
+  "oneLiner": "A working laboratory bench where every experiment is logged, dated and instrumented with real readings.",
+  "tags": "Paper and ink · signal orange and cobalt · live instruments · experiment chart · lab report",
+  "philosophy": "The site becomes a light, precise laboratory: field notebook meets scientific instrument, with hairline grids, plate numbers and specimen labels. Every reading on the bench is real. The instrument strip shows ZeroHuman’s heartbeat, the Digest pipeline’s latest commit, how many days the daily email has been running (counted from May 4, 2026) and the published Digest count with its date, each tagged Live, Computed or Snapshot. All 20 builds are plotted on one experiment chart from December 2025 to November 2026. The AI agent economy write-up becomes a formal lab report.",
+  "type": "Instrument Sans (text and headlines, set condensed and heavy), Martian Mono (readings, labels, plate numbers), Instrument Serif italic (figure captions and annotations).",
+  "palette": [
+   [
+    "paper",
+    "#EFECE4"
+   ],
+   [
+    "sheet",
+    "#F8F6F0"
+   ],
+   [
+    "ink",
+    "#151512"
+   ],
+   [
+    "ink-2",
+    "#4A4A43"
+   ],
+   [
+    "signal",
+    "#E8541A"
+   ],
+   [
+    "signal-ink",
+    "#A93A0A"
+   ],
+   [
+    "cobalt",
+    "#2340C8"
+   ]
+  ],
+  "nav": "A persistent numbered index rail on the left (sections 00 to 11, styled as drawers or plates) on desktop. On mobile it becomes a bottom instrument bar showing the current section and a full Index drawer.",
+  "layout": "A bench grid of numbered plates with registration marks. Data modules sit on a hairline grid and long-form reading uses a narrow notebook column.",
+  "live": "ZeroHuman /api/status (shown as a needle gauge and heartbeat), the GitHub commit feed for the Digest pipeline, the daily-email day count computed live from its start date, and the published Digest count as a dated snapshot, labeled as such because no live count endpoint exists.",
+  "motion": [
+   "Instrument needles and values settle into place when real data arrives. The motion only happens because data arrived.",
+   "Experiment chart: all 20 builds plotted by month, with a cumulative step line and bands for status. You can filter by stack (AI Agents, Ethereum, HyperAgent and others). Hover, focus or tap a point to open its specimen card, and every point is a real button.",
+   "Registration and crop marks draw in when each plate enters the viewport.",
+   "Lab report: a replay of the 36 seconds between payment (block 26385257, 14:58:11 UTC) and delivery (block 26385260, 14:58:47 UTC), built from the real transaction data, with play and pause.",
+   "The left rail tracks the current section while you scroll, and the mobile bar mirrors it.",
+   "Click-to-load YouTube for recordings."
+  ],
+  "reducedMotion": "Needles, drawing lines and the replay show their final state immediately. The chart and every reading are fully visible and interactive with no motion.",
+  "maintenance": [
+   "Builds feed the chart directly from builds.ts. It needs a full ISO date per build (some entries only have a month or a footer date), and the prototype parses those as they are.",
+   "The instruments need a small edge function in production that caches ZeroHuman status and GitHub commits for a minute or so, so visitors never hit the GitHub rate limit (60 requests an hour per IP) or the worker itself.",
+   "Each new experiment needs a status, a date and stack tags, which already exist in builds.ts. The lab-report format is a new long-form template that existing build write-ups could adopt gradually.",
+   "At about 300 KB before interaction, this is the lightest homepage of the six."
+  ],
+  "strengths": [
+   "Turns “show what actually happened” into the interface itself",
+   "Real live data makes it feel alive without faking it",
+   "Scales naturally as experiments accumulate"
+  ],
+  "tradeoffs": [
+   "Can read as clinical, with less warmth and less of your face",
+   "Video and film are present but secondary",
+   "Depends on keeping dates and statuses rigorous"
+  ],
+  "effort": "Moderate: new chart and instrument components plus a cached live-data endpoint.",
+  "known": [
+   "Live readings depend on GitHub’s unauthenticated rate limit. Repeated visits from one IP fall back to the dated snapshot, as designed."
+  ],
+  "interiors": [
+   "lab/ai-agent-economy/"
+  ],
+  "interiorLabels": [
+   "Lab report: AI agent economy"
+  ],
+  "weight": "about 300 KB uncompressed"
+ },
+ {
+  "slug": "03-cinematic",
+  "name": "The Cinematic Creator",
+  "accent": "#e6b26f",
+  "mode": "Dark · video-first",
+  "oneLiner": "A screening room: your film and videos lead, and the rest of the site is told in chapters and credits.",
+  "tags": "Letterboxed stills · Bodoni title cards · film-strip reel · chapters menu · screening-room film page",
+  "philosophy": "This direction treats you as a filmmaker who builds, not a developer who makes videos. The homepage opens like a title sequence, a slow cross-dissolve through real stills from Returning Your Things with your name set as a title card. A “Now showing” feature follows, then a scrubbable film-strip reel of your YouTube work, builds presented as episodes, essays as director’s notes and the Digest as a clearly labeled automated wire. The palette is graded from your own film: snowy-night blue against golden summer light.",
+  "type": "Bodoni Moda (title cards and intertitles, roman and italic), Archivo (UI, metadata and body, widely tracked for slate-style labels).",
+  "palette": [
+   [
+    "void",
+    "#050608"
+   ],
+   [
+    "night",
+    "#0c131a"
+   ],
+   [
+    "dusk",
+    "#15202b"
+   ],
+   [
+    "steel",
+    "#2a4e68"
+   ],
+   [
+    "frost",
+    "#9fb3c6"
+   ],
+   [
+    "lamp",
+    "#e6b26f"
+   ],
+   [
+    "gold",
+    "#f0dfc2"
+   ],
+   [
+    "paper",
+    "#efe8db"
+   ]
+  ],
+  "nav": "A single “Chapters” button opens a full-screen chapter menu (a native dialog with a focus trap and Esc to close). A chapter label and runtime bar in the header track where you are.",
+  "layout": "Full-bleed letterboxed frames, film-slate metadata rows, centered intertitles, a horizontal reel with a projector preview, vertical 9:16 cards for shorts, and end-credits typography for the footer.",
+  "live": "The kenashe.ai commit feed and the Digest pipeline (for the automated wire), with honest dated fallbacks. There are no view counts anywhere.",
+  "motion": [
+   "Opening title sequence: a slow cross-dissolve of real film stills with a gentle Ken Burns push, a visible Pause button and a shot counter. The push freezes when paused.",
+   "Rack-focus reveals, where sections resolve from soft focus to sharp as they enter the frame.",
+   "The reel: a projector view plus a film strip. Arrow keys move along the strip, a scrubber is linked to scrolling, and hovering or focusing a video cycles its three real frames.",
+   "The chapter label and a runtime-style progress bar follow your scroll.",
+   "Film page: a letterboxed click-to-load player, the director’s note verbatim, credits set like end credits, a contact sheet of real frames with a keyboard-accessible lightbox, and an original, overcorrected and final hat comparison from the making-of essay.",
+   "YouTube loads only on click (youtube-nocookie)."
+  ],
+  "reducedMotion": "The title sequence becomes a single still with no dissolve or push, and rack-focus effects are removed. The reel and lightbox stay fully usable.",
+  "maintenance": [
+   "Needs a videos.ts data file (or a build-time read of the YouTube RSS feed) with frame and thumbnail images, which the current repo does not have. This is the most important new piece of data.",
+   "Image-heavy, at about 1.4 MB uncompressed on the homepage. Production would need responsive srcset sizes, AVIF and a lighter first frame.",
+   "Every new long video needs three good stills. YouTube’s auto-frames were used here, and hand-picked stills would look better.",
+   "Builds, writing and the Digest port as straightforward components. The cinematic layer is mostly CSS."
+  ],
+  "strengths": [
+   "The strongest fit for a personality-led creator audience",
+   "Presents Returning Your Things as a film, which is how you intended it",
+   "The most emotionally memorable"
+  ],
+  "tradeoffs": [
+   "Build depth and receipts become secondary to the visual story",
+   "Relies on a steady supply of strong video stills",
+   "Heaviest imagery to maintain and optimize"
+  ],
+  "effort": "Moderate: new video data, image pipeline work and several bespoke components.",
+  "known": [
+   "The stills are YouTube auto-frames at 1280×720, and some are not the strongest moments in each video."
+  ],
+  "interiors": [
+   "films/returning-your-things/"
+  ],
+  "interiorLabels": [
+   "Film page: Returning Your Things"
+  ],
+  "weight": "about 1.45 MB uncompressed (film stills 1.1 MB)"
+ },
+ {
+  "slug": "04-publication",
+  "name": "The Independent Publication",
+  "accent": "#D93A1E",
+  "mode": "Light · editorial",
+  "oneLiner": "A one-author technology publication: a broadsheet front page, features with bylines, and the Digest set apart as the wire.",
+  "tags": "Newsprint · Fraunces and Newsreader · section bar · The Wire (automated) · reading mode",
+  "philosophy": "This direction treats KenAshe.ai as a serious independent publication with one author. The front page reads like a broadsheet, with a masthead, a dateline and an edition line, section heads, rules and a lead feature. Its organizing principle is editorial honesty. Features and essays carry their authorship labels, the Build Desk reports builds as stories with status, Watch holds the film and videos, and the automated Digest is boxed as “The Wire” in a typewriter face, labeled machine-published with its count and date. An editorial-standards box explains exactly what sponsorship does and does not buy.",
+  "type": "Fraunces (display, using its optical-size and softness axes, with a red italic spot), Newsreader (body text), Public Sans (metadata and section bar), IBM Plex Mono (The Wire, marking machine output).",
+  "palette": [
+   [
+    "paper",
+    "#F1ECE1"
+   ],
+   [
+    "paper-2",
+    "#E8E1D2"
+   ],
+   [
+    "ink",
+    "#141210"
+   ],
+   [
+    "ink-2",
+    "#4A443C"
+   ],
+   [
+    "hair",
+    "#C9BFAC"
+   ],
+   [
+    "spot",
+    "#D93A1E"
+   ],
+   [
+    "spot-ink",
+    "#B02C17"
+   ],
+   [
+    "night",
+    "#14120F"
+   ]
+  ],
+  "nav": "A masthead with a newspaper-style section bar (Front page, Features & Essays, Build Desk, Watch, The Wire, The Author, Press & Standards, Follow). It becomes a compact sticky nameplate on scroll and a Sections overlay on mobile.",
+  "layout": "A twelve-column broadsheet grid (lead feature, Build Desk column and “From the notebook” column) that re-sets to a single column on mobile. Articles use a reading measure of about 68 characters with margin sidenotes.",
+  "live": "The Digest pipeline’s latest commit on The Wire, plus ZeroHuman status on the Build Desk, each with a dated “Snapshot · Nov 25, 2026” fallback. Reading time is computed from the article’s real word count.",
+  "motion": [
+   "Ink-in rules and underlines draw once as sections arrive. Motion is quiet and typographic.",
+   "Filter tabs: features by authorship type, and the build ledger by status.",
+   "Feature article: an accessible reading-progress bar, and a reading-mode control (text size, serif or sans, paper or sepia or dark) remembered in localStorage.",
+   "Sidenotes sit in the margin on wide screens and become toggled popovers below 1100 px.",
+   "“Watch from 0:12” timestamp chips open the 4:49 walkthrough inline at that exact moment.",
+   "Pull quotes are verbatim from your text, and the hat comparison uses the original essay images."
+  ],
+  "reducedMotion": "Rules and underlines appear already drawn, and the progress bar updates without easing. Nothing depends on motion.",
+  "maintenance": [
+   "Maps most cleanly onto the current content model: writing.ts becomes Features, builds.ts the Build Desk, the blog collection The Wire. The authorship field already exists.",
+   "Fonts are the heaviest of the six (eight variable files, about 600 KB uncompressed). Production should subset and drop unused axes, which would save more than half.",
+   "The front page needs light curation (choosing the lead story) or a rule such as “newest essay leads”. A featured flag in writing.ts would cover it.",
+   "Easy to grow with no new data model: new essays simply become new front pages."
+  ],
+  "strengths": [
+   "Makes the human-versus-machine split unmistakable",
+   "Gives your writing real weight and long-form craft",
+   "The most credible for press and sponsors"
+  ],
+  "tradeoffs": [
+   "Reads more like a publication than a person, with your face secondary",
+   "Asks for regular essays to keep the front page fresh",
+   "Video is a section, not the lead"
+  ],
+  "effort": "Low to moderate: templates rather than new data, plus font optimization.",
+  "known": [
+   "Font payload needs subsetting for production."
+  ],
+  "interiors": [
+   "writing/4-tips-for-making-ai-videos-that-feel-like-films/"
+  ],
+  "interiorLabels": [
+   "Feature essay: 4 Tips"
+  ],
+  "weight": "about 1.3 MB uncompressed (fonts 607 KB, images 568 KB)"
+ },
+ {
+  "slug": "05-universe",
+  "name": "The Digital Universe",
+  "accent": "#b23215",
+  "mode": "Light · spatial",
+  "oneLiner": "Your work as a navigable spatial map, with every body placed by its real date and topic, and the Digest as a nebula of 1,399 points.",
+  "tags": "Hand-written Canvas projection · real-data map · Digest nebula · list view · ZeroHuman orbit",
+  "philosophy": "This is the experimental direction, built as a scientific plate rather than a sci-fi screensaver. Forty-three handmade bodies (builds, the film, videos and essays) sit on a time axis from December 2025 to November 2026, in lanes by real topic, joined by dotted threads where works are documented as related. The Digest is a dim nebula with one particle per automated post, visibly different from your handmade work. You can orbit, zoom, tab through the bodies and switch to a plain list at any time.",
+  "type": "Syne (display, very wide), Newsreader italic (captions and narration), Geist Mono (axes, labels and data).",
+  "palette": [
+   [
+    "paper",
+    "#ebe8df"
+   ],
+   [
+    "paper-hi",
+    "#f6f4ee"
+   ],
+   [
+    "ink",
+    "#121417"
+   ],
+   [
+    "graphite",
+    "#55585e"
+   ],
+   [
+    "live",
+    "#b23215"
+   ],
+   [
+    "nebula",
+    "#4a5c70"
+   ],
+   [
+    "night",
+    "#0e0f10"
+   ]
+  ],
+  "nav": "Spatial: the map is the navigation. A minimal HUD adds Jump to (search), List view, Play/Pause motion and zoom/reset, with a conventional section nav for the HTML layers below the map.",
+  "layout": "The title block sits left of a full-width plate on desktop and above it on phones. Below the map, HTML “plates” cover now, film, writing, the Digest, about, press, sponsorship and contact.",
+  "live": "ZeroHuman /api/status on the system page (worker healthy, public mode, latest block seen), with a dated snapshot fallback. Map positions are computed from the real dates in content.json.",
+  "motion": [
+   "A hand-written Canvas 2D projection with no library: drag to orbit, pinch or buttons to zoom, Reset view, and a slow drift that pauses whenever you interact or open a card.",
+   "Every body is a real button. Tab or the arrow keys move to the nearest body in the neighbouring topic, Enter opens its card, and the camera turns to face it.",
+   "Digest nebula: 1,399 dim particles, one per published automated post.",
+   "Dotted threads link documented relationships, such as the film and its making-of, or ZeroHuman and the agent-economy experiment it grew from.",
+   "ZeroHuman page: the five-step order flow as an orbit you can step through or play (with a pause control), the first two mainnet orders traced with their real blocks and JSON, six documented limitations drawn as a boundary ring, and live worker status.",
+   "Rendering pauses when the tab is hidden or the map is off screen, and device pixel ratio is capped."
+  ],
+  "reducedMotion": "A still composition of the same map with no drift and no camera easing. Every body stays focusable, and the list view is always available.",
+  "maintenance": [
+   "Positions come from a JSON island produced by a small build script (_tools/build.py). In production that would be an Astro build step reading builds.ts, writing.ts, a videos.ts and the Digest count.",
+   "About 40 KB of hand-written JavaScript and no 3D library, so it is light (about 320 KB before interaction) but bespoke. Changes need someone comfortable with canvas code.",
+   "New content appears automatically once it has a date and a topic, but the topic lanes need a deliberate taxonomy.",
+   "The highest accessibility and QA burden of the six, although the list view and keyboard model are already in place."
+  ],
+  "strengths": [
+   "The most original, and itself a demonstration of AI-built software",
+   "Shows the scale of the work, and the Digest’s scale, honestly",
+   "Every visual element carries data"
+  ],
+  "tradeoffs": [
+   "Highest novelty risk, since some visitors want a plain page",
+   "Bespoke code is harder to maintain",
+   "The map is less legible on small phones (the list view covers this)"
+  ],
+  "effort": "High: a custom renderer, a data build step and extensive QA.",
+  "known": [
+   "Screenshots come from software-rendered Chromium. On a real GPU the drift and orbit are smoother."
+  ],
+  "interiors": [
+   "systems/zerohuman/"
+  ],
+  "interiorLabels": [
+   "System: ZeroHuman"
+  ],
+  "weight": "about 320 KB uncompressed, no 3D library"
+ },
+ {
+  "slug": "06-human",
+  "name": "The Human Behind the Technology",
+  "accent": "#d4472c",
+  "mode": "Light · personality-first",
+  "oneLiner": "Meet Ken first: big portraits, a first-person story, warm paper and a quiet technical layer one click away.",
+  "tags": "Cream and tomato red · Gloock display · polaroids · conversational pill nav · “Show receipts” toggle",
+  "philosophy": "This direction makes you the brand. It opens with “hi, I’m Ken Ashe”, your office portrait as a polaroid, the tagline in your own voice and handwritten margin notes. The work is told as personal stories, and the credibility (CPA, PMP, two decades at S&P Global, EY, Noom and Prudential, Army National Guard veteran, TechRound100 judge, NFT.NYC speaker) arrives as a warm track record rather than a résumé. The technical layer is still there: a “Show receipts” toggle reveals stacks, dates, statuses and evidence across the page.",
+  "type": "Gloock (expressive display serif), Onest (text), Caveat (sparing handwritten annotations).",
+  "palette": [
+   [
+    "paper",
+    "#f4ecdd"
+   ],
+   [
+    "card",
+    "#fdf9f1"
+   ],
+   [
+    "ink",
+    "#1f1915"
+   ],
+   [
+    "tomato",
+    "#d4472c"
+   ],
+   [
+    "ochre",
+    "#e9b44c"
+   ],
+   [
+    "forest",
+    "#1f4a3a"
+   ],
+   [
+    "night",
+    "#14110e"
+   ]
+  ],
+  "nav": "A conversational floating pill (“Hi, I’m Ken. What brings you here?”) that opens intent-based routes, such as watching videos, seeing builds, reading, booking or sponsoring, or just saying hi. A conventional menu is always there as the accessible fallback.",
+  "layout": "An editorial, story-led single column with large photography breaking the grid, polaroid stacks, a logbook of builds and letter-style writing cards. The About page is chaptered (the numbers, running the work, the side business, leaving, building in public).",
+  "live": "ZeroHuman worker status and the Digest pipeline’s latest commit inside the receipts layer, with honest dated fallbacks.",
+  "motion": [
+   "Paper “settle” reveals, where cards land as if set down on a desk, and handwritten annotations draw themselves in.",
+   "Read-along story: the first-person intro darkens word by word as you scroll to it.",
+   "A “Currently curious about” word swap that cycles real interests from content.json, with a pause control.",
+   "Conversational pill navigation that tucks away while you scroll down on phones and returns when you scroll up.",
+   "A “Show receipts” toggle that reveals the technical layer (stacks, statuses, dates, live data) without cluttering the story.",
+   "A build logbook with filters and Show all (everything is visible without JS), and a subtle magnetic tilt on the polaroids (pointer only, decorative).",
+   "About page: chapter chips, credentials with no verify links, speaking and judging with source links, the press list and sponsorship."
+  ],
+  "reducedMotion": "Text is fully dark from the start, annotations are already drawn, the word swap stops on one word and cards do not settle. The same content and controls are all available.",
+  "maintenance": [
+   "Ports cleanly: the content comes from the same data files, and the story copy lives in an about.md that you edit directly.",
+   "The work needs your voice, since personal-story headlines for each build mean a short human-written “story line” field per build in builds.ts.",
+   "Depends on photography. The four portraits carry it today, and new candid photos (filming, at events, at the desk) would multiply its impact.",
+   "Light (about 365 KB before interaction) with simple, dependency-free JavaScript."
+  ],
+  "strengths": [
+   "Best suited to a large, personality-led audience",
+   "Warmest and most approachable for sponsors and press",
+   "Credibility lands as character, not a résumé"
+  ],
+  "tradeoffs": [
+   "The technology is less visible by default (the receipts toggle covers it)",
+   "Needs ongoing personal photography and voice",
+   "Handwritten touches must stay sparing to age well"
+  ],
+  "effort": "Moderate: mostly templates, plus a story-line field and new photos over time.",
+  "known": [
+   "The handwritten captions are design copy (for example “yes, that’s a skateboard deck on the wall”) and you should approve them."
+  ],
+  "interiors": [
+   "about/"
+  ],
+  "interiorLabels": [
+   "About: the story"
+  ],
+  "weight": "about 365 KB uncompressed"
+ }
+]
