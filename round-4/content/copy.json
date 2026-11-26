@@ -1,0 +1,56 @@
+{
+  "_note": "Site wording. 'intro' is Ken's approved wording, used exactly. Everything under 'draft' was written for this prototype from facts already on the site and needs Ken's approval before production.",
+  "intro": {
+    "name": "Ken Ashe",
+    "headline": ["Making sense of AI.", "Making things with it."],
+    "text": "I explain AI in plain English and put it to work on real projects, from apps and videos to new business ideas. Follow along to learn something useful and see what I try next.",
+    "primary": "Watch my videos",
+    "secondary": "Explore my projects",
+    "aside": "Occasionally getting carried away.",
+    "short": "AI creator and builder",
+    "positioning": "A creator who makes AI understandable and explores what people can do with it through clear explanations, real projects, and stories from his own work."
+  },
+  "follow": [
+    {"label": "YouTube", "href": "https://www.youtube.com/@KenAshe"},
+    {"label": "X", "href": "https://x.com/kenashe"},
+    {"label": "TikTok", "href": "https://www.tiktok.com/@ken.ashe"},
+    {"label": "Instagram", "href": "https://www.instagram.com/ken.ashe/"},
+    {"label": "LinkedIn", "href": "https://www.linkedin.com/in/kenashe"}
+  ],
+  "draft": {
+    "homeAbout": [
+      "I’m Ken. I spent about twenty years in finance and in project and product roles, and I’m a CPA and a PMP. Then I left corporate work to make things with AI and explain what I learn along the way.",
+      "This site is where the videos, projects and writing live. I also run Lucky Domains, which is a separate business."
+    ],
+    "aboutLead": "I’m an AI creator and builder based in New Jersey. I make AI understandable and explore what people can do with it, through clear explanations, real projects and stories from my own work.",
+    "aboutBackground": [
+      "I started my career in accounting and finance, earning my CPA and working in financial reporting before moving into project, product and program leadership. Over roughly two decades I worked at S&P Global, EY, Noom and Prudential Financial, where I finished as Director of Project and Product Management.",
+      "Alongside that work I built digital businesses, including Lucky Domains, which I still run. I later left corporate work to focus on entrepreneurship and on making, and explaining, practical things with AI."
+    ],
+    "pillars": [
+      {"title": "Understanding AI", "text": "Explanations, practical context, useful observations and opinions I’m willing to defend.", "link": "/videos/", "cta": "Watch the videos"},
+      {"title": "Creating with AI", "text": "Apps, videos, workflows, creative projects and business ideas, with what I made and what happened.", "link": "/building/", "cta": "See the projects"}
+    ],
+    "plain": {
+      "zerohuman": "A tiny online shop that only AI agents can use. They find it, pay it and get their order back with no person involved. It’s a small, real test of what business between AI agents could look like.",
+      "returning-your-things": "A two-minute short film made with AI-generated imagery and no dialogue. I wanted to see whether I could tell a whole story with only pictures and music.",
+      "ai-agent-economy": "I gave two AI agents their own crypto wallets and let one buy a service from the other. One real purchase, start to finish, that anyone can look up and check.",
+      "ai-explainer-producer": "An AI agent that researches a topic, checks the facts, writes the script and produces an explainer video with a virtual presenter. I tested it on a real explainer that I published.",
+      "autonomous-seo-agent": "An AI agent with a daily job: find five new places a website could be listed, set up the profiles and keep track of it all, without me stepping in.",
+      "x-article-toolkit": "A toolkit any AI agent can use to write stronger headlines, openings and cover images for X Articles, based on research instead of guesswork.",
+      "ai-ugc-video-lab": "An experiment in AI-made ads: 50 ad ideas built around one consistent character, ending in a made-up security campaign starring a raccoon.",
+      "media-pitch-triage": "A system that reads requests from journalists, scores which ones are worth answering and keeps track of what happened to each pitch.",
+      "rebuilding-the-image-pipeline": "How I rebuilt the way this website handles pictures, so pages stay light and the image files take up far less space.",
+      "vetstack": "A helper for military members and veterans that finds current discounts and benefits that actually apply, without asking for ID or a long list of questions.",
+      "ai-werewolf": "Nine AI characters with their own personalities and secret roles play a game of alliances, bluffing and votes. A fun way to watch how AI agents reason about each other.",
+      "autonomous-ai-blog": "An experiment in automated publishing: a system that reads the day’s AI news, writes articles and publishes only the ones that pass a quality check.",
+      "geo-targeted-affiliate-site": "A website that works out each visitor’s country and language and shows offers that fit, all generated from one spreadsheet.",
+      "agent-driven-site-design-and-deployment": "I had an AI agent build a real business website and put it online, from start to finish.",
+      "sir-pitches-a-lot": "An AI agent with one job: pitch Lucky Domains to possible clients. I built it in an afternoon and tried it live on a real target.",
+      "kenashe-ai": "This website. The first version was built in a day with AI coding tools.",
+      "daily-email-to-myself": "A morning email I built for myself: weather, markets, a dad joke and 300 words on a different topic each day.",
+      "six-agent-email-response-team": "A small team of AI agents that turns customer support emails into replies a person can review.",
+      "personal-assistant-chatbot": "A chat assistant that searches my email and answers questions about the weather and local news."
+    }
+  }
+}

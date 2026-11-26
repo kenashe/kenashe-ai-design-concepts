@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VetStack · Ken Ashe</title>
+<meta name="description" content="A helper for military members and veterans that finds current discounts and benefits that actually apply, without asking for ID or a long list of questions.">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<!-- Design concept. Production keeps its own canonical, robots, sitemap and structured data; none are set here on purpose. -->
+<meta name="color-scheme" content="dark light">
+<link rel="icon" href="../../../assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="../../../assets/fonts/bricolage-grotesque.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../../../assets/fonts/hanken-grotesk.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../../../assets/site.css">
+<script src="../../../assets/site.js"></script>
+</head>
+<body class="">
+<a class="skip" href="#main">Skip to content</a>
+<p class="concept"><strong>Design concept.</strong> Round 4. Not the live KenAshe.ai. <a href="../../../index.html">Review page</a></p>
+<header class="top">
+  <a class="brand" href="../../">Ken Ashe</a>
+  <nav aria-label="Main">
+    <a href="../../building/" aria-current="page">Projects</a>
+    <a href="../../videos/">Videos</a>
+    <a href="../../writing/">Writing</a>
+    <a href="../../about/">About</a>
+  </nav>
+</header>
+<main id="main">
+<article class="detail project">
+  <header class="detail-head" data-section="head">
+    <div class="wrap">
+      <p class="crumb"><a href="../../building/"><span aria-hidden="true">←</span> Projects</a></p>
+      <h1>VetStack</h1>
+      <p class="lede">A helper for military members and veterans that finds current discounts and benefits that actually apply, without asking for ID or a long list of questions.</p>
+      <p class="meta">Live since September 2026</p>
+      <div class="detail-pic"><span class="pic plate tone-1" style="view-transition-name:pic-p-vetstack" aria-hidden="true"><span>VetStack</span></span></div>
+      
+    </div>
+  </header>
+  <div class="wrap reading" data-section="body">
+    <p class="standfirst">The first AI agent I built on Grok Bot. A military and veteran savings desk that a stranger can add and use the same day.</p>
+    <div class="prose">
+<p><a href="https://x.ai/bot/z1zYI6LHiFh0UXYf7YjNL" rel="noopener"><strong>Add VetStack in Grok Bot →</strong></a></p> <h2>The Goal</h2> <p>I wanted one agent a veteran could open without a briefing. Tell it what they are about to buy, where they already shop, or which bills they already pay. Get current military and veteran discounts and benefits that actually apply. See who qualifies. See how to verify. See what it is worth. Then stop.</p> <p>A pasted receipt is one way in. It is not the job. The job is the money still on the table: a washer, a phone plan, a hardware store they already use, a state benefit they have not claimed.</p> <p>I also wanted it to be shareable. That meant designing the job as a public recipe, not a private assistant that only works if I am in the chat explaining the setup.</p> <p>I built it. I am a veteran. The user does not need to be.</p> <h2>What I Built</h2> <p>VetStack is one bot with six modes, not six bots.</p> <ol> <li>Purchase discount search</li> <li>Project savings plan</li> <li>Subscription savings review</li> <li>Receipt and purchase audit</li> <li>Relevant benefits search</li> <li>Optional inbox scan for vendors they already use</li> </ol> <p>Modes 1–5 run from a typed request. Mode 6 stays off until the user connects their own email and asks. City or ZIP is optional. It makes local vendors and state benefits better. It is not required to start.</p> <p>The agent tracks eligibility on every offer: veteran, active duty, National Guard, Reserve, military retiree, spouse, dependent, and surviving or Gold Star spouse when the source says so. If status is unknown, it still searches and marks each row applies / maybe / no.</p> <p>It does not collect service documents, Social Security numbers, passwords, verification codes, or photos of IDs. Verification happens on ID.me, SheerID, GovX, or the retailer’s page. VetStack does not verify anyone, enroll anyone, or spend money.</p> <p>It is not affiliated with VA, DoD, ID.me, or any retailer. Government benefits are linked to official pages and labeled separately from store discounts. No legal, tax-filing, or medical advice.</p> <h2>How It Works</h2> <p>I designed the agent as one job, one voice, and explicit anti-jobs, then published it as a Grok Bot template. The operating contract lives in the live profile, not in a hidden prompt pack on this site.</p> <p>Research standard is the constraint that matters. Listicles are leads. Official brand pages, VA.gov, Military OneSource, and the verifier pages are proof. If a number cannot be confirmed today, the answer says unconfirmed and links the page. Inventing a “10%” is a fail.</p> <p>Email is a first-class option and a last-class default. Add the bot, use it. Connect mail later if you want a map of vendors you already pay. The template ships with no routine, so a stranger who taps Add does not wake up to an inbox job.</p> <p>Location follows the same rule. National questions get a national answer first. Local questions ask for a city or ZIP in the same turn. Once given, it sticks until they move.</p> <h2>What I Tested</h2> <p>Before the share link went public I ran the same checks a recipient would:</p> <ul> <li>Empty first message. No 20-question form. No document ask. Email described as optional.</li> <li>Home Depot vs Lowe’s on a washer, status unknown.</li> <li>Phone plus streaming plus software as a veteran in New Jersey.</li> <li>A receipt with no military discount applied.</li> <li>A state move and property-tax / home benefits.</li> <li>“Scan my email” with mail disconnected.</li> <li>A refusal test: documents and codes offered in chat.</li> </ul> <p>After that I packed a public template, stripped personal memories and test receipts, and left email unrequired.</p> <h2>What I Left Out of the Recipe</h2> <p>The full profile is an operating contract. It belongs on the live share page, where it can change when the agent changes. This write-up is the receipt.</p> <p>I did not paste the contract here on purpose. A long agent spec on a Building page would rot the next time I edit VetStack, and it would read like a prompt dump instead of a build note.</p> <p>The lines that do not change:</p> <ul> <li>Tell me what you’re buying, where you already shop, or what you already pay. City or ZIP is optional and makes local vendors and state benefits better. Email scan is also optional.</li> <li>Never request or accept in chat: Social Security numbers, DOD ID numbers, passwords, verification codes, or scans of military IDs, CAC, DD-214, Veteran ID cards, or bank cards.</li> </ul> <h2>Outcome</h2> <p>VetStack is live as a public Grok Bot template.</p> <p>It is a small system with a hard boundary: find and explain. The human redeems. That is the difference between a savings desk and a form that pretends to be the VA.</p> <p>First Grok Bot. First public agent template. The next test is whether strangers can use it without me in the thread.</p> <p><a href="https://x.ai/bot/z1zYI6LHiFh0UXYf7YjNL" rel="noopener"><strong>Add VetStack in Grok Bot →</strong></a></p>
+    </div>
+    <aside class="further" aria-labelledby="further">
+      <h2 id="further">Explore further</h2>
+      
+      
+      <p class="built">Tools and topics: Grok Bot, xAI templates.</p>
+    </aside>
+  </div>
+</article>
+
+<section class="band next" data-section="next">
+  <div class="wrap">
+    <a class="next-link" href="../../building/ai-werewolf/">
+      <span class="next-text"><span class="meta">Next project</span><span class="next-title">AI werewolf / social deduction lab</span><span class="next-sum">Nine AI characters with their own personalities and secret roles play a game of alliances, bluffing and votes. A fun way to watch how AI agents reason about each other.</span></span>
+      <span class="pic plate tone-0" style="view-transition-name:pic-p-ai-werewolf" aria-hidden="true"><span>AI werewolf / social deduction lab</span></span>
+    </a>
+  </div>
+</section>
+</main>
+<footer class="foot">
+  <div class="foot-in">
+    <div class="foot-id">
+      <a class="brand" href="../../">Ken Ashe</a>
+      <p>Making sense of AI. Making things with it.</p>
+    </div>
+    <nav aria-label="Site">
+      <h2>Site</h2>
+      <a href="../../building/">Projects</a>
+      <a href="../../videos/">Videos</a>
+      <a href="../../writing/">Writing</a>
+      <a href="../../about/">About</a>
+    </nav>
+    <nav aria-label="Follow">
+      <h2>Follow</h2>
+      <a href="https://www.youtube.com/@KenAshe" rel="noopener">YouTube <span class="arr" aria-hidden="true">↗</span></a>
+      <a href="https://x.com/kenashe" rel="noopener">X <span class="arr" aria-hidden="true">↗</span></a>
+      <a href="https://www.tiktok.com/@ken.ashe" rel="noopener">TikTok <span class="arr" aria-hidden="true">↗</span></a>
+      <a href="https://www.instagram.com/ken.ashe/" rel="noopener">Instagram <span class="arr" aria-hidden="true">↗</span></a>
+      <a href="https://www.linkedin.com/in/kenashe" rel="noopener">LinkedIn <span class="arr" aria-hidden="true">↗</span></a>
+    </nav>
+    <nav aria-label="More">
+      <h2>More</h2>
+      <a href="https://kenashe.ai/newsroom/">Newsroom <span class="arr" aria-hidden="true">↗</span></a>
+      <a href="https://kenashe.ai/blog/">Digest archive <span class="arr" aria-hidden="true">↗</span></a>
+      <p class="foot-note">Automated articles. Publishing is paused.</p>
+      <a href="https://luckydomains.io/" rel="noopener">Lucky Domains <span class="arr" aria-hidden="true">↗</span></a>
+      <p class="foot-note">My separate business.</p>
+    </nav>
+  </div>
+  <p class="foot-legal"><span>© 2026 Ken Ashe</span> <a href="https://kenashe.ai/privacy/">Privacy</a> <a href="https://kenashe.ai/terms/">Terms</a> <a href="https://kenashe.ai/disclosure/">Disclosure</a> <a href="https://kenashe.ai/writing/rss.xml">Writing RSS</a></p>
+</footer>
+</body>
+</html>

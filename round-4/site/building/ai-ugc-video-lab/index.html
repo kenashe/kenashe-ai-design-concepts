@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Building an AI UGC Video Agent · Ken Ashe</title>
+<meta name="description" content="An experiment in AI-made ads: 50 ad ideas built around one consistent character, ending in a made-up security campaign starring a raccoon.">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<!-- Design concept. Production keeps its own canonical, robots, sitemap and structured data; none are set here on purpose. -->
+<meta name="color-scheme" content="dark light">
+<link rel="icon" href="../../../assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="../../../assets/fonts/bricolage-grotesque.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../../../assets/fonts/hanken-grotesk.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../../../assets/site.css">
+<script src="../../../assets/site.js"></script>
+</head>
+<body class="">
+<a class="skip" href="#main">Skip to content</a>
+<p class="concept"><strong>Design concept.</strong> Round 4. Not the live KenAshe.ai. <a href="../../../index.html">Review page</a></p>
+<header class="top">
+  <a class="brand" href="../../">Ken Ashe</a>
+  <nav aria-label="Main">
+    <a href="../../building/" aria-current="page">Projects</a>
+    <a href="../../videos/">Videos</a>
+    <a href="../../writing/">Writing</a>
+    <a href="../../about/">About</a>
+  </nav>
+</header>
+<main id="main">
+<article class="detail project">
+  <header class="detail-head" data-section="head">
+    <div class="wrap">
+      <p class="crumb"><a href="../../building/"><span aria-hidden="true">←</span> Projects</a></p>
+      <h1>Building an AI UGC Video Agent</h1>
+      <p class="lede">An experiment in AI-made ads: 50 ad ideas built around one consistent character, ending in a made-up security campaign starring a raccoon.</p>
+      <p class="meta">Shipped October 2026</p>
+      <div class="detail-pic"><span class="pic plate tone-2" style="view-transition-name:pic-p-ai-ugc-video-lab" aria-hidden="true"><span>AI UGC video lab</span></span></div>
+      
+    </div>
+  </header>
+  <div class="wrap reading" data-section="body">
+    <p class="standfirst">A Hyperagent port of the open-source One Face Lock skill that turns one product photo and one line of copy into 50 UGC concepts with the same fictional creator locked across all of them, then an experiment in rendering five of those concepts as AI-generated vertical ads and checking the output with code before I reviewed it.</p>
+    <div class="prose">
+<p>The agent in this build is my Hyperagent port of the open-source <strong>one-face-lock Agent Skill v1.1.0</strong> by <strong>@danclipping</strong> (MIT license). The method, the ad formats, and the drift check are theirs. My part was adapting the skill into a working agent, running the experiment, picking the concepts, directing the iterations, judging the generated video, and building the QA workflow around it.</p> <h2>The Goal</h2> <p>I wanted to test whether a single-purpose agent could generate a large pack of UGC ad concepts while keeping the same fictional creator consistent across every one of them, and then help turn a few selected concepts into usable AI-generated video.</p> <p>The product I gave it was fictional on purpose: <em>“The Tactical Raccoon, a chaotic but highly effective perimeter security companion.”</em></p> <p>The joke that emerged was that the raccoon mostly just sits there. Apparently that is enough.</p> <h2>What I Built</h2> <p>A Hyperagent adaptation of the One Face Lock skill. It asks for two things and nothing else: one product photo and one line about the product.</p> <p>It returns a 50-script UGC pack. The same fictional creator, Dev, is locked across all 50 scripts: face, voice, clothing, room, lighting, and camera style are written once and pasted into every script word for word. The product’s appearance is locked the same way, from the photo rather than from the copy.</p> <p>The pack ends with a drift check, and the agent runs it as code rather than by eye: the two lock blocks must appear byte-identical in exactly 50 prompt blocks, every lock field must have exactly one value across the file, the format counts and numbering must be right, every hook must be unique and the right length, and no banned phrases may appear. One representative line, from the first card: <em>“so yeah, my perimeter security is a raccoon.”</em></p> <h2>The Experiment</h2> <p>The input was a stock photo of an ordinary raccoon plus the Tactical Raccoon line. The photo showed no tactical gear at all, so the skill’s rule applied: trust the photo for how the product looks and the copy for what it does. The product lock describes the raccoon exactly as photographed and bans vests, goggles, and harnesses.</p> <p>That conflict produced the creative premise. The raccoon just sits there, and somehow the security works.</p> <p>The agent generated 50 concepts. I selected five to take through video production. Five finished ads were produced across 31 successful video generations; most concepts needed more than one pass to improve visual continuity, movement, voice delivery, framing, and other quality issues. Four of the five are shown below because they are the four I liked best.</p> <h2>Four Selected Ads</h2> <ul> <li> <figure> <p><a href="https://kenashe.ai/video/ai-ugc-video-lab/tactical-raccoon-1.mp4">Play this clip</a></p> <figcaption><span>TH-01</span>“So yeah, my perimeter security is a raccoon.” Pan to the raccoon by the door, then back to Dev for “Nobody has come in.”<span>11.8s</span></figcaption> </figure> </li> <li> <figure> <p><a href="https://kenashe.ai/video/ai-ugc-video-lab/tactical-raccoon-2.mp4">Play this clip</a></p> <figcaption><span>HT-29</span>“How to know if he’s working: count the break-ins. I’ll wait.” A four-second silent stare, then “Yeah… that’s the number.”<span>13.1s</span></figcaption> </figure> </li> <li> <figure> <p><a href="https://kenashe.ai/video/ai-ugc-video-lab/tactical-raccoon-3.mp4">Play this clip</a></p> <figcaption><span>CF-42</span>“I had a chain and a prayer. Now I have a chain and a raccoon.” Dev lifts a squirming raccoon into frame on the last line.<span>14.1s</span></figcaption> </figure> </li> <li> <figure> <p><a href="https://kenashe.ai/video/ai-ugc-video-lab/tactical-raccoon-4.mp4">Play this clip</a></p> <figcaption><span>TH-09</span>Camera, alarm, raccoon, counted on his fingers. “The raccoon… nobody walks in.”<span>14.1s</span></figcaption> </figure> </li> </ul> <p>The Tactical Raccoon is fictional. Dev is an AI-generated person. These videos are AI-generated, testimonial-style ads created as an experiment, not real customer endorsements or advertisements for a real product.</p> <p>CF-42 is also the one deliberate break from the product lock, which says the raccoon only sits. Dev reaches below the frame and comes up holding it, because that gave the animal a physical reason to be at chest height.</p> <h2>What Broke</h2> <p>The failures were specific and mostly repeatable, so a short list is more useful than the rerender history.</p> <ul> <li><strong>Invented geometry.</strong> When the camera panned to parts of the room the opening frame had not shown, the model drew a different door: paneled, no chain lock. Whatever it cannot see, it makes up.</li> <li><strong>Impossible phones.</strong> A second phone with a lit screen appeared in Dev’s hand for about 0.4 seconds in one take. The camera is the phone, so that cannot exist.</li> <li><strong>The reference photo as a frame.</strong> Twice, the last quarter second of a clip jumped to the raw raccoon reference image on its white background.</li> <li><strong>Static animals.</strong> The prompt originally described the raccoon as “perfectly still.” The model obeyed, and the raccoon looked like a cutout.</li> <li><strong>Burned-in captions.</strong> One take subtitled its own dialogue on screen despite a “no text” instruction.</li> <li><strong>Composited subjects.</strong> A raccoon placed at chest height next to Dev floated there with no support and looked pasted in, because the staging gave it no reason to be there.</li> </ul> <p>Rerenders and setup changes fixed most of these: showing the model the door in the start frame, trimming glitch frames from clip tails, stating explicitly that no device is ever visible, describing the raccoon as a living animal with small movements, banning subtitles outright, and changing the staging so Dev holds the raccoon.</p> <h2>How I Checked the Videos</h2> <p>The agent cannot watch a clip the way a person does, but it can take one apart. Every render went through the same pass before I saw it.</p> <ul> <li><strong>Contact sheets.</strong> ffmpeg pulled frames into tiled images: one or two per second across the whole clip, more across camera moves, and 24 per second across the last three quarters of a second to catch single-frame glitches. The agent inspected those sheets directly. This is what caught the door flicker, the doubled door, the pasted reference frames, the second phone, and the burned-in caption.</li> <li><strong>A motion metric.</strong> To check whether the raccoon actually moved, the raccoon segment was converted to grayscale at 8 fps and the average pixel difference between consecutive frames was measured. Crude, but it turned “looks static” into a number: the final TH-01 scored about twice the earlier take during the raccoon shot.</li> <li><strong>Speech timing from audio energy.</strong> Loudness in 0.1-second windows produced a timeline of where each line landed. For HT-29 it confirmed the four-second “I’ll wait” beat was really silent, and it flagged a clip where the payoff line arrived before the raccoon did.</li> <li><strong>Pitch tracking.</strong> When I said a TH-09 line went up at the end where it should have dropped, the agent ran an autocorrelation pitch tracker over the final phrase: roughly 100 Hz rising to 123 Hz in the original, 127 Hz falling to about 101–105 Hz in the retake. The measurement agreed with my ear both times.</li> <li><strong>Join checks.</strong> Every finished ad is two clips joined end to end, so frames across each join were sampled for visible jumps in face, framing, or light.</li> </ul> <p>The distinction that matters: the automated checks surfaced problems and measurements. I still decided which take was actually better.</p> <h2>What I Learned</h2> <p><strong>The model invents what it cannot see.</strong> The door changed because the opening portrait showed only a sliver of it. Better input and setup mattered more than adding prompt instructions.</p> <p><strong>Fixing a checklist problem can make the video worse.</strong> Forcing the correct end frame nailed the door and made everything before it rushed and stiff. Stronger visual consistency is not automatically worth losing motion, personality, or comedic timing.</p> <p><strong>Sometimes rerolling beats re-prompting.</strong> The TH-09 keeper was a fresh roll of the original, unedited prompts after two rounds of targeted fixes had each lost something.</p> <p><strong>Physical staging matters.</strong> The raccoon-holding shot in CF-42 works because the animal has a believable reason to be at chest height. The composited version of the same idea did not.</p> <p><strong>Automated QA makes subjective review more efficient. It does not replace judgment.</strong> By my checklist, the door change in TH-01 was the biggest flaw. As a viewer, the raccoon’s personality mattered far more, and several “fixes” made the door correct and the ad worse. The person picking the take mattered more than the checklist.</p> <h2>Outcome</h2> <ul> <li>1 Hyperagent adaptation of the One Face Lock skill</li> <li>50 UGC concepts</li> <li>5 finished ads</li> <li>31 successful video generations during production</li> <li>4 selected ads shown on this page</li> <li>Roughly 2.5 hours from the raccoon photo to the fifth finished ad</li> </ul> <p>This was an experiment in AI-assisted creative production and quality control, not an autonomous ad agency. I selected the scripts and approved or rejected every take. The agent handled generation, inspection, measurement, trimming, and joining, and told me what it had found wrong before I watched each clip.</p> <h2>Credits</h2> <ul> <li><strong>one-face-lock Agent Skill</strong> v1.1.0 by <strong>@danclipping</strong>, MIT license: the method, formats, and drift check this agent is built on.</li> <li>Built and run in Hyperagent.</li> <li>Agent orchestration: Claude Opus 5.5.</li> <li>Video generation: Gemini Omni 1.1 Flash.</li> <li>Image generation and editing: Nano Banana Pro and Nano Banana 2.</li> <li>Post-processing and analysis: ffmpeg, Python, NumPy.</li> </ul>
+    </div>
+    <aside class="further" aria-labelledby="further">
+      <h2 id="further">Explore further</h2>
+      <ul class="links"><li><a href="../../building/ai-explainer-producer/" rel="noopener">Next: AI Explainer Producer, a source-verified explainer with an AI presenter <span class="arr" aria-hidden="true">→</span></a></li></ul>
+      
+      <p class="built">Tools and topics: HyperAgent, AI Video, Agents, Gemini, ffmpeg.</p>
+    </aside>
+  </div>
+</article>
+<section class="band tint" data-section="related">
+  <div class="wrap">
+    <div class="band-head"><h2>Connected to this project</h2></div>
+    <div class="grid three">
+<article class="card"><a class="card-link" href="../../building/ai-explainer-producer/"><span class="pic" style="view-transition-name:pic-p-ai-explainer-producer"><img src="../../../assets/r/880/build/ai-explainer-producer.webp" srcset="../../../assets/r/480/build/ai-explainer-producer.webp 480w, ../../../assets/r/880/build/ai-explainer-producer.webp 880w, ../../../assets/build/ai-explainer-producer.webp 1280w" sizes="(min-width: 900px) 31vw, 100vw" width="1280" height="720" alt="AI explainer producer: project image" loading="lazy" decoding="async"></span><span class="meta">Project</span><h3>AI explainer producer</h3></a></article>
+    </div>
+  </div>
+</section>
+<section class="band next" data-section="next">
+  <div class="wrap">
+    <a class="next-link" href="../../building/rebuilding-the-image-pipeline/">
+      <span class="next-text"><span class="meta">Next project</span><span class="next-title">Rebuilding the image pipeline</span><span class="next-sum">How I rebuilt the way this website handles pictures, so pages stay light and the image files take up far less space.</span></span>
+      <span class="pic plate tone-1" style="view-transition-name:pic-p-rebuilding-the-image-pipeline" aria-hidden="true"><span>Rebuilding the image pipeline</span></span>
+    </a>
+  </div>
+</section>
+</main>
+<footer class="foot">
+  <div class="foot-in">
+    <div class="foot-id">
+      <a class="brand" href="../../">Ken Ashe</a>
+      <p>Making sense of AI. Making things with it.</p>
+    </div>
+    <nav aria-label="Site">
+      <h2>Site</h2>
+      <a href="../../building/">Projects</a>
+      <a href="../../videos/">Videos</a>
+      <a href="../../writing/">Writing</a>
+      <a href="../../about/">About</a>
+    </nav>
+    <nav aria-label="Follow">
+      <h2>Follow</h2>
+      <a href="https://www.youtube.com/@KenAshe" rel="noopener">YouTube <span class="arr" aria-hidden="true">↗</span></a>
+      <a href="https://x.com/kenashe" rel="noopener">X <span class="arr" aria-hidden="true">↗</span></a>
+      <a href="https://www.tiktok.com/@ken.ashe" rel="noopener">TikTok <span class="arr" aria-hidden="true">↗</span></a>
+      <a href="https://www.instagram.com/ken.ashe/" rel="noopener">Instagram <span class="arr" aria-hidden="true">↗</span></a>
+      <a href="https://www.linkedin.com/in/kenashe" rel="noopener">LinkedIn <span class="arr" aria-hidden="true">↗</span></a>
+    </nav>
+    <nav aria-label="More">
+      <h2>More</h2>
+      <a href="https://kenashe.ai/newsroom/">Newsroom <span class="arr" aria-hidden="true">↗</span></a>
+      <a href="https://kenashe.ai/blog/">Digest archive <span class="arr" aria-hidden="true">↗</span></a>
+      <p class="foot-note">Automated articles. Publishing is paused.</p>
+      <a href="https://luckydomains.io/" rel="noopener">Lucky Domains <span class="arr" aria-hidden="true">↗</span></a>
+      <p class="foot-note">My separate business.</p>
+    </nav>
+  </div>
+  <p class="foot-legal"><span>© 2026 Ken Ashe</span> <a href="https://kenashe.ai/privacy/">Privacy</a> <a href="https://kenashe.ai/terms/">Terms</a> <a href="https://kenashe.ai/disclosure/">Disclosure</a> <a href="https://kenashe.ai/writing/rss.xml">Writing RSS</a></p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>I Built an AI Agent That Makes Explainer Videos · Ken Ashe</title>
+<meta name="description" content="An AI agent that researches a topic, checks the facts, writes the script and produces an explainer video with a virtual presenter. I tested it on a real explainer that I published.">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<!-- Design concept. Production keeps its own canonical, robots, sitemap and structured data; none are set here on purpose. -->
+<meta name="color-scheme" content="dark light">
+<link rel="icon" href="../../../../assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="../../../../assets/fonts/bricolage-grotesque.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../../../../assets/fonts/hanken-grotesk.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../../../../assets/site.css">
+<script src="../../../../assets/site.js"></script>
+</head>
+<body class="">
+<a class="skip" href="#main">Skip to content</a>
+<p class="concept"><strong>Demonstration build.</strong> Contains example entries that are not real. <a href="../../../index.html">Back to the demonstration</a></p>
+<header class="top">
+  <a class="brand" href="../../">Ken Ashe</a>
+  <nav aria-label="Main">
+    <a href="../../building/" aria-current="page">Projects</a>
+    <a href="../../videos/">Videos</a>
+    <a href="../../writing/">Writing</a>
+    <a href="../../about/">About</a>
+  </nav>
+</header>
+<main id="main">
+<article class="detail project">
+  <header class="detail-head" data-section="head">
+    <div class="wrap">
+      <p class="crumb"><a href="../../building/"><span aria-hidden="true">←</span> Projects</a></p>
+      <h1>I Built an AI Agent That Makes Explainer Videos</h1>
+      <p class="lede">An AI agent that researches a topic, checks the facts, writes the script and produces an explainer video with a virtual presenter. I tested it on a real explainer that I published.</p>
+      <p class="meta">Shipped October 2026</p>
+      <div class="detail-pic"><span class="pic" style="view-transition-name:pic-p-ai-explainer-producer"><img src="../../../../assets/r/880/build/ai-explainer-producer.webp" srcset="../../../../assets/r/480/build/ai-explainer-producer.webp 480w, ../../../../assets/r/880/build/ai-explainer-producer.webp 880w, ../../../../assets/build/ai-explainer-producer.webp 1280w" sizes="(min-width: 1100px) 1040px, 100vw" width="1280" height="720" alt="AI explainer producer: project image" fetchpriority="high" decoding="async"></span></div>
+      <p class="actions"><a class="btn solid" href="https://www.youtube.com/watch?v=L8LzPXzMbQg" data-yt="L8LzPXzMbQg" data-title="ENSv2 Explained: New Prices, Migration &amp; What .eth Owners Need to Know">Watch the video</a></p>
+    </div>
+  </header>
+  <div class="wrap reading" data-section="body">
+    <p class="standfirst">A reusable HyperAgent production agent that researches a technical topic, verifies it against primary sources, scripts it, and assembles an explainer with an AI presenter. I tested it on a real ENSv2 video, published the result, and kept track of the human work it still needed.</p>
+    <div class="prose">
+<figure class="embed"><a class="player" href="https://www.youtube.com/watch?v=L8LzPXzMbQg" data-yt="L8LzPXzMbQg" data-title="ENSv2 Explained: New Prices, Migration &amp; What .eth Owners Need to Know" aria-label="Play video: ENSv2 Explained: New Prices, Migration &amp; What .eth Owners Need to Know"><span class="pic"><img src="../../../../assets/r/880/video/L8LzPXzMbQg.webp" srcset="../../../../assets/r/480/video/L8LzPXzMbQg.webp 480w, ../../../../assets/r/880/video/L8LzPXzMbQg.webp 880w, ../../../../assets/video/L8LzPXzMbQg.webp 1280w" sizes="(min-width: 800px) 720px, 100vw" width="1280" height="720" alt="" loading="lazy" decoding="async"></span><span class="play" aria-hidden="true"></span></a><figcaption><a href="https://www.youtube.com/watch?v=L8LzPXzMbQg" rel="noopener" rel="noopener">Watch on YouTube <span class="arr" aria-hidden="true">↗</span></a></figcaption></figure> <h2>The Problem</h2> <p>I wanted to understand the proposed ENSv2 changes. Instead of reading every proposal, forum post and documentation page myself, I used AI to help research it. That turned into a bigger question: could I build an agent that takes a complicated topic and produces an accurate, watchable YouTube explainer with relatively little manual production work?</p> <p>A good technical explainer takes a lot of different skills: research, fact-checking, scriptwriting, presenting, graphics, editing, captions and formatting for each platform. I wanted to see how much of that a reusable production system could carry.</p> <h2>What I Built</h2> <p>AI Explainer Producer is a named agent in HyperAgent. It is not a one-off prompt. It runs on two reusable skills: a stage-gated production method (verify claims, script, storyboard, cast, pilot, produce, check) and a Python assembly toolkit that stitches presenter takes, graphics, captions and audio into finished videos.</p> <ol> <li>Research</li><li>Verify claims</li><li>Script</li><li>Storyboard</li><li>Cast presenter</li><li>Pilot</li><li>Produce</li><li>Assemble &amp; QA</li><li>Human edit</li> </ol> <ul> <li><strong>HyperAgent</strong> runs the agent and its tools.</li> <li><strong>Claude Opus 5.5</strong> handles production planning and editorial decisions; <strong>Sonnet subagents</strong> take supporting research and production tasks.</li> <li><strong>HeyGen Avatar V</strong> generates the virtual presenter, Brody, a stock HeyGen avatar.</li> <li><strong>HyperFrames and GSAP</strong> render the diagrams and animated explanations.</li> <li><strong>Python and FFmpeg</strong> assemble the timeline and run technical checks: loudness, dead air, black or frozen frames.</li> <li><strong>CapCut</strong> is where I did the final human edit.</li> </ul> <p>Every stage ends at a checkpoint. The agent doesn’t pick a presenter, start full production, or publish anything without my sign-off.</p> <h2>The First Experiment: ENSv2</h2> <ol> <li><strong>Start from a draft.</strong> I began with a six-page script Claude had written.</li> <li><strong>Verify it.</strong> The agent checked the claims against primary ENS sources (the activation proposal, the pricing proposal, and the official migration and registrar documentation) and kept a claim-by-claim ledger. Claims were verified, adjusted, or cut; only verified or carefully qualified ones made it into the video. That pass removed things the draft got wrong, including a line suggesting I had personally reviewed every contract call.</li> <li><strong>Rewrite for the audience.</strong> The seven-to-eight-minute draft became an owner-focused script of about 500 words built around four questions: what will I pay, do I have to migrate, when could I lose my name, and what changes?</li> <li><strong>Storyboard it.</strong> The storyboard used source-labeled diagrams and real screenshots of ENS documentation, with no generated interfaces or fake transactions.</li> <li><strong>Cast the presenter.</strong> The agent generated six short auditions from stock HeyGen presenters and voices. I chose Brody with his default voice.</li> <li><strong>Pilot first.</strong> A roughly 30-second pilot tested the presenter, a diagram, a real screenshot, captions, and both 16:9 and 9:16 cuts before committing to the full video.</li> <li><strong>Improve, then produce.</strong> The pilot led to better graphics, larger and more readable source lines, an on-screen AI disclosure, and no silent title cards. Then the agent produced the four presenter sections and assembled the master plus two vertical cuts.</li> <li><strong>Add the human parts.</strong> I filmed my own opening and closing on an iPhone, finished the edit and audio in CapCut, and published it.</li> </ol> <figure> <img alt="Brody, the AI-generated presenter, in a living room with a record shelf, labeled on screen as an AI-generated presenter." decoding="async" height="720" loading="lazy" src="../../../../assets/r/880/page/building--ai-explainer-producer-1.webp" srcset="../../../../assets/r/480/page/building--ai-explainer-producer-1.webp 480w, ../../../../assets/r/880/page/building--ai-explainer-producer-1.webp 880w, ../../../../assets/page/building--ai-explainer-producer-1.webp 1280w" sizes="(min-width: 800px) 720px, 100vw" width="1280"/> <figcaption>Brody, the AI presenter, with the on-screen disclosure. Frame from the production master.</figcaption> </figure> <h2>What Worked</h2> <ul> <li><strong>A consistent presenter.</strong> The same face, voice and setting across every section. The four sections came out word-accurate with no retakes.</li> <li><strong>Fact-checking against primary sources.</strong> The ledger made every claim traceable to an official page.</li> <li><strong>Clear visuals for complicated ideas.</strong> Pricing, migration and grace-period rules became diagrams instead of paragraphs.</li> <li><strong>Reusable skills.</strong> The method and the assembly toolkit aren’t tied to ENS; the next topic starts from the same system.</li> <li><strong>Automated assembly and QA.</strong> Multiple segments, captions and loudness checks without hand-editing each piece.</li> <li><strong>Multiple formats.</strong> A horizontal master and two vertical clips for short-form platforms.</li> </ul> <p>Most importantly, it produced a real, published video, not just a prototype.</p> <h2>What Didn’t Work Perfectly</h2> <ul> <li><strong>The facts moved mid-production.</strong> The ENS activation vote went live while the video was being made, so the agent rechecked the sources, re-recorded one presenter line, and rebuilt the status graphic from fresh screenshots.</li> <li><strong>Graphics needed fixing.</strong> Headlines with a stray rule through them, a timeline missing its bars, overlapping text on a vertical card, a font that rendered as boxes. All caught in review and re-rendered.</li> <li><strong>Captions and on-screen text needed corrections.</strong></li> <li><strong>An assembly-script bug</strong> broke builds without a music track, and had to be patched.</li> <li><strong>The first pilot</strong> exposed pacing problems and source lines too small to read.</li> <li><strong>I still recorded my own footage,</strong> and my audio needed noise reduction and volume adjustments in CapCut.</li> <li><strong>Final editorial judgment and the decision to publish</strong> were mine.</li> </ul> <p>This was not a fully autonomous production. The agent did most of the research, scripting, presenting, graphics and assembly; I directed it, checked it, appeared in it, and stood behind it.</p> <figure> <img alt="On-screen status board titled Where things actually stand, built from real Tally screenshots of the ENS activation proposal and live vote." decoding="async" height="720" loading="lazy" src="../../../../assets/r/880/page/building--ai-explainer-producer-2.webp" srcset="../../../../assets/r/480/page/building--ai-explainer-producer-2.webp 480w, ../../../../assets/r/880/page/building--ai-explainer-producer-2.webp 880w, ../../../../assets/page/building--ai-explainer-producer-2.webp 1280w" sizes="(min-width: 800px) 720px, 100vw" width="1280"/> <figcaption>The status board, rebuilt from real Tally captures after the vote went live. Frame from the production master.</figcaption> </figure> <h2>What I Learned</h2> <p>AI can do a substantial share of video production now. The human still supplies the direction, the judgment, the authenticity and the accountability.</p> <p>Building a reusable workflow was worth more than asking a tool to make one video. The checkpoints, the claim ledger and the assembly toolkit are what I’ll keep.</p> <p>And making content with AI can itself be content worth sharing. This page is part of that.</p> <section class="box"> <h2>Follow-up: ENSv2 Vote Results (October 27, 2026)</h2> <p>After publishing the original 3:56 ENSv2 explainer, I produced a second, shorter video covering the successful ENSv2 activation vote and the upcoming multi-year renewal discounts.</p> <p>This 40-second update uses an AI-generated presenter and two ENS names I own to illustrate the pricing changes:</p> <ul> <li><strong>108.eth:</strong> a three-year renewal at $440 per year, compared with the standard $640 annual rate.</li> <li><strong>ashe.eth:</strong> a six-year renewal at $90 per year, compared with the standard $160 annual rate.</li> </ul> <p>It’s another published output from my AI-assisted video production experiments.</p> <figure class="embed"><a class="player" href="https://www.youtube.com/watch?v=dcK_1nMhy8w" data-yt="dcK_1nMhy8w" data-title="ENSv2 Vote Passed: New .eth Renewal Discounts Explained" aria-label="Play video: ENSv2 Vote Passed: New .eth Renewal Discounts Explained"><span class="pic"><img src="../../../../assets/r/880/video/dcK_1nMhy8w.webp" srcset="../../../../assets/r/480/video/dcK_1nMhy8w.webp 480w, ../../../../assets/r/880/video/dcK_1nMhy8w.webp 880w, ../../../../assets/video/dcK_1nMhy8w.webp 1280w" sizes="(min-width: 800px) 720px, 100vw" width="1280" height="720" alt="" loading="lazy" decoding="async"></span><span class="play" aria-hidden="true"></span></a><figcaption><a href="https://www.youtube.com/watch?v=dcK_1nMhy8w" rel="noopener" rel="noopener">Watch on YouTube <span class="arr" aria-hidden="true">↗</span></a></figcaption></figure> </section> <h2>What’s Next</h2> <p>I plan to keep testing the agent on other technical subjects. Future experiments might include better virtual presenters, shorter production time, platform-specific edits, and measuring whether AI-assisted videos perform differently from ones I make the traditional way. None of that is done yet.</p> <h2>Related Builds</h2> <p>This builds on my <a href="../../building/ai-ugc-video-lab/">AI UGC video lab</a>, where an agent generated short, fictional ad concepts with a consistent AI-generated creator. AI Explainer Producer takes the same idea further: from short experimental clips to a researched, source-verified educational video with a real person in it.</p> <p><a href="https://youtu.be/L8LzPXzMbQg" rel="noopener"><strong>Watch the ENSv2 explainer on YouTube ↗</strong></a></p>
+    </div>
+    <aside class="further" aria-labelledby="further">
+      <h2 id="further">Explore further</h2>
+      <ul class="links"><li><a href="https://www.youtube.com/watch?v=L8LzPXzMbQg" rel="noopener">Watch on YouTube <span class="arr" aria-hidden="true">↗</span></a></li></ul>
+      
+      <p class="built">Tools and topics: AI Agents, HyperAgent, HeyGen, Video Production.</p>
+    </aside>
+  </div>
+</article>
+<section class="band tint" data-section="related">
+  <div class="wrap">
+    <div class="band-head"><h2>Connected to this project</h2></div>
+    <div class="grid three">
+<article class="card"><a class="card-link" href="../../building/ai-agent-economy/"><span class="pic" style="view-transition-name:pic-p-ai-agent-economy"><img src="../../../../assets/r/880/video/yZWsJjFnSH0.webp" srcset="../../../../assets/r/480/video/yZWsJjFnSH0.webp 480w, ../../../../assets/r/880/video/yZWsJjFnSH0.webp 880w, ../../../../assets/video/yZWsJjFnSH0.webp 1280w" sizes="(min-width: 900px) 31vw, 100vw" width="1280" height="720" alt="Still from the video “I Built Two AI Agents That Buy and Sell Services on Ethereum”" loading="lazy" decoding="async"></span><span class="meta">Project</span><h3>AI agent economy on Ethereum</h3></a></article>
+<article class="card vcard" id="v-dcK_1nMhy8w">
+  <a class="player" href="https://www.youtube.com/watch?v=dcK_1nMhy8w" data-yt="dcK_1nMhy8w" data-title="ENSv2 Vote Passed: New .eth Renewal Discounts Explained" aria-label="Play video: ENSv2 Vote Passed: New .eth Renewal Discounts Explained"><span class="pic"><img src="../../../../assets/r/880/video/dcK_1nMhy8w.webp" srcset="../../../../assets/r/480/video/dcK_1nMhy8w.webp 480w, ../../../../assets/r/880/video/dcK_1nMhy8w.webp 880w, ../../../../assets/video/dcK_1nMhy8w.webp 1280w" sizes="(min-width: 900px) 31vw, 100vw" width="1280" height="720" alt="" loading="lazy" decoding="async"></span><span class="play" aria-hidden="true"></span></a>
+  <h3><a href="https://www.youtube.com/watch?v=dcK_1nMhy8w" data-yt="dcK_1nMhy8w" data-title="ENSv2 Vote Passed: New .eth Renewal Discounts Explained">ENSv2 Vote Passed: New .eth Renewal Discounts Explained</a></h3>
+  
+  <p class="meta">Oct 27, 2026</p>
+</article>
+<article class="card"><a class="card-link" href="../../building/ai-ugc-video-lab/"><span class="pic plate tone-2" style="view-transition-name:pic-p-ai-ugc-video-lab" aria-hidden="true"><span>AI UGC video lab</span></span><span class="meta">Project</span><h3>AI UGC video lab</h3></a></article>
+    </div>
+  </div>
+</section>
+<section class="band next" data-section="next">
+  <div class="wrap">
+    <a class="next-link" href="../../building/autonomous-seo-agent/">
+      <span class="next-text"><span class="meta">Next project</span><span class="next-title">Autonomous SEO agent</span><span class="next-sum">An AI agent with a daily job: find five new places a website could be listed, set up the profiles and keep track of it all, without me stepping in.</span></span>
+      <span class="pic" style="view-transition-name:pic-p-autonomous-seo-agent"><img src="../../../../assets/r/880/video/_MAhfwQxdvA.webp" srcset="../../../../assets/r/480/video/_MAhfwQxdvA.webp 480w, ../../../../assets/r/880/video/_MAhfwQxdvA.webp 880w, ../../../../assets/video/_MAhfwQxdvA.webp 1280w" sizes="(min-width: 900px) 420px, 100vw" width="1280" height="720" alt="Still from the video “I Gave an AI Agent an SEO Job. Now It Works Without Me.”" loading="lazy" decoding="async"></span>
+    </a>
+  </div>
+</section>
+</main>
+<footer class="foot">
+  <div class="foot-in">
+    <div class="foot-id">
+      <a class="brand" href="../../">Ken Ashe</a>
+      <p>Making sense of AI. Making things with it.</p>
+    </div>
+    <nav aria-label="Site">
+      <h2>Site</h2>
+      <a href="../../building/">Projects</a>
+      <a href="../../videos/">Videos</a>
+      <a href="../../writing/">Writing</a>
+      <a href="../../about/">About</a>
+    </nav>
+    <nav aria-label="Follow">
+      <h2>Follow</h2>
+      <a href="https://www.youtube.com/@KenAshe" rel="noopener">YouTube <span class="arr" aria-hidden="true">↗</span></a>
+      <a href="https://x.com/kenashe" rel="noopener">X <span class="arr" aria-hidden="true">↗</span></a>
+      <a href="https://www.tiktok.com/@ken.ashe" rel="noopener">TikTok <span class="arr" aria-hidden="true">↗</span></a>
+      <a href="https://www.instagram.com/ken.ashe/" rel="noopener">Instagram <span class="arr" aria-hidden="true">↗</span></a>
+      <a href="https://www.linkedin.com/in/kenashe" rel="noopener">LinkedIn <span class="arr" aria-hidden="true">↗</span></a>
+    </nav>
+    <nav aria-label="More">
+      <h2>More</h2>
+      <a href="https://kenashe.ai/newsroom/">Newsroom <span class="arr" aria-hidden="true">↗</span></a>
+      <a href="https://kenashe.ai/blog/">Digest archive <span class="arr" aria-hidden="true">↗</span></a>
+      <p class="foot-note">Automated articles. Publishing is paused.</p>
+      <a href="https://luckydomains.io/" rel="noopener">Lucky Domains <span class="arr" aria-hidden="true">↗</span></a>
+      <p class="foot-note">My separate business.</p>
+    </nav>
+  </div>
+  <p class="foot-legal"><span>© 2026 Ken Ashe</span> <a href="https://kenashe.ai/privacy/">Privacy</a> <a href="https://kenashe.ai/terms/">Terms</a> <a href="https://kenashe.ai/disclosure/">Disclosure</a> <a href="https://kenashe.ai/writing/rss.xml">Writing RSS</a></p>
+</footer>
+</body>
+</html>

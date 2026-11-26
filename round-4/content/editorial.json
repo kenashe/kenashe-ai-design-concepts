@@ -1,0 +1,11 @@
+{
+  "_help": "The one small file for homepage choices. Everything here is optional. Use an item's id: building:<slug>, writing:<slug> or video:<YouTube id>.",
+  "featured": null,
+  "_featured_help": "Set to an id to feature that item on the homepage. Leave null and the newest full-length video is featured automatically.",
+  "homeProjects": [],
+  "_homeProjects_help": "Up to three project ids for the homepage. Leave empty and the first three projects with a page and a picture are used, in the order of the project list.",
+  "hide": [],
+  "_hide_help": "Ids listed here never appear in homepage or featured areas. Their pages and archive entries stay exactly as they are.",
+  "corrections": {},
+  "_corrections_help": "Only for videos, whose details come from YouTube. Example: {\"video:abc123def45\": {\"title\": \"A better title\", \"thumbnail\": \"video/my-picture.webp\"}}. Projects and writing are corrected in their own record."
+}

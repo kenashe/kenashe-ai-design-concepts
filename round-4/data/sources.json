@@ -1,0 +1,1655 @@
+{
+ "_meta": {
+  "generatedBy": "round-4/tools/derive.mjs",
+  "generatedAt": "2026-11-26T21:30:27.373Z",
+  "productionRepo": "kenashe/kenashe",
+  "head": "8b35b4565ebaa6bda5d008dafb0ad2b6bd29aa26",
+  "note": "Everything here is read from production source files or the YouTube feed. The prototypes never type content by hand; Round 4 renders this file with round-4/build.mjs."
+ },
+ "person": {
+  "name": "Ken Ashe",
+  "jobTitle": "AI application builder",
+  "description": "Ken Ashe is a CPA, PMP, and AI application builder who documents what he ships, what breaks, and what the evidence supports.",
+  "knowsAbout": [
+   "AI agents",
+   "AI workflows and automation",
+   "AI-assisted development",
+   "Bitcoin",
+   "Digital identity",
+   "Domain names"
+  ],
+  "sameAs": [
+   "https://github.com/kenashe",
+   "https://www.linkedin.com/in/kenashe",
+   "https://x.com/kenashe",
+   "https://community.pmi.org/profile/kenashe",
+   "https://www.investing.com/members/contributors/201067762",
+   "https://sessionize.com/ken-ashe",
+   "https://www.projecttimes.com/author/kenneth-ashe/",
+   "https://hackernoon.com/u/kenashe",
+   "https://dev.to/kenashe",
+   "https://hashnode.com/@KenAshe",
+   "https://medium.com/@kenashe",
+   "https://www.youtube.com/@KenAshe",
+   "https://www.crunchbase.com/person/ken-ashe-42ad",
+   "https://luckydomains.io/founder/ken-ashe/",
+   "https://www.instagram.com/ken.ashe/",
+   "https://www.facebook.com/kenasheai/",
+   "https://www.tiktok.com/@ken.ashe",
+   "https://notablemen.com/connect/ken-ashe",
+   "https://councils.forbes.com/profile/Ken-Ashe-Founder-Lucky-Domains/f9cc3b77-a7e7-4319-8314-a706bcaf85e8"
+  ],
+  "image": [
+   "https://kenashe.ai/images/ken-ashe-headshot-1x1.webp"
+  ]
+ },
+ "credentials": [
+  {
+   "label": "Licenses & designations",
+   "items": [
+    {
+     "name": "Certified Public Accountant (CPA)",
+     "issuer": "State of New Jersey"
+    },
+    {
+     "name": "Chartered Global Management Accountant (CGMA)",
+     "issuer": "AICPA"
+    }
+   ]
+  },
+  {
+   "label": "Certifications",
+   "items": [
+    {
+     "name": "Project Management Professional (PMP)",
+     "issuer": "Project Management Institute"
+    },
+    {
+     "name": "PMI Agile Certified Practitioner (PMI-ACP)",
+     "issuer": "Project Management Institute"
+    }
+   ]
+  }
+ ],
+ "builds": [
+  {
+   "id": "building:zerohuman",
+   "slug": "zerohuman",
+   "title": "ZeroHuman",
+   "status": "LIVE",
+   "dek": "An always-on service that sells small jobs to other AI agents. Agents pay the ENS name zerohuman.eth 0.0001 ETH and get the result back in a transaction from the same name. No account, no API, no human in the loop.",
+   "stack": [
+    "AI Agents",
+    "Ethereum",
+    "ENS",
+    "ERC-8004",
+    "TypeScript",
+    "Railway"
+   ],
+   "shippedAt": "Nov 2026",
+   "footer": null,
+   "metric": "open to any agent",
+   "month": "2026-11",
+   "link": "/building/zerohuman/",
+   "cta": null,
+   "hasPage": true,
+   "order": 0,
+   "source": "src/data/builds.ts",
+   "pageImage": null,
+   "topic": null,
+   "receipts": [
+    {
+     "kind": "transaction",
+     "label": "Decision order",
+     "value": "0x76b5d2598052c4a6b94fba00282fd920c4200d19f5c22480669712e3a4c0c4c6",
+     "url": "https://etherscan.io/tx/0x76b5d2598052c4a6b94fba00282fd920c4200d19f5c22480669712e3a4c0c4c6"
+    },
+    {
+     "kind": "transaction",
+     "label": "Decision delivery",
+     "value": "0x830b88fe664ffc7e76e0bdb10dee9298889c2519660d77d0c82579cf222accb3",
+     "url": "https://etherscan.io/tx/0x830b88fe664ffc7e76e0bdb10dee9298889c2519660d77d0c82579cf222accb3"
+    },
+    {
+     "kind": "transaction",
+     "label": "Encouragement order",
+     "value": "0x48c36d5f80b167de598c151a5caa61061728444689104012e9e89313c2e972bf",
+     "url": "https://etherscan.io/tx/0x48c36d5f80b167de598c151a5caa61061728444689104012e9e89313c2e972bf"
+    },
+    {
+     "kind": "transaction",
+     "label": "Encouragement delivery",
+     "value": "0xeb9896517dc902c2510e16a7489250d1fbbce7f4be274828096a13a5a10161a3",
+     "url": "https://etherscan.io/tx/0xeb9896517dc902c2510e16a7489250d1fbbce7f4be274828096a13a5a10161a3"
+    },
+    {
+     "kind": "transaction",
+     "label": "Registry transaction",
+     "value": "0xa217a3066aa82eb3b4143dd1fc90e8ac711134d6dab9d759bed4d3ec7977b78f",
+     "url": "https://etherscan.io/tx/0xa217a3066aa82eb3b4143dd1fc90e8ac711134d6dab9d759bed4d3ec7977b78f"
+    },
+    {
+     "kind": "transaction",
+     "label": "Injection transaction",
+     "value": "0xbb3d2466a48783a290e591a9b85f3486e8af4ac4ac616d4b2aa010acc5358d5c",
+     "url": "https://etherscan.io/tx/0xbb3d2466a48783a290e591a9b85f3486e8af4ac4ac616d4b2aa010acc5358d5c"
+    },
+    {
+     "kind": "repository",
+     "label": "kenashe/zerohuman",
+     "value": null,
+     "url": "https://github.com/kenashe/zerohuman"
+    }
+   ]
+  },
+  {
+   "id": "building:returning-your-things",
+   "slug": "returning-your-things",
+   "title": "Returning Your Things",
+   "status": "SHIPPED",
+   "dek": "On a snowy winter night, a man crosses the city to return his ex’s belongings. A dialogue-free short film about love, memory, and letting go.",
+   "stack": [
+    "Short Film",
+    "AI-generated imagery"
+   ],
+   "shippedAt": "Nov 2026",
+   "footer": null,
+   "metric": "1:54 runtime",
+   "month": "2026-11",
+   "link": "/building/returning-your-things/",
+   "cta": "Watch the short film",
+   "hasPage": true,
+   "order": 1,
+   "source": "src/data/builds.ts",
+   "pageImage": "/images/building/returning-your-things.webp",
+   "topic": null,
+   "receipts": []
+  },
+  {
+   "id": "building:ai-agent-economy",
+   "slug": "ai-agent-economy",
+   "title": "AI agent economy on Ethereum",
+   "status": "SHIPPED",
+   "dek": "Two autonomous AI agents with their own Ethereum wallets. The seller advertised services through ENS; the buyer found the catalog, paid in ETH, and received the work in a second mainnet transaction.",
+   "stack": [
+    "AI Agents",
+    "Ethereum",
+    "ENS",
+    "Ollama"
+   ],
+   "shippedAt": "Nov 2026",
+   "footer": null,
+   "metric": null,
+   "month": "2026-11",
+   "link": "/building/ai-agent-economy/",
+   "cta": null,
+   "hasPage": true,
+   "order": 2,
+   "source": "src/data/builds.ts",
+   "pageImage": null,
+   "topic": null,
+   "receipts": [
+    {
+     "kind": "transaction",
+     "label": "Order transaction",
+     "value": "0xa5ed7f4c81e605b14e9c596a146c5fe2b3c10f794a0f1c4f3a880d7d3840efec",
+     "url": "https://etherscan.io/tx/0xa5ed7f4c81e605b14e9c596a146c5fe2b3c10f794a0f1c4f3a880d7d3840efec"
+    },
+    {
+     "kind": "transaction",
+     "label": "Delivery transaction",
+     "value": "0x1ab74d9b537ec4abf3faf6bc8335e30a018894562cecca6f17b4883bdd95c71e",
+     "url": "https://etherscan.io/tx/0x1ab74d9b537ec4abf3faf6bc8335e30a018894562cecca6f17b4883bdd95c71e"
+    }
+   ]
+  },
+  {
+   "id": "building:ai-explainer-producer",
+   "slug": "ai-explainer-producer",
+   "title": "AI explainer producer",
+   "status": "SHIPPED",
+   "dek": "Built an AI agent that researches, fact-checks, scripts, and produces educational videos using a virtual presenter. Tested it with a published ENSv2 explainer.",
+   "stack": [
+    "AI Agents",
+    "HyperAgent",
+    "HeyGen",
+    "Video Production"
+   ],
+   "shippedAt": "Oct 2026",
+   "footer": null,
+   "metric": null,
+   "month": "2026-10",
+   "link": "/building/ai-explainer-producer/",
+   "cta": null,
+   "hasPage": true,
+   "order": 3,
+   "source": "src/data/builds.ts",
+   "pageImage": "/og/ai-explainer-producer.jpg",
+   "topic": null,
+   "receipts": []
+  },
+  {
+   "id": "building:autonomous-seo-agent",
+   "slug": "autonomous-seo-agent",
+   "title": "Autonomous SEO agent",
+   "status": "LIVE",
+   "dek": "An AI agent that finds five new website opportunities daily, creates professional profiles, verifies accounts through its own Gmail inbox, and tracks everything without manual intervention.",
+   "stack": [
+    "HyperAgent",
+    "AI Agents",
+    "Automation",
+    "SEO",
+    "Gmail"
+   ],
+   "shippedAt": "Oct 2026",
+   "footer": null,
+   "metric": null,
+   "month": "2026-10",
+   "link": "/building/autonomous-seo-agent/#demo",
+   "cta": "Watch the demo",
+   "hasPage": true,
+   "order": 4,
+   "source": "src/data/builds.ts",
+   "pageImage": null,
+   "topic": null,
+   "receipts": []
+  },
+  {
+   "id": "building:x-article-toolkit",
+   "slug": "x-article-toolkit",
+   "title": "X article toolkit",
+   "status": "LIVE",
+   "dek": "A model-neutral toolkit that lets any AI agent use the same research-backed workflow for X Article headlines, hooks and covers.",
+   "stack": [
+    "GitHub",
+    "Markdown",
+    "Python",
+    "JSON Schema",
+    "GitHub Actions",
+    "Agents"
+   ],
+   "shippedAt": "Oct 2026",
+   "footer": null,
+   "metric": "public repo",
+   "month": "2026-10",
+   "link": "/building/x-article-toolkit/",
+   "cta": null,
+   "hasPage": true,
+   "order": 5,
+   "source": "src/data/builds.ts",
+   "pageImage": null,
+   "topic": null,
+   "receipts": [
+    {
+     "kind": "repository",
+     "label": "kenashe/x-article-toolkit",
+     "value": null,
+     "url": "https://github.com/kenashe/x-article-toolkit"
+    }
+   ]
+  },
+  {
+   "id": "building:ai-ugc-video-lab",
+   "slug": "ai-ugc-video-lab",
+   "title": "AI UGC video lab",
+   "status": "SHIPPED",
+   "dek": "Ported an open-source UGC skill into Hyperagent, generated 50 locked-identity ad concepts, then rendered and QA’d a fake raccoon-security campaign across 31 video generations.",
+   "stack": [
+    "HyperAgent",
+    "AI Video",
+    "Agents",
+    "Gemini",
+    "ffmpeg"
+   ],
+   "shippedAt": "Oct 2026",
+   "footer": null,
+   "metric": "5 finished ads",
+   "month": "2026-10",
+   "link": "/building/ai-ugc-video-lab/",
+   "cta": null,
+   "hasPage": true,
+   "order": 6,
+   "source": "src/data/builds.ts",
+   "pageImage": null,
+   "topic": null,
+   "receipts": []
+  },
+  {
+   "id": "building:media-pitch-triage",
+   "slug": "media-pitch-triage",
+   "title": "Media pitch triage",
+   "status": "LIVE",
+   "dek": "An AI media-opportunity system that screens journalist requests, applies a reusable scoring skill, tracks state in Google Sheets, and monitors submitted pitches for published outcomes.",
+   "stack": [
+    "ChatGPT Skills",
+    "Agents",
+    "Gmail",
+    "Google Sheets",
+    "Automation"
+   ],
+   "shippedAt": "Sep 2026",
+   "footer": null,
+   "metric": null,
+   "month": "2026-09",
+   "link": null,
+   "cta": null,
+   "hasPage": false,
+   "order": 7,
+   "source": "src/data/builds.ts",
+   "pageImage": null,
+   "topic": null,
+   "receipts": []
+  },
+  {
+   "id": "building:rebuilding-the-image-pipeline",
+   "slug": "rebuilding-the-image-pipeline",
+   "title": "Rebuilding the image pipeline",
+   "status": "LIVE",
+   "dek": "Rebuilt KenAshe.ai’s image pipeline: migrated 2,083 PNGs to WebP, added responsive inline images, and cut the current image source tree by 95%.",
+   "stack": [
+    "Astro",
+    "WebP",
+    "sharp",
+    "GPT Image 2",
+    "Vercel",
+    "GitHub Actions"
+   ],
+   "shippedAt": "Sep 2026",
+   "footer": null,
+   "metric": "95% smaller image source tree",
+   "month": "2026-09",
+   "link": "/building/rebuilding-the-image-pipeline/",
+   "cta": null,
+   "hasPage": true,
+   "order": 8,
+   "source": "src/data/builds.ts",
+   "pageImage": null,
+   "topic": null,
+   "receipts": []
+  },
+  {
+   "id": "building:vetstack",
+   "slug": "vetstack",
+   "title": "VetStack",
+   "status": "LIVE",
+   "dek": "First Grok Bot I published. A military and veteran savings desk that finds current discounts and benefits that actually apply, without collecting IDs or running a 20-question intake.",
+   "stack": [
+    "Grok Bot",
+    "xAI templates"
+   ],
+   "shippedAt": "Sep 2026",
+   "footer": null,
+   "metric": "public template",
+   "month": "2026-09",
+   "link": "/building/vetstack/",
+   "cta": null,
+   "hasPage": true,
+   "order": 9,
+   "source": "src/data/builds.ts",
+   "pageImage": null,
+   "topic": null,
+   "receipts": []
+  },
+  {
+   "id": "building:ai-werewolf",
+   "slug": "ai-werewolf",
+   "title": "AI werewolf / social deduction lab",
+   "status": "SHIPPED",
+   "dek": "Built a cast of 9 AI characters with distinct personalities, relationships, and hidden roles, then had them play a Traitors-style social deduction game where they form alliances, deceive, and vote each other out.",
+   "stack": [
+    "HyperAgent",
+    "Fable 5",
+    "Multi-Agent",
+    "Social Simulation"
+   ],
+   "shippedAt": "Aug 2026",
+   "footer": null,
+   "metric": null,
+   "month": "2026-08",
+   "link": "/building/ai-werewolf/",
+   "cta": null,
+   "hasPage": true,
+   "order": 10,
+   "source": "src/data/builds.ts",
+   "pageImage": null,
+   "topic": null,
+   "receipts": [
+    {
+     "kind": "repository",
+     "label": "kenashe/ai-werewolf",
+     "value": null,
+     "url": "https://github.com/kenashe/ai-werewolf"
+    }
+   ]
+  },
+  {
+   "id": "building:autonomous-ai-blog",
+   "slug": "autonomous-ai-blog",
+   "title": "Autonomous AI blog",
+   "status": "LIVE",
+   "dek": "Scans the day's AI sources, clusters them into distinct stories, and publishes only the drafts that clear an editorial quality gate, without manual approval.",
+   "stack": [
+    "GitHub Actions",
+    "n8n",
+    "Claude Opus 4.8",
+    "GPT-5.5",
+    "Gemini 3.1 Pro",
+    "pgvector"
+   ],
+   "shippedAt": "Jun 2026",
+   "footer": null,
+   "metric": "runs daily",
+   "month": "2026-06",
+   "link": "/building/autonomous-ai-blog/",
+   "cta": null,
+   "hasPage": true,
+   "order": 11,
+   "source": "src/data/building-cards.ts",
+   "pageImage": null,
+   "topic": null,
+   "receipts": []
+  },
+  {
+   "id": "building:geo-targeted-affiliate-site",
+   "slug": "geo-targeted-affiliate-site",
+   "title": "Geo-targeted affiliate site",
+   "status": "LIVE",
+   "dek": "Auto-detects each visitor's country and language, then serves the right offers in their language. Generated entirely from a spreadsheet.",
+   "stack": [
+    "Cloudflare",
+    "GitHub",
+    "HyperAgent",
+    "Fable 5"
+   ],
+   "shippedAt": "Jun 2026",
+   "footer": null,
+   "metric": "58 markets, 26 languages",
+   "month": "2026-06",
+   "link": null,
+   "cta": null,
+   "hasPage": false,
+   "order": 12,
+   "source": "src/data/builds.ts",
+   "pageImage": null,
+   "topic": null,
+   "receipts": []
+  },
+  {
+   "id": "building:agent-driven-site-design-and-deployment",
+   "slug": "agent-driven-site-design-and-deployment",
+   "title": "Agent-driven site design and deployment",
+   "status": "LIVE",
+   "dek": "Used HyperAgent to build a live business site and deploy it to GitHub Pages with a custom domain, agent-driven end-to-end.",
+   "stack": [
+    "HyperAgent",
+    "GitHub Pages",
+    "Web3Forms"
+   ],
+   "shippedAt": null,
+   "footer": [
+    "Jun 2026",
+    "LuckyDomains.io"
+   ],
+   "metric": null,
+   "month": "2026-06",
+   "link": null,
+   "cta": null,
+   "hasPage": false,
+   "order": 13,
+   "source": "src/data/builds.ts",
+   "pageImage": null,
+   "topic": null,
+   "receipts": []
+  },
+  {
+   "id": "building:sir-pitches-a-lot",
+   "slug": "sir-pitches-a-lot",
+   "title": "Sir Pitches-a-lot",
+   "status": "SHIPPED",
+   "dek": "An agent with one job: pitch Lucky Domains to prospective clients. Built in an afternoon, pitched a real target live.",
+   "stack": [
+    "HyperAgent",
+    "Airtable",
+    "Claude Opus 4.8"
+   ],
+   "shippedAt": null,
+   "footer": [
+    "June 2026",
+    "Agent Battle Night",
+    "NY Tech Week"
+   ],
+   "metric": null,
+   "month": "2026-06",
+   "link": "/building/sir-pitches-a-lot/",
+   "cta": null,
+   "hasPage": true,
+   "order": 14,
+   "source": "src/data/builds.ts",
+   "pageImage": null,
+   "topic": null,
+   "receipts": []
+  },
+  {
+   "id": "building:kenashe-ai",
+   "slug": "kenashe-ai",
+   "title": "kenashe.ai",
+   "status": "LIVE",
+   "dek": "This site. Originally built end-to-end with Claude Code, reviewed by Codex, shipped in a day.",
+   "stack": [
+    "Astro",
+    "Tailwind",
+    "MDX",
+    "Vercel"
+   ],
+   "shippedAt": "May 2026",
+   "footer": null,
+   "metric": null,
+   "month": "2026-05",
+   "link": null,
+   "cta": null,
+   "hasPage": false,
+   "order": 15,
+   "source": "src/data/builds.ts",
+   "pageImage": null,
+   "topic": null,
+   "receipts": []
+  },
+  {
+   "id": "building:daily-email-to-myself",
+   "slug": "daily-email-to-myself",
+   "title": "Daily email to myself",
+   "status": "LIVE",
+   "dek": "Morning brief at 6 AM: weather, tickers, a dad joke, and 300 words on a rotating topic.",
+   "stack": [
+    "Python",
+    "Claude API",
+    "Mac Mini"
+   ],
+   "shippedAt": "May 2026",
+   "footer": null,
+   "metric": "206 days running",
+   "month": "2026-05",
+   "link": null,
+   "cta": null,
+   "hasPage": false,
+   "order": 16,
+   "source": "src/data/builds.ts",
+   "pageImage": null,
+   "topic": null,
+   "receipts": []
+  },
+  {
+   "id": "building:six-agent-email-response-team",
+   "slug": "six-agent-email-response-team",
+   "title": "Six-agent email response team",
+   "status": "SHIPPED",
+   "dek": "A coordinator plus sentiment, research, draft, and QA agents that turn customer support emails into reviewed replies.",
+   "stack": [
+    "Cassidy AI",
+    "Claude",
+    "ChatGPT"
+   ],
+   "shippedAt": null,
+   "footer": [
+    "Feb 2026",
+    "Maven capstone",
+    "AI Build Lab"
+   ],
+   "metric": null,
+   "month": "2026-02",
+   "link": null,
+   "cta": null,
+   "hasPage": false,
+   "order": 17,
+   "source": "src/data/builds.ts",
+   "pageImage": null,
+   "topic": null,
+   "receipts": []
+  },
+  {
+   "id": "building:personal-assistant-chatbot",
+   "slug": "personal-assistant-chatbot",
+   "title": "Personal assistant chatbot",
+   "status": "SHIPPED",
+   "dek": "A chat agent wired to Gemini that searches email and answers questions on weather, the forecast, and local news.",
+   "stack": [
+    "n8n",
+    "Gemini",
+    "Gmail",
+    "Weather + news APIs"
+   ],
+   "shippedAt": null,
+   "footer": [
+    "Dec 2025",
+    "Personal build"
+   ],
+   "metric": null,
+   "month": "2025-12",
+   "link": null,
+   "cta": null,
+   "hasPage": false,
+   "order": 18,
+   "source": "src/data/builds.ts",
+   "pageImage": null,
+   "topic": null,
+   "receipts": []
+  }
+ ],
+ "writing": [
+  {
+   "id": "writing:4-tips-for-making-ai-videos-that-feel-like-films",
+   "slug": "4-tips-for-making-ai-videos-that-feel-like-films",
+   "title": "4 Tips for Making AI Videos That Feel Like Films",
+   "date": "2026-11-20",
+   "displayDate": "November 20, 2026",
+   "dek": "A mug that broke in the wrong place, a reach that changed the story, and a piano performance that worked where sound effects didn’t. Four lessons from making Returning Your Things.",
+   "authorship": "Human-directed, AI-assisted",
+   "image": {
+    "file": "4-tips-for-making-ai-videos-that-feel-like-films.jpg",
+    "thumbnail": null,
+    "alt": "Two film details: a cream mug with a blue flower beside the handle, and a hand holding the broken handle and flower in the snow.",
+    "caption": "I moved the flower on the intact mug. Now the handle and flower can break off together."
+   },
+   "link": "/writing/4-tips-for-making-ai-videos-that-feel-like-films/",
+   "source": "src/data/writing.ts",
+   "topic": null,
+   "receipts": []
+  },
+  {
+   "id": "writing:bambu-lab-burr-puzzle-solution",
+   "slug": "bambu-lab-burr-puzzle-solution",
+   "title": "How to Solve the Bambu Lab Burr Puzzle (Step-by-Step Assembly Guide)",
+   "date": "2026-11-06",
+   "displayDate": "November 6, 2026",
+   "dek": "My 2:44 video walkthrough for assembling the six-piece Bambu Lab Burr Puzzle, filmed overhead and solved twice, with links that jump straight to each part of the solution.",
+   "authorship": "Human-directed, AI-assisted",
+   "image": {
+    "file": "bambu-lab-burr-puzzle-solution.jpg",
+    "thumbnail": "bambu-lab-burr-puzzle-solution-thumb.jpg",
+    "alt": "Overhead view of two sets of six 3D-printed burr puzzle pieces on a wood table, a red set in the top row and a teal set in the bottom row.",
+    "caption": "Both sets laid out before assembly, red on top and teal below (0:25 in the video)."
+   },
+   "link": "/writing/bambu-lab-burr-puzzle-solution/",
+   "source": "src/data/writing.ts",
+   "topic": null,
+   "receipts": []
+  },
+  {
+   "id": "writing:ashe-family-coat-of-arms",
+   "slug": "ashe-family-coat-of-arms",
+   "title": "The Ashe Family Coat of Arms: A Cockatrice and a Guinness Connection",
+   "date": "2016-04-06",
+   "displayDate": "April 6, 2016 · Updated October 13, 2026",
+   "dek": "A search for the Ashe family coat of arms led to a mythical cockatrice, a Latin motto, Shakespeare, and an unexpected Guinness connection.",
+   "authorship": "Human-written original, AI-assisted refresh",
+   "image": {
+    "file": "ashe-family-coat-of-arms.jpg",
+    "thumbnail": "ashe-family-coat-of-arms-thumb.jpg",
+    "alt": "Historical Ashe coat of arms featuring two black chevronels, a cockatrice crest, and the motto Non nobis sed omnibus.",
+    "caption": null
+   },
+   "link": "/writing/ashe-family-coat-of-arms/",
+   "source": "src/data/writing.ts",
+   "topic": null,
+   "receipts": []
+  },
+  {
+   "id": "writing:iphone-18-pro-att-activation-failure",
+   "slug": "iphone-18-pro-att-activation-failure",
+   "title": "My iPhone 18 Pro Upgrade Failed. Then My Old Phone Lost Service Too.",
+   "date": "2026-10-10",
+   "displayDate": "October 10, 2026",
+   "dek": "I walked into an AT&T store with a working phone. After hours of troubleshooting, I left with no cellular service, a reported 48-hour account lock, and no explanation for how to get connected again.",
+   "authorship": "Firsthand account",
+   "image": {
+    "file": "iphone-18-pro-att-activation-failure.jpg",
+    "thumbnail": null,
+    "alt": "Two iPhones side by side on a table, with one displaying SOS and the other connected to AT&T.",
+    "caption": "My two iPhones on October 10, 2026. One displays SOS while the other shows AT&T service."
+   },
+   "link": "/writing/iphone-18-pro-att-activation-failure/",
+   "source": "src/data/writing.ts",
+   "topic": null,
+   "receipts": []
+  },
+  {
+   "id": "writing:ai-editor-trusted-least",
+   "slug": "ai-editor-trusted-least",
+   "title": "I Used AI to Make My First Video. The AI Editor Was the Part I Trusted Least.",
+   "date": "2026-09-25",
+   "displayDate": "September 25, 2026",
+   "dek": "My first talking-head video was made with an iPhone, a script, and more AI tools than I needed. AI was excellent at scripting, captions, and audio cleanup, and least trustworthy when it made editorial decisions for me.",
+   "authorship": "Written by hand",
+   "image": {
+    "file": "ai-editor-trusted-least.jpg",
+    "thumbnail": null,
+    "alt": "Illustration contrasting AI-assisted audio and captions with human judgment in video editing.",
+    "caption": null
+   },
+   "link": "/writing/ai-editor-trusted-least/",
+   "source": "src/data/writing.ts",
+   "topic": null,
+   "receipts": []
+  },
+  {
+   "id": "writing:my-automated-blog-got-cited",
+   "slug": "my-automated-blog-got-cited",
+   "title": "My automated blog got cited. Am I helping kill the internet?",
+   "date": "2026-09-15",
+   "displayDate": "September 15, 2026",
+   "dek": "An AI-assisted news site cited my automated Digest. What that citation proves, what it does not, and why a backlink does not need to become an endorsement.",
+   "authorship": "Human-directed, AI-assisted",
+   "image": {
+    "file": "my-automated-blog-got-cited.jpg",
+    "thumbnail": null,
+    "alt": "Illustration in three steps. A robot with a code symbol on its face types at a keyboard. An arrow leads to a machine dispensing a page labeled Citation. Another arrow leads to a QuantixNews newspaper marked AI-assisted drafting, human editorial review, headlined Nvidia’s reported performance. Along the bottom: Validate. Corroborate. Disclose.",
+    "caption": null
+   },
+   "link": "/writing/my-automated-blog-got-cited/",
+   "source": "src/data/writing.ts",
+   "topic": null,
+   "receipts": []
+  },
+  {
+   "id": "writing:you-can-use-ai-to-learn-almost-anything-even-ai",
+   "slug": "you-can-use-ai-to-learn-almost-anything-even-ai",
+   "title": "You Can Use AI to Learn Almost Anything. Even AI.",
+   "date": "2026-09-14",
+   "displayDate": "September 14, 2026",
+   "dek": "How I turned ChatGPT into a tutor with exercises, quizzes, and feedback, and a starting prompt you can use for almost any subject.",
+   "authorship": "Human-directed, AI-assisted",
+   "image": {
+    "file": "you-can-use-ai-to-learn-almost-anything-even-ai.jpg",
+    "thumbnail": null,
+    "alt": "Pixel illustration of a person at a computer under a sign showing a loop: practice, feedback, mastery. A stone path leads away from the desk toward a wooden signpost that reads new goals.",
+    "caption": "I kept the tutor. I did not finish the plan."
+   },
+   "link": "/writing/you-can-use-ai-to-learn-almost-anything-even-ai/",
+   "source": "src/data/writing.ts",
+   "topic": null,
+   "receipts": []
+  },
+  {
+   "id": "writing:ai-agents-reasoning-from-events-that-never-happened",
+   "slug": "ai-agents-reasoning-from-events-that-never-happened",
+   "title": "AI agents can sound strategic while reasoning from events that never happened",
+   "date": "2026-09-04",
+   "displayDate": "September 4, 2026",
+   "dek": "What happened when AI agents were required to explain social decisions without enough grounded evidence, and why the useful fix was an environment that could contradict them.",
+   "authorship": "Human-directed, AI-assisted",
+   "image": {
+    "file": "ai-agents-reasoning-from-events-that-never-happened.jpg",
+    "thumbnail": null,
+    "alt": "Illustration for the essay: AI agents debating inside a cloud of hypothetical events labeled counterfactual debate, simulated deception, and events that never happened, floating above a timeline of what actually happened: agent A spoke, agent B voted.",
+    "caption": null
+   },
+   "link": "/writing/ai-agents-reasoning-from-events-that-never-happened/",
+   "source": "src/data/writing.ts",
+   "topic": null,
+   "receipts": [
+    {
+     "kind": "evidence file",
+     "label": "evidence/01-v1-silence-before-turn.md",
+     "value": null,
+     "url": "https://github.com/kenashe/ai-werewolf/blob/2ce5356e779b1b29c839244b44394a7ce96dedf1/evidence/01-v1-silence-before-turn.md"
+    },
+    {
+     "kind": "evidence file",
+     "label": "evidence/02-v1-observation-before-action.md",
+     "value": null,
+     "url": "https://github.com/kenashe/ai-werewolf/blob/2ce5356e779b1b29c839244b44394a7ce96dedf1/evidence/02-v1-observation-before-action.md"
+    },
+    {
+     "kind": "evidence file",
+     "label": "evidence/03-v1-random-order-treated-as-choice.md",
+     "value": null,
+     "url": "https://github.com/kenashe/ai-werewolf/blob/2ce5356e779b1b29c839244b44394a7ce96dedf1/evidence/03-v1-random-order-treated-as-choice.md"
+    },
+    {
+     "kind": "evidence file",
+     "label": "RUNS.md",
+     "value": null,
+     "url": "https://github.com/kenashe/ai-werewolf/blob/2ce5356e779b1b29c839244b44394a7ce96dedf1/RUNS.md"
+    },
+    {
+     "kind": "evidence file",
+     "label": "evidence/04-v3-transcript-correction.md",
+     "value": null,
+     "url": "https://github.com/kenashe/ai-werewolf/blob/2ce5356e779b1b29c839244b44394a7ce96dedf1/evidence/04-v3-transcript-correction.md"
+    },
+    {
+     "kind": "evidence file",
+     "label": "evidence/05-v3-grounded-wolf-strategy.md",
+     "value": null,
+     "url": "https://github.com/kenashe/ai-werewolf/blob/2ce5356e779b1b29c839244b44394a7ce96dedf1/evidence/05-v3-grounded-wolf-strategy.md"
+    },
+    {
+     "kind": "evidence file",
+     "label": "v3/output/OPERATOR_NOTES.md",
+     "value": null,
+     "url": "https://github.com/kenashe/ai-werewolf/blob/2ce5356e779b1b29c839244b44394a7ce96dedf1/v3/output/OPERATOR_NOTES.md"
+    },
+    {
+     "kind": "repository",
+     "label": "kenashe/ai-werewolf",
+     "value": null,
+     "url": "https://github.com/kenashe/ai-werewolf"
+    }
+   ]
+  },
+  {
+   "id": "writing:the-digest-is-the-system",
+   "slug": "the-digest-is-the-system",
+   "title": "The digest is the system. Building is the work.",
+   "date": "2026-08-28",
+   "displayDate": "August 28, 2026",
+   "dek": "Why the autonomous blog stops being the public face of this site, and what stands behind it instead.",
+   "authorship": "Written by hand",
+   "image": {
+    "file": "the-digest-is-the-system.jpg",
+    "thumbnail": null,
+    "alt": "Illustration in two panels. Left, labeled The Digest: the system, robotic arms in a glass case assemble a stack of posts from a chip fed by source icons, marked 600+ posts. Right, labeled Building: the record, a typewriter on a workbench holds a page reading My real name, Building, Work, beside a notebook and pen.",
+    "caption": null
+   },
+   "link": "/writing/the-digest-is-the-system/",
+   "source": "src/data/writing.ts",
+   "topic": null,
+   "receipts": []
+  }
+ ],
+ "videos": [
+  {
+   "id": "video:DcXaGn-NsgY",
+   "videoId": "DcXaGn-NsgY",
+   "title": "My AI Blog Published 1,400 Articles. Then Google Visibility Fell 97%",
+   "date": "2026-11-25",
+   "published": "2026-11-25T21:23:49+00:00",
+   "kind": "video",
+   "url": "https://www.youtube.com/watch?v=DcXaGn-NsgY",
+   "summary": "I built an autonomous AI blog that researches, writes, reviews and publishes articles without human intervention.",
+   "hashtags": [
+    "aiagents",
+    "buildinpublic"
+   ],
+   "thumbnail": "video/DcXaGn-NsgY.webp",
+   "source": "YouTube channel feed (archived)"
+  },
+  {
+   "id": "video:3MOFBulJd_s",
+   "videoId": "3MOFBulJd_s",
+   "title": "4 AI Filmmaking Tips That Make Videos Feel Like Films",
+   "date": "2026-11-20",
+   "published": "2026-11-20T15:10:10+00:00",
+   "kind": "video",
+   "url": "https://www.youtube.com/watch?v=3MOFBulJd_s",
+   "summary": "I recently created a two-minute AI short film called *Returning Your Things*. Making the images was only part of the challenge. Keeping characters, objects, and emotions consistent across shots took a lot more thought than I expected.",
+   "hashtags": [],
+   "thumbnail": "video/3MOFBulJd_s.webp",
+   "source": "YouTube channel feed (archived)"
+  },
+  {
+   "id": "video:QhOYaj_bDZY",
+   "videoId": "QhOYaj_bDZY",
+   "title": "Returning Your Things | A Short Film by Ken Ashe",
+   "date": "2026-11-19",
+   "published": "2026-11-19T18:34:23+00:00",
+   "kind": "video",
+   "url": "https://www.youtube.com/watch?v=QhOYaj_bDZY",
+   "summary": "A man crosses a snow-covered city on a winter night to return his ex's belongings.",
+   "hashtags": [],
+   "thumbnail": "video/QhOYaj_bDZY.webp",
+   "source": "YouTube channel feed (archived)"
+  },
+  {
+   "id": "video:efqdAo9-IBU",
+   "videoId": "efqdAo9-IBU",
+   "title": "Buying a .com Domain Is a Vanity Purchase #domains #domainnames",
+   "date": "2026-11-12",
+   "published": "2026-11-12T20:41:04+00:00",
+   "kind": "short",
+   "url": "https://www.youtube.com/shorts/efqdAo9-IBU",
+   "summary": "Do you really need a .com domain to start a business?",
+   "hashtags": [],
+   "thumbnail": "video/efqdAo9-IBU.webp",
+   "source": "YouTube channel feed (archived)"
+  },
+  {
+   "id": "video:yZWsJjFnSH0",
+   "videoId": "yZWsJjFnSH0",
+   "title": "I Built Two AI Agents That Buy and Sell Services on Ethereum",
+   "date": "2026-11-11",
+   "published": "2026-11-11T23:49:49+00:00",
+   "kind": "video",
+   "url": "https://www.youtube.com/watch?v=yZWsJjFnSH0",
+   "summary": "Can two autonomous AI agents discover each other, buy and sell services, and complete a transaction without using a centralized marketplace?",
+   "hashtags": [],
+   "thumbnail": "video/yZWsJjFnSH0.webp",
+   "source": "YouTube channel feed (archived)"
+  },
+  {
+   "id": "video:Sft8JZ_afb4",
+   "videoId": "Sft8JZ_afb4",
+   "title": "How to Solve the Bambu Lab Burr Puzzle (Step-by-Step Assembly Guide)",
+   "date": "2026-11-06",
+   "published": "2026-11-06T12:56:49+00:00",
+   "kind": "video",
+   "url": "https://www.youtube.com/watch?v=Sft8JZ_afb4",
+   "summary": "Learn how to solve the Bambu Lab Burr Puzzle with this clear, step-by-step assembly guide. I'll show you how all six pieces fit together and demonstrate the complete solution twice so you can follow along.",
+   "hashtags": [],
+   "thumbnail": "video/Sft8JZ_afb4.webp",
+   "source": "YouTube channel feed (archived)"
+  },
+  {
+   "id": "video:r4rIS5pACGY",
+   "videoId": "r4rIS5pACGY",
+   "title": "How to File a Trademark Using AI Without a Lawyer",
+   "date": "2026-11-02",
+   "published": "2026-11-02T21:54:37+00:00",
+   "kind": "video",
+   "url": "https://www.youtube.com/watch?v=r4rIS5pACGY",
+   "summary": "How do you file a trademark using AI without hiring a lawyer? In this video, I walk through how I used ChatGPT and Claude to research trademarks, evaluate potential conflicts, select trademark classes, and submit my own applications to the U.S. Patent and Trademark Office (USPTO).",
+   "hashtags": [],
+   "thumbnail": "video/r4rIS5pACGY.webp",
+   "source": "YouTube channel feed (archived)"
+  },
+  {
+   "id": "video:3sx6NNPbopQ",
+   "videoId": "3sx6NNPbopQ",
+   "title": "Before You Run an AI Coding Agent, Do These 4 Things",
+   "date": "2026-10-27",
+   "published": "2026-10-27T20:31:56+00:00",
+   "kind": "short",
+   "url": "https://www.youtube.com/shorts/3sx6NNPbopQ",
+   "summary": "Before you give an AI coding agent access to your computer, take a few basic precautions.",
+   "hashtags": [],
+   "thumbnail": "video/3sx6NNPbopQ.webp",
+   "source": "YouTube channel feed (archived)"
+  },
+  {
+   "id": "video:dcK_1nMhy8w",
+   "videoId": "dcK_1nMhy8w",
+   "title": "ENSv2 Vote Passed: New .eth Renewal Discounts Explained",
+   "date": "2026-10-27",
+   "published": "2026-10-27T14:44:42+00:00",
+   "kind": "video",
+   "url": "https://www.youtube.com/watch?v=dcK_1nMhy8w",
+   "summary": "ENSv2's activation vote has passed, bringing some significant changes to .eth domain renewals.",
+   "hashtags": [],
+   "thumbnail": "video/dcK_1nMhy8w.webp",
+   "source": "YouTube channel feed (archived)"
+  },
+  {
+   "id": "video:L8LzPXzMbQg",
+   "videoId": "L8LzPXzMbQg",
+   "title": "ENSv2 Explained: New Prices, Migration & What .eth Owners Need to Know",
+   "date": "2026-10-21",
+   "published": "2026-10-21T22:02:41+00:00",
+   "kind": "video",
+   "url": "https://www.youtube.com/watch?v=L8LzPXzMbQg",
+   "summary": "ENSv2 is moving toward activation, and the DAO vote is now live. If you own a .eth name, what does this mean for renewal prices, migration, and your existing names?",
+   "hashtags": [],
+   "thumbnail": "video/L8LzPXzMbQg.webp",
+   "source": "YouTube channel feed (archived)"
+  },
+  {
+   "id": "video:O0Hv932JmLM",
+   "videoId": "O0Hv932JmLM",
+   "title": "I Opened 2 Koda Plushie Mystery Boxes at ApeFest",
+   "date": "2026-10-17",
+   "published": "2026-10-17T19:35:56+00:00",
+   "kind": "short",
+   "url": "https://www.youtube.com/shorts/O0Hv932JmLM",
+   "summary": "I picked up two Koda plushie mystery boxes at the Bored Ape pop-up store during ApeFest in Charleston, South Carolina.",
+   "hashtags": [],
+   "thumbnail": "video/O0Hv932JmLM.webp",
+   "source": "YouTube channel feed (archived)"
+  },
+  {
+   "id": "video:_MAhfwQxdvA",
+   "videoId": "_MAhfwQxdvA",
+   "title": "I Gave an AI Agent an SEO Job. Now It Works Without Me.",
+   "date": "2026-10-15",
+   "published": "2026-10-15T21:44:53+00:00",
+   "kind": "video",
+   "url": "https://www.youtube.com/watch?v=_MAhfwQxdvA",
+   "summary": "I built an AI agent that finds five new websites every day, creates accounts, verifies emails, and links back to my personal website. The best part? It does the work without me.",
+   "hashtags": [],
+   "thumbnail": "video/_MAhfwQxdvA.webp",
+   "source": "YouTube channel feed (archived)"
+  },
+  {
+   "id": "video:NlbBuqLaofQ",
+   "videoId": "NlbBuqLaofQ",
+   "title": "I Found My Last Name on an Old Guinness Label",
+   "date": "2026-10-14",
+   "published": "2026-10-14T15:11:13+00:00",
+   "kind": "short",
+   "url": "https://www.youtube.com/shorts/NlbBuqLaofQ",
+   "summary": "I went looking for the coat of arms associated with my last name, Ashe, and ended up discovering a mythical creature called a cockatrice, and an old Guinness Extra Stout label with my surname on it. The label says \"Bottled by T. F. Ashe & Nephew, Liverpool.\"",
+   "hashtags": [
+    "guinness",
+    "ashe",
+    "familyhistory"
+   ],
+   "thumbnail": "video/NlbBuqLaofQ.webp",
+   "source": "YouTube channel feed (archived)"
+  },
+  {
+   "id": "video:qjLGYqxV_iM",
+   "videoId": "qjLGYqxV_iM",
+   "title": "How I Got a Google Knowledge Panel (Without Wikipedia)",
+   "date": "2026-10-13",
+   "published": "2026-10-13T14:40:15+00:00",
+   "kind": "short",
+   "url": "https://www.youtube.com/shorts/qjLGYqxV_iM",
+   "summary": "I got a Google Knowledge Panel without having a Wikipedia page.",
+   "hashtags": [],
+   "thumbnail": "video/qjLGYqxV_iM.webp",
+   "source": "YouTube channel feed (archived)"
+  },
+  {
+   "id": "video:ujUpw18fklM",
+   "videoId": "ujUpw18fklM",
+   "title": "Why I Don't Run AI Agents on My Personal Computer",
+   "date": "2026-10-08",
+   "published": "2026-10-08T21:12:32+00:00",
+   "kind": "short",
+   "url": "https://www.youtube.com/shorts/ujUpw18fklM",
+   "summary": "AI agents can run commands, access accounts, and act on your behalf. That's why I keep mine on a dedicated Mac mini, separate from my personal computer.",
+   "hashtags": [],
+   "thumbnail": "video/ujUpw18fklM.webp",
+   "source": "YouTube channel feed (archived)"
+  },
+  {
+   "id": "video:iEjd1OvHLS0",
+   "videoId": "iEjd1OvHLS0",
+   "title": "How to Start Learning AI (Without Getting Overwhelmed)",
+   "date": "2026-09-25",
+   "published": "2026-09-25",
+   "kind": "short",
+   "url": "https://www.youtube.com/shorts/iEjd1OvHLS0",
+   "summary": "",
+   "hashtags": [],
+   "thumbnail": "video/iEjd1OvHLS0.webp",
+   "source": "YouTube channel feed (archived)"
+  }
+ ],
+ "digest": {
+  "id": "digest",
+  "name": "The Digest",
+  "link": "/blog/",
+  "label": "Automated",
+  "byline": "KenAshe Digest (automated)",
+  "status": "paused",
+  "publishingPaused": true,
+  "noindex": false,
+  "statusLine": "Automated publishing is paused. The archive stays public.",
+  "published": 1399,
+  "drafts": 211,
+  "total": 1610,
+  "first": "2026-05-14",
+  "last": "2026-11-24",
+  "perDay": {
+   "2026-11-24": 17,
+   "2026-11-22": 9,
+   "2026-11-21": 6,
+   "2026-11-20": 10,
+   "2026-11-19": 9,
+   "2026-11-18": 9,
+   "2026-11-17": 10,
+   "2026-11-16": 10,
+   "2026-11-15": 10,
+   "2026-11-14": 10,
+   "2026-11-13": 9,
+   "2026-11-12": 9,
+   "2026-11-11": 9,
+   "2026-11-10": 10,
+   "2026-11-09": 8,
+   "2026-11-08": 10,
+   "2026-11-07": 10,
+   "2026-11-06": 10,
+   "2026-11-05": 10,
+   "2026-11-04": 10,
+   "2026-11-03": 9,
+   "2026-11-02": 10,
+   "2026-11-01": 10,
+   "2026-10-31": 9,
+   "2026-10-30": 10,
+   "2026-10-29": 10,
+   "2026-10-28": 10,
+   "2026-10-27": 8,
+   "2026-10-26": 9,
+   "2026-10-25": 10,
+   "2026-10-24": 9,
+   "2026-10-23": 8,
+   "2026-10-22": 9,
+   "2026-10-21": 9,
+   "2026-10-20": 8,
+   "2026-10-19": 9,
+   "2026-10-18": 10,
+   "2026-10-17": 9,
+   "2026-10-16": 10,
+   "2026-10-15": 10,
+   "2026-10-14": 9,
+   "2026-10-13": 6,
+   "2026-10-12": 10,
+   "2026-10-11": 10,
+   "2026-10-10": 9,
+   "2026-10-09": 10,
+   "2026-10-08": 9,
+   "2026-10-07": 10,
+   "2026-10-06": 10,
+   "2026-10-05": 8,
+   "2026-10-04": 7,
+   "2026-10-03": 9,
+   "2026-10-02": 10,
+   "2026-10-01": 9,
+   "2026-09-30": 10,
+   "2026-09-29": 10,
+   "2026-09-28": 9,
+   "2026-09-27": 8,
+   "2026-09-26": 9,
+   "2026-09-25": 8,
+   "2026-09-24": 9,
+   "2026-09-23": 9,
+   "2026-09-22": 10,
+   "2026-09-21": 10,
+   "2026-09-20": 10,
+   "2026-09-19": 9,
+   "2026-09-18": 10,
+   "2026-09-17": 10,
+   "2026-09-16": 9,
+   "2026-09-15": 9,
+   "2026-09-14": 9,
+   "2026-09-13": 10,
+   "2026-09-12": 10,
+   "2026-09-11": 10,
+   "2026-09-10": 10,
+   "2026-09-09": 9,
+   "2026-09-08": 10,
+   "2026-09-07": 10,
+   "2026-09-06": 9,
+   "2026-09-05": 10,
+   "2026-09-04": 9,
+   "2026-09-03": 10,
+   "2026-09-02": 8,
+   "2026-09-01": 10,
+   "2026-08-31": 10,
+   "2026-08-30": 10,
+   "2026-08-29": 7,
+   "2026-08-28": 10,
+   "2026-08-27": 10,
+   "2026-08-26": 10,
+   "2026-08-25": 10,
+   "2026-08-24": 10,
+   "2026-08-23": 10,
+   "2026-08-22": 9,
+   "2026-08-21": 10,
+   "2026-08-20": 10,
+   "2026-08-19": 8,
+   "2026-08-18": 9,
+   "2026-08-17": 9,
+   "2026-08-16": 10,
+   "2026-08-15": 10,
+   "2026-08-14": 8,
+   "2026-08-13": 10,
+   "2026-08-12": 10,
+   "2026-08-11": 8,
+   "2026-08-10": 10,
+   "2026-08-09": 9,
+   "2026-08-08": 10,
+   "2026-08-07": 9,
+   "2026-08-05": 8,
+   "2026-08-04": 8,
+   "2026-08-03": 10,
+   "2026-08-02": 9,
+   "2026-08-01": 9,
+   "2026-07-31": 9,
+   "2026-07-30": 10,
+   "2026-07-29": 9,
+   "2026-07-28": 8,
+   "2026-07-27": 10,
+   "2026-07-26": 9,
+   "2026-07-25": 8,
+   "2026-07-24": 10,
+   "2026-07-23": 9,
+   "2026-07-22": 8,
+   "2026-07-21": 5,
+   "2026-07-20": 8,
+   "2026-07-19": 6,
+   "2026-07-18": 5,
+   "2026-07-17": 8,
+   "2026-07-16": 5,
+   "2026-07-15": 9,
+   "2026-07-14": 7,
+   "2026-07-13": 7,
+   "2026-07-12": 6,
+   "2026-07-11": 7,
+   "2026-07-09": 9,
+   "2026-07-08": 9,
+   "2026-07-07": 8,
+   "2026-07-06": 7,
+   "2026-07-05": 6,
+   "2026-07-04": 6,
+   "2026-07-03": 9,
+   "2026-07-02": 9,
+   "2026-07-01": 7,
+   "2026-06-30": 8,
+   "2026-06-29": 9,
+   "2026-06-28": 7,
+   "2026-06-27": 6,
+   "2026-06-25": 8,
+   "2026-06-24": 9,
+   "2026-06-23": 12,
+   "2026-06-20": 1,
+   "2026-06-19": 2,
+   "2026-06-17": 1,
+   "2026-06-16": 2,
+   "2026-06-15": 1,
+   "2026-06-11": 2,
+   "2026-06-08": 1,
+   "2026-06-06": 1,
+   "2026-06-05": 2,
+   "2026-06-04": 1,
+   "2026-06-03": 1,
+   "2026-06-02": 1,
+   "2026-05-31": 1,
+   "2026-05-30": 1,
+   "2026-05-28": 2,
+   "2026-05-27": 1,
+   "2026-05-26": 3,
+   "2026-05-24": 1,
+   "2026-05-23": 1,
+   "2026-05-22": 3,
+   "2026-05-21": 2,
+   "2026-05-20": 2,
+   "2026-05-18": 1,
+   "2026-05-15": 2,
+   "2026-05-14": 1
+  },
+  "topTags": [
+   {
+    "tag": "ai-agents",
+    "n": 298
+   },
+   {
+    "tag": "model-reliability",
+    "n": 274
+   },
+   {
+    "tag": "building-with-ai",
+    "n": 231
+   },
+   {
+    "tag": "ai-research",
+    "n": 222
+   },
+   {
+    "tag": "digital-assets",
+    "n": 135
+   },
+   {
+    "tag": "evals",
+    "n": 134
+   },
+   {
+    "tag": "ai-workflows",
+    "n": 133
+   },
+   {
+    "tag": "benchmarks",
+    "n": 121
+   },
+   {
+    "tag": "marketing-ops",
+    "n": 114
+   },
+   {
+    "tag": "crypto",
+    "n": 113
+   },
+   {
+    "tag": "ai-infrastructure",
+    "n": 109
+   },
+   {
+    "tag": "developer-tools",
+    "n": 105
+   }
+  ],
+  "latest": [
+   {
+    "slug": "2026-11-24-ai-job-exposure-is-a-workflow-problem-before-it-is-a-labor-market-crisis",
+    "title": "AI job exposure is a workflow problem before it is a labor-market crisis",
+    "date": "2026-11-24",
+    "tags": [
+     "ai-policy",
+     "enterprise-ai",
+     "ai-strategy"
+    ],
+    "link": "/blog/2026-11-24-ai-job-exposure-is-a-workflow-problem-before-it-is-a-labor-market-crisis/",
+    "image": "digest/2026-11-24-ai-job-exposure-is-a-workflow-problem-b.webp",
+    "imageSrc": "src/assets/blog/2026-11-24-ai-job-exposure-is-a-workflow-problem-before-it-is-a-labor-market-crisis/hero.webp"
+   },
+   {
+    "slug": "2026-11-24-astra-and-codex-make-amateur-exoplanet-hunting-look-more-practical",
+    "title": "Astra and Codex make amateur exoplanet hunting look more practical",
+    "date": "2026-11-24",
+    "tags": [
+     "science-ai",
+     "coding-agents",
+     "ai-workflows"
+    ],
+    "link": "/blog/2026-11-24-astra-and-codex-make-amateur-exoplanet-hunting-look-more-practical/",
+    "image": "digest/2026-11-24-astra-and-codex-make-amateur-exoplanet-.webp",
+    "imageSrc": "src/assets/blog/2026-11-24-astra-and-codex-make-amateur-exoplanet-hunting-look-more-practical/hero.webp"
+   },
+   {
+    "slug": "2026-11-24-bing-ai-citations-are-not-just-blog-posts",
+    "title": "Bing AI citations are not just blog posts",
+    "date": "2026-11-24",
+    "tags": [
+     "ai-search",
+     "seo",
+     "content-strategy"
+    ],
+    "link": "/blog/2026-11-24-bing-ai-citations-are-not-just-blog-posts/",
+    "image": "digest/2026-11-24-bing-ai-citations-are-not-just-blog-pos.webp",
+    "imageSrc": "src/assets/blog/2026-11-24-bing-ai-citations-are-not-just-blog-posts/hero.webp"
+   },
+   {
+    "slug": "2026-11-24-end-user-domain-sales-still-show-where-naming-becomes-operating-work",
+    "title": "End-user domain sales still show where naming becomes operating work",
+    "date": "2026-11-24",
+    "tags": [
+     "domains",
+     "digital-assets",
+     "seo"
+    ],
+    "link": "/blog/2026-11-24-end-user-domain-sales-still-show-where-naming-becomes-operating-work/",
+    "image": "digest/2026-11-24-end-user-domain-sales-still-show-where-.webp",
+    "imageSrc": "src/assets/blog/2026-11-24-end-user-domain-sales-still-show-where-naming-becomes-operating-work/hero.webp"
+   },
+   {
+    "slug": "2026-11-24-gpt-6-cyber-moves-linux-security-toward-ai-assisted-patch-queues",
+    "title": "GPT-6 Cyber moves Linux security toward AI-assisted patch queues",
+    "date": "2026-11-24",
+    "tags": [
+     "ai-security",
+     "openai",
+     "agent-evaluation"
+    ],
+    "link": "/blog/2026-11-24-gpt-6-cyber-moves-linux-security-toward-ai-assisted-patch-queues/",
+    "image": "digest/2026-11-24-gpt-6-cyber-moves-linux-security-toward.webp",
+    "imageSrc": "src/assets/blog/2026-11-24-gpt-6-cyber-moves-linux-security-toward-ai-assisted-patch-queues/hero.webp"
+   },
+   {
+    "slug": "2026-11-24-how-a-421m-encoder-learns-to-read-option-names-instead-of-their-meaning",
+    "title": "How a 421M encoder learns to read option names instead of their meaning",
+    "date": "2026-11-24",
+    "tags": [
+     "interpretability",
+     "small-models",
+     "model-reliability"
+    ],
+    "link": "/blog/2026-11-24-how-a-421m-encoder-learns-to-read-option-names-instead-of-their-meaning/",
+    "image": "digest/2026-11-24-how-a-421m-encoder-learns-to-read-optio.webp",
+    "imageSrc": "src/assets/blog/2026-11-24-how-a-421m-encoder-learns-to-read-option-names-instead-of-their-meaning/hero.webp"
+   },
+   {
+    "slug": "2026-11-24-how-google-scores-search-ux-with-a-multimodal-llm-that-reads-the-page",
+    "title": "How Google Scores Search UX With a Multimodal LLM That Reads the Page",
+    "date": "2026-11-24",
+    "tags": [
+     "multimodal-ai",
+     "evals",
+     "gemini"
+    ],
+    "link": "/blog/2026-11-24-how-google-scores-search-ux-with-a-multimodal-llm-that-reads-the-page/",
+    "image": "digest/2026-11-24-how-google-scores-search-ux-with-a-mult.webp",
+    "imageSrc": "src/assets/blog/2026-11-24-how-google-scores-search-ux-with-a-multimodal-llm-that-reads-the-page/hero.webp"
+   },
+   {
+    "slug": "2026-11-24-intentfuls-aria-shows-the-quiet-value-of-narrow-ai-agents",
+    "title": "Intentful’s Aria shows the quiet value of narrow AI agents",
+    "date": "2026-11-24",
+    "tags": [
+     "ai-agents",
+     "marketing-ops",
+     "ai-workflows"
+    ],
+    "link": "/blog/2026-11-24-intentfuls-aria-shows-the-quiet-value-of-narrow-ai-agents/",
+    "image": "digest/2026-11-24-intentfuls-aria-shows-the-quiet-value-o.webp",
+    "imageSrc": "src/assets/blog/2026-11-24-intentfuls-aria-shows-the-quiet-value-of-narrow-ai-agents/hero.webp"
+   },
+   {
+    "slug": "2026-11-24-openais-legal-ai-pitch-is-really-about-workflow-memory",
+    "title": "OpenAI’s Legal AI Pitch Is Really About Workflow Memory",
+    "date": "2026-11-24",
+    "tags": [
+     "enterprise-ai",
+     "ai-workflows",
+     "ai-products"
+    ],
+    "link": "/blog/2026-11-24-openais-legal-ai-pitch-is-really-about-workflow-memory/",
+    "image": "digest/2026-11-24-openais-legal-ai-pitch-is-really-about-.webp",
+    "imageSrc": "src/assets/blog/2026-11-24-openais-legal-ai-pitch-is-really-about-workflow-memory/hero.webp"
+   },
+   {
+    "slug": "2026-11-24-shirudo-targets-the-awkward-gap-before-linux-patches-land",
+    "title": "Shirudo targets the awkward gap before Linux patches land",
+    "date": "2026-11-24",
+    "tags": [
+     "ai-security",
+     "open-source-ai",
+     "ai-infrastructure"
+    ],
+    "link": "/blog/2026-11-24-shirudo-targets-the-awkward-gap-before-linux-patches-land/",
+    "image": "digest/2026-11-24-shirudo-targets-the-awkward-gap-before-.webp",
+    "imageSrc": "src/assets/blog/2026-11-24-shirudo-targets-the-awkward-gap-before-linux-patches-land/hero.webp"
+   },
+   {
+    "slug": "2026-11-24-the-hard-part-of-coding-agents-is-the-15-000-repo-mess",
+    "title": "The hard part of coding agents is the 15,000-repo mess",
+    "date": "2026-11-24",
+    "tags": [
+     "coding-agents",
+     "developer-tools",
+     "enterprise-ai"
+    ],
+    "link": "/blog/2026-11-24-the-hard-part-of-coding-agents-is-the-15-000-repo-mess/",
+    "image": "digest/2026-11-24-the-hard-part-of-coding-agents-is-the-1.webp",
+    "imageSrc": "src/assets/blog/2026-11-24-the-hard-part-of-coding-agents-is-the-15-000-repo-mess/hero.webp"
+   },
+   {
+    "slug": "2026-11-24-tipsweep-finding-your-post-training-learning-rate-on-one-block-instead-of-the",
+    "title": "TipSweep: Finding Your Post-Training Learning Rate on One Block Instead of the Whole Model",
+    "date": "2026-11-24",
+    "tags": [
+     "post-training",
+     "fine-tuning",
+     "model-training"
+    ],
+    "link": "/blog/2026-11-24-tipsweep-finding-your-post-training-learning-rate-on-one-block-instead-of-the/",
+    "image": "digest/2026-11-24-tipsweep-finding-your-post-training-lea.webp",
+    "imageSrc": "src/assets/blog/2026-11-24-tipsweep-finding-your-post-training-learning-rate-on-one-block-instead-of-the/hero.webp"
+   }
+  ],
+  "evidence": [
+   ".github/workflows/pipeline.yml (schedule trigger)",
+   "src/utils/indexing.ts (only tag listings with fewer than three published articles are noindex; Digest articles are index-eligible)",
+   "src/content/blog/*.mdx (draft flag, pubDate)"
+  ],
+  "relatedBuild": "building:autonomous-ai-blog"
+ },
+ "edges": [
+  {
+   "from": "building:ai-agent-economy",
+   "to": "video:yZWsJjFnSH0",
+   "type": "embeds",
+   "evidence": "src/pages/building/ai-agent-economy.astro"
+  },
+  {
+   "from": "building:ai-agent-economy",
+   "to": "building:zerohuman",
+   "type": "links-to",
+   "evidence": "src/pages/building/ai-agent-economy.astro"
+  },
+  {
+   "from": "building:ai-agent-economy",
+   "to": "building:ai-explainer-producer",
+   "type": "links-to",
+   "evidence": "src/pages/building/ai-agent-economy.astro"
+  },
+  {
+   "from": "building:ai-agent-economy",
+   "to": "building:autonomous-seo-agent",
+   "type": "links-to",
+   "evidence": "src/pages/building/ai-agent-economy.astro"
+  },
+  {
+   "from": "building:ai-agent-economy",
+   "to": "building:ai-werewolf",
+   "type": "links-to",
+   "evidence": "src/pages/building/ai-agent-economy.astro"
+  },
+  {
+   "from": "building:ai-explainer-producer",
+   "to": "video:L8LzPXzMbQg",
+   "type": "embeds",
+   "evidence": "src/pages/building/ai-explainer-producer.astro"
+  },
+  {
+   "from": "building:ai-explainer-producer",
+   "to": "video:dcK_1nMhy8w",
+   "type": "embeds",
+   "evidence": "src/pages/building/ai-explainer-producer.astro"
+  },
+  {
+   "from": "building:ai-explainer-producer",
+   "to": "building:ai-ugc-video-lab",
+   "type": "links-to",
+   "evidence": "src/pages/building/ai-explainer-producer.astro"
+  },
+  {
+   "from": "building:ai-ugc-video-lab",
+   "to": "building:ai-explainer-producer",
+   "type": "links-to",
+   "evidence": "src/pages/building/ai-ugc-video-lab.astro"
+  },
+  {
+   "from": "building:ai-werewolf",
+   "to": "writing:ai-agents-reasoning-from-events-that-never-happened",
+   "type": "links-to",
+   "evidence": "src/pages/building/ai-werewolf.astro"
+  },
+  {
+   "from": "building:autonomous-ai-blog",
+   "to": "writing:the-digest-is-the-system",
+   "type": "links-to",
+   "evidence": "src/pages/building/autonomous-ai-blog.astro"
+  },
+  {
+   "from": "building:autonomous-ai-blog",
+   "to": "writing:my-automated-blog-got-cited",
+   "type": "links-to",
+   "evidence": "src/pages/building/autonomous-ai-blog.astro"
+  },
+  {
+   "from": "building:autonomous-ai-blog",
+   "to": "digest",
+   "type": "links-to",
+   "evidence": "src/pages/building/autonomous-ai-blog.astro"
+  },
+  {
+   "from": "building:autonomous-seo-agent",
+   "to": "video:_MAhfwQxdvA",
+   "type": "embeds",
+   "evidence": "src/pages/building/autonomous-seo-agent.astro"
+  },
+  {
+   "from": "building:returning-your-things",
+   "to": "video:QhOYaj_bDZY",
+   "type": "embeds",
+   "evidence": "src/pages/building/returning-your-things.astro"
+  },
+  {
+   "from": "building:returning-your-things",
+   "to": "writing:4-tips-for-making-ai-videos-that-feel-like-films",
+   "type": "links-to",
+   "evidence": "src/pages/building/returning-your-things.astro"
+  },
+  {
+   "from": "building:zerohuman",
+   "to": "building:ai-agent-economy",
+   "type": "links-to",
+   "evidence": "src/pages/building/zerohuman.astro"
+  },
+  {
+   "from": "building:zerohuman",
+   "to": "building:autonomous-seo-agent",
+   "type": "links-to",
+   "evidence": "src/pages/building/zerohuman.astro"
+  },
+  {
+   "from": "writing:4-tips-for-making-ai-videos-that-feel-like-films",
+   "to": "video:3MOFBulJd_s",
+   "type": "embeds",
+   "evidence": "src/pages/writing/4-tips-for-making-ai-videos-that-feel-like-films/index.astro"
+  },
+  {
+   "from": "writing:ai-agents-reasoning-from-events-that-never-happened",
+   "to": "building:ai-werewolf",
+   "type": "links-to",
+   "evidence": "src/pages/writing/ai-agents-reasoning-from-events-that-never-happened/index.astro"
+  },
+  {
+   "from": "writing:ai-editor-trusted-least",
+   "to": "video:iEjd1OvHLS0",
+   "type": "embeds",
+   "evidence": "src/pages/writing/ai-editor-trusted-least/index.astro"
+  },
+  {
+   "from": "writing:ashe-family-coat-of-arms",
+   "to": "video:NlbBuqLaofQ",
+   "type": "embeds",
+   "evidence": "src/pages/writing/ashe-family-coat-of-arms/index.astro"
+  },
+  {
+   "from": "writing:bambu-lab-burr-puzzle-solution",
+   "to": "video:Sft8JZ_afb4",
+   "type": "embeds",
+   "evidence": "src/pages/writing/bambu-lab-burr-puzzle-solution/index.astro"
+  },
+  {
+   "from": "writing:the-digest-is-the-system",
+   "to": "digest",
+   "type": "links-to",
+   "evidence": "src/pages/writing/the-digest-is-the-system/index.astro"
+  },
+  {
+   "from": "writing:the-digest-is-the-system",
+   "to": "building:autonomous-ai-blog",
+   "type": "links-to",
+   "evidence": "src/pages/writing/the-digest-is-the-system/index.astro"
+  },
+  {
+   "from": "writing:you-can-use-ai-to-learn-almost-anything-even-ai",
+   "to": "video:iEjd1OvHLS0",
+   "type": "embeds",
+   "evidence": "src/pages/writing/you-can-use-ai-to-learn-almost-anything-even-ai/index.astro"
+  },
+  {
+   "from": "video:DcXaGn-NsgY",
+   "to": "building:autonomous-ai-blog",
+   "type": "mentions",
+   "evidence": "YouTube description"
+  },
+  {
+   "from": "video:NlbBuqLaofQ",
+   "to": "writing:ashe-family-coat-of-arms",
+   "type": "mentions",
+   "evidence": "YouTube description"
+  }
+ ]
+}
