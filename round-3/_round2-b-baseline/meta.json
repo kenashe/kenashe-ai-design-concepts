@@ -1,0 +1,31 @@
+{
+  "name": "The Living Universe",
+  "letter": "B",
+  "oneLiner": "Every build, essay, video and short is a light in a 3D sky placed by its topic and date, joined by the links Ken actually wrote, with the automated Digest as a separate dust lane that cools and goes still when publishing is paused.",
+  "pages": [
+    { "path": "index.html", "label": "Homepage" },
+    { "path": "universe/index.html", "label": "Universe, full-screen explore (proposed route)" },
+    { "path": "building/autonomous-ai-blog/index.html", "label": "Autonomous AI Blog (the Digest nebula)" },
+    { "path": "building/returning-your-things/index.html", "label": "Returning Your Things (film first)" },
+    { "path": "publish/index.html", "label": "Publishing demo" },
+    { "path": "index.html?demo=build,essay,video", "label": "Homepage with example entries" }
+  ],
+  "palette": [
+    ["Void", "#0b0a08"],
+    ["Deep", "#100e0b"],
+    ["Surface", "#17140f"],
+    ["Line", "#2a251c"],
+    ["Starlight", "#f3eee3"],
+    ["Muted", "#a89f8c"],
+    ["Amber (Ken's accent, placeholders)", "#ffb300"],
+    ["Ember (film & video)", "#ff9468"],
+    ["Verdigris (onchain)", "#86e0d2"],
+    ["Amber gold (web & search)", "#ffc35a"],
+    ["Signal (agents & automation)", "#c8ff4d"],
+    ["Candle (life & curiosity)", "#f6cfae"],
+    ["Ash (the Digest, paused)", "#8f9cab"],
+    ["Warm dust (the Digest, publishing)", "#ffd7a1"]
+  ],
+  "type": "Instrument Serif (display and headings) · Hanken Grotesk (body and universe labels, carried over from production) · JetBrains Mono (data, dates, kickers; also production). All self-hosted latin woff2.",
+  "signature": "A living, data-placed universe you can orbit, fly through and replay month by month, where following a thread carries a light along a documented link to the related work, and the Digest's dust lane shows its real daily volume and its derived publishing status."
+}

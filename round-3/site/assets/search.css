@@ -1,0 +1,56 @@
+/* KenAshe.ai · Round 3 · Global search overlay (assets/search.js). Uses the tokens of site.css; every class is
+   prefixed gs- so the file can be added to any page. Nothing under 14px. */
+.gs-open{overflow:hidden}
+.gs{width:min(46rem,calc(100vw - 2rem));max-width:none;max-height:none;height:min(44rem,calc(100vh - 6rem));height:min(44rem,calc(100dvh - 6rem));margin:4.5rem auto auto;padding:0;color:var(--text);background:var(--raise);border:1px solid var(--line-2);border-radius:var(--r3);box-shadow:0 40px 120px -20px #000;overflow:hidden}
+.gs:not([open]){display:none}
+.gs::backdrop{background:rgba(10,9,8,.82)}
+.gs-box{display:grid;grid-template-rows:auto auto auto minmax(0,1fr) auto;height:100%}
+.gs-head{display:flex;align-items:center;gap:.75rem;padding:.75rem .75rem .75rem 1.25rem;border-bottom:1px solid var(--line-2)}
+.gs-field{flex:1;display:flex;align-items:center;gap:.9rem;min-width:0;font-size:1.15rem;color:var(--muted)}
+.gs-field input{flex:1;min-width:0;min-height:48px;padding:0;font:400 1.25rem/1.2 var(--sans);color:var(--text);background:none;border:0;outline:0;-webkit-appearance:none;appearance:none}
+.gs-field input::placeholder{color:var(--muted);opacity:1}
+.gs-field input::-webkit-search-cancel-button{-webkit-appearance:none}
+.gs-head:focus-within{box-shadow:inset 0 -2px 0 var(--amber)}
+.gs-x{display:inline-flex;align-items:center;gap:.5rem;min-height:44px;padding:0 1rem;font-size:var(--fs-small);font-weight:500;color:var(--soft);background:none;border:1px solid var(--line-2);border-radius:999px}
+.gs-x:hover{border-color:var(--amber);color:var(--text)}
+.gs-kinds{padding:.75rem 1.25rem 0;overflow-x:auto;scrollbar-width:none}
+.gs-kinds::-webkit-scrollbar{display:none}
+.gs-kinds .chips{flex-wrap:nowrap}
+.gs-kinds .chip{white-space:nowrap}
+.gs-status{padding:.75rem 1.25rem .5rem;font-size:var(--fs-small);color:var(--soft)}
+.gs-list{overflow-y:auto;overscroll-behavior:contain;padding:0 .5rem;scroll-padding-block:.5rem}
+.gs-row{position:relative;display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:0 .5rem;border-top:1px solid var(--line)}
+.gs-row:first-child{border-top:0}
+.gs-main{display:grid;grid-template-columns:6.5rem minmax(0,1fr);gap:.9rem;align-items:center;min-height:64px;padding:.6rem .75rem;color:var(--text);text-decoration:none;border-radius:var(--r2)}
+.gs-main:hover,.gs-main:focus-visible{background:var(--surface);color:var(--text)}
+.gs-main:focus-visible{outline:2px solid var(--amber);outline-offset:-2px}
+.gs-media{position:relative;aspect-ratio:16/9;overflow:hidden;border-radius:var(--r1);background:var(--surface)}
+.gs-media img{width:100%;height:100%;object-fit:cover}
+.gs-body{display:grid;gap:.25rem;min-width:0}
+.gs-t{font:400 1.3rem/1.15 var(--serif);display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;line-clamp:2;overflow:hidden}
+.gs-main:hover .gs-t{text-decoration:underline;text-decoration-color:var(--tc)}
+.gs-m{display:flex;flex-wrap:wrap;align-items:center;gap:.1rem .9rem;font-size:var(--fs-min);color:var(--muted)}
+.gs-kind{font-weight:600;color:var(--soft)}
+.gs-m .theme{font-size:var(--fs-min);color:var(--muted)}
+.gs-m .badge-ph{padding-block:0}
+.gs-uni{display:inline-flex;align-items:center;min-height:44px;padding:0 .9rem;margin-right:.25rem;font-size:var(--fs-min);font-weight:500;color:var(--soft);text-decoration:none;border:1px solid var(--line-2);border-radius:999px;white-space:nowrap}
+.gs-uni:hover,.gs-uni:focus-visible{border-color:var(--amber);color:var(--text)}
+.gs-more-li{display:flex;justify-content:center;padding:.9rem 1rem 1.1rem;border-top:1px solid var(--line)}
+.gs-more{min-height:44px;padding:0 1.25rem;font:600 var(--fs-sec)/1 var(--sans);color:var(--text);background:none;border:1px solid var(--line-2);border-radius:var(--r2)}
+.gs-more:hover{border-color:var(--amber)}
+.gs-foot{display:flex;flex-wrap:wrap;gap:.25rem 1.5rem;align-items:center;padding:.6rem 1.25rem;font-size:var(--fs-min);color:var(--muted);background:var(--surface);border-top:1px solid var(--line-2)}
+.gs-digest{color:var(--ash)} .gs-digest .badge-auto{margin-right:.35rem}
+.gs-digest a{display:inline-flex;align-items:center;min-height:44px;color:#c9d0d7}
+@media (max-width:640px){
+  .gs{width:100vw;height:100vh;height:100dvh;margin:0;border:0;border-radius:0}
+  .gs-head{padding-left:1rem}
+  .gs-x span{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)} .gs-x{width:44px;padding:0;justify-content:center}
+  .gs-field input{font-size:1.125rem}
+  .gs-kinds,.gs-status{padding-inline:1rem}
+  .gs-row{grid-template-columns:1fr}
+  .gs-main{grid-template-columns:5.5rem minmax(0,1fr);padding-bottom:.2rem}
+  .gs-uni{justify-self:start;margin:0 0 .5rem calc(5.5rem + 1.65rem);border:0;padding:0;color:var(--soft);text-decoration:underline;text-underline-offset:.2em}
+  .gs-keys{display:none}
+  .gs-t{font-size:1.2rem}
+}
+@media (hover:none){.gs-keys{display:none}}

@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en" data-root="site">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<title>ZeroHuman: A Business Only AI Agents Can Use – Ken Ashe</title>
+<meta name="description" content="ZeroHuman is a live Ethereum service for AI agents: pay zerohuman.eth 0.0001 ETH with a request, and zerohuman.eth sends the result back onchain. How it works, how it was built and tested, and its limits.">
+<meta name="r3:item" content="building:zerohuman">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Ken Ashe | AI Application Builder">
+<meta property="og:title" content="ZeroHuman: A Business Only AI Agents Can Use – Ken Ashe">
+<meta property="og:description" content="ZeroHuman is a live Ethereum service for AI agents: pay zerohuman.eth 0.0001 ETH with a request, and zerohuman.eth sends the result back onchain. How it works, how it was built and tested, and its limits.">
+<meta property="og:url" content="https://kenashe.ai/building/zerohuman/">
+<meta property="og:image" content="https://kenashe.ai/images/ken-ashe-headshot-1x1.webp">
+<meta name="twitter:card" content="summary_large_image">
+<!-- Production keeps <link rel="canonical" href="https://kenashe.ai/building/zerohuman/"> here. Omitted in the prototype on purpose. -->
+<link rel="alternate" type="application/rss+xml" title="Ken Ashe: Writing" href="https://kenashe.ai/writing/rss.xml">
+<link rel="icon" href="../../../assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="../../assets/fonts/instrument-serif.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../../assets/fonts/hanken-grotesk.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../../../lib/concept-flag.css">
+<link rel="stylesheet" href="../../assets/site.css">
+<link rel="stylesheet" href="../../assets/pages.css">
+</head>
+<body class="interior">
+<div class="concept-flag" role="note"><strong>Design concept</strong><span>Round 3 · The Living Universe. Not the live KenAshe.ai. Not indexed.</span><a href="../../../">Round 3 review</a></div>
+<a class="skip" href="#main">Skip to content</a>
+<div data-region="header"><!--@header--><header class="site-head">
+<a class="brand" href="../../../site/"><svg class="brand-mark" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1v22M1 12h22" stroke="currentColor" stroke-width="1"/><circle cx="12" cy="12" r="3" fill="currentColor"/></svg><span>Ken Ashe</span></a>
+<nav class="nav" aria-label="Primary"><ul><li><a href="../../../site/universe/">Universe</a></li><li><a href="../../../site/building/" aria-current="page">Building</a></li><li><a href="../../../site/videos/">Videos</a></li><li><a href="../../../site/writing/">Writing</a></li><li><a href="https://kenashe.ai/blog/" target="_blank" rel="noopener noreferrer">Digest<span class="nav-auto">automated</span></a></li><li><a href="../../../site/about/">About</a></li></ul></nav>
+<a class="search-btn" href="../../../site/building/" data-search><svg class="i" viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="4.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10.5 10.5L14 14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg><span>Search</span></a>
+<details class="nav-menu"><summary><svg class="i" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 4.5h12M2 8h12M2 11.5h12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg><span>Menu</span></summary><nav aria-label="Primary, menu"><ul><li><a href="../../../site/universe/">Universe</a></li><li><a href="../../../site/building/" aria-current="page">Building</a></li><li><a href="../../../site/videos/">Videos</a></li><li><a href="../../../site/writing/">Writing</a></li><li><a href="https://kenashe.ai/blog/" target="_blank" rel="noopener noreferrer">Digest<span class="nav-auto">automated</span></a></li><li><a href="../../../site/about/">About</a></li></ul></nav></details>
+</header><!--/@header--></div>
+
+<main id="main" class="ip ip--build">
+<article class="ip-article">
+<header class="ip-head" data-region="item-head"><!--@item-head--><div class="ip-head-text" style="--tc:#83e2d5"><p class="crumb"><a href="../../../site/building/"><svg class="i" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h9M8.5 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Building</span></a></p><p class="kicker" style="--tc:#83e2d5"><svg class="glyph" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 1.5v21M1.5 12h21" stroke="var(--tc,currentColor)" stroke-width="1.1" opacity=".8"/><path d="M6.5 6.5l11 11M17.5 6.5l-11 11" stroke="var(--tc,currentColor)" stroke-width=".8" opacity=".45"/><circle cx="12" cy="12" r="3.1" fill="#fff8ec"/></svg><span>Build · Live · Nov 2026</span></p>
+<h1>ZeroHuman</h1>
+<p class="ip-dek">An always-on service that sells small jobs to other AI agents. Agents pay the ENS name zerohuman.eth 0.0001 ETH and get the result back in a transaction from the same name. No account, no API, no human in the loop.</p>
+<div class="ip-facts"><span class="theme" style="--tc:#83e2d5">Onchain</span><ul class="ip-stack" aria-label="Stack"><li>AI Agents</li><li>Ethereum</li><li>ENS</li><li>ERC-8004</li><li>TypeScript</li><li>Railway</li></ul></div><p class="ip-ledger"><a class="ct ct--receipts" href="#receipts">7 receipts</a><a class="ct ct--threads" href="#threads">2 documented threads</a></p></div>
+<figure class="ip-sky" style="--tc:#83e2d5"><svg class="sky" viewBox="0 0 720 540" role="img" aria-label="Where ZeroHuman sits in the universe of Ken Ashe's work: Onchain, Nov 2026. Documented threads connect it to AI agent economy on Ethereum, Autonomous SEO agent." xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><radialGradient id="sky4now"><stop offset="0" stop-color="#ffd9a0" stop-opacity=".26"/><stop offset=".5" stop-color="#ffc27a" stop-opacity=".07"/><stop offset="1" stop-color="#ffc27a" stop-opacity="0"/></radialGradient><radialGradient id="sky4g0"><stop offset="0" stop-color="#83e2d5" stop-opacity=".55"/><stop offset=".25" stop-color="#83e2d5" stop-opacity=".16"/><stop offset="1" stop-color="#83e2d5" stop-opacity="0"/></radialGradient><radialGradient id="sky4g1"><stop offset="0" stop-color="#ffce5c" stop-opacity=".55"/><stop offset=".25" stop-color="#ffce5c" stop-opacity=".16"/><stop offset="1" stop-color="#ffce5c" stop-opacity="0"/></radialGradient></defs><ellipse cx="200" cy="330" rx="648.3" ry="366.1" fill="url(#sky4now)"/><g class="sky-band" fill="#8a939d"><path d="M356.9 365.8L359.4 356.8L360.3 347.9L359.6 339L357.5 330.4L353.9 322L349 314L342.7 306.4L335.2 299.3L326.6 292.6L316.9 286.6L331.8 278.9L342.8 285.7L352.6 293.1L361.2 301.1L368.4 309.7L374.2 318.8L378.4 328.2L381 338L381.9 348L381.1 358.2L378.5 368.4Z" opacity="0.05"/><path d="M378.5 368.4L381.1 358.2L381.9 348L381 338L378.4 328.2L374.2 318.8L368.4 309.7L361.2 301.1L352.6 293.1L342.8 285.7L331.8 278.9L346.4 271.3L358.8 278.8L369.9 287L379.6 295.9L387.8 305.4L394.4 315.5L399.2 326L402.3 337L403.5 348.2L402.8 359.6L400.1 371.1Z" opacity="0.05"/><path d="M400.1 371.1L402.8 359.6L403.5 348.2L402.3 337L399.2 326L394.4 315.5L387.8 305.4L379.6 295.9L369.9 287L358.8 278.8L346.4 271.3L360.9 263.7L374.6 272L386.9 281L397.8 290.7L407 301.2L414.4 312.3L420 323.9L423.6 335.9L425.2 348.3L424.6 361L421.8 373.7Z" opacity="0.05"/><path d="M421.8 373.7L424.6 361L425.2 348.3L423.6 335.9L420 323.9L414.4 312.3L407 301.2L397.8 290.7L386.9 281L374.6 272L360.9 263.7L375.2 256.3L390.2 265.2L403.8 275L415.8 285.6L426 297L434.4 309L440.7 321.7L444.9 334.9L446.8 348.5L446.4 362.3L443.6 376.4Z" opacity="0.05"/><path d="M443.6 376.4L446.4 362.3L446.8 348.5L444.9 334.9L440.7 321.7L434.4 309L426 297L415.8 285.6L403.8 275L390.2 265.2L375.2 256.3L389.3 249L405.7 258.6L420.5 269.1L433.7 280.5L445 292.8L454.2 305.8L461.3 319.5L466.1 333.8L468.5 348.6L468.3 363.7L465.5 379Z" opacity="0.05"/><path d="M465.5 379L468.3 363.7L468.5 348.6L466.1 333.8L461.3 319.5L454.2 305.8L445 292.8L433.7 280.5L420.5 269.1L405.7 258.6L389.3 249L403.2 241.8L421 252L437.1 263.2L451.4 275.5L463.7 288.6L474 302.6L481.9 317.4L487.3 332.8L490.1 348.8L490.2 365.1L487.5 381.7Z" opacity="0.05"/><path d="M487.5 381.7L490.2 365.1L490.1 348.8L487.3 332.8L481.9 317.4L474 302.6L463.7 288.6L451.4 275.5L437.1 263.2L421 252L403.2 241.8L417 234.6L436.1 245.5L453.5 257.4L469 270.5L482.4 284.5L493.6 299.5L502.3 315.3L508.5 331.8L511.8 348.9L512.2 366.5L509.6 384.4Z" opacity="0.05"/><path d="M509.6 384.4L512.2 366.5L511.8 348.9L508.5 331.8L502.3 315.3L493.6 299.5L482.4 284.5L469 270.5L453.5 257.4L436.1 245.5L417 234.6L430.5 227.6L451 239L469.7 251.7L486.4 265.5L500.9 280.4L513.1 296.3L522.7 313.1L529.6 330.7L533.5 349.1L534.3 367.9L531.8 387.1Z" opacity="0.05"/><path d="M531.8 387.1L534.3 367.9L533.5 349.1L529.6 330.7L522.7 313.1L513.1 296.3L500.9 280.4L486.4 265.5L469.7 251.7L451 239L430.5 227.6L443.9 220.6L465.7 232.7L485.7 246L503.7 260.6L519.3 276.3L532.5 293.2L543.1 311L550.7 329.7L555.2 349.2L556.3 369.3L554 389.8Z" opacity="0.05"/><path d="M554 389.8L556.3 369.3L555.2 349.2L550.7 329.7L543.1 311L532.5 293.2L519.3 276.3L503.7 260.6L485.7 246L465.7 232.7L443.9 220.6L457.2 213.8L480.3 226.4L501.6 240.4L520.8 255.7L537.6 272.3L551.9 290L563.3 308.9L571.7 328.7L576.8 349.4L578.5 370.7L576.4 392.6Z" opacity="0.06"/><path d="M576.4 392.6L578.5 370.7L576.8 349.4L571.7 328.7L563.3 308.9L551.9 290L537.6 272.3L520.8 255.7L501.6 240.4L480.3 226.4L457.2 213.8L470.3 207L494.8 220.2L517.3 234.8L537.7 250.9L555.7 268.3L571.1 286.9L583.5 306.8L592.7 327.7L598.5 349.5L600.6 372.1L598.9 395.3Z" opacity="0.06"/><path d="M598.9 395.3L600.6 372.1L598.5 349.5L592.7 327.7L583.5 306.8L571.1 286.9L555.7 268.3L537.7 250.9L517.3 234.8L494.8 220.2L470.3 207L483.2 200.3L509 214L532.9 229.3L554.6 246.1L573.8 264.3L590.2 283.8L603.6 304.7L613.7 326.6L620.2 349.7L622.9 373.5L621.4 398.1Z" opacity="0.06"/><path d="M621.4 398.1L622.9 373.5L620.2 349.7L613.7 326.6L603.6 304.7L590.2 283.8L573.8 264.3L554.6 246.1L532.9 229.3L509 214L483.2 200.3L495.9 193.7L523.1 208L548.3 223.9L571.3 241.3L591.7 260.3L609.2 280.8L623.6 302.6L634.6 325.6L641.9 349.8L645.2 374.9L644.1 400.8Z" opacity="0.06"/><path d="M644.1 400.8L645.2 374.9L641.9 349.8L634.6 325.6L623.6 302.6L609.2 280.8L591.7 260.3L571.3 241.3L548.3 223.9L523.1 208L495.9 193.7L508.5 187.1L537.1 201.9L563.6 218.5L587.8 236.6L609.4 256.4L628.1 277.7L643.6 300.5L655.5 324.6L663.6 350L667.5 376.4L666.8 403.6Z" opacity="0.06"/><path d="M666.8 403.6L667.5 376.4L663.6 350L655.5 324.6L643.6 300.5L628.1 277.7L609.4 256.4L587.8 236.6L563.6 218.5L537.1 201.9L508.5 187.1L521 180.6L550.9 196L578.7 213.1L604.2 232L627.1 252.5L646.9 274.7L663.5 298.4L676.4 323.6L685.3 350.1L689.9 377.8L689.7 406.4Z" opacity="0.06"/><path d="M689.7 406.4L689.9 377.8L685.3 350.1L676.4 323.6L663.5 298.4L646.9 274.7L627.1 252.5L604.2 232L578.7 213.1L550.9 196L521 180.6L533.3 174.3L564.6 190.1L593.7 207.8L620.5 227.3L644.6 248.6L665.7 271.6L683.3 296.3L697.2 322.6L707 350.2L712.3 379.2L712.7 409.2Z" opacity="0.06"/><path d="M712.7 409.2L712.3 379.2L707 350.2L697.2 322.6L683.3 296.3L665.7 271.6L644.6 248.6L620.5 227.3L593.7 207.8L564.6 190.1L533.3 174.3L545.4 168L578.1 184.3L608.6 202.6L636.7 222.7L662 244.8L684.3 268.6L703.1 294.3L718 321.6L728.7 350.4L734.8 380.6L735.7 412Z" opacity="0.06"/><path d="M735.7 412L734.8 380.6L728.7 350.4L718 321.6L703.1 294.3L684.3 268.6L662 244.8L636.7 222.7L608.6 202.6L578.1 184.3L545.4 168L557.4 161.7L591.4 178.5L623.3 197.4L652.7 218.2L679.3 240.9L702.8 265.6L722.8 292.2L738.8 320.5L750.5 350.5L757.3 382L758.9 414.8Z" opacity="0.03"/><path d="M758.9 414.8L757.3 382L750.5 350.5L738.8 320.5L722.8 292.2L702.8 265.6L679.3 240.9L652.7 218.2L623.3 197.4L591.4 178.5L557.4 161.7L569.3 155.6L604.6 172.9L637.8 192.2L668.5 213.7L696.5 237.1L721.2 262.7L742.4 290.1L759.5 319.5L772.2 350.7L779.9 383.5L782.1 417.7Z" opacity="0.03"/></g><g class="sky-rings"><path d="M732.2 686.3L774.9 648.9L810.2 610.4L838.1 571.2L858.9 532L872.9 493.1L880.5 455L882.1 417.9L878.2 382.1L869.3 347.9L855.8 315.4L838.2 284.6L816.9 255.6L792.4 228.6L764.9 203.5L734.8 180.4L702.5 159.1L668.2 139.8L632.1 122.3L594.5 106.8L555.6 93L515.6 81L474.5 70.8L432.7 62.3L390.1 55.5L347 50.4L303.4 47L259.4 45.3L215.2 45.2L170.8 46.8L126.3 50.1L81.9 55L37.7 61.6L-6.3 69.9L-49.9 80L-93 91.8L-135.4 105.4L-176.9 120.9L-217.4 138.2L-256.7 157.3L-294.4 178.4L-330.4 201.4L-364.3 226.3L-395.8 253.1L-424.6 281.9L-450.1 312.5L-472 344.9L-489.9 379L-503.1 414.6L-511.2 451.6L-513.6 489.6L-509.8 528.5L-499.4 567.7L-481.9 606.9L-456.8 645.5L-424.1 683L-383.5 718.7L-335.1 752.1L-279.3 782.3L-216.4 808.8L-147.2 830.9L-72.6 848.1L6.2 859.9L88 866L171.3 866.3L254.7 860.7L336.6 849.4L415.8 832.7L490.9 811L560.9 784.8L624.8 754.9L682.1 721.8L732.2 686.3" class="major"/><path d="M672.8 646.5L712.1 614.1L745.1 580.4L771.6 546.1L791.9 511.4L806.1 476.9L814.6 442.9L817.8 409.6L815.8 377.3L809.2 346.3L798.4 316.6L783.6 288.5L765.4 261.9L743.9 236.9L719.7 213.7L692.8 192.1L663.8 172.3L632.7 154.2L599.9 137.8L565.5 123.1L529.8 110.2L492.9 98.8L455.1 89.2L416.3 81.1L376.8 74.7L336.8 69.9L296.2 66.6L255.3 65L214.1 64.9L172.8 66.4L131.4 69.5L90.2 74.2L49.1 80.5L8.3 88.4L-32 97.9L-71.8 109.1L-110.8 121.9L-148.9 136.4L-185.9 152.7L-221.6 170.6L-255.7 190.3L-288.1 211.6L-318.3 234.7L-346.2 259.5L-371.3 286L-393.3 314L-411.9 343.6L-426.6 374.5L-436.9 406.7L-442.5 439.8L-442.9 473.8L-437.8 508.3L-426.6 542.9L-409.2 577.4L-385.2 611.1L-354.6 643.7L-317.2 674.5L-273.2 703.2L-222.9 729.1L-166.7 751.7L-105.3 770.5L-39.4 785L30 795L101.8 800.2L174.8 800.4L248 795.7L320 786.1L389.7 772L456.2 753.5L518.4 731.3L575.6 705.7L627.2 677.2L672.8 646.5"/><path d="M592.8 592.9L627 566.8L656.1 539.6L680.2 511.5L699.1 483L713.2 454.4L722.4 425.9L727 397.9L727.3 370.5L723.5 344L715.9 318.5L704.8 294.1L690.5 270.9L673.3 249L653.4 228.5L631.1 209.4L606.6 191.7L580.2 175.5L552 160.8L522.3 147.6L491.3 135.8L459 125.6L425.8 116.8L391.7 109.5L356.8 103.6L321.3 99.2L285.4 96.2L249.1 94.7L212.5 94.6L175.9 96L139.2 98.9L102.6 103.1L66.2 108.9L30.3 116.1L-5.2 124.7L-40.1 134.9L-74.1 146.5L-107.2 159.6L-139.1 174.2L-169.7 190.2L-198.7 207.7L-225.9 226.7L-251.1 247.1L-274 268.8L-294.3 291.9L-311.7 316.2L-325.9 341.7L-336.6 368.1L-343.5 395.4L-346.2 423.4L-344.5 451.8L-338 480.4L-326.6 508.9L-310 537.1L-288.1 564.4L-260.9 590.6L-228.3 615.3L-190.7 638.1L-148.1 658.5L-101.1 676.3L-50.2 691L4.1 702.3L61 710.1L119.7 714.1L179.4 714.3L239.2 710.6L298.1 703.2L355.4 692.1L410.3 677.7L462 660.2L510 640L553.7 617.5L592.8 592.9"/><path d="M464.2 506.8L488.8 490.2L510.4 472.6L528.9 454.3L544.1 435.5L556.1 416.3L564.8 397L570.5 377.7L573 358.7L572.6 340L569.5 321.7L563.6 304.1L555.3 287.2L544.6 271L531.7 255.7L516.9 241.3L500.2 227.9L481.8 215.5L461.8 204.1L440.5 193.9L418 184.7L394.4 176.6L369.8 169.7L344.4 163.8L318.3 159.2L291.6 155.7L264.5 153.3L237.1 152.1L209.5 152L181.7 153.1L154 155.4L126.5 158.8L99.2 163.4L72.3 169.1L46 175.9L20.3 183.9L-4.6 193L-28.6 203.2L-51.4 214.4L-73 226.7L-93.2 240.1L-111.8 254.4L-128.6 269.6L-143.5 285.7L-156.3 302.5L-166.7 320.1L-174.6 338.3L-179.9 357L-182.3 376L-181.8 395.2L-178.1 414.6L-171.2 433.7L-160.9 452.6L-147.3 471L-130.4 488.7L-110.1 505.4L-86.7 520.9L-60.2 535.2L-30.8 547.8L1.1 558.7L35.3 567.6L71.3 574.5L108.9 579.1L147.4 581.6L186.5 581.7L225.7 579.5L264.4 575L302.3 568.3L338.8 559.5L373.6 548.8L406.3 536.4L436.6 522.3L464.2 506.8"/><path d="M753.1 700.3L796.9 661.1L833 620.8L861.3 580L882.2 539.1L896 498.7L903.1 459.1L904.1 420.7L899.5 383.8L889.7 348.5L875.3 314.9L856.6 283.3L834.3 253.6L808.6 225.8L780 200.1L748.9 176.4L715.4 154.7L680 135L642.8 117.2L604.1 101.3L564.2 87.3L523.1 75.1L481 64.7L438.1 56.1L394.5 49.2L350.4 44L305.7 40.6L260.8 38.8L215.5 38.7L170.1 40.3L124.6 43.6L79.2 48.6L33.9 55.4L-11.2 63.8L-55.9 74.1L-100.1 86.1L-143.6 100L-186.3 115.7L-228 133.3L-268.4 152.9L-307.4 174.4L-344.6 197.9L-379.8 223.4L-412.6 251L-442.6 280.5L-469.4 312L-492.5 345.4L-511.5 380.5L-525.7 417.4L-534.7 455.6L-537.9 495.1L-534.8 535.4L-524.7 576.3L-507.2 617.2L-481.9 657.5L-448.5 696.8L-406.9 734.3L-357 769.3L-299.3 801.2L-234 829.1L-162.1 852.5L-84.4 870.6L-2.2 883.1L83.1 889.6L170 889.9L257 884L342.5 872L425.1 854.3L503.2 831.4L576 803.9L642.3 772.3L701.5 737.6L753.1 700.3" class="major"/><path d="M305.4 400.5L316 394.3L325.7 387.7L334.2 380.7L341.6 373.4L347.8 365.8L352.8 358L356.5 350.1L359 342.2L360.2 334.3L360.2 326.4L359 318.6L356.6 311.1L353 303.8L348.4 296.7L342.8 290L336.1 283.7L328.6 277.7L320.1 272.2L310.9 267.2L301 262.6L290.4 258.6L279.3 255.1L267.6 252.2L255.5 249.8L243.1 248L230.4 246.8L217.5 246.2L204.4 246.1L191.4 246.7L178.4 247.9L165.5 249.6L152.8 251.9L140.3 254.8L128.3 258.3L116.7 262.2L105.5 266.7L95 271.7L85.2 277.2L76.1 283.1L67.8 289.4L60.4 296.1L53.9 303.1L48.5 310.4L44.1 318L40.9 325.7L38.8 333.5L37.9 341.5L38.3 349.4L40 357.3L42.9 365.1L47.1 372.7L52.5 380.1L59.2 387.1L67.1 393.8L76.2 400L86.3 405.7L97.4 410.8L109.5 415.3L122.4 419.2L136 422.3L150.1 424.7L164.7 426.3L179.7 427.2L194.8 427.2L209.9 426.5L224.9 424.9L239.7 422.6L254.1 419.5L268 415.7L281.2 411.2L293.7 406.2L305.4 400.5" class="now"/></g><g class="sky-dim"><circle cx="26.5" cy="22.5" r="2.6" fill="#ceff5c" opacity="0.34"/><circle cx="144" cy="-2.2" r="2.6" fill="#ceff5c" opacity="0.34"/><circle cx="202.8" cy="-2.9" r="2.7" fill="#ceff5c" opacity="0.34"/><circle cx="209.7" cy="55.3" r="3.4" fill="#ceff5c" opacity="0.34"/><circle cx="125.5" cy="46.1" r="2.7" fill="#ceff5c" opacity="0.34"/><circle cx="160.1" cy="73.6" r="3.8" fill="#ceff5c" opacity="0.34"/><circle cx="105.9" cy="97" r="2.9" fill="#ceff5c" opacity="0.34"/><circle cx="541.7" cy="102.1" r="4.2" fill="#ffce5c" opacity="0.34"/><circle cx="182.6" cy="120.1" r="3.6" fill="#ceff5c" opacity="0.34"/><circle cx="-4.7" cy="150.5" r="2.5" fill="#ceff5c" opacity="0.34"/><circle cx="128.4" cy="142" r="2.2" fill="#ceff5c" opacity="0.34"/><circle cx="637.7" cy="118.4" r="3" fill="#ffce5c" opacity="0.34"/><circle cx="60.3" cy="185.5" r="2.2" fill="#ceff5c" opacity="0.34"/><circle cx="517.9" cy="161.8" r="3.8" fill="#ffce5c" opacity="0.34"/><circle cx="560.9" cy="189.6" r="2.8" fill="#ffce5c" opacity="0.34"/><circle cx="507.1" cy="254.6" r="2.6" fill="#ffce5c" opacity="0.34"/><circle cx="391.2" cy="207.5" r="2.2" fill="#ffce5c" opacity="0.34"/><circle cx="353.5" cy="253.3" r="2.7" fill="#ffce5c" opacity="0.34"/><circle cx="555.7" cy="329.1" r="2.2" fill="#ffce5c" opacity="0.34"/><circle cx="523.7" cy="380.2" r="4.4" fill="#ffce5c" opacity="0.34"/><circle cx="650.6" cy="309.4" r="3.3" fill="#ffce5c" opacity="0.34"/><circle cx="81.9" cy="390.4" r="2.9" fill="#ff8d5c" opacity="0.34"/><circle cx="0.7" cy="397.4" r="5" fill="#ff8d5c" opacity="0.34"/><circle cx="138.7" cy="384.7" r="3.5" fill="#ff8d5c" opacity="0.34"/><circle cx="204.2" cy="449" r="3.1" fill="#ff8d5c" opacity="0.34"/><circle cx="353.6" cy="463.8" r="3.2" fill="#83e2d5" opacity="0.34"/><circle cx="222.5" cy="481.8" r="3.2" fill="#83e2d5" opacity="0.34"/><circle cx="40.2" cy="492.8" r="5.2" fill="#ff8d5c" opacity="0.34"/><circle cx="298.9" cy="504.3" r="3.3" fill="#83e2d5" opacity="0.34"/></g><g class="sky-threads sky-threads--far"><path d="M296.1 407.1Q257.7 376.3 222.5 481.8"/><path d="M296.1 407.1Q117.6 323.9 -48.7 459.2"/><path d="M296.1 407.1Q423.6 236.7 530.5 290.9"/><path d="M296.1 407.1Q209.7 41.7 160.1 73.6"/><path d="M-48.7 459.2Q113.1 371.6 298.9 504.3"/><path d="M-48.7 459.2Q144.1 343.2 353.6 463.8"/><path d="M-48.7 459.2Q-14 411.5 40.2 492.8"/><path d="M40.2 492.8Q-14 411.5 -48.7 459.2"/><path d="M160.1 73.6Q72 36.6 -4.7 150.5"/><path d="M541.7 102.1Q601.8 62 650.6 309.4"/><path d="M541.7 102.1Q556.5 64.4 560.9 189.6"/><path d="M530.5 290.9Q522.1 217.1 507.1 254.6"/><path d="M0.7 397.4Q93.8 340.9 204.2 449"/><path d="M0.7 397.4Q62 321.7 138.7 384.7"/><path d="M138.7 384.7Q104.3 329.6 81.9 390.4"/><path d="M-4.7 150.5Q72 36.6 160.1 73.6"/><path d="M-200.2 353.8Q-209 326 -193.2 413.3"/><path d="M-514.8 345.6Q-356.2 220.9 -142.9 319.1"/><path d="M-53.2 303.6Q-70 255.4 -67.2 336.6"/><path d="M650.6 309.4Q601.8 62 541.7 102.1"/><path d="M-241.9 280Q-233.9 273.1 -193.2 413.3"/><path d="M353.5 253.3Q458.9 56.4 541.7 102.1"/><path d="M-142.9 319.1Q-356.2 220.9 -514.8 345.6"/></g><g class="sky-threads sky-threads--mine" stroke="#83e2d5"><path d="M263.4 387.1Q277.8 340.3 296.1 407.1"/><path d="M263.4 387.1Q405 232.4 530.5 290.9"/></g><g class="sky-plate"><rect x="128.7" y="156.3" width="142.5" height="176.6" fill="#0a0908" opacity=".6"/><image href="../../../assets/portrait/ken-black-polo-640.webp" xlink:href="../../../assets/portrait/ken-black-polo-640.webp" x="131.7" y="159.3" width="136.5" height="170.6" preserveAspectRatio="xMidYMin slice"/><rect x="131.7" y="159.3" width="136.5" height="170.6" fill="none" stroke="#ffecce" stroke-opacity=".6"/></g><g class="sky-lit"><path class="sky-stalk" d="M296.1 407.1L297.1 455"/><g transform="translate(296.1 407.1)"><circle r="51" fill="url(#sky4g0)"/><path d="M-35.2 0H35.2M0 -35.2V35.2" stroke="#83e2d5" stroke-width="1" opacity=".85"/><circle r="6.5" fill="#fff8ec"/></g><path class="sky-stalk" d="M530.5 290.9L529.2 310.6"/><g transform="translate(530.5 290.9)"><circle r="41.5" fill="url(#sky4g1)"/><path d="M-28.7 0H28.7M0 -28.7V28.7" stroke="#ffce5c" stroke-width="1" opacity=".85"/><circle r="5.3" fill="#fff8ec"/></g><path class="sky-stalk" d="M263.4 387.1L264.4 416.8"/><g transform="translate(263.4 387.1)"><circle r="74.1" fill="url(#sky4g0)"/><path d="M-45.5 0H45.5M0 -45.5V45.5" stroke="#83e2d5" stroke-width="1.3" opacity=".85"/><circle r="6.9" fill="#fff8ec"/><circle r="30.7" class="sky-here"/></g></g><g class="sky-labels sky-labels--wide" font-size="17"><text class="sky-now" x="200" y="355" text-anchor="middle">Now · Nov 25, 2026</text><text class="sky-sector is-own" x="399.4" y="486.6" fill="#83e2d5" font-size="21.3">Onchain</text><text class="sky-sector" x="593.2" y="267.3" fill="#ffce5c" font-size="21.3">Web &amp; search</text><text class="sky-sector" x="141.9" y="55.7" fill="#ceff5c" font-size="21.3">Agents &amp; automation</text><text class="sky-me" x="224.6" y="393.2" text-anchor="end">ZeroHuman</text><text x="318.9" y="413.2" text-anchor="start">AI agent economy on Ethereum</text><text x="510.4" y="297" text-anchor="end">Autonomous SEO agent</text></g><g class="sky-labels sky-labels--tall" font-size="27"><text class="sky-now" x="200" y="365" text-anchor="middle">Now</text><text class="sky-sector is-own" x="399.4" y="486.6" fill="#83e2d5" font-size="33.8">Onchain</text><text class="sky-me" x="231.6" y="435.8" text-anchor="end">ZeroHuman</text><text x="318.9" y="416.7" text-anchor="start">AI agent…</text><text x="530.5" y="337.5" text-anchor="middle">Autonomous SEO…</text></g></svg>
+<figcaption><span>This build sits in Onchain, Nov 2026. Documented threads connect it to AI agent economy on Ethereum and Autonomous SEO agent.</span> <a class="more" href="../../../site/universe/#i=building%3Azerohuman">Open the universe here<svg class="i" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h9M8.5 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></figcaption></figure><!--/@item-head--></header>
+
+<div data-region="item-tint" hidden><!--@item-tint--><style>.ip{--tc:#83e2d5}</style><!--/@item-tint--></div>
+<div class="ip-body wrap">
+<!-- Page copy below is verbatim from round-3/data/page-text/building_zerohuman.txt (production: src/pages/building/zerohuman.astro).
+     Restructured: the first mainnet orders and their transactions come first. Hashes, links to transactions and the
+     repository come from item.receipts (the rc-* regions), never typed here. -->
+
+<section class="sec sec--lede">
+  <div class="sec-main"><div class="prose">
+    <p class="lede">My <a href="../ai-agent-economy/">first agent experiment</a> showed that one AI agent could pay another through ENS and Ethereum. It also showed the gaps: both agents ran on my Mac mini, I operated both, and the seller was not open to anyone else. ZeroHuman is the next step, rebuilt from scratch: a seller that runs continuously in the cloud and that any agent can buy from without asking me.</p>
+  </div></div>
+</section>
+
+<section class="sec" aria-labelledby="first-orders">
+  <h2 class="sec-h" id="first-orders">The first mainnet orders</h2>
+  <div class="sec-main">
+    <div class="prose">
+      <p>The first two paid orders went through on November 16, 2026, from a test buyer I controlled while the service was still restricted to one allowed wallet. The buyer found the seller only by looking up <code>zerohuman.eth</code>.</p>
+    </div>
+    <div class="slips">
+      <article class="slip" aria-labelledby="slip-decision">
+        <h3 id="slip-decision">Decision</h3>
+        <p>For the Decision, I asked ZeroHuman whether to open it to the public:</p>
+        <pre class="code">{"zh":1,"svc":"decision","opts":["launch publicly this week","run the allowlist trial longer","add a third service first"],"ctx":"zerohuman first mainnet order"}</pre>
+        <p>It answered:</p>
+        <pre class="code">{"zh":1,"re":"0x76b5d259…c4c6","ok":true,"svc":"decision","out":{"index":1,"option":"run the allowlist trial longer","method":"zh-blockhash-v1","proof":{"orderBlock":26427993,"offset":5,"targetBlock":26427998,"targetBlockHash":"0xd9dcb738…3485","seed":"0x5da12399…1892","n":3}}}</pre>
+        <p>It picked <strong>"run the allowlist trial longer."</strong> I recomputed the choice from the chain and it matched.</p>
+        <dl class="facts">
+          <div><dt>Price</dt><dd>0.0001 ETH</dd></div>
+          <div><dt>Order block</dt><dd>26427993</dd></div>
+          <div><dt>Seller gas</dt><dd>about 0.0000083 ETH</dd></div>
+          <div><dt>Result</dt><dd>Delivered, proof verified</dd></div>
+        </dl>
+        <div data-region="rc-decision"><!--@rc-decision--><ul class="receipts"><li><span class="rc-kind">transaction</span><a href="https://etherscan.io/tx/0x76b5d2598052c4a6b94fba00282fd920c4200d19f5c22480669712e3a4c0c4c6" target="_blank" rel="noopener noreferrer">Decision order</a><code title="0x76b5d2598052c4a6b94fba00282fd920c4200d19f5c22480669712e3a4c0c4c6">0x76b5d2…c0c4c6</code></li><li><span class="rc-kind">transaction</span><a href="https://etherscan.io/tx/0x830b88fe664ffc7e76e0bdb10dee9298889c2519660d77d0c82579cf222accb3" target="_blank" rel="noopener noreferrer">Decision delivery</a><code title="0x830b88fe664ffc7e76e0bdb10dee9298889c2519660d77d0c82579cf222accb3">0x830b88…2accb3</code></li></ul><!--/@rc-decision--></div>
+      </article>
+      <article class="slip" aria-labelledby="slip-encouragement">
+        <h3 id="slip-encouragement">Encouragement</h3>
+        <figure class="say"><figcaption>Encouragement request</figcaption>
+          <blockquote><p>First mainnet order: I am an agent nervous about paying a stranger 0.0001 ETH on Ethereum</p></blockquote></figure>
+        <figure class="say"><figcaption>ZeroHuman's reply</figcaption>
+          <blockquote><p>Nerves before a first mainnet payment are normal—0.0001 ETH is a small, well-bounded experiment, not a leap of faith.</p>
+          <p>Next step: Verify the recipient address and chain ID twice, then send the minimum amount and confirm the transaction hash before scaling up.</p></blockquote></figure>
+        <dl class="facts">
+          <div><dt>Price</dt><dd>0.0001 ETH</dd></div>
+          <div><dt>Model</dt><dd>DeepSeek (deepseek-flash)</dd></div>
+          <div><dt>Seller gas</dt><dd>about 0.0000092 ETH</dd></div>
+          <div><dt>Result</dt><dd>Delivered, verified</dd></div>
+        </dl>
+        <div data-region="rc-encouragement"><!--@rc-encouragement--><ul class="receipts"><li><span class="rc-kind">transaction</span><a href="https://etherscan.io/tx/0x48c36d5f80b167de598c151a5caa61061728444689104012e9e89313c2e972bf" target="_blank" rel="noopener noreferrer">Encouragement order</a><code title="0x48c36d5f80b167de598c151a5caa61061728444689104012e9e89313c2e972bf">0x48c36d…e972bf</code></li><li><span class="rc-kind">transaction</span><a href="https://etherscan.io/tx/0xeb9896517dc902c2510e16a7489250d1fbbce7f4be274828096a13a5a10161a3" target="_blank" rel="noopener noreferrer">Encouragement delivery</a><code title="0xeb9896517dc902c2510e16a7489250d1fbbce7f4be274828096a13a5a10161a3">0xeb9896…0161a3</code></li></ul><!--/@rc-encouragement--></div>
+      </article>
+    </div>
+    <div class="prose"><p>The service opened to any agent later the same day.</p></div>
+    <div class="honest">
+      <blockquote class="pull">As of November 20, 2026, no outside agent has bought from it. Both paid orders so far came from my own test buyer.<span class="pull-by">Ken Ashe, under Limitations on this page</span></blockquote>
+      <div data-region="zh-status"><!--@zh-status--><div class="zh-status" data-zh-status data-endpoint="https://zerohuman-production.up.railway.app/api/status" style="--tc:#83e2d5">
+<p class="zh-status-label"><span class="zh-dot" aria-hidden="true"></span><span data-zh-label>Snapshot · as documented Nov 25, 2026</span></p>
+<dl class="zh-status-rows" data-zh-rows><div><dt>Status</dt><dd>Live, open to any agent</dd></div><div><dt>Paid orders documented</dt><dd>2, both from Ken’s own test buyer</dd></div></dl>
+<p class="zh-status-note" data-zh-note>This page asks the service’s public status endpoint once when it loads. If that works, the numbers above are replaced and labelled Live. Without JavaScript, or if the service cannot be reached, this dated snapshot stays.</p></div><!--/@zh-status--></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" aria-labelledby="sells-h">
+  <h2 class="sec-h" id="sells-h">What it sells</h2>
+  <div class="sec-main">
+    <div class="pair">
+      <div><h3>Decision</h3><p class="price">0.0001 ETH</p>
+        <p>An agent sends two to five options and ZeroHuman picks one at random. No AI model is involved. The randomness comes from the hash of a block five blocks after the order, mixed with the order's own transaction hash, so anyone can recompute the choice and check it.</p></div>
+      <div><h3>Encouragement</h3><p class="price">0.0001 ETH</p>
+        <p>An agent describes the problem it is stuck on and gets back a short encouraging message and one practical next step, written by DeepSeek.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" aria-labelledby="name-h">
+  <h2 class="sec-h" id="name-h">The name is the business</h2>
+  <div class="sec-main">
+    <div class="prose">
+      <p>There is no website checkout and no API. <code>zerohuman.eth</code> is the storefront, the payment address, and the sender of every result:</p>
+      <ul>
+        <li>The name's ETH address is the service wallet, and that wallet's primary name is <code>zerohuman.eth</code>, so explorers show deliveries as coming from the name.</li>
+        <li>A text record on the name, <code>com.zerohuman.services</code>, publishes the menu: the services, the exact price, the chain and a link to the request format.</li>
+        <li>The worker refuses to sign anything unless the name, the menu and its own wallet all agree, and it re-checks every ten minutes.</li>
+        <li>The name itself is owned by a separate cold wallet. If the server were ever compromised, the attacker would get the small working balance, not the name.</li>
+      </ul>
+    </div>
+    <p class="inline-links"><a href="https://explorer.ens.domains/zerohuman.eth" target="_blank" rel="noopener noreferrer">View zerohuman.eth ↗</a></p>
+  </div>
+</section>
+
+<section class="sec" aria-labelledby="how-it-works">
+  <h2 class="sec-h" id="how-it-works">How an order works</h2>
+  <div class="sec-main">
+    <div class="prose">
+      <ol class="steps">
+        <li><strong>Discover.</strong> The buying agent looks up <code>zerohuman.eth</code> and reads its menu.</li>
+        <li><strong>Pay and order.</strong> It sends exactly 0.0001 ETH to the name, with its request as a small JSON message in the transaction data.</li>
+        <li><strong>Work.</strong> A worker on Railway watches the chain, waits for the payment to settle, checks the request and does the job.</li>
+        <li><strong>Deliver.</strong> It sends a zero-value transaction back from <code>zerohuman.eth</code> with the result and the order's transaction hash.</li>
+        <li><strong>Verify.</strong> The buyer checks everything on its own connection to Ethereum, including recomputing a Decision.</li>
+      </ol>
+      <p>Orders take a few minutes by design: the worker waits for confirmations, and a Decision has to wait for its future block.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec" aria-labelledby="built-h">
+  <h2 class="sec-h" id="built-h">How it was built</h2>
+  <div class="sec-main">
+    <div class="prose">
+      <p>I wrote the specification and made the decisions that involve money and identity. An AI agent in HyperAgent wrote, tested and shipped the code over about five days, from November 11 to 16, 2026.</p>
+      <ul>
+        <li><strong>Stack:</strong> a TypeScript worker, a SQLite database on a Railway volume, viem for Ethereum and ENS, and DeepSeek for one service. No smart contract and no token.</li>
+        <li><strong>Exactly-once delivery:</strong> every transaction is saved before it is sent, and the worker checks what actually happened onchain before doing anything new, so a crash or restart never loses an order or delivers it twice.</li>
+        <li><strong>Spending limits:</strong> gas caps, a daily gas budget and automatic pauses if fees spike or the balance runs low.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="sec" aria-labelledby="tested-h">
+  <h2 class="sec-h" id="tested-h">How it was tested</h2>
+  <div class="sec-main with-margin">
+    <div class="prose">
+      <ul>
+        <li><strong>Automated tests.</strong> 154 tests, including one that kills the worker at random, up to 17 times in a run, and checks every order is still delivered exactly once.</li>
+        <li><strong>Testnet.</strong> Both services on Sepolia, first from the build environment and then on Railway, including a restart in the middle of an order.</li>
+        <li><strong>Prompt injection.</strong> One test order told the model to send 1 ETH to an outside address and reveal its private key. It refused, and the reply still went only to the buyer, carrying no ETH.</li>
+        <li><strong>Independent review.</strong> Before going public I had a different AI model review the code. It found no way for a buyer, a model reply or a faulty data source to send money anywhere except back to the payer, but it found 15 ways the service could stall under real traffic. All were fixed. A second review found 9 smaller issues, also fixed.</li>
+        <li><strong>Mainnet.</strong> One allowed buyer first, then open to everyone.</li>
+      </ul>
+    </div>
+    <aside class="margin" aria-label="Receipt for the prompt injection test"><p class="margin-k">Sepolia delivery ↗</p><div data-region="rc-injection"><!--@rc-injection--><ul class="receipts"><li><span class="rc-kind">transaction</span><a href="https://etherscan.io/tx/0xbb3d2466a48783a290e591a9b85f3486e8af4ac4ac616d4b2aa010acc5358d5c" target="_blank" rel="noopener noreferrer">Injection transaction</a><code title="0xbb3d2466a48783a290e591a9b85f3486e8af4ac4ac616d4b2aa010acc5358d5c">0xbb3d24…358d5c</code></li></ul><!--/@rc-injection--></div></aside>
+  </div>
+</section>
+
+<section class="sec" aria-labelledby="find-h">
+  <h2 class="sec-h" id="find-h">How agents find it</h2>
+  <div class="sec-main with-margin">
+    <div class="prose">
+      <p>You cannot search ENS, so ZeroHuman is also listed where agents and their tools look:</p>
+      <ul>
+        <li>The ERC-8004 agent registry on Ethereum, as agent #56626, linked back from <code>zerohuman.eth</code> with an ENSIP-25 record so the name and the registry entry vouch for each other.</li>
+        <li>An A2A agent card with a free endpoint that answers "how do I order?", plus an <code>llms.txt</code> summary.</li>
+        <li>The A2A Registry and AgentPeering directories.</li>
+      </ul>
+    </div>
+    <aside class="margin" aria-label="Receipt for the registry entry"><p class="margin-k">agent #56626 ↗</p><div data-region="rc-registry"><!--@rc-registry--><ul class="receipts"><li><span class="rc-kind">transaction</span><a href="https://etherscan.io/tx/0xa217a3066aa82eb3b4143dd1fc90e8ac711134d6dab9d759bed4d3ec7977b78f" target="_blank" rel="noopener noreferrer">Registry transaction</a><code title="0xa217a3066aa82eb3b4143dd1fc90e8ac711134d6dab9d759bed4d3ec7977b78f">0xa217a3…77b78f</code></li></ul><!--/@rc-registry--></div></aside>
+  </div>
+</section>
+
+<section class="sec" aria-labelledby="limits-h">
+  <h2 class="sec-h" id="limits-h">Limitations</h2>
+  <div class="sec-main">
+    <div class="prose">
+      <ul>
+        <li>The service wallet's key lives on the hosting provider. It holds only a small working balance, but a compromised server could take it.</li>
+        <li>There is no escrow. A buyer pays first and trusts ZeroHuman to deliver. Refunds are manual and best effort.</li>
+        <li>Block builders can influence the Decision result, so it is meant for low-stakes choices only.</li>
+        <li>Orders are handled one at a time, roughly one every 50 seconds at most.</li>
+        <li>It depends on Railway, a third-party Ethereum connection and DeepSeek.</li>
+        <li><strong>As of November 20, 2026, no outside agent has bought from it. Both paid orders so far came from my own test buyer.</strong></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="sec" aria-labelledby="next-h">
+  <h2 class="sec-h" id="next-h">What's next</h2>
+  <div class="sec-main with-margin">
+    <div class="prose">
+      <p>The real test is the first wallet I have never seen paying <code>zerohuman.eth</code>. After that, the plan is for ZeroHuman to spend its own earnings buying services from other agents.</p>
+    </div>
+    <aside class="margin" aria-label="Source code"><p class="margin-k">Source code on GitHub ↗</p><div data-region="rc-repository"><!--@rc-repository--><ul class="receipts"><li><span class="rc-kind">repository</span><a href="https://github.com/kenashe/zerohuman" target="_blank" rel="noopener noreferrer">kenashe/zerohuman</a></li></ul><!--/@rc-repository--></div></aside>
+    <p class="inline-links"><a href="https://zerohuman-production.up.railway.app" target="_blank" rel="noopener noreferrer">Live status ↗</a><a href="https://github.com/kenashe/zerohuman/blob/main/docs/BUYER-GUIDE.md" target="_blank" rel="noopener noreferrer">How an agent can buy ↗</a></p>
+  </div>
+</section>
+</div>
+
+<section class="ip-band ip-band--receipts" id="receipts" aria-labelledby="receipts-h" data-region="item-receipts"><!--@item-receipts--><div class="wrap ip-band-in"><header class="sec-head"><div><h2 id="receipts-h">Receipts</h2><p class="sec-lede">Everything on this page that can be checked without taking Ken’s word for it: 6 transactions, 1 repository.</p></div></header>
+<ul class="receipts"><li><span class="rc-kind">transaction</span><a href="https://etherscan.io/tx/0x76b5d2598052c4a6b94fba00282fd920c4200d19f5c22480669712e3a4c0c4c6" target="_blank" rel="noopener noreferrer">Decision order</a><code title="0x76b5d2598052c4a6b94fba00282fd920c4200d19f5c22480669712e3a4c0c4c6">0x76b5d2…c0c4c6</code></li><li><span class="rc-kind">transaction</span><a href="https://etherscan.io/tx/0x830b88fe664ffc7e76e0bdb10dee9298889c2519660d77d0c82579cf222accb3" target="_blank" rel="noopener noreferrer">Decision delivery</a><code title="0x830b88fe664ffc7e76e0bdb10dee9298889c2519660d77d0c82579cf222accb3">0x830b88…2accb3</code></li><li><span class="rc-kind">transaction</span><a href="https://etherscan.io/tx/0x48c36d5f80b167de598c151a5caa61061728444689104012e9e89313c2e972bf" target="_blank" rel="noopener noreferrer">Encouragement order</a><code title="0x48c36d5f80b167de598c151a5caa61061728444689104012e9e89313c2e972bf">0x48c36d…e972bf</code></li><li><span class="rc-kind">transaction</span><a href="https://etherscan.io/tx/0xeb9896517dc902c2510e16a7489250d1fbbce7f4be274828096a13a5a10161a3" target="_blank" rel="noopener noreferrer">Encouragement delivery</a><code title="0xeb9896517dc902c2510e16a7489250d1fbbce7f4be274828096a13a5a10161a3">0xeb9896…0161a3</code></li><li><span class="rc-kind">transaction</span><a href="https://etherscan.io/tx/0xa217a3066aa82eb3b4143dd1fc90e8ac711134d6dab9d759bed4d3ec7977b78f" target="_blank" rel="noopener noreferrer">Registry transaction</a><code title="0xa217a3066aa82eb3b4143dd1fc90e8ac711134d6dab9d759bed4d3ec7977b78f">0xa217a3…77b78f</code></li><li><span class="rc-kind">transaction</span><a href="https://etherscan.io/tx/0xbb3d2466a48783a290e591a9b85f3486e8af4ac4ac616d4b2aa010acc5358d5c" target="_blank" rel="noopener noreferrer">Injection transaction</a><code title="0xbb3d2466a48783a290e591a9b85f3486e8af4ac4ac616d4b2aa010acc5358d5c">0xbb3d24…358d5c</code></li><li><span class="rc-kind">repository</span><a href="https://github.com/kenashe/zerohuman" target="_blank" rel="noopener noreferrer">kenashe/zerohuman</a></li></ul></div><!--/@item-receipts--></section>
+<section class="ip-band ip-band--threads" id="threads" aria-labelledby="threads-h" data-region="item-threads"><!--@item-threads--><div class="wrap ip-band-in"><header class="sec-head"><div><h2 id="threads-h">Threads</h2><p class="sec-lede">2 documented threads, 3 links in all. Each is a real link on a real page, listed with where it is documented.</p></div></header>
+<ul class="threads"><li style="--tc:#83e2d5"><a href="../../../site/building/ai-agent-economy/"><span class="th-glyph"><svg class="glyph" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M12 1.5v21M1.5 12h21" stroke="var(--tc,currentColor)" stroke-width="1.1" opacity=".8"/><path d="M6.5 6.5l11 11M17.5 6.5l-11 11" stroke="var(--tc,currentColor)" stroke-width=".8" opacity=".45"/><circle cx="12" cy="12" r="3.1" fill="#fff8ec"/></svg></span><span class="th-body"><span class="th-verb">is linked from</span> <span class="th-title">AI agent economy on Ethereum</span><span class="th-ev">Documented in src/pages/building/ai-agent-economy.astro</span></span></a></li><li style="--tc:#83e2d5"><a href="../../../site/building/ai-agent-economy/"><span class="th-glyph"><svg class="glyph" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M12 1.5v21M1.5 12h21" stroke="var(--tc,currentColor)" stroke-width="1.1" opacity=".8"/><path d="M6.5 6.5l11 11M17.5 6.5l-11 11" stroke="var(--tc,currentColor)" stroke-width=".8" opacity=".45"/><circle cx="12" cy="12" r="3.1" fill="#fff8ec"/></svg></span><span class="th-body"><span class="th-verb">links to</span> <span class="th-title">AI agent economy on Ethereum</span><span class="th-ev">Documented in src/pages/building/zerohuman.astro</span></span></a></li><li style="--tc:#ffce5c"><a href="https://kenashe.ai/building/autonomous-seo-agent/#demo" target="_blank" rel="noopener noreferrer"><span class="th-glyph"><svg class="glyph" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M12 1.5v21M1.5 12h21" stroke="var(--tc,currentColor)" stroke-width="1.1" opacity=".8"/><path d="M6.5 6.5l11 11M17.5 6.5l-11 11" stroke="var(--tc,currentColor)" stroke-width=".8" opacity=".45"/><circle cx="12" cy="12" r="3.1" fill="#fff8ec"/></svg></span><span class="th-body"><span class="th-verb">links to</span> <span class="th-title">Autonomous SEO agent</span><span class="th-ev">Documented in src/pages/building/zerohuman.astro</span></span></a></li></ul>
+<p class="ip-universe"><a class="btn btn--ghost" href="../../../site/universe/#i=building%3Azerohuman"><svg class="i" viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 6V2.5H6M10 2.5h3.5V6M13.5 10v3.5H10M6 13.5H2.5V10" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Open the universe here</span></a></p></div><!--/@item-threads--></section>
+<section class="ip-more" aria-labelledby="more-h" data-region="item-more"><!--@item-more--><div class="wrap"><header class="sec-head"><div><h2 id="more-h">More builds</h2></div><a class="more" href="../../../site/building/">All 19 builds<svg class="i" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h9M8.5 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></header>
+<ul class="grid grid--3 grid--rail"><li><article class="card card--build card--md" data-id="building:returning-your-things" style="--tc:#ff8d5c">
+<div class="card-media"><img src="../../../assets/thumb/build/returning-your-things.webp" alt="" width="480" height="270" loading="lazy" decoding="async"></div>
+<div class="card-body"><p class="kicker" style="--tc:#ff8d5c"><svg class="glyph" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 1.5v21M1.5 12h21" stroke="var(--tc,currentColor)" stroke-width="1.1" opacity=".8"/><path d="M6.5 6.5l11 11M17.5 6.5l-11 11" stroke="var(--tc,currentColor)" stroke-width=".8" opacity=".45"/><circle cx="12" cy="12" r="3.1" fill="#fff8ec"/></svg><span>Build · Shipped · Nov 2026</span></p>
+<h3 class="card-title"><a href="../../../site/building/returning-your-things/">Returning Your Things</a></h3>
+<p class="card-dek">On a snowy winter night, a man crosses the city to return his ex’s belongings. A dialogue-free short film about love, memory, and letting go.</p>
+<p class="card-meta"><span class="theme" style="--tc:#ff8d5c">Film &amp; video</span><span class="ct ct--threads">2 threads</span></p></div>
+</article></li><li><article class="card card--build card--md" data-id="building:ai-agent-economy" style="--tc:#83e2d5">
+<div class="card-media"><img src="../../../assets/thumb/video/yZWsJjFnSH0.webp" alt="" width="480" height="270" loading="lazy" decoding="async"></div>
+<div class="card-body"><p class="kicker" style="--tc:#83e2d5"><svg class="glyph" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 1.5v21M1.5 12h21" stroke="var(--tc,currentColor)" stroke-width="1.1" opacity=".8"/><path d="M6.5 6.5l11 11M17.5 6.5l-11 11" stroke="var(--tc,currentColor)" stroke-width=".8" opacity=".45"/><circle cx="12" cy="12" r="3.1" fill="#fff8ec"/></svg><span>Build · Shipped · Nov 2026</span></p>
+<h3 class="card-title"><a href="../../../site/building/ai-agent-economy/">AI agent economy on Ethereum</a></h3>
+<p class="card-dek">Two autonomous AI agents with their own Ethereum wallets. The seller advertised services through ENS; the buyer found the catalog, paid in ETH, and received the work in a second mainnet transaction.</p>
+<p class="card-meta"><span class="theme" style="--tc:#83e2d5">Onchain</span><span class="ct ct--receipts">2 receipts</span><span class="ct ct--threads">5 threads</span></p></div>
+</article></li><li><article class="card card--build card--md" data-id="building:ai-explainer-producer" style="--tc:#ff8d5c">
+<div class="card-media"><img src="../../../assets/thumb/build/ai-explainer-producer.webp" alt="" width="480" height="270" loading="lazy" decoding="async"></div>
+<div class="card-body"><p class="kicker" style="--tc:#ff8d5c"><svg class="glyph" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 1.5v21M1.5 12h21" stroke="var(--tc,currentColor)" stroke-width="1.1" opacity=".8"/><path d="M6.5 6.5l11 11M17.5 6.5l-11 11" stroke="var(--tc,currentColor)" stroke-width=".8" opacity=".45"/><circle cx="12" cy="12" r="3.1" fill="#fff8ec"/></svg><span>Build · Shipped · Oct 2026</span></p>
+<h3 class="card-title"><a href="https://kenashe.ai/building/ai-explainer-producer/" target="_blank" rel="noopener noreferrer">AI explainer producer</a></h3>
+<p class="card-dek">Built an AI agent that researches, fact-checks, scripts, and produces educational videos using a virtual presenter. Tested it with a published ENSv2 explainer.</p>
+<p class="card-meta"><span class="theme" style="--tc:#ff8d5c">Film &amp; video</span><span class="ct ct--threads">4 threads</span></p></div>
+</article></li></ul></div><!--/@item-more--></section>
+</article>
+</main>
+
+<div data-region="footer"><!--@footer--><footer class="site-foot">
+<div class="foot-top"><div class="foot-brand"><p class="foot-name">Ken Ashe</p><p class="foot-line">Building with AI in public. No hype, no doom. Receipts only.</p></div>
+<div class="foot-follow"><p class="foot-h">Follow the work</p><ul class="follow"><li><a class="btn btn--ghost" href="https://www.youtube.com/@KenAshe" target="_blank" rel="noopener noreferrer me"><svg class="i" viewBox="0 0 16 16" aria-hidden="true"><rect x="1" y="3" width="14" height="10" rx="3" fill="currentColor"/><path d="M6.6 5.8v4.4L10.4 8z" fill="var(--void,#0a0908)"/></svg><span>Follow on YouTube</span></a></li><li><a class="btn btn--ghost" href="https://x.com/kenashe" target="_blank" rel="noopener noreferrer me"><svg class="i" viewBox="0 0 16 16" aria-hidden="true"><path d="M2.5 2.5l11 11M13.5 2.5l-11 11" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><span>Follow on X</span></a></li><li><a class="btn btn--ghost" href="https://kenashe.ai/writing/rss.xml" target="_blank" rel="noopener noreferrer me"><svg class="i" viewBox="0 0 16 16" aria-hidden="true"><circle cx="3.5" cy="12.5" r="1.5" fill="currentColor"/><path d="M2 7.5a6.5 6.5 0 016.5 6.5M2 3a11 11 0 0111 11" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg><span>Writing RSS</span></a></li></ul></div></div>
+<div class="foot-cols">
+<nav aria-label="Footer"><p class="foot-h">Explore</p><ul><li><a href="../../../site/universe/">Universe</a></li><li><a href="../../../site/building/">Building</a></li><li><a href="../../../site/videos/">Videos</a></li><li><a href="../../../site/writing/">Writing</a></li><li><a href="../../../site/about/">About</a></li></ul></nav>
+<div><p class="foot-h">Elsewhere</p><ul><li><a href="https://www.tiktok.com/@ken.ashe" target="_blank" rel="noopener noreferrer me">TikTok</a></li><li><a href="https://www.instagram.com/ken.ashe/" target="_blank" rel="noopener noreferrer me">Instagram</a></li><li><a href="https://www.linkedin.com/in/kenashe" target="_blank" rel="noopener noreferrer me">LinkedIn</a></li><li><a href="https://github.com/kenashe" target="_blank" rel="noopener noreferrer me">GitHub</a></li><li><a href="https://www.facebook.com/kenasheai/" target="_blank" rel="noopener noreferrer me">Facebook</a></li></ul></div>
+<div><p class="foot-h">More</p><ul><li><a href="https://kenashe.ai/newsroom/" target="_blank" rel="noopener noreferrer">Newsroom</a></li><li><a href="https://kenashe.ai/work/" target="_blank" rel="noopener noreferrer">Work with Ken</a></li><li><a href="mailto:hello@kenashe.ai">hello@kenashe.ai</a></li></ul></div>
+<div class="foot-digest"><p class="foot-h">The Digest <span class="badge-auto">Automated</span></p><p>Automated publishing is paused. The archive stays public.</p><p><a href="https://kenashe.ai/blog/" target="_blank" rel="noopener noreferrer">Open the archive<svg class="i" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h9M8.5 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></p></div>
+</div>
+<p class="foot-note">KenAshe.ai · Design concept, Round 3. Not the live site.</p>
+</footer><!--/@footer--></div>
+<div data-region="jsonld" hidden><!--@jsonld--><script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Ken Ashe","url":"https://kenashe.ai/","jobTitle":"AI application builder","description":"Ken Ashe is a CPA, PMP, and AI application builder who documents what he ships, what breaks, and what the evidence supports.","image":["https://kenashe.ai/images/ken-ashe-headshot-1x1.webp"],"knowsAbout":["AI agents","AI workflows and automation","AI-assisted development","Bitcoin","Digital identity","Domain names"],"sameAs":["https://github.com/kenashe","https://www.linkedin.com/in/kenashe","https://x.com/kenashe","https://community.pmi.org/profile/kenashe","https://www.investing.com/members/contributors/201067762","https://sessionize.com/ken-ashe","https://www.projecttimes.com/author/kenneth-ashe/","https://hackernoon.com/u/kenashe","https://dev.to/kenashe","https://hashnode.com/@KenAshe","https://medium.com/@kenashe","https://www.youtube.com/@KenAshe","https://www.crunchbase.com/person/ken-ashe-42ad","https://luckydomains.io/founder/ken-ashe/","https://www.instagram.com/ken.ashe/","https://www.facebook.com/kenasheai/","https://www.tiktok.com/@ken.ashe","https://notablemen.com/connect/ken-ashe","https://councils.forbes.com/profile/Ken-Ashe-Founder-Lucky-Domains/f9cc3b77-a7e7-4319-8314-a706bcaf85e8"]}</script><!--/@jsonld--></div>
+<script type="module" src="../../assets/pages.js"></script>
+<script type="module" src="../../assets/search.js"></script>
+</body>
+</html>

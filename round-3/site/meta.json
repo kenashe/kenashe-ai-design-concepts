@@ -1,0 +1,299 @@
+{
+ "name": "The Living Universe",
+ "oneLiner": "Ken's photograph stands as a lit window at \"now\", the centre of a universe made only of his work; the newest video is the newest light, and everything older recedes outward into the past.",
+ "signature": "One universe, three ways in: select a light to read it, follow a documented thread to related work, replay the growth of the whole record over time. Conventional navigation, list view and search sit beside it, so nobody needs the universe to find content.",
+ "palette": [
+  [
+   "Void",
+   "#0a0908"
+  ],
+  [
+   "Surface",
+   "#15120d"
+  ],
+  [
+   "Line",
+   "#463d2e"
+  ],
+  [
+   "Starlight (text)",
+   "#f4efe4"
+  ],
+  [
+   "Soft text",
+   "#d3cbbb"
+  ],
+  [
+   "Muted text",
+   "#a9a08d"
+  ],
+  [
+   "Amber (action, focus, placeholders)",
+   "#ffb84d"
+  ],
+  [
+   "Window light",
+   "#ffd9a0"
+  ],
+  [
+   "Theme: Film & video",
+   "#ff8d5c"
+  ],
+  [
+   "Theme: Onchain",
+   "#83e2d5"
+  ],
+  [
+   "Theme: Web & search",
+   "#ffce5c"
+  ],
+  [
+   "Theme: Agents & automation",
+   "#ceff5c"
+  ],
+  [
+   "Theme: Life & curiosity",
+   "#efd4b9"
+  ],
+  [
+   "Digest ash (automated)",
+   "#9aa3ad"
+  ]
+ ],
+ "type": "Instrument Serif (display, headings, tagline) \u00b7 Hanken Grotesk (text, UI, universe labels) \u00b7 JetBrains Mono (hashes in receipts only). No text under 14px.",
+ "pages": [
+  {
+   "path": "site/index.html",
+   "label": "Homepage"
+  },
+  {
+   "path": "site/universe/",
+   "label": "Full-screen universe"
+  },
+  {
+   "path": "site/videos/",
+   "label": "Video archive"
+  },
+  {
+   "path": "site/building/",
+   "label": "Project index"
+  },
+  {
+   "path": "site/writing/",
+   "label": "Writing index"
+  },
+  {
+   "path": "site/building/zerohuman/",
+   "label": "ZeroHuman (build, receipts)"
+  },
+  {
+   "path": "site/building/returning-your-things/",
+   "label": "Returning Your Things (film)"
+  },
+  {
+   "path": "site/building/autonomous-ai-blog/",
+   "label": "Autonomous AI blog (Digest system)"
+  },
+  {
+   "path": "site/building/ai-agent-economy/",
+   "label": "AI agent economy (build)"
+  },
+  {
+   "path": "site/writing/4-tips-for-making-ai-videos-that-feel-like-films/",
+   "label": "Essay page"
+  },
+  {
+   "path": "site/about/",
+   "label": "About"
+  },
+  {
+   "path": "site/publish/",
+   "label": "Publishing demo"
+  }
+ ],
+ "allPages": [
+  {
+   "path": "site/index.html",
+   "label": "Homepage /"
+  },
+  {
+   "path": "site/index.html?demo=build,essay,video,category",
+   "label": "Homepage with the four publishing-demo steps applied"
+  },
+  {
+   "path": "site/universe/",
+   "label": "The universe, full screen (proposed route /universe/)"
+  },
+  {
+   "path": "stress/",
+   "label": "Stress test \u00b7 1,000 synthetic items"
+  },
+  {
+   "path": "stress/real/",
+   "label": "Stress test \u00b7 real 44 (baseline)"
+  },
+  {
+   "path": "stress/300/",
+   "label": "Stress test \u00b7 300"
+  },
+  {
+   "path": "stress/3000/",
+   "label": "Stress test \u00b7 3,000"
+  },
+  {
+   "path": "stress/3000-digest/",
+   "label": "Stress test \u00b7 3,000 + Digest publishing (55,179 posts)"
+  },
+  {
+   "path": "site/videos/",
+   "label": "Video archive /videos/ (latest video, long-form and Shorts, search, filters, play in place)"
+  },
+  {
+   "path": "site/videos/?kind=short&theme=life",
+   "label": "Video archive, a shared filtered view (Shorts in Life & curiosity)"
+  },
+  {
+   "path": "site/building/",
+   "label": "Project index /building/ (status, stack, receipts, threads; filters in the URL)"
+  },
+  {
+   "path": "site/building/?q=agent&status=LIVE",
+   "label": "Project index, a shared filtered view (live builds matching \u201cagent\u201d)"
+  },
+  {
+   "path": "site/writing/",
+   "label": "Writing index /writing/ (authorship labels; the automated Digest kept to one line)"
+  },
+  {
+   "path": "stress/videos/",
+   "label": "Stress test \u00b7 video archive and search with 2,128 synthetic videos"
+  },
+  {
+   "path": "site/building/zerohuman/",
+   "label": "Build page /building/zerohuman/ (receipts first, the honest limit, optional live status, its place in the universe)"
+  },
+  {
+   "path": "site/building/returning-your-things/",
+   "label": "Film page /building/returning-your-things/ (the film first, director's note, stills, credits, making-of threads)"
+  },
+  {
+   "path": "site/building/autonomous-ai-blog/",
+   "label": "Build page /building/autonomous-ai-blog/ (the system behind the Digest; state, counts and weekly volume derived)"
+  },
+  {
+   "path": "site/building/ai-agent-economy/",
+   "label": "Build page /building/ai-agent-economy/ (two transactions with block-level facts, timeline, video)"
+  },
+  {
+   "path": "site/writing/4-tips-for-making-ai-videos-that-feel-like-films/",
+   "label": "Essay page /writing/4-tips-for-making-ai-videos-that-feel-like-films/ (long-form reading, authorship label, video, its own images)"
+  },
+  {
+   "path": "site/about/",
+   "label": "About /about/ (photographs, bio, credentials, speaking, press, Lucky Domains, sponsorship, follow)"
+  },
+  {
+   "path": "site/publish/",
+   "label": "Publishing demonstration (prototype-only route): what Ken types, then the real homepage and universe regions rebuilt"
+  },
+  {
+   "path": "site/publish/?demo=build,essay,video,category",
+   "label": "Publishing demonstration with all four steps applied"
+  }
+ ],
+ "extraShots": [
+  {
+   "name": "x-home-webgl",
+   "path": "site/?tier=webgl",
+   "label": "Homepage, WebGL tier",
+   "kinds": [
+    "desktop"
+   ]
+  },
+  {
+   "name": "x-home-canvas",
+   "path": "site/?tier=canvas",
+   "label": "Homepage, Canvas tier",
+   "kinds": [
+    "desktop"
+   ]
+  },
+  {
+   "name": "x-home-still",
+   "path": "site/?tier=still",
+   "label": "Homepage, static SVG tier (also what JavaScript-off shows)",
+   "kinds": [
+    "desktop"
+   ]
+  },
+  {
+   "name": "x-home-demo",
+   "path": "site/?demo=build,essay,video,category",
+   "label": "Homepage with the four demo entries (placeholders)",
+   "kinds": [
+    "desktop",
+    "mobile"
+   ]
+  },
+  {
+   "name": "x-universe-item",
+   "path": "site/universe/?tier=webgl#i=building:zerohuman",
+   "label": "Universe focused on ZeroHuman with its threads",
+   "kinds": [
+    "desktop",
+    "mobile"
+   ]
+  },
+  {
+   "name": "x-videos-shorts",
+   "path": "site/videos/?kind=short",
+   "label": "Video archive filtered to Shorts",
+   "kinds": [
+    "desktop",
+    "mobile"
+   ]
+  },
+  {
+   "name": "x-building-filter",
+   "path": "site/building/?q=agent&status=LIVE",
+   "label": "Project index, shared filtered view",
+   "kinds": [
+    "desktop"
+   ]
+  },
+  {
+   "name": "x-publish-all",
+   "path": "site/publish/?demo=build,essay,video,category",
+   "label": "Publishing demo with all four steps applied",
+   "kinds": [
+    "desktop"
+   ]
+  },
+  {
+   "name": "x-stress-1000",
+   "path": "stress/?tier=webgl",
+   "label": "Stress test, 1,000 synthetic items",
+   "kinds": [
+    "desktop",
+    "mobile"
+   ]
+  },
+  {
+   "name": "x-stress-3000",
+   "path": "stress/3000-digest/?tier=webgl",
+   "label": "Stress test, 3,000 synthetic items + 55,179-post Digest",
+   "kinds": [
+    "desktop",
+    "firefox"
+   ]
+  },
+  {
+   "name": "x-stress-videos",
+   "path": "stress/videos/",
+   "label": "Stress test, archive of 2,128 synthetic videos",
+   "kinds": [
+    "desktop"
+   ]
+  }
+ ]
+}

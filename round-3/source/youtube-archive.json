@@ -1,0 +1,211 @@
+[
+ {
+  "id": "video:DcXaGn-NsgY",
+  "videoId": "DcXaGn-NsgY",
+  "title": "My AI Blog Published 1,400 Articles. Then Google Visibility Fell 97%",
+  "date": "2026-11-25",
+  "published": "2026-11-25T21:23:49+00:00",
+  "kind": "video",
+  "url": "https://www.youtube.com/watch?v=DcXaGn-NsgY",
+  "summary": "I built an autonomous AI blog that researches, writes, reviews and publishes articles without human intervention.",
+  "thumbnail": "video/DcXaGn-NsgY.webp",
+  "source": "YouTube channel feed",
+  "updated": "2026-11-25T21:23:49+00:00",
+  "mentions": [
+   "/building/autonomous-ai-blog"
+  ],
+  "hashtags": [
+   "aiagents",
+   "buildinpublic"
+  ]
+ },
+ {
+  "id": "video:3MOFBulJd_s",
+  "videoId": "3MOFBulJd_s",
+  "title": "4 AI Filmmaking Tips That Make Videos Feel Like Films",
+  "date": "2026-11-20",
+  "published": "2026-11-20T15:10:10+00:00",
+  "kind": "video",
+  "url": "https://www.youtube.com/watch?v=3MOFBulJd_s",
+  "summary": "I recently created a two-minute AI short film called *Returning Your Things*. Making the images was only part of the challenge. Keeping characters, objects, and emotions consistent across shots took a lot more thought than I expected.",
+  "thumbnail": "video/3MOFBulJd_s.webp",
+  "source": "YouTube channel feed"
+ },
+ {
+  "id": "video:QhOYaj_bDZY",
+  "videoId": "QhOYaj_bDZY",
+  "title": "Returning Your Things | A Short Film by Ken Ashe",
+  "date": "2026-11-19",
+  "published": "2026-11-19T18:34:23+00:00",
+  "kind": "video",
+  "url": "https://www.youtube.com/watch?v=QhOYaj_bDZY",
+  "summary": "A man crosses a snow-covered city on a winter night to return his ex's belongings.",
+  "thumbnail": "video/QhOYaj_bDZY.webp",
+  "source": "YouTube channel feed"
+ },
+ {
+  "id": "video:efqdAo9-IBU",
+  "videoId": "efqdAo9-IBU",
+  "title": "Buying a .com Domain Is a Vanity Purchase #domains #domainnames",
+  "date": "2026-11-12",
+  "published": "2026-11-12T20:41:04+00:00",
+  "kind": "short",
+  "url": "https://www.youtube.com/shorts/efqdAo9-IBU",
+  "summary": "Do you really need a .com domain to start a business?",
+  "thumbnail": "video/efqdAo9-IBU.webp",
+  "source": "YouTube channel feed"
+ },
+ {
+  "id": "video:yZWsJjFnSH0",
+  "videoId": "yZWsJjFnSH0",
+  "title": "I Built Two AI Agents That Buy and Sell Services on Ethereum",
+  "date": "2026-11-11",
+  "published": "2026-11-11T23:49:49+00:00",
+  "kind": "video",
+  "url": "https://www.youtube.com/watch?v=yZWsJjFnSH0",
+  "summary": "Can two autonomous AI agents discover each other, buy and sell services, and complete a transaction without using a centralized marketplace?",
+  "thumbnail": "video/yZWsJjFnSH0.webp",
+  "source": "YouTube channel feed"
+ },
+ {
+  "id": "video:Sft8JZ_afb4",
+  "videoId": "Sft8JZ_afb4",
+  "title": "How to Solve the Bambu Lab Burr Puzzle (Step-by-Step Assembly Guide)",
+  "date": "2026-11-06",
+  "published": "2026-11-06T12:56:49+00:00",
+  "kind": "video",
+  "url": "https://www.youtube.com/watch?v=Sft8JZ_afb4",
+  "summary": "Learn how to solve the Bambu Lab Burr Puzzle with this clear, step-by-step assembly guide. I'll show you how all six pieces fit together and demonstrate the complete solution twice so you can follow along.",
+  "thumbnail": "video/Sft8JZ_afb4.webp",
+  "source": "YouTube channel feed"
+ },
+ {
+  "id": "video:r4rIS5pACGY",
+  "videoId": "r4rIS5pACGY",
+  "title": "How to File a Trademark Using AI Without a Lawyer",
+  "date": "2026-11-02",
+  "published": "2026-11-02T21:54:37+00:00",
+  "kind": "video",
+  "url": "https://www.youtube.com/watch?v=r4rIS5pACGY",
+  "summary": "How do you file a trademark using AI without hiring a lawyer? In this video, I walk through how I used ChatGPT and Claude to research trademarks, evaluate potential conflicts, select trademark classes, and submit my own applications to the U.S. Patent and Trademark Office (USPTO).",
+  "thumbnail": "video/r4rIS5pACGY.webp",
+  "source": "YouTube channel feed"
+ },
+ {
+  "id": "video:3sx6NNPbopQ",
+  "videoId": "3sx6NNPbopQ",
+  "title": "Before You Run an AI Coding Agent, Do These 4 Things",
+  "date": "2026-10-27",
+  "published": "2026-10-27T20:31:56+00:00",
+  "kind": "short",
+  "url": "https://www.youtube.com/shorts/3sx6NNPbopQ",
+  "summary": "Before you give an AI coding agent access to your computer, take a few basic precautions.",
+  "thumbnail": "video/3sx6NNPbopQ.webp",
+  "source": "YouTube channel feed"
+ },
+ {
+  "id": "video:dcK_1nMhy8w",
+  "videoId": "dcK_1nMhy8w",
+  "title": "ENSv2 Vote Passed: New .eth Renewal Discounts Explained",
+  "date": "2026-10-27",
+  "published": "2026-10-27T14:44:42+00:00",
+  "kind": "video",
+  "url": "https://www.youtube.com/watch?v=dcK_1nMhy8w",
+  "summary": "ENSv2's activation vote has passed, bringing some significant changes to .eth domain renewals.",
+  "thumbnail": "video/dcK_1nMhy8w.webp",
+  "source": "YouTube channel feed"
+ },
+ {
+  "id": "video:L8LzPXzMbQg",
+  "videoId": "L8LzPXzMbQg",
+  "title": "ENSv2 Explained: New Prices, Migration & What .eth Owners Need to Know",
+  "date": "2026-10-21",
+  "published": "2026-10-21T22:02:41+00:00",
+  "kind": "video",
+  "url": "https://www.youtube.com/watch?v=L8LzPXzMbQg",
+  "summary": "ENSv2 is moving toward activation, and the DAO vote is now live. If you own a .eth name, what does this mean for renewal prices, migration, and your existing names?",
+  "thumbnail": "video/L8LzPXzMbQg.webp",
+  "source": "YouTube channel feed"
+ },
+ {
+  "id": "video:O0Hv932JmLM",
+  "videoId": "O0Hv932JmLM",
+  "title": "I Opened 2 Koda Plushie Mystery Boxes at ApeFest",
+  "date": "2026-10-17",
+  "published": "2026-10-17T19:35:56+00:00",
+  "kind": "short",
+  "url": "https://www.youtube.com/shorts/O0Hv932JmLM",
+  "summary": "I picked up two Koda plushie mystery boxes at the Bored Ape pop-up store during ApeFest in Charleston, South Carolina.",
+  "thumbnail": "video/O0Hv932JmLM.webp",
+  "source": "YouTube channel feed"
+ },
+ {
+  "id": "video:_MAhfwQxdvA",
+  "videoId": "_MAhfwQxdvA",
+  "title": "I Gave an AI Agent an SEO Job. Now It Works Without Me.",
+  "date": "2026-10-15",
+  "published": "2026-10-15T21:44:53+00:00",
+  "kind": "video",
+  "url": "https://www.youtube.com/watch?v=_MAhfwQxdvA",
+  "summary": "I built an AI agent that finds five new websites every day, creates accounts, verifies emails, and links back to my personal website. The best part? It does the work without me.",
+  "thumbnail": "video/_MAhfwQxdvA.webp",
+  "source": "YouTube channel feed"
+ },
+ {
+  "id": "video:NlbBuqLaofQ",
+  "videoId": "NlbBuqLaofQ",
+  "title": "I Found My Last Name on an Old Guinness Label",
+  "date": "2026-10-14",
+  "published": "2026-10-14T15:11:13+00:00",
+  "kind": "short",
+  "url": "https://www.youtube.com/shorts/NlbBuqLaofQ",
+  "summary": "I went looking for the coat of arms associated with my last name, Ashe, and ended up discovering a mythical creature called a cockatrice, and an old Guinness Extra Stout label with my surname on it. The label says \"Bottled by T. F. Ashe & Nephew, Liverpool.\"",
+  "thumbnail": "video/NlbBuqLaofQ.webp",
+  "source": "YouTube channel feed",
+  "updated": "2026-11-14T20:17:33+00:00",
+  "mentions": [
+   "/writing/ashe-family-coat-of-arms"
+  ],
+  "hashtags": [
+   "guinness",
+   "ashe",
+   "familyhistory"
+  ]
+ },
+ {
+  "id": "video:qjLGYqxV_iM",
+  "videoId": "qjLGYqxV_iM",
+  "title": "How I Got a Google Knowledge Panel (Without Wikipedia)",
+  "date": "2026-10-13",
+  "published": "2026-10-13T14:40:15+00:00",
+  "kind": "short",
+  "url": "https://www.youtube.com/shorts/qjLGYqxV_iM",
+  "summary": "I got a Google Knowledge Panel without having a Wikipedia page.",
+  "thumbnail": "video/qjLGYqxV_iM.webp",
+  "source": "YouTube channel feed"
+ },
+ {
+  "id": "video:ujUpw18fklM",
+  "videoId": "ujUpw18fklM",
+  "title": "Why I Don't Run AI Agents on My Personal Computer",
+  "date": "2026-10-08",
+  "published": "2026-10-08T21:12:32+00:00",
+  "kind": "short",
+  "url": "https://www.youtube.com/shorts/ujUpw18fklM",
+  "summary": "AI agents can run commands, access accounts, and act on your behalf. That's why I keep mine on a dedicated Mac mini, separate from my personal computer.",
+  "thumbnail": "video/ujUpw18fklM.webp",
+  "source": "YouTube channel feed"
+ },
+ {
+  "id": "video:iEjd1OvHLS0",
+  "videoId": "iEjd1OvHLS0",
+  "title": "How to Start Learning AI (Without Getting Overwhelmed)",
+  "date": "2026-09-25",
+  "published": "2026-09-25",
+  "kind": "short",
+  "url": "https://www.youtube.com/shorts/iEjd1OvHLS0",
+  "summary": "",
+  "thumbnail": "video/iEjd1OvHLS0.webp",
+  "source": "YouTube channel feed (archived 2026-11-25)"
+ }
+]

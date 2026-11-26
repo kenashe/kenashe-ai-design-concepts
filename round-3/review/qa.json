@@ -1,0 +1,1163 @@
+{
+ "round-3/": {
+  "errors": [],
+  "failed": [],
+  "hosts": [],
+  "overflow": {
+   "1440": 0,
+   "768": 0,
+   "390": 0
+  },
+  "broken": [],
+  "bytes_raw": 906423,
+  "bytes_gz": 801225,
+  "requests": 15,
+  "weight_kb": 312,
+  "weight_raw_kb": 415,
+  "requests_initial": 7,
+  "robots": "noindex, nofollow, noarchive",
+  "flag": true,
+  "h1": 1,
+  "canonical": null,
+  "title": "KenAshe.ai \u00b7 Round 3 \u00b7 The Living Universe (design concept, not the live site)",
+  "height": 31052,
+  "text": {
+   "min": 14,
+   "under14": 0,
+   "samples": []
+  },
+  "img_no_alt": 0,
+  "kbd_stops": 40,
+  "kbd_bad": [],
+  "height_mobile": 40765,
+  "text_mobile": {
+   "min": 14,
+   "under14": 0,
+   "samples": []
+  },
+  "small_taps": [],
+  "reduced_motion_changed_px": 0,
+  "reduced_motion_infinite_anims": 0,
+  "nojs_text": 41432,
+  "nojs_links": 137,
+  "nojs_h1_visible": true,
+  "offline_page_errors": [],
+  "offline_text": 41432,
+  "firefox": {
+   "1440": {
+    "errors": [],
+    "overflow": 0,
+    "h1": true,
+    "canvas": 0
+   },
+   "390": {
+    "errors": [],
+    "overflow": 0,
+    "h1": true,
+    "canvas": 0
+   }
+  },
+  "unexpected_hosts": [],
+  "ok": true
+ },
+ "round-3/site/": {
+  "errors": [],
+  "failed": [],
+  "hosts": [],
+  "overflow": {
+   "1440": 0,
+   "768": 0,
+   "390": 0
+  },
+  "broken": [],
+  "bytes_raw": 778360,
+  "bytes_gz": 503483,
+  "requests": 45,
+  "weight_kb": 492,
+  "weight_raw_kb": 760,
+  "requests_initial": 45,
+  "robots": "noindex, nofollow, noarchive",
+  "flag": true,
+  "h1": 1,
+  "canonical": null,
+  "title": "Ken Ashe | AI Application Builder",
+  "height": 4501,
+  "text": {
+   "min": 14,
+   "under14": 0,
+   "samples": []
+  },
+  "img_no_alt": 0,
+  "kbd_stops": 40,
+  "kbd_bad": [],
+  "height_mobile": 6222,
+  "text_mobile": {
+   "min": 14,
+   "under14": 0,
+   "samples": []
+  },
+  "small_taps": [],
+  "reduced_motion_changed_px": 0,
+  "reduced_motion_infinite_anims": 0,
+  "nojs_text": 4000,
+  "nojs_links": 108,
+  "nojs_h1_visible": true,
+  "offline_page_errors": [],
+  "offline_text": 3845,
+  "firefox": {
+   "1440": {
+    "errors": [],
+    "overflow": 0,
+    "h1": true,
+    "canvas": 2
+   },
+   "390": {
+    "errors": [],
+    "overflow": 0,
+    "h1": true,
+    "canvas": 2
+   }
+  },
+  "unexpected_hosts": [],
+  "ok": true
+ },
+ "round-3/site/about/": {
+  "errors": [],
+  "failed": [],
+  "hosts": [],
+  "overflow": {
+   "1440": 0,
+   "768": 0,
+   "390": 0
+  },
+  "broken": [],
+  "bytes_raw": 566279,
+  "bytes_gz": 322204,
+  "requests": 38,
+  "weight_kb": 292,
+  "weight_raw_kb": 531,
+  "requests_initial": 37,
+  "robots": "noindex, nofollow, noarchive",
+  "flag": true,
+  "h1": 1,
+  "canonical": null,
+  "title": "About \u2013 Ken Ashe",
+  "height": 7072,
+  "text": {
+   "min": 14,
+   "under14": 0,
+   "samples": []
+  },
+  "img_no_alt": 0,
+  "kbd_stops": 40,
+  "kbd_bad": [],
+  "height_mobile": 11671,
+  "text_mobile": {
+   "min": 14,
+   "under14": 0,
+   "samples": []
+  },
+  "small_taps": [],
+  "reduced_motion_changed_px": 0,
+  "reduced_motion_infinite_anims": 0,
+  "nojs_text": 7432,
+  "nojs_links": 59,
+  "nojs_h1_visible": true,
+  "offline_page_errors": [],
+  "offline_text": 7432,
+  "firefox": {
+   "1440": {
+    "errors": [],
+    "overflow": 0,
+    "h1": true,
+    "canvas": 0
+   },
+   "390": {
+    "errors": [],
+    "overflow": 0,
+    "h1": true,
+    "canvas": 0
+   }
+  },
+  "unexpected_hosts": [],
+  "ok": true
+ },
+ "round-3/site/building/": {
+  "errors": [],
+  "failed": [],
+  "hosts": [],
+  "overflow": {
+   "1440": 0,
+   "768": 0,
+   "390": 0
+  },
+  "broken": [],
+  "bytes_raw": 480703,
+  "bytes_gz": 229566,
+  "requests": 34,
+  "weight_kb": 224,
+  "weight_raw_kb": 469,
+  "requests_initial": 34,
+  "robots": "noindex, nofollow, noarchive",
+  "flag": true,
+  "h1": 1,
+  "canonical": null,
+  "title": "Building | Ken Ashe",
+  "height": 5764,
+  "text": {
+   "min": 14,
+   "under14": 0,
+   "samples": []
+  },
+  "img_no_alt": 0,
+  "kbd_stops": 40,
+  "kbd_bad": [],
+  "height_mobile": 8690,
+  "text_mobile": {
+   "min": 14,
+   "under14": 0,
+   "samples": []
+  },
+  "small_taps": [],
+  "reduced_motion_changed_px": 0,
+  "reduced_motion_infinite_anims": 0,
+  "nojs_text": 6467,
+  "nojs_links": 49,
+  "nojs_h1_visible": true,
+  "offline_page_errors": [],
+  "offline_text": 7333,
+  "firefox": {
+   "1440": {
+    "errors": [],
+    "overflow": 0,
+    "h1": true,
+    "canvas": 0
+   },
+   "390": {
+    "errors": [],
+    "overflow": 0,
+    "h1": true,
+    "canvas": 0
+   }
+  },
+  "unexpected_hosts": [],
+  "ok": true
+ },
+ "round-3/site/building/ai-agent-economy/": {
+  "errors": [],
+  "failed": [],
+  "hosts": [],
+  "overflow": {
+   "1440": 0,
+   "768": 0,
+   "390": 0
+  },
+  "broken": [],
+  "bytes_raw": 599590,
+  "bytes_gz": 337228,
+  "requests": 36,
+  "weight_kb": 302,
+  "weight_raw_kb": 558,
+  "requests_initial": 34,
+  "robots": "noindex, nofollow, noarchive",
+  "flag": true,
+  "h1": 1,
+  "canonical": null,
+  "title": "I Built Two AI Agents That Buy and Sell Services on Ethereum \u2013 Ken Ashe",
+  "height": 8614,
+  "text": {
+   "min": 14,
+   "under14": 0,
+   "samples": []
+  },
+  "img_no_alt": 0,
+  "kbd_stops": 40,
+  "kbd_bad": [],
+  "height_mobile": 12543,
+  "text_mobile": {
+   "min": 14,
+   "under14": 0,
+   "samples": []
+  },
+  "small_taps": [],
+  "reduced_motion_changed_px": 0,
+  "reduced_motion_infinite_anims": 0,
+  "nojs_text": 9718,
+  "nojs_links": 57,
+  "nojs_h1_visible": true,
+  "offline_page_errors": [],
+  "offline_text": 9718,
+  "firefox": {
+   "1440": {
+    "errors": [],
+    "overflow": 0,
+    "h1": true,
+    "canvas": 0
+   },
+   "390": {
+    "errors": [],
+    "overflow": 0,
+    "h1": true,
+    "canvas": 0
+   }
+  },
+  "unexpected_hosts": [],
+  "ok": true
+ },
+ "round-3/site/building/autonomous-ai-blog/": {
+  "errors": [],
+  "failed": [],
+  "hosts": [],
+  "overflow": {
+   "1440": 0,
+   "768": 0,
+   "390": 0
+  },
+  "broken": [],
+  "bytes_raw": 599532,
+  "bytes_gz": 335095,
+  "requests": 36,
+  "weight_kb": 300,
+  "weight_raw_kb": 559,
+  "requests_initial": 34,
+  "robots": "noindex, nofollow, noarchive",
+  "flag": true,
+  "h1": 1,
+  "canonical": null,
+  "title": "Autonomous AI Blog \u2013 Ken Ashe",
+  "height": 10252,
+  "text": {
+   "min": 14,
+   "under14": 0,
+   "samples": []
+  },
+  "img_no_alt": 0,
+  "kbd_stops": 40,
+  "kbd_bad": [],
+  "height_mobile": 14943,
+  "text_mobile": {
+   "min": 14,
+   "under14": 0,
+   "samples": []
+  },
+  "small_taps": [],
+  "reduced_motion_changed_px": 0,
+  "reduced_motion_infinite_anims": 0,
+  "nojs_text": 14688,
+  "nojs_links": 53,
+  "nojs_h1_visible": true,
+  "offline_page_errors": [],
+  "offline_text": 14688,
+  "firefox": {
+   "1440": {
+    "errors": [],
+    "overflow": 0,
+    "h1": true,
+    "canvas": 0
+   },
+   "390": {
+    "errors": [],
+    "overflow": 0,
+    "h1": true,
+    "canvas": 0
+   }
+  },
+  "unexpected_hosts": [],
+  "ok": true
+ },
+ "round-3/site/building/returning-your-things/": {
+  "errors": [],
+  "failed": [],
+  "hosts": [],
+  "overflow": {
+   "1440": 0,
+   "768": 0,
+   "390": 0
+  },
+  "broken": [],
+  "bytes_raw": 831241,
+  "bytes_gz": 579532,
+  "requests": 41,
+  "weight_kb": 541,
+  "weight_raw_kb": 787,
+  "requests_initial": 39,
+  "robots": "noindex, nofollow, noarchive",
+  "flag": true,
+  "h1": 1,
+  "canonical": null,
+  "title": "Returning Your Things \u2013 Ken Ashe",
+  "height": 5075,
+  "text": {
+   "min": 14,
+   "under14": 0,
+   "samples": []
+  },
+  "img_no_alt": 0,
+  "kbd_stops": 40,
+  "kbd_bad": [],
+  "height_mobile": 6125,
+  "text_mobile": {
+   "min": 14,
+   "under14": 0,
+   "samples": []
+  },
+  "small_taps": [],
+  "reduced_motion_changed_px": 0,
+  "reduced_motion_infinite_anims": 0,
+  "nojs_text": 3867,
+  "nojs_links": 47,
+  "nojs_h1_visible": true,
+  "offline_page_errors": [],
+  "offline_text": 3867,
+  "firefox": {
+   "1440": {
+    "errors": [],
+    "overflow": 0,
+    "h1": true,
+    "canvas": 0
+   },
+   "390": {
+    "errors": [],
+    "overflow": 0,
+    "h1": true,
+    "canvas": 0
+   }
+  },
+  "unexpected_hosts": [],
+  "ok": true
+ },
+ "round-3/site/building/zerohuman/": {
+  "errors": [],
+  "failed": [],
+  "hosts": [
+   "zerohuman-production.up.railway.app"
+  ],
+  "overflow": {
+   "1440": 0,
+   "768": 0,
+   "390": 0
+  },
+  "broken": [],
+  "bytes_raw": 570320,
+  "bytes_gz": 310247,
+  "requests": 36,
+  "weight_kb": 263,
+  "weight_raw_kb": 517,
+  "requests_initial": 33,
+  "robots": "noindex, nofollow, noarchive",
+  "flag": true,
+  "h1": 1,
+  "canonical": null,
+  "title": "ZeroHuman: A Business Only AI Agents Can Use \u2013 Ken Ashe",
+  "height": 8256,
+  "text": {
+   "min": 14,
+   "under14": 0,
+   "samples": []
+  },
+  "img_no_alt": 0,
+  "kbd_stops": 40,
+  "kbd_bad": [],
+  "height_mobile": 13048,
+  "text_mobile": {
+   "min": 14,
+   "under14": 0,
+   "samples": []
+  },
+  "small_taps": [],
+  "reduced_motion_changed_px": 0,
+  "reduced_motion_infinite_anims": 0,
+  "nojs_text": 10348,
+  "nojs_links": 63,
+  "nojs_h1_visible": true,
+  "offline_page_errors": [],
+  "offline_text": 10231,
+  "firefox": {
+   "1440": {
+    "errors": [],
+    "overflow": 0,
+    "h1": true,
+    "canvas": 0
+   },
+   "390": {
+    "errors": [],
+    "overflow": 0,
+    "h1": true,
+    "canvas": 0
+   }
+  },
+  "unexpected_hosts": [],
+  "ok": true
+ },
+ "round-3/site/publish/": {
+  "errors": [],
+  "failed": [],
+  "hosts": [],
+  "overflow": {
+   "1440": 0,
+   "768": 0,
+   "390": 0
+  },
+  "broken": [],
+  "bytes_raw": 664277,
+  "bytes_gz": 384279,
+  "requests": 42,
+  "weight_kb": 262,
+  "weight_raw_kb": 536,
+  "requests_initial": 33,
+  "robots": "noindex, nofollow, noarchive",
+  "flag": true,
+  "h1": 1,
+  "canonical": null,
+  "title": "Publishing: what Ken types and what updates by itself \u2013 Ken Ashe",
+  "height": 8361,
+  "text": {
+   "min": 14,
+   "under14": 0,
+   "samples": []
+  },
+  "img_no_alt": 0,
+  "kbd_stops": 40,
+  "kbd_bad": [],
+  "height_mobile": 12405,
+  "text_mobile": {
+   "min": 14,
+   "under14": 0,
+   "samples": []
+  },
+  "small_taps": [],
+  "reduced_motion_changed_px": 0,
+  "reduced_motion_infinite_anims": 0,
+  "nojs_text": 11532,
+  "nojs_links": 106,
+  "nojs_h1_visible": true,
+  "offline_page_errors": [],
+  "offline_text": 11426,
+  "firefox": {
+   "1440": {
+    "errors": [],
+    "overflow": 0,
+    "h1": true,
+    "canvas": 0
+   },
+   "390": {
+    "errors": [],
+    "overflow": 0,
+    "h1": true,
+    "canvas": 0
+   }
+  },
+  "unexpected_hosts": [],
+  "ok": true
+ },
+ "round-3/site/universe/": {
+  "errors": [],
+  "failed": [],
+  "hosts": [],
+  "overflow": {
+   "1440": 0,
+   "768": 0,
+   "390": 0
+  },
+  "broken": [],
+  "bytes_raw": 542467,
+  "bytes_gz": 245344,
+  "requests": 32,
+  "weight_kb": 240,
+  "weight_raw_kb": 530,
+  "requests_initial": 32,
+  "robots": "noindex, nofollow, noarchive",
+  "flag": true,
+  "h1": 1,
+  "canonical": null,
+  "title": "The Universe | Ken Ashe",
+  "height": 5020,
+  "text": {
+   "min": 14,
+   "under14": 0,
+   "samples": []
+  },
+  "img_no_alt": 0,
+  "kbd_stops": 40,
+  "kbd_bad": [],
+  "height_mobile": 9617,
+  "text_mobile": {
+   "min": 14,
+   "under14": 0,
+   "samples": []
+  },
+  "small_taps": [],
+  "reduced_motion_changed_px": 0,
+  "reduced_motion_infinite_anims": 0,
+  "nojs_text": 9598,
+  "nojs_links": 180,
+  "nojs_h1_visible": true,
+  "offline_page_errors": [],
+  "offline_text": 9929,
+  "firefox": {
+   "1440": {
+    "errors": [],
+    "overflow": 0,
+    "h1": true,
+    "canvas": 2
+   },
+   "390": {
+    "errors": [],
+    "overflow": 0,
+    "h1": true,
+    "canvas": 2
+   }
+  },
+  "unexpected_hosts": [],
+  "ok": true
+ },
+ "round-3/site/videos/": {
+  "errors": [],
+  "failed": [],
+  "hosts": [],
+  "overflow": {
+   "1440": 0,
+   "768": 0,
+   "390": 0
+  },
+  "broken": [],
+  "bytes_raw": 632589,
+  "bytes_gz": 394789,
+  "requests": 47,
+  "weight_kb": 386,
+  "weight_raw_kb": 618,
+  "requests_initial": 47,
+  "robots": "noindex, nofollow, noarchive",
+  "flag": true,
+  "h1": 1,
+  "canonical": null,
+  "title": "Videos | Ken Ashe",
+  "height": 4837,
+  "text": {
+   "min": 14,
+   "under14": 0,
+   "samples": []
+  },
+  "img_no_alt": 0,
+  "kbd_stops": 40,
+  "kbd_bad": [],
+  "height_mobile": 7073,
+  "text_mobile": {
+   "min": 14,
+   "under14": 0,
+   "samples": []
+  },
+  "small_taps": [],
+  "reduced_motion_changed_px": 0,
+  "reduced_motion_infinite_anims": 0,
+  "nojs_text": 3482,
+  "nojs_links": 68,
+  "nojs_h1_visible": true,
+  "offline_page_errors": [],
+  "offline_text": 3630,
+  "firefox": {
+   "1440": {
+    "errors": [],
+    "overflow": 0,
+    "h1": true,
+    "canvas": 0
+   },
+   "390": {
+    "errors": [],
+    "overflow": 0,
+    "h1": true,
+    "canvas": 0
+   }
+  },
+  "unexpected_hosts": [],
+  "ok": true
+ },
+ "round-3/site/writing/": {
+  "errors": [],
+  "failed": [],
+  "hosts": [],
+  "overflow": {
+   "1440": 0,
+   "768": 0,
+   "390": 0
+  },
+  "broken": [],
+  "bytes_raw": 525091,
+  "bytes_gz": 298877,
+  "requests": 39,
+  "weight_kb": 292,
+  "weight_raw_kb": 513,
+  "requests_initial": 39,
+  "robots": "noindex, nofollow, noarchive",
+  "flag": true,
+  "h1": 1,
+  "canonical": null,
+  "title": "Writing | Ken Ashe",
+  "height": 3353,
+  "text": {
+   "min": 14,
+   "under14": 0,
+   "samples": []
+  },
+  "img_no_alt": 0,
+  "kbd_stops": 40,
+  "kbd_bad": [],
+  "height_mobile": 6354,
+  "text_mobile": {
+   "min": 14,
+   "under14": 0,
+   "samples": []
+  },
+  "small_taps": [],
+  "reduced_motion_changed_px": 0,
+  "reduced_motion_infinite_anims": 0,
+  "nojs_text": 3924,
+  "nojs_links": 47,
+  "nojs_h1_visible": true,
+  "offline_page_errors": [],
+  "offline_text": 4012,
+  "firefox": {
+   "1440": {
+    "errors": [],
+    "overflow": 0,
+    "h1": true,
+    "canvas": 0
+   },
+   "390": {
+    "errors": [],
+    "overflow": 0,
+    "h1": true,
+    "canvas": 0
+   }
+  },
+  "unexpected_hosts": [],
+  "ok": true
+ },
+ "round-3/site/writing/4-tips-for-making-ai-videos-that-feel-like-films/": {
+  "errors": [],
+  "failed": [],
+  "hosts": [],
+  "overflow": {
+   "1440": 0,
+   "768": 0,
+   "390": 0
+  },
+  "broken": [],
+  "bytes_raw": 868151,
+  "bytes_gz": 615541,
+  "requests": 41,
+  "weight_kb": 487,
+  "weight_raw_kb": 734,
+  "requests_initial": 37,
+  "robots": "noindex, nofollow, noarchive",
+  "flag": true,
+  "h1": 1,
+  "canonical": null,
+  "title": "4 Tips for Making AI Videos That Feel Like Films \u2013 Ken Ashe",
+  "height": 6948,
+  "text": {
+   "min": 14,
+   "under14": 0,
+   "samples": []
+  },
+  "img_no_alt": 0,
+  "kbd_stops": 40,
+  "kbd_bad": [],
+  "height_mobile": 8302,
+  "text_mobile": {
+   "min": 14,
+   "under14": 0,
+   "samples": []
+  },
+  "small_taps": [],
+  "reduced_motion_changed_px": 0,
+  "reduced_motion_infinite_anims": 0,
+  "nojs_text": 6280,
+  "nojs_links": 52,
+  "nojs_h1_visible": true,
+  "offline_page_errors": [],
+  "offline_text": 6280,
+  "firefox": {
+   "1440": {
+    "errors": [],
+    "overflow": 0,
+    "h1": true,
+    "canvas": 0
+   },
+   "390": {
+    "errors": [],
+    "overflow": 0,
+    "h1": true,
+    "canvas": 0
+   }
+  },
+  "unexpected_hosts": [],
+  "ok": true
+ },
+ "round-3/stress/": {
+  "errors": [],
+  "failed": [],
+  "hosts": [],
+  "overflow": {
+   "1440": 0,
+   "768": 0,
+   "390": 0
+  },
+  "broken": [],
+  "bytes_raw": 1009546,
+  "bytes_gz": 274997,
+  "requests": 34,
+  "weight_kb": 269,
+  "weight_raw_kb": 986,
+  "requests_initial": 34,
+  "robots": "noindex, nofollow, noarchive",
+  "flag": true,
+  "h1": 1,
+  "canonical": null,
+  "title": "Stress test (1,000) \u00b7 synthetic data \u00b7 Ken Ashe Round 3",
+  "height": 9649,
+  "text": {
+   "min": 14,
+   "under14": 0,
+   "samples": []
+  },
+  "img_no_alt": 0,
+  "kbd_stops": 40,
+  "kbd_bad": [],
+  "height_mobile": 18510,
+  "text_mobile": {
+   "min": 14,
+   "under14": 0,
+   "samples": []
+  },
+  "small_taps": [],
+  "reduced_motion_changed_px": 0,
+  "reduced_motion_infinite_anims": 0,
+  "nojs_text": 14772,
+  "nojs_links": 313,
+  "nojs_h1_visible": true,
+  "offline_page_errors": [],
+  "offline_text": 17546,
+  "firefox": {
+   "1440": {
+    "errors": [],
+    "overflow": 0,
+    "h1": true,
+    "canvas": 2
+   },
+   "390": {
+    "errors": [],
+    "overflow": 0,
+    "h1": true,
+    "canvas": 2
+   }
+  },
+  "unexpected_hosts": [],
+  "ok": true
+ },
+ "round-3/stress/300/": {
+  "errors": [],
+  "failed": [],
+  "hosts": [],
+  "overflow": {
+   "1440": 0,
+   "768": 0,
+   "390": 0
+  },
+  "broken": [],
+  "bytes_raw": 768750,
+  "bytes_gz": 258823,
+  "requests": 34,
+  "weight_kb": 253,
+  "weight_raw_kb": 751,
+  "requests_initial": 34,
+  "robots": "noindex, nofollow, noarchive",
+  "flag": true,
+  "h1": 1,
+  "canonical": null,
+  "title": "Stress test (300) \u00b7 synthetic data \u00b7 Ken Ashe Round 3",
+  "height": 4549,
+  "text": {
+   "min": 14,
+   "under14": 0,
+   "samples": []
+  },
+  "img_no_alt": 0,
+  "kbd_stops": 40,
+  "kbd_bad": [],
+  "height_mobile": 7618,
+  "text_mobile": {
+   "min": 14,
+   "under14": 0,
+   "samples": []
+  },
+  "small_taps": [],
+  "reduced_motion_changed_px": 0,
+  "reduced_motion_infinite_anims": 0,
+  "nojs_text": 5668,
+  "nojs_links": 379,
+  "nojs_h1_visible": true,
+  "offline_page_errors": [],
+  "offline_text": 6223,
+  "firefox": {
+   "1440": {
+    "errors": [],
+    "overflow": 0,
+    "h1": true,
+    "canvas": 2
+   },
+   "390": {
+    "errors": [],
+    "overflow": 0,
+    "h1": true,
+    "canvas": 2
+   }
+  },
+  "unexpected_hosts": [],
+  "ok": true
+ },
+ "round-3/stress/3000-digest/": {
+  "errors": [],
+  "failed": [],
+  "hosts": [],
+  "overflow": {
+   "1440": 0,
+   "768": 0,
+   "390": 0
+  },
+  "broken": [],
+  "bytes_raw": 1965880,
+  "bytes_gz": 346233,
+  "requests": 34,
+  "weight_kb": 338,
+  "weight_raw_kb": 1920,
+  "requests_initial": 34,
+  "robots": "noindex, nofollow, noarchive",
+  "flag": true,
+  "h1": 1,
+  "canonical": null,
+  "title": "Stress test (3,000 + Digest publishing) \u00b7 synthetic data \u00b7 Ken Ashe Round 3",
+  "height": 5998,
+  "text": {
+   "min": 14,
+   "under14": 0,
+   "samples": []
+  },
+  "img_no_alt": 0,
+  "kbd_stops": 40,
+  "kbd_bad": [],
+  "height_mobile": 9603,
+  "text_mobile": {
+   "min": 14,
+   "under14": 0,
+   "samples": []
+  },
+  "small_taps": [],
+  "reduced_motion_changed_px": 0,
+  "reduced_motion_infinite_anims": 0,
+  "nojs_text": 6989,
+  "nojs_links": 389,
+  "nojs_h1_visible": true,
+  "offline_page_errors": [],
+  "offline_text": 7768,
+  "firefox": {
+   "1440": {
+    "errors": [],
+    "overflow": 0,
+    "h1": true,
+    "canvas": 2
+   },
+   "390": {
+    "errors": [],
+    "overflow": 0,
+    "h1": true,
+    "canvas": 2
+   }
+  },
+  "unexpected_hosts": [],
+  "ok": true
+ },
+ "round-3/stress/3000/": {
+  "errors": [],
+  "failed": [],
+  "hosts": [],
+  "overflow": {
+   "1440": 0,
+   "768": 0,
+   "390": 0
+  },
+  "broken": [],
+  "bytes_raw": 1871676,
+  "bytes_gz": 328322,
+  "requests": 34,
+  "weight_kb": 321,
+  "weight_raw_kb": 1828,
+  "requests_initial": 34,
+  "robots": "noindex, nofollow, noarchive",
+  "flag": true,
+  "h1": 1,
+  "canonical": null,
+  "title": "Stress test (3,000) \u00b7 synthetic data \u00b7 Ken Ashe Round 3",
+  "height": 5998,
+  "text": {
+   "min": 14,
+   "under14": 0,
+   "samples": []
+  },
+  "img_no_alt": 0,
+  "kbd_stops": 40,
+  "kbd_bad": [],
+  "height_mobile": 9603,
+  "text_mobile": {
+   "min": 14,
+   "under14": 0,
+   "samples": []
+  },
+  "small_taps": [],
+  "reduced_motion_changed_px": 0,
+  "reduced_motion_infinite_anims": 0,
+  "nojs_text": 7074,
+  "nojs_links": 389,
+  "nojs_h1_visible": true,
+  "offline_page_errors": [],
+  "offline_text": 7777,
+  "firefox": {
+   "1440": {
+    "errors": [],
+    "overflow": 0,
+    "h1": true,
+    "canvas": 2
+   },
+   "390": {
+    "errors": [],
+    "overflow": 0,
+    "h1": true,
+    "canvas": 2
+   }
+  },
+  "unexpected_hosts": [],
+  "ok": true
+ },
+ "round-3/stress/real/": {
+  "errors": [],
+  "failed": [],
+  "hosts": [],
+  "overflow": {
+   "1440": 0,
+   "768": 0,
+   "390": 0
+  },
+  "broken": [],
+  "bytes_raw": 538188,
+  "bytes_gz": 247064,
+  "requests": 34,
+  "weight_kb": 241,
+  "weight_raw_kb": 526,
+  "requests_initial": 34,
+  "robots": "noindex, nofollow, noarchive",
+  "flag": true,
+  "h1": 1,
+  "canonical": null,
+  "title": "Stress test (Real \u00b7 today) \u00b7 synthetic data \u00b7 Ken Ashe Round 3",
+  "height": 4206,
+  "text": {
+   "min": 14,
+   "under14": 0,
+   "samples": []
+  },
+  "img_no_alt": 0,
+  "kbd_stops": 40,
+  "kbd_bad": [],
+  "height_mobile": 6957,
+  "text_mobile": {
+   "min": 14,
+   "under14": 0,
+   "samples": []
+  },
+  "small_taps": [],
+  "reduced_motion_changed_px": 0,
+  "reduced_motion_infinite_anims": 0,
+  "nojs_text": 6034,
+  "nojs_links": 128,
+  "nojs_h1_visible": true,
+  "offline_page_errors": [],
+  "offline_text": 6323,
+  "firefox": {
+   "1440": {
+    "errors": [],
+    "overflow": 0,
+    "h1": true,
+    "canvas": 2
+   },
+   "390": {
+    "errors": [],
+    "overflow": 0,
+    "h1": true,
+    "canvas": 2
+   }
+  },
+  "unexpected_hosts": [],
+  "ok": true
+ },
+ "round-3/stress/videos/": {
+  "errors": [],
+  "failed": [],
+  "hosts": [],
+  "overflow": {
+   "1440": 0,
+   "768": 0,
+   "390": 0
+  },
+  "broken": [],
+  "bytes_raw": 2066062,
+  "bytes_gz": 422097,
+  "requests": 44,
+  "weight_kb": 260,
+  "weight_raw_kb": 1866,
+  "requests_initial": 31,
+  "robots": "noindex, nofollow, noarchive",
+  "flag": true,
+  "h1": 1,
+  "canonical": null,
+  "title": "Video archive stress test (2,000+ synthetic videos) \u00b7 Ken Ashe Round 3",
+  "height": 45075,
+  "text": {
+   "min": 14,
+   "under14": 0,
+   "samples": []
+  },
+  "img_no_alt": 0,
+  "kbd_stops": 40,
+  "kbd_bad": [],
+  "height_mobile": 86197,
+  "text_mobile": {
+   "min": 14,
+   "under14": 0,
+   "samples": []
+  },
+  "small_taps": [],
+  "reduced_motion_changed_px": 0,
+  "reduced_motion_infinite_anims": 0,
+  "nojs_text": 99794,
+  "nojs_links": 2203,
+  "nojs_h1_visible": true,
+  "offline_page_errors": [],
+  "offline_text": 3023,
+  "firefox": {
+   "1440": {
+    "errors": [],
+    "overflow": 0,
+    "h1": true,
+    "canvas": 0
+   },
+   "390": {
+    "errors": [],
+    "overflow": 0,
+    "h1": true,
+    "canvas": 0
+   }
+  },
+  "unexpected_hosts": [],
+  "ok": true
+ }
+}

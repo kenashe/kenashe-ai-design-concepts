@@ -1,0 +1,22 @@
+# Live run against the real YouTube feed, 2026-11-26T01:36Z, in a scratch folder
+# Starting state: the archive WITHOUT Ken's newest video (DcXaGn-NsgY) and without its thumbnail.
+$ node tools/sync-videos.mjs --archive scratch/archive.json --thumbs scratch/assets/video
+[videos] {"feed":"ok","inFeed":15,"added":["DcXaGn-NsgY"],"updated":[],"thumbnails":["DcXaGn-NsgY"],"thumbnailsPending":[],"total":16,"changed":true}
+
+$ ls -la scratch/assets/video | grep DcXaGn
+108984 DcXaGn-NsgY.jpg
+
+$ head of archive
+{
+ "videoId": "DcXaGn-NsgY",
+ "title": "My AI Blog Published 1,400 Articles. Then Google Visibility Fell 97%",
+ "published": "2026-11-25T21:23:49+00:00",
+ "kind": "video",
+ "mentions": [
+  "/building/autonomous-ai-blog"
+ ],
+ "thumbnail": "video/DcXaGn-NsgY.jpg"
+}
+
+# Second run: nothing new, so nothing to commit and no rebuild.
+[videos] {"feed":"ok","inFeed":15,"added":[],"updated":[],"thumbnails":[],"thumbnailsPending":[],"total":16,"changed":false}

@@ -1,0 +1,153 @@
+{
+ "rows": [
+  {
+   "ask": "1 \u00b7 Evolve the Living Universe",
+   "answer": "Still the one signature experience, and still only data: builds, essays, videos and shorts are distinct lights placed by theme and date; threads are the 28 documented relationships. You can select a light, **follow a thread** to related work, and **replay growth** over time. Lighting, depth of field, drift and labels were reworked; universe labels are now 14 px or larger with collision avoidance. The **Digest is one faint ash band** under the plane with a derived \u201cAutomated Digest \u00b7 paused\u201d label, built from weekly totals (a 55,179-post Digest costs the same to draw as today's 1,399). It is excluded from headline counts and opens on demand.",
+   "see": [
+    [
+     "Homepage",
+     "site/"
+    ],
+    [
+     "Full-screen universe",
+     "site/universe/"
+    ],
+    [
+     "Focused on ZeroHuman",
+     "site/universe/#i=building:zerohuman"
+    ]
+   ]
+  },
+  {
+   "ask": "2 \u00b7 Strengthen personal identity",
+   "answer": "Your real photograph stands as a lit rectangular window at \u201cnow\u201d, the centre of the universe: light falls from it, the newest work sits nearest to it and older work recedes behind it. It is not Direction A's circular orbit. Your name is set up to 168 px, with the tagline and subline verbatim, two calls to action (Watch the latest video, Explore the universe) and follow links for YouTube and X. The same window appears in every item's \u201cplace in the universe\u201d. The photo is cropped by CSS only; your likeness is never edited.",
+   "see": [
+    [
+     "Homepage",
+     "site/"
+    ],
+    [
+     "About",
+     "site/about/"
+    ]
+   ]
+  },
+  {
+   "ask": "3 \u00b7 Improve content discovery",
+   "answer": "**Latest video** is on the first screen and again as a large click-to-load feature, always the newest long-form upload. **Video archive** at /videos/ separates long-form and Shorts, filters by theme and year, searches instantly and plays in place. **Search** (button, \u201c/\u201d, Ctrl/Cmd+K) covers everything on every page; the project index filters by theme, status, stack and year with shareable URLs. **Receipts** (transactions, repositories, evidence files) and **threads** with their evidence appear on item pages and cards. No editing-room interface. Header navigation, index pages and a list view mean nobody needs the universe to find anything.",
+   "see": [
+    [
+     "Video archive",
+     "site/videos/"
+    ],
+    [
+     "Project index",
+     "site/building/"
+    ],
+    [
+     "Writing index",
+     "site/writing/"
+    ],
+    [
+     "ZeroHuman receipts",
+     "site/building/zerohuman/"
+    ]
+   ]
+  },
+  {
+   "ask": "4 \u00b7 Refine visual design",
+   "answer": "No text under 14 px anywhere (checked on every page, including SVG labels); body text 17 px; far fewer mono micro-labels; contrast-checked palette that keeps Direction B's warm night. Homepage is **5.0 desktop viewports and 7.4 mobile** (Round 2 B: 5.9 and 7.5; Round 1 pages ran to 30+). Mobile has its own first screen: name, face in the universe, tagline, primary button.",
+   "see": [
+    [
+     "Homepage",
+     "site/"
+    ],
+    [
+     "Style guide",
+     "site/STYLEGUIDE.md"
+    ]
+   ]
+  },
+  {
+   "ask": "5 \u00b7 Preserve and strengthen the architecture",
+   "answer": "Same approved pipeline, strengthened: automatic YouTube sync, an archive that outlives the feed, automatic thumbnails, no network at build time, themes that emerge from the data, level-of-detail clusters. Nine automated tests and a recorded live run. See the demonstrations table below.",
+   "see": [
+    [
+     "Architecture",
+     "#architecture"
+    ],
+    [
+     "Publishing demo",
+     "site/publish/"
+    ],
+    [
+     "Stress test",
+     "stress/"
+    ]
+   ]
+  },
+  {
+   "ask": "6 \u00b7 Production readiness",
+   "answer": "Production re-reviewed read-only at `eb9a67b` (unchanged since Round 2). URLs, canonical, robots, sitemap, structured data and the Digest's state are preserved by not touching the files that own them. Tested in Chromium and Firefox; Safari and real GPUs could not be tested here and are disclosed.",
+   "see": [
+    [
+     "Verification",
+     "#verification"
+    ],
+    [
+     "Migration plan",
+     "#migration"
+    ]
+   ]
+  },
+  {
+   "ask": "7 \u00b7 Deliverables",
+   "answer": "One prototype (12 pages), desktop and mobile screenshots, six interior pages, the full-screen universe, the updated publishing demo (four steps), the future-scale stress test (six pages), this report, and a five-phase migration and rollback plan. Rounds 1 and 2 remain online unchanged.",
+   "see": [
+    [
+     "Screenshots",
+     "#screens"
+    ],
+    [
+     "Report",
+     "#report"
+    ]
+   ]
+  }
+ ],
+ "demonstrations": [
+  {
+   "ask": "How does a new YouTube upload trigger a refresh and rebuild?",
+   "answer": "A scheduled GitHub Action (every 30 minutes, or the Run workflow button) runs `sync-videos.mjs`. When the feed has something new it commits the archive and thumbnail as Ken and pushes; the push triggers the normal Vercel build. Nothing new means no commit and no build. Free on the public repo. Proposed only: `production-plan/sync-videos.yml`.",
+   "evidence": "Recorded live run against your real feed (`production-plan/evidence/live-sync-run.txt`); test 1."
+  },
+  {
+   "ask": "How does the archive persist beyond the latest 15 videos?",
+   "answer": "The archive file is append-only and committed with the site. Links found in descriptions are stored in it too, so relationships persist as well.",
+   "evidence": "Test 2: 28 videos through a 15-item feed, all 28 kept. Today's archive already holds 16."
+  },
+  {
+   "ask": "How are new thumbnails acquired without manual work?",
+   "answer": "The sync downloads the best available size (three fallbacks), rejects YouTube's grey placeholder, and retries on later runs. Until then the item draws its data-derived visual.",
+   "evidence": "Tests 3 and 5; the live run fetched a 109 KB thumbnail."
+  },
+  {
+   "ask": "How does the site function when external services are unavailable?",
+   "answer": "Feed down: the run changes nothing and the site builds from the archive. The build itself makes no network requests. In the browser every page is complete with all outside hosts blocked and with JavaScript off.",
+   "evidence": "Test 4 (HTTP 500, garbage response, unreachable host); QA columns \u201cOutside hosts blocked\u201d and \u201cJS off\u201d below."
+  },
+  {
+   "ask": "How are new categories accommodated without frequent rule changes?",
+   "answer": "Themes are dynamic. After the seed vocabulary, a build follows the stack it shares with earlier builds; four or more unfiled items sharing a tag become a new theme with its own sector; videos and essays inherit from what they link to; an optional `topic` gives you control.",
+   "evidence": "Test 6; publishing demo step 4 (a Robotics theme appears); in the stress data Robotics, 3D printing, Homelab and Hardware appear without a rule."
+  },
+  {
+   "ask": "How does the universe stay usable with hundreds or thousands of items?",
+   "answer": "Individual lights for the most recent whole months up to a budget (240 desktop, 110 phone); older work as month, quarter and year clusters that open when selected or zoomed; threads and labels capped; one tab stop plus a list view that fills years on demand; time mapped logarithmically so the newest year keeps room.",
+   "evidence": "Stress test table below: 3,004 items draw in 10 ms per frame (Chromium Canvas) against 5.6 ms for today's 44; DOM under 4,000 nodes."
+  }
+ ],
+ "stressIntro": "Synthetic future content, generated by `tools/synthesize.mjs` and kept entirely under `stress/` (nothing synthetic appears in the real prototype; every stress page carries a banner). Sizes: 300, 1,000 and 3,000 personal items (about 16 years at 190 pieces a year), plus a worst case where the Digest resumes and reaches 55,179 posts. I re-ran the measurements independently of the builder.",
+ "stressNotes": "*Frame interval is how often the browser actually delivered a frame in this sandbox (2 shared CPU cores, software rendering, no GPU). An empty canvas already costs about 39 ms per frame here, so these intervals say little about real devices. **Draw per frame** is the meaningful number: the time the site's own code spends drawing.\n\n- Drawing cost roughly doubles from 44 to 3,004 items, because at most about 300 individual lights are drawn and the rest are clusters.\n- A 55,179-post Digest adds about 2 ms: it is 32 band segments, not 55,179 grains.\n- Firefox's software Canvas is about four times slower than Chromium's here (41 ms at 3,000 items). On a real GPU-backed Canvas this should be far lower, but that is unverified.\n- The video archive with 2,128 synthetic videos filters in 27 to 56 ms and holds 600 to 2,100 elements however far you scroll (builder's measurement).\n- Known limits at scale: cluster labels can overlap near the rim at 3,000 items; replay re-partitions each month (10 to 50 ms each here).",
+ "verificationNotes": "**What was tested:** every page in headless Chromium at 1440, 768 and 390 px and in headless Firefox at 1440 and 390 px; with JavaScript disabled; with every outside host blocked; with reduced motion (two frames a second apart must be identical); the first 40 keyboard tab stops for visible focus; smallest rendered text; tap targets on the phone layout; page weight. The builders additionally scripted universe keyboard travel, thread following, replay, pause, touch drag/tap/pinch (emulated), the search overlay (focus trap, Escape, arrow keys), filters and URL state, and click-to-load players.\n\n**Could not be verified, stated plainly:**\n\n- **Safari and iOS.** Safari's engine cannot run in this environment (its Linux build needs system libraries this machine does not have). The code avoids features newer than Safari 16 or guards them, but nothing has been seen in Safari. Things to look at first there: the Canvas and WebGL universe, `inert`, `display: contents` on build headers, SVG `<image>` in the small sky views.\n- **Real GPUs and real phones.** All graphics ran in software on two CPU cores. Frame rates, heat and battery on real devices are unknown. Phase 3 of the migration plan is designed so you can try the universe privately on your own devices before anything visible changes.\n- **Firefox WebGL.** Headless Firefox here cannot create a WebGL context, so only its Canvas path and its fallback from WebGL were exercised.\n- **Screen readers.** Semantics, labels and focus order were checked by script; no screen reader was run.\n- **Real YouTube playback.** Player requests were stubbed in tests; click-to-load wiring was verified, playback was not.\n- **Touch.** Emulated touch only.\n- **The proposed GitHub Action** has not run in production (it is not installed). Its script was run for real against your feed in a scratch folder.\n- **GitHub Pages** was still returning 404 for this repository at the time of writing, so the checks ran on the pushed files served locally, the same way Pages serves them."
+}
