@@ -216,13 +216,12 @@ function home(cx, m) {
     <div class="hero-text">
       <p class="eyebrow">${c.short}</p>
       <h1>${c.name}</h1>
-      <p class="headline">${c.headline.map((l) => `<span>${l}</span>`).join(' ')}</p>
+      <p class="headline">${c.headline.map((l) => `<span>${e(l)}</span>`).join(' ')} <span class="headline-aside">${e(c.aside)}</span></p>
       <p class="lede">${c.text}</p>
       <p class="actions"><a class="btn solid" href="${cx.to('/videos/')}">${c.primary} ${arrow}</a> <a class="btn line" href="${cx.to('/building/')}">${c.secondary} ${arrow}</a></p>
     </div>
     <figure class="hero-photo">
       ${img(cx, 'portrait/ken-black-polo-1280.webp', 'Ken Ashe, smiling, in a black polo shirt', { eager: true, w: 1122, h: 1402, sizes: '(min-width: 900px) 34vw, 70vw' })}
-      <figcaption>${c.aside}</figcaption>
     </figure>
   </div>`),
     section('featured', 'band featured', `  <div class="wrap">

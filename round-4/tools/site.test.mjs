@@ -208,6 +208,8 @@ test('site 9 · the Digest: out of the navigation and homepage, archive linked f
 test('site 10 · approved wording is used exactly, and the prototype is kept out of search', () => {
   const s = site(fresh()); const home = s.pages.get('/'); const text = home.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ');
   for (const t of ['Ken Ashe', 'Making sense of AI.', 'Making things with it.', 'I explain AI in plain English and put it to work on real projects, from apps and videos to new business ideas. Follow along to learn something useful and see what I try next.', 'Watch my videos', 'Explore my projects']) assert.ok(text.includes(t), t);
+  const headline = home.match(/<p class="headline">([\s\S]*?)<\/p>/)[1].replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
+  assert.equal(headline, 'Making sense of AI. Making things with it. Occasionally getting carried away.');
   assert.equal(text.split('Occasionally getting carried away.').length - 1, 1, 'the aside appears once');
   assert.ok(!/universe/i.test(home));
   for (const [route, html] of s.pages) { assert.match(html, /<meta name="robots" content="noindex, nofollow, noarchive">/, route); assert.ok(!/rel="canonical"/.test(html), route); assert.equal((html.match(/<h1/g) || []).length, 1, `${route}: one h1`); }

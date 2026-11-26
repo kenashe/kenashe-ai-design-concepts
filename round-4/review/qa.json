@@ -8,14 +8,14 @@
     "taps": [],
     "h1": 1,
     "overflow": 0,
-    "height": 4565,
+    "height": 4615,
     "broken": [],
     "noalt": 0,
     "responsive": "12/12",
     "lazy": 11,
     "robots": "noindex, nofollow, noarchive",
     "canonical": false,
-    "text": 3111
+    "text": 3110
    },
    "820": {
     "min": 14,
@@ -24,14 +24,14 @@
     "taps": [],
     "h1": 1,
     "overflow": 0,
-    "height": 5596,
+    "height": 5625,
     "broken": [],
     "noalt": 0,
     "responsive": "12/12",
     "lazy": 11,
     "robots": "noindex, nofollow, noarchive",
     "canonical": false,
-    "text": 3111
+    "text": 3110
    },
    "390": {
     "min": 14,
@@ -40,14 +40,14 @@
     "taps": [],
     "h1": 1,
     "overflow": 0,
-    "height": 6141,
+    "height": 6170,
     "broken": [],
     "noalt": 0,
     "responsive": "12/12",
     "lazy": 11,
     "robots": "noindex, nofollow, noarchive",
     "canonical": false,
-    "text": 2537
+    "text": 2536
    },
    "320": {
     "min": 14,
@@ -56,24 +56,24 @@
     "taps": [],
     "h1": 1,
     "overflow": 0,
-    "height": 6663,
+    "height": 6718,
     "broken": [],
     "noalt": 0,
     "responsive": "12/12",
     "lazy": 11,
     "robots": "noindex, nofollow, noarchive",
     "canonical": false,
-    "text": 2537
+    "text": 2536
    }
   },
   "hosts": [],
-  "initial_kb": 451,
-  "requests": 18,
+  "initial_kb": 486,
+  "requests": 19,
   "dead_links": [],
   "tab_stops": 45,
   "focus_not_visible": [],
   "nojs": {
-   "text": 3111,
+   "text": 3110,
    "nav": 4,
    "links": 26,
    "h1": 1
@@ -81,7 +81,7 @@
   "hosts_blocked": {
    "errors": [],
    "broken_images": 0,
-   "text": 3111
+   "text": 3110
   },
   "reduced_motion_longest_transition_s": 0,
   "firefox": {
@@ -2718,14 +2718,14 @@
     "taps": [],
     "h1": 1,
     "overflow": 0,
-    "height": 18219,
+    "height": 17638,
     "broken": [],
     "noalt": 0,
     "responsive": "0/17",
     "lazy": 17,
     "robots": "noindex, nofollow, noarchive",
     "canonical": false,
-    "text": 19487
+    "text": 19724
    },
    "820": {
     "min": 14,
@@ -2734,14 +2734,14 @@
     "taps": [],
     "h1": 1,
     "overflow": 0,
-    "height": 17396,
+    "height": 16872,
     "broken": [],
     "noalt": 0,
     "responsive": "0/17",
     "lazy": 17,
     "robots": "noindex, nofollow, noarchive",
     "canonical": false,
-    "text": 19487
+    "text": 19724
    },
    "390": {
     "min": 14,
@@ -2750,14 +2750,14 @@
     "taps": [],
     "h1": 1,
     "overflow": 0,
-    "height": 23688,
+    "height": 23236,
     "broken": [],
     "noalt": 0,
     "responsive": "0/17",
     "lazy": 17,
     "robots": "noindex, nofollow, noarchive",
     "canonical": false,
-    "text": 19487
+    "text": 19724
    },
    "320": {
     "min": 14,
@@ -2766,32 +2766,32 @@
     "taps": [],
     "h1": 1,
     "overflow": 0,
-    "height": 25270,
+    "height": 24848,
     "broken": [],
     "noalt": 0,
     "responsive": "0/17",
     "lazy": 17,
     "robots": "noindex, nofollow, noarchive",
     "canonical": false,
-    "text": 19487
+    "text": 19724
    }
   },
   "hosts": [],
-  "initial_kb": 728,
+  "initial_kb": 731,
   "requests": 14,
   "dead_links": [],
   "tab_stops": 45,
   "focus_not_visible": [],
   "nojs": {
-   "text": 19487,
+   "text": 19724,
    "nav": 0,
-   "links": 62,
+   "links": 67,
    "h1": 1
   },
   "hosts_blocked": {
    "errors": [],
    "broken_images": 0,
-   "text": 19487
+   "text": 19724
   },
   "reduced_motion_longest_transition_s": 0,
   "firefox": {
@@ -2926,7 +2926,7 @@
     "taps": [],
     "h1": 1,
     "overflow": 0,
-    "height": 4497,
+    "height": 4547,
     "broken": [],
     "noalt": 0,
     "responsive": "11/11",
@@ -2942,7 +2942,7 @@
     "taps": [],
     "h1": 1,
     "overflow": 0,
-    "height": 5563,
+    "height": 5592,
     "broken": [],
     "noalt": 0,
     "responsive": "11/11",
@@ -2958,7 +2958,7 @@
     "taps": [],
     "h1": 1,
     "overflow": 0,
-    "height": 6075,
+    "height": 6104,
     "broken": [],
     "noalt": 0,
     "responsive": "11/11",
@@ -2974,7 +2974,7 @@
     "taps": [],
     "h1": 1,
     "overflow": 0,
-    "height": 6575,
+    "height": 6629,
     "broken": [],
     "noalt": 0,
     "responsive": "11/11",
@@ -2985,8 +2985,8 @@
    }
   },
   "hosts": [],
-  "initial_kb": 419,
-  "requests": 17,
+  "initial_kb": 454,
+  "requests": 18,
   "dead_links": [],
   "tab_stops": 45,
   "focus_not_visible": [],

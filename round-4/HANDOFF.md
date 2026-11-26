@@ -8,8 +8,8 @@ live site, production was only read, and Rounds 1 to 3 are unchanged in the same
 * **Your name is the identity.** "Ken Ashe" is set very large in real text, with your photograph beside it, the
   approved headline and introduction word for word, and the two actions: *Watch my videos* goes to the video
   archive, *Explore my projects* goes to the project index.
-* **One personality detail.** "Occasionally getting carried away." appears once, as a small tilted note on your
-  photograph. It is not repeated anywhere else.
+* **One personality detail, in the headline.** "Occasionally getting carried away." follows the first two
+  sentences as the third line of the same thought. The photograph has no caption or hover effect.
 * **Four navigation items**, each a plain link: Projects, Videos, Writing, About. Your name goes home.
 * **A short homepage in five parts:** introduction, one featured piece, three projects, a few things to watch and
   read, a short personal note with follow links. Nothing appears twice, and the same subject is not shown in two
@@ -24,13 +24,18 @@ live site, production was only read, and Rounds 1 to 3 are unchanged in the same
 * **The Digest** is out of the navigation and off the homepage. The footer links to its archive and says
   "Automated articles. Publishing is paused." That sentence is read from the pipeline's real state, not typed in.
 
-## The one distinctive interaction
+## Motion on the homepage
+
+The final line of the headline settles upward by four pixels once as the page opens, over 360 milliseconds.
+It is readable from the first frame. The rest of the hero stays still, with no looping effects or scroll-triggered
+reveals. The line stays completely still when reduced motion is enabled.
+
+## The signature navigation interaction
 
 When someone opens a project or an essay, **its picture travels from the card into the opening of the page**, and
 travels back when they return. It works from the homepage, the indexes, "next project" links and related items.
 
-* The links are ordinary links. The effect is the browser's own page-to-page transition, switched on by two lines of
-  CSS, so there is nothing to break.
+* The links are ordinary links. The effect uses the browser's own page-to-page transition; the links also work without it.
 * Keyboard and touch get the same thing, because it is triggered by navigation, not by the mouse.
 * With reduced motion switched on, pages change instantly.
 * Browsers that do not support it (Firefox today) simply load the page.
@@ -92,7 +97,7 @@ and 1440 pixels wide in headless Chromium 148, and at 390 and 1440 in headless F
 * With every outside service blocked, every page still renders completely. No page contacts any outside service
   until someone presses play.
 * With reduced motion on, nothing animates and page changes are instant.
-* Homepage: about 5 desktop screens and 7 phone screens tall; about 450 KB on first load including fonts.
+* Homepage: about 5 desktop screens and 7 phone screens tall; about 490 KB on first load including fonts.
 * The transition was confirmed in Chromium by mouse and by keyboard, forwards and back. Firefox navigated normally
   without it, as designed.
 * 14 automated tests pass (`node --test round-4/tools/site.test.mjs`): four for the video sync, ten for the site.
