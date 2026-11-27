@@ -1,0 +1,26 @@
+✔ sync 1 · a new YouTube upload is picked up, archived with its thumbnail, and flags a rebuild
+✔ sync 2 · the archive keeps every video after it leaves the feed’s 15-item window
+✔ sync 3 · thumbnails are acquired without anyone doing anything, with fallbacks and retries
+✔ sync 4 · YouTube unavailable: the run changes nothing, exits cleanly, and the site still builds from the archive
+✔ sync 5 · a thumbnail changed on YouTube (title untouched) replaces the picture on the site
+✔ sync 6 · a title changed on YouTube (thumbnail untouched) updates the title and leaves the picture alone
+✔ sync 7 · a corrupt or failed thumbnail download is rejected and the last good picture stays
+✔ sync 8 · an older video outside the feed window: its thumbnail is refreshed by --all, not by the ordinary run
+✔ site 1 · with no choice made, the newest full-length video is featured; one setting changes it
+✔ site 2 · nothing is shown twice on the homepage, and a subject is not repeated
+✔ site 3 · hiding an item removes it from featured areas and keeps its page and archive entry
+✔ site 4 · a title or thumbnail is corrected in one place and changes everywhere
+✔ site 5 · a new project record appears in the index with no other edit
+✔ site 6 · a video with no thumbnail yet gets a plain frame behind its play button, never a broken picture
+✔ site 7 · the picture transition needs no setup: names are unique on every page and match between card and page
+✔ site 8 · every internal link leads to a page that exists; nothing links to a missing local file
+✔ site 9 · the Digest: out of the navigation and homepage, archive linked from the footer, status read from production
+✔ site 10 · approved wording is used exactly, and the prototype is kept out of search
+✔ site 11 · “Latest video” is only the automatic choice; a chosen piece is “Featured”, with its own date
+✔ site 12 · homepage settings always produce a valid page: with a page, without a write-up, mistyped, hidden
+✔ site 13 · projects without a picture: eligible for the homepage, drawn as text cards, no substitute cover on their page
+✔ site 14 · each editable field has one source: the record’s title and summary travel everywhere, the page heading stays with the page
+✔ site 15 · wording: Digest status, Lucky Domains, authorship labels, Facebook, no stray formatting marks
+ℹ tests 23
+ℹ pass 23
+ℹ fail 0

@@ -1,0 +1,72 @@
+{
+ "_note": "Site wording. 'intro' is Ken's approved wording, used exactly. 'draft' holds page introductions and the About text. Project summaries are not here: they live in each project's record (src/data/builds.ts).",
+ "intro": {
+  "name": "Ken Ashe",
+  "headline": [
+   "Making sense of AI.",
+   "Making things with it."
+  ],
+  "text": "I explain AI in plain English and put it to work on real projects, from apps and videos to new business ideas. Follow along to learn something useful and see what I try next.",
+  "primary": "Watch my videos",
+  "secondary": "Explore my projects",
+  "aside": "Occasionally getting carried away.",
+  "short": "AI creator and builder",
+  "positioning": "A creator who makes AI understandable and explores what people can do with it through clear explanations, real projects, and stories from his own work."
+ },
+ "follow": [
+  {
+   "label": "YouTube",
+   "href": "https://www.youtube.com/@KenAshe"
+  },
+  {
+   "label": "X",
+   "href": "https://x.com/kenashe"
+  },
+  {
+   "label": "TikTok",
+   "href": "https://www.tiktok.com/@ken.ashe"
+  },
+  {
+   "label": "Instagram",
+   "href": "https://www.instagram.com/ken.ashe/"
+  },
+  {
+   "label": "Facebook",
+   "href": "https://www.facebook.com/kenasheai/"
+  },
+  {
+   "label": "LinkedIn",
+   "href": "https://www.linkedin.com/in/kenashe"
+  }
+ ],
+ "draft": {
+  "homeAbout": [
+   "I spent about twenty years in finance and in project and product roles, and I’m a CPA and a PMP. Then I left corporate work to make things with AI and explain what I learn along the way.",
+   "This site is where the videos, projects and writing live. I also run Lucky Domains, a digital presence studio for the AI era."
+  ],
+  "aboutLead": "I’m an AI creator and builder based in New Jersey. I make AI understandable and explore what people can do with it, through clear explanations, real projects and stories from my own work.",
+  "aboutBackground": [
+   "I started my career in accounting and finance, earning my CPA and working in financial reporting before moving into project, product and program leadership. Over roughly two decades I worked at S&P Global, EY, Noom and Prudential Financial, where I finished as Director of Project and Product Management.",
+   "Alongside that work I built digital businesses. I later left corporate work to focus on entrepreneurship and on making, and explaining, practical things with AI."
+  ],
+  "pillars": [
+   {
+    "title": "Understanding AI",
+    "text": "Explanations, practical context, useful observations and my honest take after trying things myself.",
+    "link": "/videos/",
+    "cta": "Watch the videos"
+   },
+   {
+    "title": "Creating with AI",
+    "text": "Apps, videos, workflows, creative projects and business ideas, with what I made and what happened.",
+    "link": "/building/",
+    "cta": "See the projects"
+   }
+  ],
+  "ledes": {
+   "projects": "Things I’ve made with AI: apps, agents, videos and a few experiments that got out of hand. Each one says what it is and what happened.",
+   "videos": "AI explained in plain English, and what happens when I put it to work. New videos appear here as they go up on YouTube.",
+   "writing": "Essays, lessons from projects and personal stories."
+  }
+ }
+}

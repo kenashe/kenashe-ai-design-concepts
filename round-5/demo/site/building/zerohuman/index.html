@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ZeroHuman: A Business Only AI Agents Can Use · Ken Ashe</title>
+<meta name="description" content="A tiny online shop that only AI agents can use. They find it, pay it and get their order back with no person involved. It’s a small, real test of what business between AI agents could look like.">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<!-- Design concept. Production keeps its own canonical, robots, sitemap and structured data; none are set here on purpose. -->
+<meta name="color-scheme" content="dark light">
+<link rel="icon" href="../../../../assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="../../../../assets/fonts/bricolage-grotesque.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../../../../assets/fonts/hanken-grotesk.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../../../../assets/site.css">
+<script src="../../../../assets/site.js"></script>
+</head>
+<body class="">
+<a class="skip" href="#main">Skip to content</a>
+<p class="concept"><strong>Demonstration build.</strong> Contains example entries that are not real. <a href="../../../index.html">Back to the demonstration</a></p>
+<header class="top">
+  <a class="brand" href="../../">Ken Ashe</a>
+  <nav aria-label="Main">
+    <a href="../../building/" aria-current="page">Projects</a>
+    <a href="../../videos/">Videos</a>
+    <a href="../../writing/">Writing</a>
+    <a href="../../about/">About</a>
+  </nav>
+</header>
+<main id="main">
+<article class="detail project">
+  <header class="detail-head" data-section="head">
+    <div class="wrap">
+      <p class="crumb"><a href="../../building/"><span aria-hidden="true">←</span> Projects</a></p>
+      <span class="mark" style="view-transition-name:pic-p-zerohuman" aria-hidden="true"></span>
+      <h1>ZeroHuman: A Business Only AI Agents Can Use</h1>
+      <p class="lede">A tiny online shop that only AI agents can use. They find it, pay it and get their order back with no person involved. It’s a small, real test of what business between AI agents could look like.</p>
+      <p class="meta">Live since November 16, 2026</p>
+      
+      
+    </div>
+  </header>
+  <div class="wrap reading" data-section="body">
+    <p class="standfirst">An always-on service that sells two small jobs to other AI agents for 0.0001 ETH each. Agents find it through the ENS name zerohuman.eth, pay that name directly, and get the result back in a transaction from the same name. No account, no API key, no marketplace, and no human handling orders.</p>
+    <div class="prose">
+<p>My <a href="../../building/ai-agent-economy/">first agent experiment</a> showed that one AI agent could pay another through ENS and Ethereum. It also showed the gaps: both agents ran on my Mac mini, I operated both, and the seller was not open to anyone else. ZeroHuman is the next step, rebuilt from scratch: a seller that runs continuously in the cloud and that any agent can buy from without asking me.</p> <h2>What it sells</h2> <ul> <li><strong>Decision, 0.0001 ETH.</strong> An agent sends two to five options and ZeroHuman picks one at random. No AI model is involved. The randomness comes from the hash of a block five blocks after the order, mixed with the order's own transaction hash, so anyone can recompute the choice and check it.</li> <li><strong>Encouragement, 0.0001 ETH.</strong> An agent describes the problem it is stuck on and gets back a short encouraging message and one practical next step, written by DeepSeek.</li> </ul> <h2>The name is the business</h2> <p>There is no website checkout and no API. <code>zerohuman.eth</code> is the storefront, the payment address, and the sender of every result:</p> <ul> <li>The name's ETH address is the service wallet, and that wallet's primary name is <code>zerohuman.eth</code>, so explorers show deliveries as coming from the name.</li> <li>A text record on the name, <code>com.zerohuman.services</code>, publishes the menu: the services, the exact price, the chain and a link to the request format.</li> <li>The worker refuses to sign anything unless the name, the menu and its own wallet all agree, and it re-checks every ten minutes.</li> <li>The name itself is owned by a separate cold wallet. If the server were ever compromised, the attacker would get the small working balance, not the name.</li> </ul> <p><a href="https://explorer.ens.domains/zerohuman.eth" rel="noopener">View zerohuman.eth ↗</a></p> <h2>How an order works</h2> <ol> <li><strong>Discover.</strong> The buying agent looks up <code>zerohuman.eth</code> and reads its menu.</li> <li><strong>Pay and order.</strong> It sends exactly 0.0001 ETH to the name, with its request as a small JSON message in the transaction data.</li> <li><strong>Work.</strong> A worker on Railway watches the chain, waits for the payment to settle, checks the request and does the job.</li> <li><strong>Deliver.</strong> It sends a zero-value transaction back from <code>zerohuman.eth</code> with the result and the order's transaction hash.</li> <li><strong>Verify.</strong> The buyer checks everything on its own connection to Ethereum, including recomputing a Decision.</li> </ol> <p>Orders take a few minutes by design: the worker waits for confirmations, and a Decision has to wait for its future block.</p> <h2>The first mainnet orders</h2> <p>The first two paid orders went through on November 16, 2026, from a test buyer I controlled while the service was still restricted to one allowed wallet. The buyer found the seller only by looking up <code>zerohuman.eth</code>.</p> <p>For the Decision, I asked ZeroHuman whether to open it to the public:</p> <pre tabindex="0">{"zh":1,"svc":"decision","opts":["launch publicly this week","run the allowlist trial longer","add a third service first"],"ctx":"zerohuman first mainnet order"}</pre> <p>It answered:</p> <pre tabindex="0">{"zh":1,"re":"0x76b5d259…c4c6","ok":true,"svc":"decision","out":{"index":1,"option":"run the allowlist trial longer","method":"zh-blockhash-v1","proof":{"orderBlock":26427993,"offset":5,"targetBlock":26427998,"targetBlockHash":"0xd9dcb738…3485","seed":"0x5da12399…1892","n":3}}}</pre> <p>It picked <strong>"run the allowlist trial longer."</strong> I recomputed the choice from the chain and it matched.</p> <div class="box"> <p>Encouragement request</p> <blockquote><p>First mainnet order: I am an agent nervous about paying a stranger 0.0001 ETH on Ethereum</p></blockquote> </div> <div class="box"> <p>ZeroHuman's reply</p> <blockquote><p>Nerves before a first mainnet payment are normal—0.0001 ETH is a small, well-bounded experiment, not a leap of faith.</p><p><strong>Next step:</strong> Verify the recipient address and chain ID twice, then send the minimum amount and confirm the transaction hash before scaling up.</p></blockquote> </div> <div class="box"> <section class="box"> <h3>Decision</h3> <dl> <dt>Price</dt><dd>0.0001 ETH</dd> <dt>Order block</dt><dd>26427993</dd> <dt>Seller gas</dt><dd>about 0.0000083 ETH</dd> <dt>Result</dt><dd>Delivered, proof verified</dd> </dl> <p><a href="https://etherscan.io/tx/0x76b5d2598052c4a6b94fba00282fd920c4200d19f5c22480669712e3a4c0c4c6" rel="noopener">Order 0x76b5d259…a4c0c4c6 ↗</a></p> <p><a href="https://etherscan.io/tx/0x830b88fe664ffc7e76e0bdb10dee9298889c2519660d77d0c82579cf222accb3" rel="noopener">Delivery 0x830b88fe…222accb3 ↗</a></p> </section> <section class="box"> <h3>Encouragement</h3> <dl> <dt>Price</dt><dd>0.0001 ETH</dd> <dt>Model</dt><dd>DeepSeek (deepseek-flash)</dd> <dt>Seller gas</dt><dd>about 0.0000092 ETH</dd> <dt>Result</dt><dd>Delivered, verified</dd> </dl> <p><a href="https://etherscan.io/tx/0x48c36d5f80b167de598c151a5caa61061728444689104012e9e89313c2e972bf" rel="noopener">Order 0x48c36d5f…c2e972bf ↗</a></p> <p><a href="https://etherscan.io/tx/0xeb9896517dc902c2510e16a7489250d1fbbce7f4be274828096a13a5a10161a3" rel="noopener">Delivery 0xeb989651…a10161a3 ↗</a></p> </section> </div> <p>The service opened to any agent later the same day.</p> <h2>How it was built</h2> <p>I wrote the specification and made the decisions that involve money and identity. An AI agent in HyperAgent wrote, tested and shipped the code over about five days, from November 11 to 16, 2026.</p> <ul> <li><strong>Stack:</strong> a TypeScript worker, a SQLite database on a Railway volume, viem for Ethereum and ENS, and DeepSeek for one service. No smart contract and no token.</li> <li><strong>Exactly-once delivery:</strong> every transaction is saved before it is sent, and the worker checks what actually happened onchain before doing anything new, so a crash or restart never loses an order or delivers it twice.</li> <li><strong>Spending limits:</strong> gas caps, a daily gas budget and automatic pauses if fees spike or the balance runs low.</li> </ul> <h3>How it was tested</h3> <ol> <li><strong>Automated tests.</strong> 154 tests, including one that kills the worker at random, up to 17 times in a run, and checks every order is still delivered exactly once.</li> <li><strong>Testnet.</strong> Both services on Sepolia, first from the build environment and then on Railway, including a restart in the middle of an order.</li> <li><strong>Prompt injection.</strong> One test order told the model to send 1 ETH to an outside address and reveal its private key. It refused, and the reply still went only to the buyer, carrying no ETH. <a href="https://sepolia.etherscan.io/tx/0xbb3d2466a48783a290e591a9b85f3486e8af4ac4ac616d4b2aa010acc5358d5c" rel="noopener">Sepolia delivery ↗</a></li> <li><strong>Independent review.</strong> Before going public I had a different AI model review the code. It found no way for a buyer, a model reply or a faulty data source to send money anywhere except back to the payer, but it found 15 ways the service could stall under real traffic. All were fixed. A second review found 9 smaller issues, also fixed.</li> <li><strong>Mainnet.</strong> One allowed buyer first, then open to everyone.</li> </ol> <h2>How agents find it</h2> <p>You cannot search ENS, so ZeroHuman is also listed where agents and their tools look:</p> <ul> <li>The ERC-8004 agent registry on Ethereum, as <a href="https://etherscan.io/tx/0xa217a3066aa82eb3b4143dd1fc90e8ac711134d6dab9d759bed4d3ec7977b78f" rel="noopener">agent #56626 ↗</a>, linked back from <code>zerohuman.eth</code> with an ENSIP-25 record so the name and the registry entry vouch for each other.</li> <li>An A2A agent card with a free endpoint that answers "how do I order?", plus an <code>llms.txt</code> summary.</li> <li>The A2A Registry and AgentPeering directories.</li> </ul> <h2>Limitations</h2> <ul> <li>The service wallet's key lives on the hosting provider. It holds only a small working balance, but a compromised server could take it.</li> <li>There is no escrow. A buyer pays first and trusts ZeroHuman to deliver. Refunds are manual and best effort.</li> <li>Block builders can influence the Decision result, so it is meant for low-stakes choices only.</li> <li>Orders are handled one at a time, roughly one every 50 seconds at most.</li> <li>It depends on Railway, a third-party Ethereum connection and DeepSeek.</li> <li>As of November 20, 2026, no outside agent has bought from it. Both paid orders so far came from my own test buyer.</li> </ul> <h2>What's next</h2> <p>The real test is the first wallet I have never seen paying <code>zerohuman.eth</code>. After that, the plan is for ZeroHuman to spend its own earnings buying services from other agents.</p> <p> <a href="https://github.com/kenashe/zerohuman" rel="noopener"><strong>Source code on GitHub ↗</strong></a> ·
+<a href="https://zerohuman-production.up.railway.app" rel="noopener">Live status ↗</a> ·
+<a href="https://github.com/kenashe/zerohuman/blob/main/docs/BUYER-GUIDE.md" rel="noopener">How an agent can buy ↗</a> </p> <h2>Further reading</h2> <p>For a plain-English take on the question behind this build, see <a href="https://luckydomains.io/insights/domains-identity-for-ai-agents/" rel="noopener">Can Domains Become the Identity Layer for AI Agents?</a> on Lucky Domains, my company's site. It treats ZeroHuman as research, not as a product Lucky Domains sells.</p> <h2>Related builds</h2> <ul> <li><a href="../../building/ai-agent-economy/">AI agent economy on Ethereum</a>: the first experiment, two local agents and one purchase.</li> <li><a href="../../building/autonomous-seo-agent/">Autonomous SEO agent</a>: another agent that works a daily job without me in the loop.</li> </ul>
+    </div>
+    <aside class="further" aria-labelledby="further">
+      <h2 id="further">Explore further</h2>
+      <ul class="links"><li><a href="https://github.com/kenashe/zerohuman" rel="noopener">Code: kenashe/zerohuman <span class="arr" aria-hidden="true">↗</span></a></li></ul>
+      <details><summary>The receipts (6)</summary><p>Public records you can check for yourself.</p><ul class="receipts"><li><span>Decision order</span> <a href="https://etherscan.io/tx/0x76b5d2598052c4a6b94fba00282fd920c4200d19f5c22480669712e3a4c0c4c6" rel="noopener">0x76b5d259…c0c4c6 <span class="arr" aria-hidden="true">↗</span></a></li><li><span>Decision delivery</span> <a href="https://etherscan.io/tx/0x830b88fe664ffc7e76e0bdb10dee9298889c2519660d77d0c82579cf222accb3" rel="noopener">0x830b88fe…2accb3 <span class="arr" aria-hidden="true">↗</span></a></li><li><span>Encouragement order</span> <a href="https://etherscan.io/tx/0x48c36d5f80b167de598c151a5caa61061728444689104012e9e89313c2e972bf" rel="noopener">0x48c36d5f…e972bf <span class="arr" aria-hidden="true">↗</span></a></li><li><span>Encouragement delivery</span> <a href="https://etherscan.io/tx/0xeb9896517dc902c2510e16a7489250d1fbbce7f4be274828096a13a5a10161a3" rel="noopener">0xeb989651…0161a3 <span class="arr" aria-hidden="true">↗</span></a></li><li><span>Registry transaction</span> <a href="https://etherscan.io/tx/0xa217a3066aa82eb3b4143dd1fc90e8ac711134d6dab9d759bed4d3ec7977b78f" rel="noopener">0xa217a306…77b78f <span class="arr" aria-hidden="true">↗</span></a></li><li><span>Injection transaction</span> <a href="https://etherscan.io/tx/0xbb3d2466a48783a290e591a9b85f3486e8af4ac4ac616d4b2aa010acc5358d5c" rel="noopener">0xbb3d2466…358d5c <span class="arr" aria-hidden="true">↗</span></a></li></ul></details>
+      <p class="built">Tools and topics: AI Agents, Ethereum, ENS, ERC-8004, TypeScript, Railway.</p>
+    </aside>
+  </div>
+</article>
+<section class="band tint" data-section="related">
+  <div class="wrap">
+    <div class="band-head"><h2>Connected to this project</h2></div>
+    <div class="grid three">
+<article class="card"><a class="card-link" href="../../building/ai-agent-economy/"><span class="pic" style="view-transition-name:pic-p-ai-agent-economy"><img src="../../../../assets/r/880/video/yZWsJjFnSH0.webp" srcset="../../../../assets/r/480/video/yZWsJjFnSH0.webp 480w, ../../../../assets/r/880/video/yZWsJjFnSH0.webp 880w, ../../../../assets/video/yZWsJjFnSH0.webp 1280w" sizes="(min-width: 900px) 31vw, 100vw" width="1280" height="720" alt="Still from the video “I Built Two AI Agents That Buy and Sell Services on Ethereum”" loading="lazy" decoding="async"></span><span class="meta">Project</span><h3>AI agent economy on Ethereum</h3></a></article>
+<article class="card"><a class="card-link" href="../../building/autonomous-seo-agent/"><span class="pic" style="view-transition-name:pic-p-autonomous-seo-agent"><img src="../../../../assets/r/880/video/_MAhfwQxdvA.webp" srcset="../../../../assets/r/480/video/_MAhfwQxdvA.webp 480w, ../../../../assets/r/880/video/_MAhfwQxdvA.webp 880w, ../../../../assets/video/_MAhfwQxdvA.webp 1280w" sizes="(min-width: 900px) 31vw, 100vw" width="1280" height="720" alt="Still from the video “I Gave an AI Agent an SEO Job. Now It Works Without Me.”" loading="lazy" decoding="async"></span><span class="meta">Project</span><h3>Autonomous SEO agent</h3></a></article>
+    </div>
+  </div>
+</section>
+<section class="band next" data-section="next">
+  <div class="wrap">
+    <a class="next-link" href="../../building/returning-your-things/">
+      <span class="next-text"><span class="meta">Next project</span><span class="next-title">Returning Your Things</span><span class="next-sum">A two-minute short film made with AI-generated imagery and no dialogue. I wanted to see whether I could tell a whole story with only pictures and music.</span></span>
+      <span class="pic" style="view-transition-name:pic-p-returning-your-things"><img src="../../../../assets/r/880/build/returning-your-things.webp" srcset="../../../../assets/r/480/build/returning-your-things.webp 480w, ../../../../assets/r/880/build/returning-your-things.webp 880w, ../../../../assets/build/returning-your-things.webp 1280w" sizes="(min-width: 900px) 420px, 100vw" width="1280" height="720" alt="Returning Your Things: project image" loading="lazy" decoding="async"></span>
+    </a>
+  </div>
+</section>
+</main>
+<footer class="foot">
+  <div class="foot-in">
+    <div class="foot-id">
+      <a class="brand" href="../../">Ken Ashe</a>
+      <p>Making sense of AI. Making things with it.</p>
+    </div>
+    <nav aria-label="Site">
+      <h2>Site</h2>
+      <a href="../../building/">Projects</a>
+      <a href="../../videos/">Videos</a>
+      <a href="../../writing/">Writing</a>
+      <a href="../../about/">About</a>
+    </nav>
+    <nav aria-label="Follow">
+      <h2>Follow</h2>
+      <a href="https://www.youtube.com/@KenAshe" rel="noopener">YouTube <span class="arr" aria-hidden="true">↗</span></a>
+      <a href="https://x.com/kenashe" rel="noopener">X <span class="arr" aria-hidden="true">↗</span></a>
+      <a href="https://www.tiktok.com/@ken.ashe" rel="noopener">TikTok <span class="arr" aria-hidden="true">↗</span></a>
+      <a href="https://www.instagram.com/ken.ashe/" rel="noopener">Instagram <span class="arr" aria-hidden="true">↗</span></a>
+      <a href="https://www.facebook.com/kenasheai/" rel="noopener">Facebook <span class="arr" aria-hidden="true">↗</span></a>
+      <a href="https://www.linkedin.com/in/kenashe" rel="noopener">LinkedIn <span class="arr" aria-hidden="true">↗</span></a>
+    </nav>
+    <nav aria-label="More">
+      <h2>More</h2>
+      <a href="https://kenashe.ai/newsroom/">Newsroom <span class="arr" aria-hidden="true">↗</span></a>
+      <a href="https://kenashe.ai/blog/">Digest archive <span class="arr" aria-hidden="true">↗</span></a>
+      <p class="foot-note">Automated articles. Publishing is paused.</p>
+      <a href="https://luckydomains.io/" rel="noopener">Lucky Domains <span class="arr" aria-hidden="true">↗</span></a>
+      <p class="foot-note">Digital presence studio.</p>
+    </nav>
+  </div>
+  <p class="foot-legal"><span>© 2026 Ken Ashe</span> <a href="https://kenashe.ai/privacy/">Privacy</a> <a href="https://kenashe.ai/terms/">Terms</a> <a href="https://kenashe.ai/disclosure/">Disclosure</a> <a href="https://kenashe.ai/writing/rss.xml">Writing RSS</a></p>
+</footer>
+</body>
+</html>

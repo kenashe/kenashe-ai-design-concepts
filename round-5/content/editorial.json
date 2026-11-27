@@ -1,0 +1,15 @@
+{
+ "_help": "The one small file for homepage choices. Everything here is optional. Use an item's id: building:<slug>, writing:<slug> or video:<YouTube id>.",
+ "featured": null,
+ "_featured_help": "Set to an id to feature that item on the homepage; it is labelled Featured. Leave null and the newest full-length video is featured automatically, labelled Latest video.",
+ "homeProjects": [],
+ "_homeProjects_help": "Up to three project ids for the homepage, in the order you want. Leave empty for the automatic choice: the newest projects with a write-up. A project does not need a picture to appear.",
+ "hide": [],
+ "_hide_help": "Ids listed here never appear in homepage or featured areas. Their pages and archive entries stay exactly as they are.",
+ "corrections": {
+  "video:DcXaGn-NsgY": {
+   "summary": "A look back at my autonomous AI blog and its results. Publishing is currently paused."
+  }
+ },
+ "_corrections_help": "Only for videos, whose details come from YouTube. Use it to reword a description for the site, or to fix the title or picture of an older video that YouTube's feed no longer lists. Example: {\"video:abc123def45\": {\"title\": \"A better title\", \"summary\": \"A clearer description\", \"thumbnail\": \"video/my-picture.webp\"}}. Projects and writing are corrected in their own record."
+}

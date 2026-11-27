@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sir Pitches-a-Lot · Ken Ashe</title>
+<meta name="description" content="An AI agent with one job: pitch Lucky Domains to possible clients. I built it in an afternoon and tried it live on a real target.">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<!-- Design concept. Production keeps its own canonical, robots, sitemap and structured data; none are set here on purpose. -->
+<meta name="color-scheme" content="dark light">
+<link rel="icon" href="../../../../assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="../../../../assets/fonts/bricolage-grotesque.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../../../../assets/fonts/hanken-grotesk.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../../../../assets/site.css">
+<script src="../../../../assets/site.js"></script>
+</head>
+<body class="">
+<a class="skip" href="#main">Skip to content</a>
+<p class="concept"><strong>Demonstration build.</strong> Contains example entries that are not real. <a href="../../../index.html">Back to the demonstration</a></p>
+<header class="top">
+  <a class="brand" href="../../">Ken Ashe</a>
+  <nav aria-label="Main">
+    <a href="../../building/" aria-current="page">Projects</a>
+    <a href="../../videos/">Videos</a>
+    <a href="../../writing/">Writing</a>
+    <a href="../../about/">About</a>
+  </nav>
+</header>
+<main id="main">
+<article class="detail project">
+  <header class="detail-head" data-section="head">
+    <div class="wrap">
+      <p class="crumb"><a href="../../building/"><span aria-hidden="true">←</span> Projects</a></p>
+      <span class="mark" style="view-transition-name:pic-p-sir-pitches-a-lot" aria-hidden="true"></span>
+      <h1>Sir Pitches-a-Lot</h1>
+      <p class="lede">An AI agent with one job: pitch Lucky Domains to possible clients. I built it in an afternoon and tried it live on a real target.</p>
+      <p class="meta">Shipped August 2026</p>
+      
+      
+    </div>
+  </header>
+  <div class="wrap reading" data-section="body">
+    <p class="standfirst">A HyperAgent competition agent that researched an anonymized founder target, pitched Lucky Domains, and generated a personalized landing page campaign designed around one question: would they reply?</p>
+    <div class="prose">
+<h2>The Goal</h2> <p>The challenge was to build an agent that could create a mini outreach campaign for a matched target, not just write a single cold email.</p> <p>The product was <a href="https://luckydomains.io/services/#domains" rel="noopener"><strong>Lucky Domains</strong></a>, my domain acquisition and SEO strategy business. The target was a specific founder at a specific company, but I kept the public version anonymized.</p> <p>The win condition was simple: <strong>would they reply?</strong></p> <p>That changed the project. The real challenge was not writing one good pitch. It was designing an agent that could repeatedly produce a good campaign under competition constraints.</p> <p>The campaign needed to feel specific, useful, credible, and founder-to-founder. It also needed to support more than email. Pages, videos, social media concepts, mini decks, visuals, teardowns, and useful artifacts were all valid ways to pitch the target.</p> <h2>What I Built</h2> <p>I built <strong>Sir Pitches-a-Lot</strong>, a reusable HyperAgent system prompt designed for an Airtable outreach competition.</p> <p>The name was intentionally unserious. The agent’s behavior was not.</p> <p>The final shipped artifact was a reusable agent prompt plus a target-specific Lucky Domains campaign package. For this run, HyperAgent generated a personalized landing page as the main creative asset.</p> <p>Sir Pitches-a-Lot was designed to create a complete campaign package, including:</p> <ul> <li>A research hook</li> <li>A fit thesis</li> <li>A first-touch email</li> <li>A follow-up sequence</li> <li>A personalized creative asset</li> <li>A clear call to action</li> <li>A shareable campaign package</li> </ul> <p>The agent was built using the same structured prompt framework I have been using across agent experiments: identity, context, instructions, criteria, and examples.</p> <h2>How It Works</h2> <p>The agent workflow is:</p> <p><strong>brief → research → trigger selection → fit thesis → email sequence → asset choice → landing page → campaign package → QA</strong></p> <p>Sir Pitches-a-Lot starts with the Airtable Battle Brief, the matched target, and the product being pitched.</p> <p>It researches the target and company, then looks for a fresh and relevant hook from the last 6 to 12 months. If it finds a real trigger, it uses that as the opening angle. If research is thin, it follows a fallback ladder: target-specific trigger, company-specific trigger, observable workflow or business model fact, and finally a clearly labeled assumption.</p> <p>That fallback ladder mattered because AI-generated outreach has an obvious failure mode: fake personalization. The agent was explicitly told not to invent research, not to treat stale information as current, and not to present assumptions as facts.</p> <p>Once it has a credible hook, the agent builds a narrow fit thesis around why Lucky Domains could matter to that target now. It then drafts a concise first-touch email, follow-ups that add new value, and a low-friction CTA that a founder could answer quickly.</p> <p>The creative asset is chosen based on what would most increase reply probability. The default preference is a teardown, audit, opportunity map, workflow map, or landing page rather than a generic product deck. In this run, the strongest format was a personalized landing page.</p> <h2>What Broke &amp; What I Learned</h2> <p>The first version of the prompt over-produced.</p> <p>It created a complete campaign report, but the win condition was not “who can write the longest campaign.” The win condition was “would they reply?” That forced the prompt to become tighter and more practical.</p> <p><strong>The real product was the agent.</strong> The competition was not just about producing one polished pitch. It rewarded the ability to build an agent that could research, reason, choose an asset format, write the campaign, and package the result.</p> <p><strong>The asset choice mattered.</strong> A generic deck would not prove much. A personalized landing page gave the pitch a more concrete shape and made the outreach feel built for the target rather than copied from a template.</p> <p><strong>Personalization can become hallucination.</strong> Without hard constraints, an outreach agent will be tempted to create hooks that sound plausible but are not real. The fallback ladder became one of the most important parts of the prompt.</p> <p><strong>Submission format mattered.</strong> The brief asked for a campaign share link, not a pile of disconnected assets. The final agent was updated to build one shareable campaign package and embed the creative asset inside it when possible.</p> <p><strong>The best CTA is low-friction.</strong> A meeting request is expensive. A one-word reply to receive a teardown, mockup, map, or short walkthrough is much easier to answer.</p> <h2>Outcome</h2> <p>Sir Pitches-a-Lot shipped as a working HyperAgent competition agent.</p> <p>It created a tailored Lucky Domains campaign for an anonymized founder target and generated a personalized landing page as the primary campaign asset.</p> <p>The project clarified an important distinction for me: building with AI is not just about getting one strong output. The bigger opportunity is designing agents that can repeatedly produce useful work under real constraints.</p> <p>This was a small project, but it pointed toward a larger idea I keep coming back to: the best AI systems are not just clever. They are structured, honest, useful, and built to ship.</p>
+    </div>
+    <aside class="further" aria-labelledby="further">
+      <h2 id="further">Explore further</h2>
+      
+      
+      <p class="built">Tools and topics: HyperAgent, Airtable, Claude Opus 4.8.</p>
+    </aside>
+  </div>
+</article>
+
+<section class="band next" data-section="next">
+  <div class="wrap">
+    <a class="next-link solo" href="../../building/example-recipe-card-maker/">
+      <span class="next-text"><span class="dot" style="view-transition-name:pic-p-example-recipe-card-maker" aria-hidden="true"></span><span class="meta">Next project</span><span class="next-title">Example: recipe cards from a photo</span><span class="next-sum">An example entry, not a real project. Point a phone at a handwritten recipe and get a clean card back.</span></span>
+      
+    </a>
+  </div>
+</section>
+</main>
+<footer class="foot">
+  <div class="foot-in">
+    <div class="foot-id">
+      <a class="brand" href="../../">Ken Ashe</a>
+      <p>Making sense of AI. Making things with it.</p>
+    </div>
+    <nav aria-label="Site">
+      <h2>Site</h2>
+      <a href="../../building/">Projects</a>
+      <a href="../../videos/">Videos</a>
+      <a href="../../writing/">Writing</a>
+      <a href="../../about/">About</a>
+    </nav>
+    <nav aria-label="Follow">
+      <h2>Follow</h2>
+      <a href="https://www.youtube.com/@KenAshe" rel="noopener">YouTube <span class="arr" aria-hidden="true">↗</span></a>
+      <a href="https://x.com/kenashe" rel="noopener">X <span class="arr" aria-hidden="true">↗</span></a>
+      <a href="https://www.tiktok.com/@ken.ashe" rel="noopener">TikTok <span class="arr" aria-hidden="true">↗</span></a>
+      <a href="https://www.instagram.com/ken.ashe/" rel="noopener">Instagram <span class="arr" aria-hidden="true">↗</span></a>
+      <a href="https://www.facebook.com/kenasheai/" rel="noopener">Facebook <span class="arr" aria-hidden="true">↗</span></a>
+      <a href="https://www.linkedin.com/in/kenashe" rel="noopener">LinkedIn <span class="arr" aria-hidden="true">↗</span></a>
+    </nav>
+    <nav aria-label="More">
+      <h2>More</h2>
+      <a href="https://kenashe.ai/newsroom/">Newsroom <span class="arr" aria-hidden="true">↗</span></a>
+      <a href="https://kenashe.ai/blog/">Digest archive <span class="arr" aria-hidden="true">↗</span></a>
+      <p class="foot-note">Automated articles. Publishing is paused.</p>
+      <a href="https://luckydomains.io/" rel="noopener">Lucky Domains <span class="arr" aria-hidden="true">↗</span></a>
+      <p class="foot-note">Digital presence studio.</p>
+    </nav>
+  </div>
+  <p class="foot-legal"><span>© 2026 Ken Ashe</span> <a href="https://kenashe.ai/privacy/">Privacy</a> <a href="https://kenashe.ai/terms/">Terms</a> <a href="https://kenashe.ai/disclosure/">Disclosure</a> <a href="https://kenashe.ai/writing/rss.xml">Writing RSS</a></p>
+</footer>
+</body>
+</html>

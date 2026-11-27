@@ -1,0 +1,83 @@
+From 1305eb5e53ef8debc65c9927bbcf57c6bbf34f91 Mon Sep 17 00:00:00 2001
+From: Update demonstration <noreply@example.invalid>
+Date: Fri, 27 Nov 2026 11:53:42 -0500
+Subject: [PATCH] Add a project
+
+---
+ src/data/builds.ts                            |  9 ++++
+ .../building/example-recipe-card-maker.astro  | 43 +++++++++++++++++++
+ 2 files changed, 52 insertions(+)
+ create mode 100644 src/pages/building/example-recipe-card-maker.astro
+
+diff --git a/src/data/builds.ts b/src/data/builds.ts
+index 36f54c5..b9326d4 100644
+--- a/src/data/builds.ts
++++ b/src/data/builds.ts
+@@ -26,6 +26,15 @@ export const daysSince = (iso: string) =>
+   Math.max(0, Math.floor((Date.now() - new Date(iso).getTime()) / 86_400_000));
+ 
+ export const projects: Project[] = [
++  {
++    title: 'Example: recipe card maker',
++    status: 'SHIPPED',
++    dek: 'Example entry for the update demonstration. Not a real project.',
++    summary: 'An example entry, not a real project. A small app that turns a photo of a handwritten recipe into a tidy, printable card.',
++    stack: ['Example'],
++    shippedAt: 'Dec 2026',
++    link: '/building/example-recipe-card-maker/',
++  },
+   {
+     title: 'ZeroHuman',
+     status: 'LIVE',
+diff --git a/src/pages/building/example-recipe-card-maker.astro b/src/pages/building/example-recipe-card-maker.astro
+new file mode 100644
+index 0000000..a1d8837
+--- /dev/null
++++ b/src/pages/building/example-recipe-card-maker.astro
+@@ -0,0 +1,43 @@
++---
++// Example write-up for the update demonstration. Not a real project. Same shape as the other Building pages.
++import BuildLayout from '../../layouts/BuildLayout.astro';
++
++const title = 'Example: I Built a Recipe Card Maker in an Afternoon';
++const status = 'SHIPPED';
++const date = 'December 2026';
++const summary = 'Example entry for the update demonstration. Not a real project.';
++const stack = ['Example'];
++---
++
++<BuildLayout
++  title={title}
++  description={summary}
++  breadcrumbs={[
++    { name: 'Home', path: '/' },
++    { name: 'Building', path: '/building/' },
++    { name: title, path: '/building/example-recipe-card-maker/' },
++  ]}
++>
++  <article class="build">
++    <nav class="crumbs" aria-label="Breadcrumb">
++      <a href="/building/"><span aria-hidden="true">&larr;</span> Building</a>
++    </nav>
++
++    <header class="build-header">
++      <h1>{title}</h1>
++      <p class="summary">{summary}</p>
++      <p class="meta">Example entry · {date}</p>
++      <ul class="stack" aria-label="Stack">
++        {stack.map((s) => <li>{s}</li>)}
++      </ul>
++    </header>
++
++    <div class="prose">
++      <p><strong>This is an example entry made for the demonstration. It is not real.</strong> It exists only to show where a new project appears.</p>
++      <h2>What it is</h2>
++      <p>The write-up is an ordinary page file, written the way the other project pages are written today.</p>
++      <h2>Related work</h2>
++      <p>Links written in the page connect it to other work automatically. This page mentions the <a href="/building/ai-explainer-producer/">AI explainer producer</a> and the essay <a href="/writing/ai-editor-trusted-least/">about the AI editor</a>, so each of them now lists it as connected.</p>
++    </div>
++  </article>
++</BuildLayout>
+-- 
+2.56.1
+

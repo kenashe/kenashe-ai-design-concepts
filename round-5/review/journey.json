@@ -1,0 +1,495 @@
+{
+ "desktop": {
+  "steps": [
+   [
+    "home",
+    "/",
+    "Ken Ashe"
+   ],
+   [
+    "home card with a picture -> project",
+    "/building/returning-your-things/",
+    "Returning Your Things"
+   ],
+   [
+    "Back -> home",
+    "/",
+    "Ken Ashe"
+   ],
+   [
+    "home text card -> project without a picture",
+    "/building/zerohuman/",
+    "ZeroHuman: A Business Only AI Agents Can Use"
+   ],
+   [
+    "Back -> home",
+    "/",
+    "Ken Ashe"
+   ],
+   [
+    "home writing row -> essay",
+    "/writing/iphone-18-pro-att-activation-failure/",
+    "My iPhone 18 Pro Upgrade Failed. Then My Old Phone Lost Service Too."
+   ],
+   [
+    "Back -> home",
+    "/",
+    "Ken Ashe"
+   ],
+   [
+    "nav -> Projects",
+    "/building/",
+    "Projects"
+   ],
+   [
+    "Projects list -> project",
+    "/building/ai-explainer-producer/",
+    "I Built an AI Agent That Makes Explainer Videos"
+   ],
+   [
+    "Next project link",
+    "/building/autonomous-seo-agent/",
+    "Autonomous SEO Agent"
+   ],
+   [
+    "Back",
+    "/building/ai-explainer-producer/",
+    "I Built an AI Agent That Makes Explainer Videos"
+   ],
+   [
+    "Back -> Projects list",
+    "/building/",
+    "Projects"
+   ]
+  ],
+  "reveals": [
+   [
+    "/",
+    false,
+    []
+   ],
+   [
+    "/building/returning-your-things/",
+    true,
+    [
+     "pic-p-returning-your-things"
+    ]
+   ],
+   [
+    "/",
+    true,
+    [
+     "pic-p-returning-your-things"
+    ]
+   ],
+   [
+    "/building/zerohuman/",
+    true,
+    [
+     "pic-p-zerohuman"
+    ]
+   ],
+   [
+    "/",
+    true,
+    [
+     "pic-p-zerohuman"
+    ]
+   ],
+   [
+    "/writing/iphone-18-pro-att-activation-failure/",
+    true,
+    [
+     "pic-w-iphone-18-pro-att-activation-failure"
+    ]
+   ],
+   [
+    "/",
+    true,
+    [
+     "pic-w-iphone-18-pro-att-activation-failure"
+    ]
+   ],
+   [
+    "/building/",
+    true,
+    []
+   ],
+   [
+    "/building/ai-explainer-producer/",
+    true,
+    [
+     "pic-p-ai-explainer-producer"
+    ]
+   ],
+   [
+    "/building/autonomous-seo-agent/",
+    true,
+    [
+     "pic-p-autonomous-seo-agent"
+    ]
+   ],
+   [
+    "/building/ai-explainer-producer/",
+    true,
+    [
+     "pic-p-ai-explainer-producer",
+     "pic-p-autonomous-seo-agent"
+    ]
+   ],
+   [
+    "/building/",
+    true,
+    [
+     "pic-p-ai-explainer-producer"
+    ]
+   ]
+  ],
+  "errors": [],
+  "browser": "148.0.7778.96"
+ },
+ "phone": {
+  "steps": [
+   [
+    "home",
+    "/",
+    "Ken Ashe"
+   ],
+   [
+    "home card with a picture -> project",
+    "/building/returning-your-things/",
+    "Returning Your Things"
+   ],
+   [
+    "Back -> home",
+    "/",
+    "Ken Ashe"
+   ],
+   [
+    "home text card -> project without a picture",
+    "/building/zerohuman/",
+    "ZeroHuman: A Business Only AI Agents Can Use"
+   ],
+   [
+    "Back -> home",
+    "/",
+    "Ken Ashe"
+   ],
+   [
+    "home writing row -> essay",
+    "/writing/iphone-18-pro-att-activation-failure/",
+    "My iPhone 18 Pro Upgrade Failed. Then My Old Phone Lost Service Too."
+   ],
+   [
+    "Back -> home",
+    "/",
+    "Ken Ashe"
+   ],
+   [
+    "nav -> Projects",
+    "/building/",
+    "Projects"
+   ],
+   [
+    "Projects list -> project",
+    "/building/ai-explainer-producer/",
+    "I Built an AI Agent That Makes Explainer Videos"
+   ],
+   [
+    "Next project link",
+    "/building/autonomous-seo-agent/",
+    "Autonomous SEO Agent"
+   ],
+   [
+    "Back",
+    "/building/ai-explainer-producer/",
+    "I Built an AI Agent That Makes Explainer Videos"
+   ],
+   [
+    "Back -> Projects list",
+    "/building/",
+    "Projects"
+   ]
+  ],
+  "reveals": [
+   [
+    "/",
+    false,
+    []
+   ],
+   [
+    "/building/returning-your-things/",
+    true,
+    [
+     "pic-p-returning-your-things"
+    ]
+   ],
+   [
+    "/",
+    true,
+    [
+     "pic-p-returning-your-things"
+    ]
+   ],
+   [
+    "/building/zerohuman/",
+    true,
+    [
+     "pic-p-zerohuman"
+    ]
+   ],
+   [
+    "/",
+    true,
+    [
+     "pic-p-zerohuman"
+    ]
+   ],
+   [
+    "/writing/iphone-18-pro-att-activation-failure/",
+    true,
+    [
+     "pic-w-iphone-18-pro-att-activation-failure"
+    ]
+   ],
+   [
+    "/",
+    true,
+    [
+     "pic-w-iphone-18-pro-att-activation-failure"
+    ]
+   ],
+   [
+    "/building/",
+    true,
+    []
+   ],
+   [
+    "/building/ai-explainer-producer/",
+    true,
+    [
+     "pic-p-ai-explainer-producer"
+    ]
+   ],
+   [
+    "/building/autonomous-seo-agent/",
+    true,
+    [
+     "pic-p-autonomous-seo-agent"
+    ]
+   ],
+   [
+    "/building/ai-explainer-producer/",
+    true,
+    [
+     "pic-p-ai-explainer-producer",
+     "pic-p-autonomous-seo-agent"
+    ]
+   ],
+   [
+    "/building/",
+    true,
+    [
+     "pic-p-ai-explainer-producer"
+    ]
+   ]
+  ],
+  "errors": [],
+  "browser": "148.0.7778.96"
+ },
+ "reduced-motion": {
+  "steps": [
+   [
+    "home",
+    "/",
+    "Ken Ashe"
+   ],
+   [
+    "home card with a picture -> project",
+    "/building/returning-your-things/",
+    "Returning Your Things"
+   ],
+   [
+    "Back -> home",
+    "/",
+    "Ken Ashe"
+   ],
+   [
+    "home text card -> project without a picture",
+    "/building/zerohuman/",
+    "ZeroHuman: A Business Only AI Agents Can Use"
+   ],
+   [
+    "Back -> home",
+    "/",
+    "Ken Ashe"
+   ],
+   [
+    "home writing row -> essay",
+    "/writing/iphone-18-pro-att-activation-failure/",
+    "My iPhone 18 Pro Upgrade Failed. Then My Old Phone Lost Service Too."
+   ],
+   [
+    "Back -> home",
+    "/",
+    "Ken Ashe"
+   ],
+   [
+    "nav -> Projects",
+    "/building/",
+    "Projects"
+   ],
+   [
+    "Projects list -> project",
+    "/building/ai-explainer-producer/",
+    "I Built an AI Agent That Makes Explainer Videos"
+   ],
+   [
+    "Next project link",
+    "/building/autonomous-seo-agent/",
+    "Autonomous SEO Agent"
+   ],
+   [
+    "Back",
+    "/building/ai-explainer-producer/",
+    "I Built an AI Agent That Makes Explainer Videos"
+   ],
+   [
+    "Back -> Projects list",
+    "/building/",
+    "Projects"
+   ]
+  ],
+  "reveals": [
+   [
+    "/",
+    false,
+    []
+   ],
+   [
+    "/building/returning-your-things/",
+    false,
+    []
+   ],
+   [
+    "/",
+    false,
+    []
+   ],
+   [
+    "/building/zerohuman/",
+    false,
+    []
+   ],
+   [
+    "/",
+    false,
+    []
+   ],
+   [
+    "/writing/iphone-18-pro-att-activation-failure/",
+    false,
+    []
+   ],
+   [
+    "/",
+    false,
+    []
+   ],
+   [
+    "/building/",
+    false,
+    []
+   ],
+   [
+    "/building/ai-explainer-producer/",
+    false,
+    []
+   ],
+   [
+    "/building/autonomous-seo-agent/",
+    false,
+    []
+   ],
+   [
+    "/building/ai-explainer-producer/",
+    false,
+    []
+   ],
+   [
+    "/building/",
+    false,
+    []
+   ]
+  ],
+  "errors": [],
+  "browser": "148.0.7778.96"
+ },
+ "firefox": {
+  "steps": [
+   [
+    "home",
+    "/",
+    "Ken Ashe"
+   ],
+   [
+    "home card with a picture -> project",
+    "/building/returning-your-things/",
+    "Returning Your Things"
+   ],
+   [
+    "Back -> home",
+    "/",
+    "Ken Ashe"
+   ],
+   [
+    "home text card -> project without a picture",
+    "/building/zerohuman/",
+    "ZeroHuman: A Business Only AI Agents Can Use"
+   ],
+   [
+    "Back -> home",
+    "/",
+    "Ken Ashe"
+   ],
+   [
+    "home writing row -> essay",
+    "/writing/iphone-18-pro-att-activation-failure/",
+    "My iPhone 18 Pro Upgrade Failed. Then My Old Phone Lost Service Too."
+   ],
+   [
+    "Back -> home",
+    "/",
+    "Ken Ashe"
+   ],
+   [
+    "nav -> Projects",
+    "/building/",
+    "Projects"
+   ],
+   [
+    "Projects list -> project",
+    "/building/ai-explainer-producer/",
+    "I Built an AI Agent That Makes Explainer Videos"
+   ],
+   [
+    "Next project link",
+    "/building/autonomous-seo-agent/",
+    "Autonomous SEO Agent"
+   ],
+   [
+    "Back",
+    "/building/ai-explainer-producer/",
+    "I Built an AI Agent That Makes Explainer Videos"
+   ],
+   [
+    "Back -> Projects list",
+    "/building/",
+    "Projects"
+   ]
+  ],
+  "reveals": [],
+  "errors": [],
+  "browser": "150.0.2"
+ }
+}

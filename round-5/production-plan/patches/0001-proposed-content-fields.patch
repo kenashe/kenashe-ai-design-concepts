@@ -1,0 +1,248 @@
+From 44f75f93540250a3dd419876b3345895e1ed9df4 Mon Sep 17 00:00:00 2001
+From: Round 5 demonstration <noreply@example.invalid>
+Date: Fri, 27 Nov 2026 11:36:22 -0500
+Subject: [PATCH] Proposed structure: plain summaries live in the project
+ records; every project not marked unlisted is a card
+
+---
+ src/data/building-cards.ts | 29 ++++-------------------------
+ src/data/builds.ts         | 25 +++++++++++++++++++++++++
+ 2 files changed, 29 insertions(+), 25 deletions(-)
+
+diff --git a/src/data/building-cards.ts b/src/data/building-cards.ts
+index c3bab10..d3bb426 100644
+--- a/src/data/building-cards.ts
++++ b/src/data/building-cards.ts
+@@ -6,34 +6,15 @@ const autonomousBlog: Project = {
+   title: 'Autonomous AI blog',
+   status: 'LIVE',
+   dek: "Scans the day's AI sources, clusters them into distinct stories, and publishes only the drafts that clear an editorial quality gate, without manual approval.",
++  summary: "An experiment in automated publishing: a system that read the day’s AI news, wrote articles and published only the ones that passed a quality check. It published about 1,400 articles. Publishing is currently paused.",
+   stack: ['GitHub Actions', 'n8n', 'Claude Opus 4.8', 'GPT-5.5', 'Gemini 3.1 Pro', 'pgvector'],
+   shippedAt: 'Jun 2026',
+   metric: 'runs daily',
+   link: '/building/autonomous-ai-blog/',
+ };
+ 
+-// The curated builds surfaced as cards (matches the prior Projects card set).
+-const CURATED = [
+-  'ZeroHuman',
+-  'Returning Your Things',
+-  'AI agent economy on Ethereum',
+-  'AI explainer producer',
+-  'Autonomous SEO agent',
+-  'X article toolkit',
+-  'AI UGC video lab',
+-  'Media pitch triage',
+-  'Rebuilding the image pipeline',
+-  'VetStack',
+-  'AI werewolf / social deduction lab',
+-  'Geo-targeted affiliate site',
+-  'kenashe.ai',
+-  'Daily email to myself',
+-  'Agent-driven site design and deployment',
+-  'Sir Pitches-a-lot',
+-  'Six-agent email response team',
+-  'Personal assistant chatbot',
+-];
+-
++// Every project in builds.ts is a card unless it is marked `unlisted`. Adding a record there is the
++// only step needed to list a new project.
+ // Order by build date, newest first. A build's date is its ship date (LIVE) or
+ // the leading footer date (SHIPPED), parsed to a year*12+month ordinal so
+ // "Jun 2026" and "June 2026" compare equal.
+@@ -49,9 +30,7 @@ const ordinal = (p: Project): number => {
+ // newest first. Shared by /building/ (full list) and the homepage (latest 3).
+ export const buildingCards: Project[] = [
+   autonomousBlog,
+-  ...CURATED.map((t) => projects.find((p) => p.title === t)).filter(
+-    (p): p is Project => p !== undefined,
+-  ),
++  ...projects.filter((p) => !p.unlisted),
+ ].sort((a, b) => ordinal(b) - ordinal(a));
+ 
+ // --- Homepage continuation helpers -------------------------------------------------
+diff --git a/src/data/builds.ts b/src/data/builds.ts
+index 6b04bc7..36f54c5 100644
+--- a/src/data/builds.ts
++++ b/src/data/builds.ts
+@@ -2,6 +2,9 @@ export type Project = {
+   title: string;
+   status: 'LIVE' | 'SHIPPED';
+   dek: string;
++  // Plain-English summary, one or two sentences. Shown on project cards, on the homepage and as the
++  // opening line of the project's page. Optional: when absent, `dek` is used.
++  summary?: string;
+   stack: string[];
+   shippedAt?: string;
+   metric?: string;
+@@ -13,6 +16,8 @@ export type Project = {
+   link?: string;
+   // Optional CTA label for `link` (defaults to "Read the build"), e.g. "Watch the demo".
+   cta?: string;
++  // true keeps a record out of the Building cards (older entries kept for reference).
++  unlisted?: boolean;
+ };
+ 
+ // Days elapsed since an ISO date. Computed at build time - Vercel redeploys
+@@ -25,6 +30,7 @@ export const projects: Project[] = [
+     title: 'ZeroHuman',
+     status: 'LIVE',
+     dek: 'An always-on service that sells small jobs to other AI agents. Agents pay the ENS name zerohuman.eth 0.0001 ETH and get the result back in a transaction from the same name. No account, no API, no human in the loop.',
++    summary: "A tiny online shop that only AI agents can use. They find it, pay it and get their order back with no person involved. It’s a small, real test of what business between AI agents could look like.",
+     stack: ['AI Agents', 'Ethereum', 'ENS', 'ERC-8004', 'TypeScript', 'Railway'],
+     shippedAt: 'Nov 2026',
+     metric: 'open to any agent',
+@@ -34,6 +40,7 @@ export const projects: Project[] = [
+     title: 'Returning Your Things',
+     status: 'SHIPPED',
+     dek: 'On a snowy winter night, a man crosses the city to return his ex’s belongings. A dialogue-free short film about love, memory, and letting go.',
++    summary: "A two-minute short film made with AI-generated imagery and no dialogue. I wanted to see whether I could tell a whole story with only pictures and music.",
+     stack: ['Short Film', 'AI-generated imagery'],
+     shippedAt: 'Nov 2026',
+     metric: '1:54 runtime',
+@@ -44,6 +51,7 @@ export const projects: Project[] = [
+     title: 'AI agent economy on Ethereum',
+     status: 'SHIPPED',
+     dek: 'Two autonomous AI agents with their own Ethereum wallets. The seller advertised services through ENS; the buyer found the catalog, paid in ETH, and received the work in a second mainnet transaction.',
++    summary: "I gave two AI agents their own crypto wallets and let one buy a service from the other. One real purchase, start to finish, that anyone can look up and check.",
+     stack: ['AI Agents', 'Ethereum', 'ENS', 'Ollama'],
+     shippedAt: 'Nov 2026',
+     link: '/building/ai-agent-economy/',
+@@ -52,6 +60,7 @@ export const projects: Project[] = [
+     title: 'AI explainer producer',
+     status: 'SHIPPED',
+     dek: 'Built an AI agent that researches, fact-checks, scripts, and produces educational videos using a virtual presenter. Tested it with a published ENSv2 explainer.',
++    summary: "An AI agent that researches a topic, checks the facts, writes the script and produces an explainer video with a virtual presenter. I tested it on a real explainer that I published.",
+     stack: ['AI Agents', 'HyperAgent', 'HeyGen', 'Video Production'],
+     shippedAt: 'Oct 2026',
+     link: '/building/ai-explainer-producer/',
+@@ -60,6 +69,7 @@ export const projects: Project[] = [
+     title: 'Autonomous SEO agent',
+     status: 'LIVE',
+     dek: 'An AI agent that finds five new website opportunities daily, creates professional profiles, verifies accounts through its own Gmail inbox, and tracks everything without manual intervention.',
++    summary: "An AI agent with a daily job: find five new places a website could be listed, set up the profiles and keep track of it all, without me stepping in.",
+     stack: ['HyperAgent', 'AI Agents', 'Automation', 'SEO', 'Gmail'],
+     shippedAt: 'Oct 2026',
+     link: '/building/autonomous-seo-agent/#demo',
+@@ -69,6 +79,7 @@ export const projects: Project[] = [
+     title: 'X article toolkit',
+     status: 'LIVE',
+     dek: 'A model-neutral toolkit that lets any AI agent use the same research-backed workflow for X Article headlines, hooks and covers.',
++    summary: "A toolkit any AI agent can use to write stronger headlines, openings and cover images for X Articles, based on research instead of guesswork.",
+     stack: ['GitHub', 'Markdown', 'Python', 'JSON Schema', 'GitHub Actions', 'Agents'],
+     shippedAt: 'Oct 2026',
+     metric: 'public repo',
+@@ -78,6 +89,7 @@ export const projects: Project[] = [
+     title: 'AI UGC video lab',
+     status: 'SHIPPED',
+     dek: 'Ported an open-source UGC skill into Hyperagent, generated 50 locked-identity ad concepts, then rendered and QA’d a fake raccoon-security campaign across 31 video generations.',
++    summary: "An experiment in AI-made ads: 50 ad ideas built around one consistent character, ending in a made-up security campaign starring a raccoon.",
+     stack: ['HyperAgent', 'AI Video', 'Agents', 'Gemini', 'ffmpeg'],
+     shippedAt: 'Oct 2026',
+     metric: '5 finished ads',
+@@ -87,6 +99,7 @@ export const projects: Project[] = [
+     title: 'Media pitch triage',
+     status: 'LIVE',
+     dek: 'An AI media-opportunity system that screens journalist requests, applies a reusable scoring skill, tracks state in Google Sheets, and monitors submitted pitches for published outcomes.',
++    summary: "A system that reads requests from journalists, scores which ones are worth answering and keeps track of what happened to each pitch.",
+     stack: ['ChatGPT Skills', 'Agents', 'Gmail', 'Google Sheets', 'Automation'],
+     shippedAt: 'Sep 2026',
+   },
+@@ -94,6 +107,7 @@ export const projects: Project[] = [
+     title: 'Rebuilding the image pipeline',
+     status: 'LIVE',
+     dek: 'Rebuilt KenAshe.ai’s image pipeline: migrated 2,083 PNGs to WebP, added responsive inline images, and cut the current image source tree by 95%.',
++    summary: "How I rebuilt the way this website handles pictures, so pages stay light and the image files take up far less space.",
+     stack: ['Astro', 'WebP', 'sharp', 'GPT Image 2', 'Vercel', 'GitHub Actions'],
+     shippedAt: 'Sep 2026',
+     metric: '95% smaller image source tree',
+@@ -103,6 +117,7 @@ export const projects: Project[] = [
+     title: 'VetStack',
+     status: 'LIVE',
+     dek: 'First Grok Bot I published. A military and veteran savings desk that finds current discounts and benefits that actually apply, without collecting IDs or running a 20-question intake.',
++    summary: "A helper for military members and veterans that finds current discounts and benefits that actually apply, without asking for ID or a long list of questions.",
+     stack: ['Grok Bot', 'xAI templates'],
+     shippedAt: 'Sep 2026',
+     metric: 'public template',
+@@ -112,12 +127,14 @@ export const projects: Project[] = [
+     title: 'AI werewolf / social deduction lab',
+     status: 'SHIPPED',
+     dek: 'Built a cast of 9 AI characters with distinct personalities, relationships, and hidden roles, then had them play a Traitors-style social deduction game where they form alliances, deceive, and vote each other out.',
++    summary: "Nine AI characters with their own personalities and secret roles play a game of alliances, bluffing and votes. A fun way to watch how AI agents reason about each other.",
+     stack: ['HyperAgent', 'Fable 5', 'Multi-Agent', 'Social Simulation'],
+     shippedAt: 'Aug 2026',
+     link: '/building/ai-werewolf/',
+   },
+   {
+     title: 'AI blog automation v2',
++    unlisted: true,
+     status: 'LIVE',
+     dek: "Scans the day's AI sources, clusters them into distinct stories, and publishes only the drafts that clear an editorial quality gate, without manual approval.",
+     stack: ['GitHub Actions', 'Claude Opus 4.8', 'GPT-5.5', 'pgvector'],
+@@ -128,6 +145,7 @@ export const projects: Project[] = [
+     title: 'Geo-targeted affiliate site',
+     status: 'LIVE',
+     dek: "Auto-detects each visitor's country and language, then serves the right offers in their language. Generated entirely from a spreadsheet.",
++    summary: "A website that works out each visitor’s country and language and shows offers that fit, all generated from one spreadsheet.",
+     stack: ['Cloudflare', 'GitHub', 'HyperAgent', 'Fable 5'],
+     shippedAt: 'Jun 2026',
+     metric: '58 markets, 26 languages',
+@@ -136,6 +154,7 @@ export const projects: Project[] = [
+     title: 'kenashe.ai',
+     status: 'LIVE',
+     dek: 'This site. Originally built end-to-end with Claude Code, reviewed by Codex, shipped in a day.',
++    summary: "This website. The first version was built in a day with AI coding tools.",
+     stack: ['Astro', 'Tailwind', 'MDX', 'Vercel'],
+     shippedAt: 'May 2026',
+   },
+@@ -143,6 +162,7 @@ export const projects: Project[] = [
+     title: 'Daily email to myself',
+     status: 'LIVE',
+     dek: 'Morning brief at 6 AM: weather, tickers, a dad joke, and 300 words on a rotating topic.',
++    summary: "A morning email I built for myself: weather, markets, a dad joke and 300 words on a different topic each day.",
+     stack: ['Python', 'Claude API', 'Mac Mini'],
+     shippedAt: 'May 2026',
+     metric: `${daysSince('2026-05-04')} days running`,
+@@ -151,6 +171,7 @@ export const projects: Project[] = [
+     title: 'Agent-driven site design and deployment',
+     status: 'LIVE',
+     dek: 'Used HyperAgent to build a live business site and deploy it to GitHub Pages with a custom domain, agent-driven end-to-end.',
++    summary: "I had an AI agent build a real business website and put it online, from start to finish.",
+     stack: ['HyperAgent', 'GitHub Pages', 'Web3Forms'],
+     footer: ['Jun 2026', 'LuckyDomains.io'],
+   },
+@@ -158,12 +179,14 @@ export const projects: Project[] = [
+     title: 'Sir Pitches-a-lot',
+     status: 'SHIPPED',
+     dek: 'An agent with one job: pitch Lucky Domains to prospective clients. Built in an afternoon, pitched a real target live.',
++    summary: "An AI agent with one job: pitch Lucky Domains to possible clients. I built it in an afternoon and tried it live on a real target.",
+     stack: ['HyperAgent', 'Airtable', 'Claude Opus 4.8'],
+     footer: ['June 2026', 'Agent Battle Night', 'NY Tech Week'],
+     link: '/building/sir-pitches-a-lot/',
+   },
+   {
+     title: 'AI blog automation v1',
++    unlisted: true,
+     status: 'SHIPPED',
+     dek: 'Autonomous pipeline that turns curated YouTube transcripts into auto-published blog posts.',
+     stack: ['n8n', 'Claude Opus 4.7', 'Gemini 3.1 Pro', 'GPT-5.5'],
+@@ -173,6 +196,7 @@ export const projects: Project[] = [
+     title: 'Six-agent email response team',
+     status: 'SHIPPED',
+     dek: 'A coordinator plus sentiment, research, draft, and QA agents that turn customer support emails into reviewed replies.',
++    summary: "A small team of AI agents that turns customer support emails into replies a person can review.",
+     stack: ['Cassidy AI', 'Claude', 'ChatGPT'],
+     footer: ['Feb 2026', 'Maven capstone', 'AI Build Lab'],
+   },
+@@ -180,6 +204,7 @@ export const projects: Project[] = [
+     title: 'Personal assistant chatbot',
+     status: 'SHIPPED',
+     dek: 'A chat agent wired to Gemini that searches email and answers questions on weather, the forecast, and local news.',
++    summary: "A chat assistant that searches my email and answers questions about the weather and local news.",
+     stack: ['n8n', 'Gemini', 'Gmail', 'Weather + news APIs'],
+     footer: ['Dec 2025', 'Personal build'],
+   },
+-- 
+2.56.1
+

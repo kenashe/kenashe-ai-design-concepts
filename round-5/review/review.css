@@ -1,0 +1,39 @@
+/* Review and demonstration pages (not part of the design) */
+body.review{background:var(--paper)}
+.rv{max-width:calc(68rem + 2*var(--pad));margin:0 auto;padding:clamp(2rem,5vw,4rem) var(--pad) 5rem}
+.rv h1{font-size:clamp(2.6rem,6vw,4.8rem);font-weight:750;letter-spacing:-.045em;line-height:.95}
+.rv h2{font-size:clamp(1.8rem,3.4vw,2.6rem);font-weight:650;letter-spacing:-.03em;margin:3.5rem 0 1rem}
+.rv h3{font-size:1.4rem;font-weight:650;margin:2rem 0 .6rem}
+.rv h4{font:650 1.15rem var(--display);margin:1.5rem 0 .4rem}
+.rv p,.rv ul,.rv ol{max-width:50rem}
+.rv p+p,.rv ul+p,.rv p+ul{margin-top:.9rem}
+.rv ul,.rv ol{padding-left:1.3rem}.rv li+li{margin-top:.45rem}
+.rv-lede{font-size:1.25rem;margin:1.25rem 0 1.5rem;color:var(--muted)}
+.rv a:not(.btn){color:var(--teal);font-weight:500;text-underline-offset:.2em}
+.rv p>a:not(.btn):not(.text-link),.rv li>a{display:inline-block;padding:.55rem 0;margin:-.55rem 0}
+.rv .btn{margin:.25rem .5rem .25rem 0}
+.rv code{font:.9em var(--mono);background:var(--tint);padding:.1em .35em;border-radius:6px;overflow-wrap:anywhere}
+.rv pre{background:var(--ink);color:#DCE6E4;padding:1rem 1.2rem;border-radius:14px;overflow-x:auto;font:.9375rem/1.6 var(--mono);white-space:pre-wrap;overflow-wrap:anywhere;max-width:60rem;margin:.9rem 0}
+.rv pre code{background:none;padding:0}
+.rv-note{font-size:1rem;color:var(--muted)}
+.rv-step{border-top:1px solid var(--line);margin-top:2.5rem}
+.rv-step h2{display:flex;gap:.9rem;align-items:center;margin-top:2rem}
+.rv-step h2 span{flex:none;width:2.6rem;height:2.6rem;border-radius:50%;background:var(--mint);display:grid;place-items:center;font-size:1.3rem}
+.tbl{overflow-x:auto;border:1px solid var(--line);border-radius:14px;background:#fff;margin:1rem 0}
+.tbl table{border-collapse:collapse;width:100%;font-size:1rem;line-height:1.45;min-width:46rem}
+.tbl th,.tbl td{text-align:left;padding:.75rem .9rem;border-bottom:1px solid var(--line);vertical-align:top}
+.tbl th{background:var(--tint);font-weight:650}
+.pagelist{list-style:none;padding:0!important;display:grid;grid-template-columns:repeat(auto-fill,minmax(17rem,1fr));gap:.25rem 1.5rem;max-width:none!important}
+.pagelist a{display:flex!important;align-items:center;min-height:44px;margin:0!important;padding:0!important}
+.shots{display:grid;grid-template-columns:minmax(0,3.2fr) minmax(0,1fr);gap:1.25rem;align-items:start;margin:1rem 0 2.5rem}
+.shots figure,.rv figure{margin:0}
+.shots img,.rv figure img{border-radius:14px;border:1px solid var(--line);width:100%;height:auto}
+.rv figcaption{font-size:.9375rem;color:var(--muted);margin-top:.5rem}
+.rv figcaption a{display:inline-flex!important;align-items:center;min-height:44px;margin:0 0 0 .5rem!important;padding:0!important}
+.rounds{display:flex;flex-wrap:wrap;gap:.5rem 1rem;list-style:none;padding:0!important}
+@media (max-width:640px){.shots{grid-template-columns:1fr 1fr}.shots figure:first-child{grid-column:1/-1}}
+.shots.two{grid-template-columns:repeat(2,minmax(0,1fr))}
+.rv video{width:100%;height:auto;border-radius:14px;border:1px solid var(--line);background:var(--ink);display:block}
+.concept span{display:inline}
+.rv video:focus-visible,.rv video:focus{outline:3px solid var(--teal);outline-offset:3px}
+.rv figure:focus-within video{outline:3px solid var(--teal);outline-offset:3px}

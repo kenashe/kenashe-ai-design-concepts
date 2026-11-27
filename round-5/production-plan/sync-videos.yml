@@ -1,0 +1,65 @@
+# PROPOSED workflow for kenashe/kenashe. Not installed. Ken copies it to
+# .github/workflows/sync-videos.yml when the migration reaches Phase 2 (agents' tokens have no
+# `workflows` scope, the same rule production already documents for pipeline.yml).
+#
+# What it does: checks Ken's YouTube channel feed every 30 minutes. It commits only when something
+# is different: a new upload, a changed title or description, or a changed thumbnail on one of the
+# videos in the feed. Once a day it also re-checks the thumbnails of older videos that have left
+# the feed. A failed or corrupt download never replaces a good picture.
+# The push to master is what makes Vercel rebuild the site, exactly as for any other commit.
+#
+# Cost: $0. The repository is public, so GitHub Actions minutes are free; a run with nothing new
+# takes about 15 seconds and produces no commit and no build.
+name: Sync YouTube videos
+
+on:
+  schedule:
+    - cron: "7,37 * * * *"   # every 30 minutes (GitHub may delay scheduled runs by a few minutes)
+    - cron: "52 9 * * *"     # once a day: also re-check thumbnails of videos outside the feed
+  workflow_dispatch:          # "Run workflow" button: use right after uploading to skip the wait
+    inputs:
+      all:
+        description: "Also re-check thumbnails of older videos (tick after changing an old thumbnail)"
+        type: boolean
+        default: false
+
+concurrency:
+  group: sync-videos
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    # Kill switch, same pattern as the Digest pipeline: set repo variable VIDEO_SYNC_ENABLED=false.
+    if: ${{ vars.VIDEO_SYNC_ENABLED != 'false' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Install sharp (for WebP thumbnails; optional, the script keeps JPEGs without it)
+        run: npm install --no-audit --no-fund --no-save sharp || true
+      - name: Read the channel feed, update the archive, fetch new thumbnails
+        id: sync
+        run: >
+          node scripts/sync-videos.mjs
+          --archive src/data/youtube-archive.json
+          --thumbs src/assets/video
+          ${{ (github.event.schedule == '52 9 * * *' || inputs.all) && '--all' || '' }}
+      - name: Commit when something is new
+        if: steps.sync.outputs.changed == 'true'
+        run: |
+          git add src/data/youtube-archive.json src/assets/video
+          # Author AND committer must be Ken, or Vercel Hobby skips the deploy (DECISIONS.md D3).
+          git -c user.name="Ken Ashe" -c user.email="kenashe@gmail.com" \
+            commit -m "videos: sync channel feed (${{ steps.sync.outputs.added || steps.sync.outputs.thumbnails || 'details' }})"
+          git pull --rebase origin master   # the Digest pipeline may have pushed in the meantime
+          git push origin HEAD:master
+      - name: Ask Vercel to deploy (belt and braces, same hook the Digest pipeline uses)
+        if: steps.sync.outputs.changed == 'true' && env.VERCEL_DEPLOY_HOOK != ''
+        env:
+          VERCEL_DEPLOY_HOOK: ${{ secrets.VERCEL_DEPLOY_HOOK }}
+        run: curl -fsS -X POST "$VERCEL_DEPLOY_HOOK" || true

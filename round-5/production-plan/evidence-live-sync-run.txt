@@ -1,0 +1,5 @@
+Real run of round-5/tools/sync-videos.mjs against the live YouTube channel feed, Nov 26, 2026 (America/New_York), into an empty scratch folder.
+Result: the feed listed 15 uploads; all 15 were archived and all 15 thumbnails were downloaded with no manual step.
+The committed archive (round-5/source/youtube-archive.json) holds 16 videos: one, iEjd1OvHLS0 from Sep 25, 2026, has already left the feed's 15-item window and is kept.
+
+[videos] {"feed":"ok","inFeed":15,"added":["DcXaGn-NsgY","3MOFBulJd_s","QhOYaj_bDZY","efqdAo9-IBU","yZWsJjFnSH0","Sft8JZ_afb4","r4rIS5pACGY","3sx6NNPbopQ","dcK_1nMhy8w","L8LzPXzMbQg","O0Hv932JmLM","_MAhfwQxdvA","NlbBuqLaofQ","qjLGYqxV_iM","ujUpw18fklM"],"updated":[],"thumbnails":["DcXaGn-NsgY","3MOFBulJd_s","QhOYaj_bDZY","efqdAo9-IBU","yZWsJjFnSH0","Sft8JZ_afb4","r4rIS5pACGY","3sx6NNPbopQ","dcK_1nMhy8w","L8LzPXzMbQg","O0Hv932JmLM","_MAhfwQxdvA","NlbBuqLaofQ","qjLGYqxV_iM","ujUpw18fklM"],"thumbnailsPending":[],"total":15,"changed":true}

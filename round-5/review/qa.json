@@ -1,0 +1,3342 @@
+{
+ "round-5/site/": {
+  "widths": {
+   "1440": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 4712,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "11/11",
+    "lazy": 10,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 3228
+   },
+   "820": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 5237,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "11/11",
+    "lazy": 10,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 3228
+   },
+   "390": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 5760,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "11/11",
+    "lazy": 10,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 2620
+   },
+   "320": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 6455,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "11/11",
+    "lazy": 10,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 2620
+   }
+  },
+  "hosts": [],
+  "initial_kb": 477,
+  "requests": 18,
+  "dead_links": [],
+  "tab_stops": 45,
+  "focus_not_visible": [],
+  "nojs": {
+   "text": 3228,
+   "nav": 4,
+   "links": 28,
+   "h1": 1
+  },
+  "hosts_blocked": {
+   "errors": [],
+   "broken_images": 0,
+   "text": 3228
+  },
+  "reduced_motion_longest_transition_s": 0,
+  "firefox": {
+   "1440": {
+    "errors": [],
+    "overflow": 0,
+    "h1": 1,
+    "broken_images": 0
+   },
+   "390": {
+    "errors": [],
+    "overflow": 0,
+    "h1": 1,
+    "broken_images": 0
+   }
+  },
+  "errors": [],
+  "failed": [],
+  "problems": [],
+  "ok": true
+ },
+ "round-5/site/about/": {
+  "widths": {
+   "1440": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 4015,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "1/1",
+    "lazy": 0,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 2623
+   },
+   "820": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 3915,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "1/1",
+    "lazy": 0,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 2623
+   },
+   "390": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 5122,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "1/1",
+    "lazy": 0,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 2589
+   },
+   "320": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 5631,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "1/1",
+    "lazy": 0,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 2589
+   }
+  },
+  "hosts": [],
+  "initial_kb": 271,
+  "requests": 7,
+  "dead_links": [],
+  "tab_stops": 42,
+  "focus_not_visible": [],
+  "nojs": {
+   "text": 2623,
+   "nav": 4,
+   "links": 16,
+   "h1": 1
+  },
+  "hosts_blocked": {
+   "errors": [],
+   "broken_images": 0,
+   "text": 2623
+  },
+  "reduced_motion_longest_transition_s": 0,
+  "firefox": {
+   "1440": {
+    "errors": [],
+    "overflow": 0,
+    "h1": 1,
+    "broken_images": 0
+   },
+   "390": {
+    "errors": [],
+    "overflow": 0,
+    "h1": 1,
+    "broken_images": 0
+   }
+  },
+  "errors": [],
+  "failed": [],
+  "problems": [],
+  "ok": true
+ },
+ "round-5/site/building/": {
+  "widths": {
+   "1440": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 5105,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "5/5",
+    "lazy": 5,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 3992
+   },
+   "820": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 4584,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "5/5",
+    "lazy": 5,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 3992
+   },
+   "390": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 7681,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "5/5",
+    "lazy": 5,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 3958
+   },
+   "320": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 8344,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "5/5",
+    "lazy": 5,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 3958
+   }
+  },
+  "hosts": [],
+  "initial_kb": 393,
+  "requests": 11,
+  "dead_links": [],
+  "tab_stops": 38,
+  "focus_not_visible": [],
+  "nojs": {
+   "text": 3992,
+   "nav": 4,
+   "links": 12,
+   "h1": 1
+  },
+  "hosts_blocked": {
+   "errors": [],
+   "broken_images": 0,
+   "text": 3992
+  },
+  "reduced_motion_longest_transition_s": 0,
+  "firefox": {
+   "1440": {
+    "errors": [],
+    "overflow": 0,
+    "h1": 1,
+    "broken_images": 0
+   },
+   "390": {
+    "errors": [],
+    "overflow": 0,
+    "h1": 1,
+    "broken_images": 0
+   }
+  },
+  "errors": [],
+  "failed": [],
+  "problems": [],
+  "ok": true
+ },
+ "round-5/site/building/ai-agent-economy/": {
+  "widths": {
+   "1440": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 10586,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "5/5",
+    "lazy": 4,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 8598
+   },
+   "820": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 9665,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "5/5",
+    "lazy": 4,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 8598
+   },
+   "390": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 13049,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "5/5",
+    "lazy": 4,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 8564
+   },
+   "320": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 14974,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "5/5",
+    "lazy": 4,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 8564
+   }
+  },
+  "hosts": [],
+  "initial_kb": 292,
+  "requests": 7,
+  "dead_links": [],
+  "tab_stops": 45,
+  "focus_not_visible": [],
+  "nojs": {
+   "text": 8598,
+   "nav": 4,
+   "links": 25,
+   "h1": 1
+  },
+  "hosts_blocked": {
+   "errors": [],
+   "broken_images": 0,
+   "text": 8598
+  },
+  "reduced_motion_longest_transition_s": 0,
+  "firefox": {
+   "1440": {
+    "errors": [],
+    "overflow": 0,
+    "h1": 1,
+    "broken_images": 0
+   },
+   "390": {
+    "errors": [],
+    "overflow": 0,
+    "h1": 1,
+    "broken_images": 0
+   }
+  },
+  "errors": [],
+  "failed": [],
+  "problems": [],
+  "ok": true
+ },
+ "round-5/site/building/ai-explainer-producer/": {
+  "widths": {
+   "1440": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 10889,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "8/8",
+    "lazy": 7,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 8413
+   },
+   "820": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 9914,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "8/8",
+    "lazy": 7,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 8413
+   },
+   "390": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 12276,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "8/8",
+    "lazy": 7,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 8379
+   },
+   "320": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 14041,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "8/8",
+    "lazy": 7,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 8379
+   }
+  },
+  "hosts": [],
+  "initial_kb": 328,
+  "requests": 8,
+  "dead_links": [],
+  "tab_stops": 40,
+  "focus_not_visible": [],
+  "nojs": {
+   "text": 8413,
+   "nav": 4,
+   "links": 14,
+   "h1": 1
+  },
+  "hosts_blocked": {
+   "errors": [],
+   "broken_images": 0,
+   "text": 8413
+  },
+  "reduced_motion_longest_transition_s": 0,
+  "firefox": {
+   "1440": {
+    "errors": [],
+    "overflow": 0,
+    "h1": 1,
+    "broken_images": 0
+   },
+   "390": {
+    "errors": [],
+    "overflow": 0,
+    "h1": 1,
+    "broken_images": 0
+   }
+  },
+  "errors": [],
+  "failed": [],
+  "problems": [],
+  "ok": true
+ },
+ "round-5/site/building/ai-ugc-video-lab/": {
+  "widths": {
+   "1440": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 9113,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "1/1",
+    "lazy": 1,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 10079
+   },
+   "820": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 7688,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "1/1",
+    "lazy": 1,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 10079
+   },
+   "390": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 11838,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "1/1",
+    "lazy": 1,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 10045
+   },
+   "320": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 13993,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "1/1",
+    "lazy": 1,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 10045
+   }
+  },
+  "hosts": [],
+  "initial_kb": 284,
+  "requests": 7,
+  "dead_links": [],
+  "tab_stops": 34,
+  "focus_not_visible": [],
+  "nojs": {
+   "text": 10079,
+   "nav": 4,
+   "links": 8,
+   "h1": 1
+  },
+  "hosts_blocked": {
+   "errors": [],
+   "broken_images": 0,
+   "text": 10079
+  },
+  "reduced_motion_longest_transition_s": 0,
+  "firefox": {
+   "1440": {
+    "errors": [],
+    "overflow": 0,
+    "h1": 1,
+    "broken_images": 0
+   },
+   "390": {
+    "errors": [],
+    "overflow": 0,
+    "h1": 1,
+    "broken_images": 0
+   }
+  },
+  "errors": [],
+  "failed": [],
+  "problems": [],
+  "ok": true
+ },
+ "round-5/site/building/ai-werewolf/": {
+  "widths": {
+   "1440": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 6623,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "3/3",
+    "lazy": 3,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 7143
+   },
+   "820": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 6225,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "3/3",
+    "lazy": 3,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 7143
+   },
+   "390": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 9095,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "3/3",
+    "lazy": 3,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 7109
+   },
+   "320": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 10413,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "3/3",
+    "lazy": 3,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 7109
+   }
+  },
+  "hosts": [],
+  "initial_kb": 247,
+  "requests": 6,
+  "dead_links": [],
+  "tab_stops": 32,
+  "focus_not_visible": [],
+  "nojs": {
+   "text": 7143,
+   "nav": 4,
+   "links": 6,
+   "h1": 1
+  },
+  "hosts_blocked": {
+   "errors": [],
+   "broken_images": 0,
+   "text": 7143
+  },
+  "reduced_motion_longest_transition_s": 0,
+  "firefox": {
+   "1440": {
+    "errors": [],
+    "overflow": 0,
+    "h1": 1,
+    "broken_images": 0
+   },
+   "390": {
+    "errors": [],
+    "overflow": 0,
+    "h1": 1,
+    "broken_images": 0
+   }
+  },
+  "errors": [],
+  "failed": [],
+  "problems": [],
+  "ok": true
+ },
+ "round-5/site/building/autonomous-ai-blog/": {
+  "widths": {
+   "1440": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 10911,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "3/3",
+    "lazy": 2,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 12456
+   },
+   "820": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 9091,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "3/3",
+    "lazy": 2,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 12456
+   },
+   "390": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 14112,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "3/3",
+    "lazy": 2,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 12422
+   },
+   "320": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 16547,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "3/3",
+    "lazy": 2,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 12422
+   }
+  },
+  "hosts": [],
+  "initial_kb": 288,
+  "requests": 7,
+  "dead_links": [],
+  "tab_stops": 41,
+  "focus_not_visible": [],
+  "nojs": {
+   "text": 12456,
+   "nav": 4,
+   "links": 15,
+   "h1": 1
+  },
+  "hosts_blocked": {
+   "errors": [],
+   "broken_images": 0,
+   "text": 12456
+  },
+  "reduced_motion_longest_transition_s": 0,
+  "firefox": {
+   "1440": {
+    "errors": [],
+    "overflow": 0,
+    "h1": 1,
+    "broken_images": 0
+   },
+   "390": {
+    "errors": [],
+    "overflow": 0,
+    "h1": 1,
+    "broken_images": 0
+   }
+  },
+  "errors": [],
+  "failed": [],
+  "problems": [],
+  "ok": true
+ },
+ "round-5/site/building/autonomous-seo-agent/": {
+  "widths": {
+   "1440": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 5549,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "3/3",
+    "lazy": 2,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 3556
+   },
+   "820": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 4782,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "3/3",
+    "lazy": 2,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 3556
+   },
+   "390": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 5916,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "3/3",
+    "lazy": 2,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 3522
+   },
+   "320": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 6575,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "3/3",
+    "lazy": 2,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 3522
+   }
+  },
+  "hosts": [],
+  "initial_kb": 323,
+  "requests": 7,
+  "dead_links": [],
+  "tab_stops": 35,
+  "focus_not_visible": [],
+  "nojs": {
+   "text": 3556,
+   "nav": 4,
+   "links": 9,
+   "h1": 1
+  },
+  "hosts_blocked": {
+   "errors": [],
+   "broken_images": 0,
+   "text": 3556
+  },
+  "reduced_motion_longest_transition_s": 0,
+  "firefox": {
+   "1440": {
+    "errors": [],
+    "overflow": 0,
+    "h1": 1,
+    "broken_images": 0
+   },
+   "390": {
+    "errors": [],
+    "overflow": 0,
+    "h1": 1,
+    "broken_images": 0
+   }
+  },
+  "errors": [],
+  "failed": [],
+  "problems": [],
+  "ok": true
+ },
+ "round-5/site/building/rebuilding-the-image-pipeline/": {
+  "widths": {
+   "1440": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 13585,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "0/0",
+    "lazy": 0,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 11696
+   },
+   "820": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 11865,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "0/0",
+    "lazy": 0,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 11696
+   },
+   "390": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 16509,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "0/0",
+    "lazy": 0,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 11662
+   },
+   "320": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 18752,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "0/0",
+    "lazy": 0,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 11662
+   }
+  },
+  "hosts": [],
+  "initial_kb": 251,
+  "requests": 6,
+  "dead_links": [],
+  "tab_stops": 35,
+  "focus_not_visible": [],
+  "nojs": {
+   "text": 11696,
+   "nav": 4,
+   "links": 2,
+   "h1": 1
+  },
+  "hosts_blocked": {
+   "errors": [],
+   "broken_images": 0,
+   "text": 11696
+  },
+  "reduced_motion_longest_transition_s": 0,
+  "firefox": {
+   "1440": {
+    "errors": [],
+    "overflow": 0,
+    "h1": 1,
+    "broken_images": 0
+   },
+   "390": {
+    "errors": [],
+    "overflow": 0,
+    "h1": 1,
+    "broken_images": 0
+   }
+  },
+  "errors": [],
+  "failed": [],
+  "problems": [],
+  "ok": true
+ },
+ "round-5/site/building/returning-your-things/": {
+  "widths": {
+   "1440": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 3701,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "3/3",
+    "lazy": 2,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 1798
+   },
+   "820": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 3586,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "3/3",
+    "lazy": 2,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 1798
+   },
+   "390": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 3890,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "3/3",
+    "lazy": 2,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 1764
+   },
+   "320": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 4152,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "3/3",
+    "lazy": 2,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 1764
+   }
+  },
+  "hosts": [],
+  "initial_kb": 370,
+  "requests": 10,
+  "dead_links": [],
+  "tab_stops": 34,
+  "focus_not_visible": [],
+  "nojs": {
+   "text": 1798,
+   "nav": 4,
+   "links": 8,
+   "h1": 1
+  },
+  "hosts_blocked": {
+   "errors": [],
+   "broken_images": 0,
+   "text": 1798
+  },
+  "reduced_motion_longest_transition_s": 0,
+  "firefox": {
+   "1440": {
+    "errors": [],
+    "overflow": 0,
+    "h1": 1,
+    "broken_images": 0
+   },
+   "390": {
+    "errors": [],
+    "overflow": 0,
+    "h1": 1,
+    "broken_images": 0
+   }
+  },
+  "errors": [],
+  "failed": [],
+  "problems": [],
+  "ok": true
+ },
+ "round-5/site/building/sir-pitches-a-lot/": {
+  "widths": {
+   "1440": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 5828,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "0/0",
+    "lazy": 0,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 6151
+   },
+   "820": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 5062,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "0/0",
+    "lazy": 0,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 6151
+   },
+   "390": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 7584,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "0/0",
+    "lazy": 0,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 6117
+   },
+   "320": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 8875,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "0/0",
+    "lazy": 0,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 6117
+   }
+  },
+  "hosts": [],
+  "initial_kb": 244,
+  "requests": 6,
+  "dead_links": [],
+  "tab_stops": 29,
+  "focus_not_visible": [],
+  "nojs": {
+   "text": 6151,
+   "nav": 4,
+   "links": 3,
+   "h1": 1
+  },
+  "hosts_blocked": {
+   "errors": [],
+   "broken_images": 0,
+   "text": 6151
+  },
+  "reduced_motion_longest_transition_s": 0,
+  "firefox": {
+   "1440": {
+    "errors": [],
+    "overflow": 0,
+    "h1": 1,
+    "broken_images": 0
+   },
+   "390": {
+    "errors": [],
+    "overflow": 0,
+    "h1": 1,
+    "broken_images": 0
+   }
+  },
+  "errors": [],
+  "failed": [],
+  "problems": [],
+  "ok": true
+ },
+ "round-5/site/building/vetstack/": {
+  "widths": {
+   "1440": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 5815,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "0/0",
+    "lazy": 0,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 5598
+   },
+   "820": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 5060,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "0/0",
+    "lazy": 0,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 5598
+   },
+   "390": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 7190,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "0/0",
+    "lazy": 0,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 5564
+   },
+   "320": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 8342,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "0/0",
+    "lazy": 0,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 5564
+   }
+  },
+  "hosts": [],
+  "initial_kb": 243,
+  "requests": 6,
+  "dead_links": [],
+  "tab_stops": 30,
+  "focus_not_visible": [],
+  "nojs": {
+   "text": 5598,
+   "nav": 4,
+   "links": 4,
+   "h1": 1
+  },
+  "hosts_blocked": {
+   "errors": [],
+   "broken_images": 0,
+   "text": 5598
+  },
+  "reduced_motion_longest_transition_s": 0,
+  "firefox": {
+   "1440": {
+    "errors": [],
+    "overflow": 0,
+    "h1": 1,
+    "broken_images": 0
+   },
+   "390": {
+    "errors": [],
+    "overflow": 0,
+    "h1": 1,
+    "broken_images": 0
+   }
+  },
+  "errors": [],
+  "failed": [],
+  "problems": [],
+  "ok": true
+ },
+ "round-5/site/building/x-article-toolkit/": {
+  "widths": {
+   "1440": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 8672,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "0/0",
+    "lazy": 0,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 10605
+   },
+   "820": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 7371,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "0/0",
+    "lazy": 0,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 10605
+   },
+   "390": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 11535,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "0/0",
+    "lazy": 0,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 10571
+   },
+   "320": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 13803,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "0/0",
+    "lazy": 0,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 10571
+   }
+  },
+  "hosts": [],
+  "initial_kb": 249,
+  "requests": 6,
+  "dead_links": [],
+  "tab_stops": 33,
+  "focus_not_visible": [],
+  "nojs": {
+   "text": 10605,
+   "nav": 4,
+   "links": 7,
+   "h1": 1
+  },
+  "hosts_blocked": {
+   "errors": [],
+   "broken_images": 0,
+   "text": 10605
+  },
+  "reduced_motion_longest_transition_s": 0,
+  "firefox": {
+   "1440": {
+    "errors": [],
+    "overflow": 0,
+    "h1": 1,
+    "broken_images": 0
+   },
+   "390": {
+    "errors": [],
+    "overflow": 0,
+    "h1": 1,
+    "broken_images": 0
+   }
+  },
+  "errors": [],
+  "failed": [],
+  "problems": [],
+  "ok": true
+ },
+ "round-5/site/building/zerohuman/": {
+  "widths": {
+   "1440": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 8828,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "3/3",
+    "lazy": 3,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 8667
+   },
+   "820": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 8048,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "3/3",
+    "lazy": 3,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 8667
+   },
+   "390": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 11696,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "3/3",
+    "lazy": 3,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 8633
+   },
+   "320": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 13853,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "3/3",
+    "lazy": 3,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 8633
+   }
+  },
+  "hosts": [],
+  "initial_kb": 252,
+  "requests": 6,
+  "dead_links": [],
+  "tab_stops": 45,
+  "focus_not_visible": [],
+  "nojs": {
+   "text": 8667,
+   "nav": 4,
+   "links": 25,
+   "h1": 1
+  },
+  "hosts_blocked": {
+   "errors": [],
+   "broken_images": 0,
+   "text": 8667
+  },
+  "reduced_motion_longest_transition_s": 0,
+  "firefox": {
+   "1440": {
+    "errors": [],
+    "overflow": 0,
+    "h1": 1,
+    "broken_images": 0
+   },
+   "390": {
+    "errors": [],
+    "overflow": 0,
+    "h1": 1,
+    "broken_images": 0
+   }
+  },
+  "errors": [],
+  "failed": [],
+  "problems": [],
+  "ok": true
+ },
+ "round-5/site/videos/": {
+  "widths": {
+   "1440": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 3946,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "16/16",
+    "lazy": 15,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 3494
+   },
+   "820": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [
+     [
+      "Buying a .com Domain Is a Vani",
+      367,
+      34
+     ]
+    ],
+    "h1": 1,
+    "overflow": 0,
+    "height": 5170,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "16/16",
+    "lazy": 15,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 3494
+   },
+   "390": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 4669,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "16/16",
+    "lazy": 15,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 2069
+   },
+   "320": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 5347,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "16/16",
+    "lazy": 15,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 2069
+   }
+  },
+  "hosts": [],
+  "initial_kb": 458,
+  "requests": 22,
+  "dead_links": [],
+  "tab_stops": 45,
+  "focus_not_visible": [],
+  "nojs": {
+   "text": 3494,
+   "nav": 4,
+   "links": 43,
+   "h1": 1
+  },
+  "hosts_blocked": {
+   "errors": [],
+   "broken_images": 0,
+   "text": 3494
+  },
+  "reduced_motion_longest_transition_s": 0,
+  "firefox": {
+   "1440": {
+    "errors": [],
+    "overflow": 0,
+    "h1": 1,
+    "broken_images": 0
+   },
+   "390": {
+    "errors": [],
+    "overflow": 0,
+    "h1": 1,
+    "broken_images": 0
+   }
+  },
+  "errors": [],
+  "failed": [],
+  "problems": [],
+  "ok": true
+ },
+ "round-5/site/writing/": {
+  "widths": {
+   "1440": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 2914,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "9/9",
+    "lazy": 9,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 2986
+   },
+   "820": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 2912,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "9/9",
+    "lazy": 9,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 2986
+   },
+   "390": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 3042,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "9/9",
+    "lazy": 9,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 1479
+   },
+   "320": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 3607,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "9/9",
+    "lazy": 9,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 1479
+   }
+  },
+  "hosts": [],
+  "initial_kb": 398,
+  "requests": 15,
+  "dead_links": [],
+  "tab_stops": 35,
+  "focus_not_visible": [],
+  "nojs": {
+   "text": 2986,
+   "nav": 4,
+   "links": 9,
+   "h1": 1
+  },
+  "hosts_blocked": {
+   "errors": [],
+   "broken_images": 0,
+   "text": 2986
+  },
+  "reduced_motion_longest_transition_s": 0,
+  "firefox": {
+   "1440": {
+    "errors": [],
+    "overflow": 0,
+    "h1": 1,
+    "broken_images": 0
+   },
+   "390": {
+    "errors": [],
+    "overflow": 0,
+    "h1": 1,
+    "broken_images": 0
+   }
+  },
+  "errors": [],
+  "failed": [],
+  "problems": [],
+  "ok": true
+ },
+ "round-5/site/writing/4-tips-for-making-ai-videos-that-feel-like-films/": {
+  "widths": {
+   "1440": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 7301,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "8/8",
+    "lazy": 7,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 4346
+   },
+   "820": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 6742,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "8/8",
+    "lazy": 7,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 4346
+   },
+   "390": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 7149,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "8/8",
+    "lazy": 7,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 4312
+   },
+   "320": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 7772,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "8/8",
+    "lazy": 7,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 4312
+   }
+  },
+  "hosts": [],
+  "initial_kb": 428,
+  "requests": 11,
+  "dead_links": [],
+  "tab_stops": 40,
+  "focus_not_visible": [],
+  "nojs": {
+   "text": 4346,
+   "nav": 4,
+   "links": 14,
+   "h1": 1
+  },
+  "hosts_blocked": {
+   "errors": [],
+   "broken_images": 0,
+   "text": 4346
+  },
+  "reduced_motion_longest_transition_s": 0,
+  "firefox": {
+   "1440": {
+    "errors": [],
+    "overflow": 0,
+    "h1": 1,
+    "broken_images": 0
+   },
+   "390": {
+    "errors": [],
+    "overflow": 0,
+    "h1": 1,
+    "broken_images": 0
+   }
+  },
+  "errors": [],
+  "failed": [],
+  "problems": [],
+  "ok": true
+ },
+ "round-5/site/writing/ai-agents-reasoning-from-events-that-never-happened/": {
+  "widths": {
+   "1440": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 13505,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "2/2",
+    "lazy": 1,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 12484
+   },
+   "820": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 11674,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "2/2",
+    "lazy": 1,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 12484
+   },
+   "390": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 16533,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "2/2",
+    "lazy": 1,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 12450
+   },
+   "320": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 18917,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "2/2",
+    "lazy": 1,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 12450
+   }
+  },
+  "hosts": [],
+  "initial_kb": 393,
+  "requests": 8,
+  "dead_links": [],
+  "tab_stops": 39,
+  "focus_not_visible": [],
+  "nojs": {
+   "text": 12484,
+   "nav": 4,
+   "links": 12,
+   "h1": 1
+  },
+  "hosts_blocked": {
+   "errors": [],
+   "broken_images": 0,
+   "text": 12484
+  },
+  "reduced_motion_longest_transition_s": 0,
+  "firefox": {
+   "1440": {
+    "errors": [],
+    "overflow": 0,
+    "h1": 1,
+    "broken_images": 0
+   },
+   "390": {
+    "errors": [],
+    "overflow": 0,
+    "h1": 1,
+    "broken_images": 0
+   }
+  },
+  "errors": [],
+  "failed": [],
+  "problems": [],
+  "ok": true
+ },
+ "round-5/site/writing/ai-editor-trusted-least/": {
+  "widths": {
+   "1440": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 9796,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "3/3",
+    "lazy": 2,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 6972
+   },
+   "820": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 8464,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "3/3",
+    "lazy": 2,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 6972
+   },
+   "390": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 10408,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "3/3",
+    "lazy": 2,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 6938
+   },
+   "320": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 11851,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "3/3",
+    "lazy": 2,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 6938
+   }
+  },
+  "hosts": [],
+  "initial_kb": 275,
+  "requests": 7,
+  "dead_links": [],
+  "tab_stops": 31,
+  "focus_not_visible": [],
+  "nojs": {
+   "text": 6972,
+   "nav": 4,
+   "links": 5,
+   "h1": 1
+  },
+  "hosts_blocked": {
+   "errors": [],
+   "broken_images": 0,
+   "text": 6972
+  },
+  "reduced_motion_longest_transition_s": 0,
+  "firefox": {
+   "1440": {
+    "errors": [],
+    "overflow": 0,
+    "h1": 1,
+    "broken_images": 0
+   },
+   "390": {
+    "errors": [],
+    "overflow": 0,
+    "h1": 1,
+    "broken_images": 0
+   }
+  },
+  "errors": [],
+  "failed": [],
+  "problems": [],
+  "ok": true
+ },
+ "round-5/site/writing/ashe-family-coat-of-arms/": {
+  "widths": {
+   "1440": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 9118,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "6/6",
+    "lazy": 5,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 5265
+   },
+   "820": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 8458,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "6/6",
+    "lazy": 5,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 5265
+   },
+   "390": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 8526,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "6/6",
+    "lazy": 5,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 5231
+   },
+   "320": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 9343,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "6/6",
+    "lazy": 5,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 5231
+   }
+  },
+  "hosts": [],
+  "initial_kb": 443,
+  "requests": 9,
+  "dead_links": [],
+  "tab_stops": 36,
+  "focus_not_visible": [],
+  "nojs": {
+   "text": 5265,
+   "nav": 4,
+   "links": 10,
+   "h1": 1
+  },
+  "hosts_blocked": {
+   "errors": [],
+   "broken_images": 0,
+   "text": 5265
+  },
+  "reduced_motion_longest_transition_s": 0,
+  "firefox": {
+   "1440": {
+    "errors": [],
+    "overflow": 0,
+    "h1": 1,
+    "broken_images": 0
+   },
+   "390": {
+    "errors": [],
+    "overflow": 0,
+    "h1": 1,
+    "broken_images": 0
+   }
+  },
+  "errors": [],
+  "failed": [],
+  "problems": [],
+  "ok": true
+ },
+ "round-5/site/writing/bambu-lab-burr-puzzle-solution/": {
+  "widths": {
+   "1440": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 5240,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "4/4",
+    "lazy": 3,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 3217
+   },
+   "820": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 4804,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "4/4",
+    "lazy": 3,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 3217
+   },
+   "390": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 5333,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "4/4",
+    "lazy": 3,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 3183
+   },
+   "320": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 5863,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "4/4",
+    "lazy": 3,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 3183
+   }
+  },
+  "hosts": [],
+  "initial_kb": 452,
+  "requests": 8,
+  "dead_links": [],
+  "tab_stops": 41,
+  "focus_not_visible": [],
+  "nojs": {
+   "text": 3217,
+   "nav": 4,
+   "links": 15,
+   "h1": 1
+  },
+  "hosts_blocked": {
+   "errors": [],
+   "broken_images": 0,
+   "text": 3217
+  },
+  "reduced_motion_longest_transition_s": 0,
+  "firefox": {
+   "1440": {
+    "errors": [],
+    "overflow": 0,
+    "h1": 1,
+    "broken_images": 0
+   },
+   "390": {
+    "errors": [],
+    "overflow": 0,
+    "h1": 1,
+    "broken_images": 0
+   }
+  },
+  "errors": [],
+  "failed": [],
+  "problems": [],
+  "ok": true
+ },
+ "round-5/site/writing/iphone-18-pro-att-activation-failure/": {
+  "widths": {
+   "1440": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 10699,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "4/4",
+    "lazy": 3,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 9346
+   },
+   "820": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 9451,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "4/4",
+    "lazy": 3,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 9346
+   },
+   "390": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 12223,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "4/4",
+    "lazy": 3,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 9312
+   },
+   "320": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 14241,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "4/4",
+    "lazy": 3,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 9312
+   }
+  },
+  "hosts": [],
+  "initial_kb": 401,
+  "requests": 8,
+  "dead_links": [],
+  "tab_stops": 29,
+  "focus_not_visible": [],
+  "nojs": {
+   "text": 9346,
+   "nav": 4,
+   "links": 3,
+   "h1": 1
+  },
+  "hosts_blocked": {
+   "errors": [],
+   "broken_images": 0,
+   "text": 9346
+  },
+  "reduced_motion_longest_transition_s": 0,
+  "firefox": {
+   "1440": {
+    "errors": [],
+    "overflow": 0,
+    "h1": 1,
+    "broken_images": 0
+   },
+   "390": {
+    "errors": [],
+    "overflow": 0,
+    "h1": 1,
+    "broken_images": 0
+   }
+  },
+  "errors": [],
+  "failed": [],
+  "problems": [],
+  "ok": true
+ },
+ "round-5/site/writing/my-automated-blog-got-cited/": {
+  "widths": {
+   "1440": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 7418,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "3/3",
+    "lazy": 2,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 7094
+   },
+   "820": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 6520,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "3/3",
+    "lazy": 2,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 7094
+   },
+   "390": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 9144,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "3/3",
+    "lazy": 2,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 7060
+   },
+   "320": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 10465,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "3/3",
+    "lazy": 2,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 7060
+   }
+  },
+  "hosts": [],
+  "initial_kb": 350,
+  "requests": 8,
+  "dead_links": [],
+  "tab_stops": 35,
+  "focus_not_visible": [],
+  "nojs": {
+   "text": 7094,
+   "nav": 4,
+   "links": 9,
+   "h1": 1
+  },
+  "hosts_blocked": {
+   "errors": [],
+   "broken_images": 0,
+   "text": 7094
+  },
+  "reduced_motion_longest_transition_s": 0,
+  "firefox": {
+   "1440": {
+    "errors": [],
+    "overflow": 0,
+    "h1": 1,
+    "broken_images": 0
+   },
+   "390": {
+    "errors": [],
+    "overflow": 0,
+    "h1": 1,
+    "broken_images": 0
+   }
+  },
+  "errors": [],
+  "failed": [],
+  "problems": [],
+  "ok": true
+ },
+ "round-5/site/writing/the-digest-is-the-system/": {
+  "widths": {
+   "1440": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 3935,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "3/3",
+    "lazy": 2,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 3376
+   },
+   "820": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 3819,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "3/3",
+    "lazy": 2,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 3376
+   },
+   "390": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 4678,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "3/3",
+    "lazy": 2,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 3342
+   },
+   "320": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 5292,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "3/3",
+    "lazy": 2,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 3342
+   }
+  },
+  "hosts": [],
+  "initial_kb": 351,
+  "requests": 9,
+  "dead_links": [],
+  "tab_stops": 33,
+  "focus_not_visible": [],
+  "nojs": {
+   "text": 3376,
+   "nav": 4,
+   "links": 7,
+   "h1": 1
+  },
+  "hosts_blocked": {
+   "errors": [],
+   "broken_images": 0,
+   "text": 3376
+  },
+  "reduced_motion_longest_transition_s": 0,
+  "firefox": {
+   "1440": {
+    "errors": [],
+    "overflow": 0,
+    "h1": 1,
+    "broken_images": 0
+   },
+   "390": {
+    "errors": [],
+    "overflow": 0,
+    "h1": 1,
+    "broken_images": 0
+   }
+  },
+  "errors": [],
+  "failed": [],
+  "problems": [],
+  "ok": true
+ },
+ "round-5/site/writing/you-can-use-ai-to-learn-almost-anything-even-ai/": {
+  "widths": {
+   "1440": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 5356,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "4/4",
+    "lazy": 3,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 3413
+   },
+   "820": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 4981,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "4/4",
+    "lazy": 3,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 3413
+   },
+   "390": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 5463,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "4/4",
+    "lazy": 3,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 3379
+   },
+   "320": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 6151,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "4/4",
+    "lazy": 3,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 3379
+   }
+  },
+  "hosts": [],
+  "initial_kb": 300,
+  "requests": 8,
+  "dead_links": [],
+  "tab_stops": 32,
+  "focus_not_visible": [],
+  "nojs": {
+   "text": 3413,
+   "nav": 4,
+   "links": 6,
+   "h1": 1
+  },
+  "hosts_blocked": {
+   "errors": [],
+   "broken_images": 0,
+   "text": 3413
+  },
+  "reduced_motion_longest_transition_s": 0,
+  "firefox": {
+   "1440": {
+    "errors": [],
+    "overflow": 0,
+    "h1": 1,
+    "broken_images": 0
+   },
+   "390": {
+    "errors": [],
+    "overflow": 0,
+    "h1": 1,
+    "broken_images": 0
+   }
+  },
+  "errors": [],
+  "failed": [],
+  "problems": [],
+  "ok": true
+ },
+ "round-5/": {
+  "widths": {
+   "1440": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 25142,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "0/20",
+    "lazy": 20,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 30191
+   },
+   "820": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 24745,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "0/20",
+    "lazy": 20,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 30191
+   },
+   "390": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 34202,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "0/20",
+    "lazy": 20,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 30191
+   },
+   "320": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 36748,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "0/20",
+    "lazy": 20,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 30191
+   }
+  },
+  "hosts": [],
+  "initial_kb": 634,
+  "requests": 11,
+  "dead_links": [],
+  "tab_stops": 45,
+  "focus_not_visible": [],
+  "nojs": {
+   "text": 30191,
+   "nav": 0,
+   "links": 74,
+   "h1": 1
+  },
+  "hosts_blocked": {
+   "errors": [],
+   "broken_images": 0,
+   "text": 30191
+  },
+  "reduced_motion_longest_transition_s": 0,
+  "firefox": {
+   "1440": {
+    "errors": [],
+    "overflow": 0,
+    "h1": 1,
+    "broken_images": 0
+   },
+   "390": {
+    "errors": [],
+    "overflow": 0,
+    "h1": 1,
+    "broken_images": 0
+   }
+  },
+  "errors": [],
+  "failed": [],
+  "problems": [],
+  "ok": true
+ },
+ "round-5/demo/": {
+  "widths": {
+   "1440": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 5169,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "0/0",
+    "lazy": 0,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 6469
+   },
+   "820": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 5161,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "0/0",
+    "lazy": 0,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 6469
+   },
+   "390": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 7446,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "0/0",
+    "lazy": 0,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 6469
+   },
+   "320": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 8835,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "0/0",
+    "lazy": 0,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 6469
+   }
+  },
+  "hosts": [],
+  "initial_kb": 242,
+  "requests": 6,
+  "dead_links": [],
+  "tab_stops": 34,
+  "focus_not_visible": [],
+  "nojs": {
+   "text": 6469,
+   "nav": 0,
+   "links": 26,
+   "h1": 1
+  },
+  "hosts_blocked": {
+   "errors": [],
+   "broken_images": 0,
+   "text": 6469
+  },
+  "reduced_motion_longest_transition_s": 0,
+  "firefox": {
+   "1440": {
+    "errors": [],
+    "overflow": 0,
+    "h1": 1,
+    "broken_images": 0
+   },
+   "390": {
+    "errors": [],
+    "overflow": 0,
+    "h1": 1,
+    "broken_images": 0
+   }
+  },
+  "errors": [],
+  "failed": [],
+  "problems": [],
+  "ok": true
+ },
+ "round-5/demo/site/": {
+  "widths": {
+   "1440": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 4592,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "10/10",
+    "lazy": 9,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 3134
+   },
+   "820": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 4702,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "10/10",
+    "lazy": 9,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 3134
+   },
+   "390": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 5481,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "10/10",
+    "lazy": 9,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 2648
+   },
+   "320": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 6264,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "10/10",
+    "lazy": 9,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 2648
+   }
+  },
+  "hosts": [],
+  "initial_kb": 449,
+  "requests": 17,
+  "dead_links": [],
+  "tab_stops": 45,
+  "focus_not_visible": [],
+  "nojs": {
+   "text": 3134,
+   "nav": 4,
+   "links": 27,
+   "h1": 1
+  },
+  "hosts_blocked": {
+   "errors": [],
+   "broken_images": 0,
+   "text": 3134
+  },
+  "reduced_motion_longest_transition_s": 0,
+  "firefox": {
+   "1440": {
+    "errors": [],
+    "overflow": 0,
+    "h1": 1,
+    "broken_images": 0
+   },
+   "390": {
+    "errors": [],
+    "overflow": 0,
+    "h1": 1,
+    "broken_images": 0
+   }
+  },
+  "errors": [],
+  "failed": [],
+  "problems": [],
+  "ok": true
+ },
+ "round-5/demo/site/building/example-recipe-card-maker/": {
+  "widths": {
+   "1440": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 3024,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "2/2",
+    "lazy": 2,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 1618
+   },
+   "820": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 2697,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "2/2",
+    "lazy": 2,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 1618
+   },
+   "390": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 3569,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "2/2",
+    "lazy": 2,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 1618
+   },
+   "320": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 3844,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "2/2",
+    "lazy": 2,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 1618
+   }
+  },
+  "hosts": [],
+  "initial_kb": 260,
+  "requests": 8,
+  "dead_links": [],
+  "tab_stops": 34,
+  "focus_not_visible": [],
+  "nojs": {
+   "text": 1618,
+   "nav": 4,
+   "links": 8,
+   "h1": 1
+  },
+  "hosts_blocked": {
+   "errors": [],
+   "broken_images": 0,
+   "text": 1618
+  },
+  "reduced_motion_longest_transition_s": 0,
+  "firefox": {
+   "1440": {
+    "errors": [],
+    "overflow": 0,
+    "h1": 1,
+    "broken_images": 0
+   },
+   "390": {
+    "errors": [],
+    "overflow": 0,
+    "h1": 1,
+    "broken_images": 0
+   }
+  },
+  "errors": [],
+  "failed": [],
+  "problems": [],
+  "ok": true
+ },
+ "round-5/demo/site/building/": {
+  "widths": {
+   "1440": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 5241,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "5/5",
+    "lazy": 5,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 4184
+   },
+   "820": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 4760,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "5/5",
+    "lazy": 5,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 4184
+   },
+   "390": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 8022,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "5/5",
+    "lazy": 5,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 4184
+   },
+   "320": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 8734,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "5/5",
+    "lazy": 5,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 4184
+   }
+  },
+  "hosts": [],
+  "initial_kb": 394,
+  "requests": 11,
+  "dead_links": [],
+  "tab_stops": 39,
+  "focus_not_visible": [],
+  "nojs": {
+   "text": 4184,
+   "nav": 4,
+   "links": 13,
+   "h1": 1
+  },
+  "hosts_blocked": {
+   "errors": [],
+   "broken_images": 0,
+   "text": 4184
+  },
+  "reduced_motion_longest_transition_s": 0,
+  "firefox": {
+   "1440": {
+    "errors": [],
+    "overflow": 0,
+    "h1": 1,
+    "broken_images": 0
+   },
+   "390": {
+    "errors": [],
+    "overflow": 0,
+    "h1": 1,
+    "broken_images": 0
+   }
+  },
+  "errors": [],
+  "failed": [],
+  "problems": [],
+  "ok": true
+ },
+ "round-5/demo/site/videos/": {
+  "widths": {
+   "1440": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 3884,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "16/16",
+    "lazy": 16,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 3734
+   },
+   "820": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [
+     [
+      "Buying a .com Domain Is a Vani",
+      367,
+      34
+     ]
+    ],
+    "h1": 1,
+    "overflow": 0,
+    "height": 5604,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "16/16",
+    "lazy": 16,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 3734
+   },
+   "390": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 4901,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "16/16",
+    "lazy": 16,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 2256
+   },
+   "320": {
+    "min": 14,
+    "small": [],
+    "low": [],
+    "taps": [],
+    "h1": 1,
+    "overflow": 0,
+    "height": 5647,
+    "broken": [],
+    "noalt": 0,
+    "responsive": "16/16",
+    "lazy": 16,
+    "robots": "noindex, nofollow, noarchive",
+    "canonical": false,
+    "text": 2256
+   }
+  },
+  "hosts": [],
+  "initial_kb": 450,
+  "requests": 22,
+  "dead_links": [],
+  "tab_stops": 45,
+  "focus_not_visible": [],
+  "nojs": {
+   "text": 3734,
+   "nav": 4,
+   "links": 46,
+   "h1": 1
+  },
+  "hosts_blocked": {
+   "errors": [],
+   "broken_images": 0,
+   "text": 3734
+  },
+  "reduced_motion_longest_transition_s": 0,
+  "firefox": {
+   "1440": {
+    "errors": [],
+    "overflow": 0,
+    "h1": 1,
+    "broken_images": 0
+   },
+   "390": {
+    "errors": [],
+    "overflow": 0,
+    "h1": 1,
+    "broken_images": 0
+   }
+  },
+  "errors": [],
+  "failed": [],
+  "problems": [],
+  "ok": true
+ }
+}

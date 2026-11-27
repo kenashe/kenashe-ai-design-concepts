@@ -1,0 +1,29 @@
+From 23ae7f3308a84bb6543a8943126f8df0d874f004 Mon Sep 17 00:00:00 2001
+From: Update demonstration <noreply@example.invalid>
+Date: Fri, 27 Nov 2026 11:53:43 -0500
+Subject: [PATCH] Change the title and description
+
+---
+ src/data/builds.ts | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/src/data/builds.ts b/src/data/builds.ts
+index b9326d4..e361cda 100644
+--- a/src/data/builds.ts
++++ b/src/data/builds.ts
+@@ -27,10 +27,10 @@ export const daysSince = (iso: string) =>
+ 
+ export const projects: Project[] = [
+   {
+-    title: 'Example: recipe card maker',
++    title: 'Example: recipe cards from a photo',
+     status: 'SHIPPED',
+     dek: 'Example entry for the update demonstration. Not a real project.',
+-    summary: 'An example entry, not a real project. A small app that turns a photo of a handwritten recipe into a tidy, printable card.',
++    summary: 'An example entry, not a real project. Point a phone at a handwritten recipe and get a clean card back.',
+     stack: ['Example'],
+     shippedAt: 'Dec 2026',
+     link: '/building/example-recipe-card-maker/',
+-- 
+2.56.1
+

@@ -1,0 +1,60 @@
+From d8ecac9f4f78b321f92f25f226e79d0feb19ddea Mon Sep 17 00:00:00 2001
+From: Update demonstration <noreply@example.invalid>
+Date: Fri, 27 Nov 2026 11:53:43 -0500
+Subject: [PATCH] Publish writing
+
+---
+ src/data/writing.ts                           |  8 +++++++
+ .../index.astro                               | 21 +++++++++++++++++++
+ 2 files changed, 29 insertions(+)
+ create mode 100644 src/pages/writing/example-a-week-of-asking-ai-first/index.astro
+
+diff --git a/src/data/writing.ts b/src/data/writing.ts
+index dbf3c91..3fdadb3 100644
+--- a/src/data/writing.ts
++++ b/src/data/writing.ts
+@@ -33,6 +33,14 @@ export interface Essay {
+ }
+ 
+ export const essays: Essay[] = [
++  {
++    slug: 'example-a-week-of-asking-ai-first',
++    title: 'Example essay: a week of asking AI first',
++    date: 'December 2, 2026',
++    published: '2026-12-02',
++    dek: 'An example entry for the demonstration. Not a real essay.',
++    authorship: 'Example entry',
++  },
+   {
+     slug: '4-tips-for-making-ai-videos-that-feel-like-films',
+     title: '4 Tips for Making AI Videos That Feel Like Films',
+diff --git a/src/pages/writing/example-a-week-of-asking-ai-first/index.astro b/src/pages/writing/example-a-week-of-asking-ai-first/index.astro
+new file mode 100644
+index 0000000..139928d
+--- /dev/null
++++ b/src/pages/writing/example-a-week-of-asking-ai-first/index.astro
+@@ -0,0 +1,21 @@
++---
++// Example essay for the update demonstration. Not real.
++import BaseLayout from '../../../layouts/BaseLayout.astro';
++import { essayBySlug, authorshipOf } from '../../../data/writing';
++
++const essay = essayBySlug('example-a-week-of-asking-ai-first');
++const authorship = authorshipOf(essay);
++const title = 'Example essay: a week of asking AI first';
++const description = 'An example entry for the demonstration. Not a real essay.';
++---
++
++<BaseLayout title={title} description={description}>
++  <article class="essay">
++    <h1>{title}</h1>
++    <p class="meta">By Ken Ashe · December 2, 2026 · Example entry</p>
++    <div class="prose">
++      <p><strong>This is an example entry made for the demonstration. It is not real.</strong></p>
++      <p>The essay text lives in its own page file, as it does today.</p>
++    </div>
++  </article>
++</BaseLayout>
+-- 
+2.56.1
+

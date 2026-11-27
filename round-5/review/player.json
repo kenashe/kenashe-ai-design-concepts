@@ -1,0 +1,51 @@
+{
+ "chromium": {
+  "browser": "148.0.7778.96",
+  "outside requests before pressing play": 0,
+  "large picture: plays in place": true,
+  "only then is YouTube contacted": [
+   "https://www.youtube-nocookie.com/embed/DcXaGn-NsgY"
+  ],
+  "fallback link under the player": "https://www.youtube.com/watch?v=DcXaGn-NsgY",
+  "small picture: opens the viewer": true,
+  "focus moves into the viewer": true,
+  "viewer has a fallback link": "https://www.youtube.com/watch?v=3MOFBulJd_s",
+  "Escape closes it": true,
+  "the player is removed on close (sound stops)": true,
+  "focus returns to the video that was opened": true,
+  "Close button closes it": true,
+  "phone width: opens the viewer": true,
+  "phone width: Close button height (px)": 48,
+  "JavaScript off: the picture is a plain link to": "https://www.youtube.com/watch?v=DcXaGn-NsgY",
+  "YouTube unreachable: fallback link still shown": "Watch on YouTube \u2197",
+  "page errors": []
+ },
+ "firefox": {
+  "browser": "150.0.2",
+  "outside requests before pressing play": 0,
+  "large picture: plays in place": true,
+  "only then is YouTube contacted": [
+   "https://www.youtube-nocookie.com/embed/DcXaGn-NsgY"
+  ],
+  "fallback link under the player": "https://www.youtube.com/watch?v=DcXaGn-NsgY",
+  "small picture: opens the viewer": true,
+  "focus moves into the viewer": true,
+  "viewer has a fallback link": "https://www.youtube.com/watch?v=3MOFBulJd_s",
+  "Escape closes it": true,
+  "the player is removed on close (sound stops)": true,
+  "focus returns to the video that was opened": true,
+  "Close button closes it": true,
+  "phone width: opens the viewer": true,
+  "phone width: Close button height (px)": 48,
+  "JavaScript off: the picture is a plain link to": "https://www.youtube.com/watch?v=DcXaGn-NsgY",
+  "YouTube unreachable: fallback link still shown": "Watch on YouTube \u2197",
+  "page errors": []
+ },
+ "real YouTube, Chromium": {
+  "what the player showed": "Sign in to confirm you\u2019re not a bot | This helps protect our community | Sign in | Learn more",
+  "video element": {
+   "currentTime": 0,
+   "paused": true
+  }
+ }
+}

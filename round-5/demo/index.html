@@ -1,0 +1,74 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Update workflow demonstration · Round 5</title><meta name="robots" content="noindex, nofollow, noarchive">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="../assets/site.css"><link rel="stylesheet" href="../review/review.css"></head><body class="review">
+<p class="concept"><strong>Design concept.</strong> <span>Round 5. Not the live KenAshe.ai.</span> <a href="../index.html">Review page</a></p>
+<main class="rv">
+<h1>Updating the site, demonstrated</h1>
+<p class="rv-lede">Six ordinary updates, made one after another in an isolated copy of the real production files. After each one the records were re-read, the site was rebuilt and the result was compared with the build before it, so the lists below are measured, not described.</p>
+<ul>
+<li><strong>Where the edits were made:</strong> a local copy of the production repository at <code>8b35b45</code> with the proposed content fields applied, on a throwaway branch with no remote. The first three steps edit <code>src/data/builds.ts</code>, <code>src/data/writing.ts</code> and page files there. Each is saved as a patch you can read.</li>
+<li><strong>What was not possible:</strong> Astro could not be installed in my environment, so production’s own templates were not run. The records are read by importing the real TypeScript files; the two example write-ups are read from their page files by a small reader. The pages you see are the prototype’s.</li>
+<li><strong>Kept apart:</strong> the example entries exist only in this demonstration build. The review prototype contains none of them, and nothing was pushed to production.</li>
+</ul>
+<p><a class="btn solid" href="site/">Open the demonstration build</a> <a class="text-link" href="../site/">Compare with the real prototype →</a></p>
+<section class="rv-step"><h2><span>1</span> Add a project</h2>
+<p><strong>What Ken does:</strong> Add one record to the project list, src/data/builds.ts, and (because this one has a write-up) one page file in src/pages/building/. No picture was supplied.</p>
+<pre tabindex="0">src/data/builds.ts                                 |  9 +++++
+ src/pages/building/example-recipe-card-maker.astro | 43 ++++++++++++++++++++++
+ 2 files changed, 52 insertions(+)</pre>
+<p><a href="patches/01-add-a-project.patch">Read the exact change (01-add-a-project.patch)</a></p>
+
+<h3>What updated by itself</h3>
+<ul><li><strong>New page:</strong> <a href="site/building/example-recipe-card-maker/">/building/example-recipe-card-maker/</a></li><li><a href="site/">Homepage</a>: Project cards, More to watch / And to read</li><li><a href="site/building/">/building/</a>: Project cards</li><li><a href="site/building/ai-explainer-producer/">/building/ai-explainer-producer/</a>: Connected items</li><li><a href="site/building/sir-pitches-a-lot/">/building/sir-pitches-a-lot/</a>: Next item</li><li><a href="site/writing/ai-editor-trusted-least/">/writing/ai-editor-trusted-least/</a>: Connected items</li></ul>
+<h3>Checked in the result</h3><ul><li>Homepage eligibility: it is the newest project with a write-up, so the automatic rule places it 1 of 3 in “Things I’ve made”, as a text card because it has no picture.</li><li>Projects list: position 1 of 20, ordered by date as production orders them.</li><li>Its own page exists at /building/example-recipe-card-maker/, opening with the record’s summary and the heading from the page file.</li><li>Related content, from the two links written in the page: “AI explainer producer” and “I Used AI to Make My First Video. The AI Editor Was the Part I Trusted Least.”. Each of those pages now lists the new project under “Connected”.</li></ul>
+<p class="rv-note">21 other pages were rebuilt byte-for-byte identical.</p></section>
+<section class="rv-step"><h2><span>2</span> Change its title and description</h2>
+<p><strong>What Ken does:</strong> Edit the two fields in the same record in src/data/builds.ts. The page file is not touched.</p>
+<pre tabindex="0">src/data/builds.ts | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)</pre>
+<p><a href="patches/02-change-the-title-and-description.patch">Read the exact change (02-change-the-title-and-description.patch)</a></p>
+
+<h3>What updated by itself</h3>
+<ul><li><a href="site/">Homepage</a>: Project cards</li><li><a href="site/building/">/building/</a>: Project cards</li><li><a href="site/building/example-recipe-card-maker/">/building/example-recipe-card-maker/</a>: Page opening</li><li><a href="site/building/ai-explainer-producer/">/building/ai-explainer-producer/</a>: Connected items</li><li><a href="site/building/sir-pitches-a-lot/">/building/sir-pitches-a-lot/</a>: Next item</li><li><a href="site/writing/ai-editor-trusted-least/">/writing/ai-editor-trusted-least/</a>: Connected items</li></ul>
+<h3>Checked in the result</h3><ul><li>Updated · Card title: homepage card</li><li>Updated · Card title: Projects list</li><li>Updated · Card title: “Connected” cards on /building/ai-explainer-producer/ and /writing/ai-editor-trusted-least/</li><li>Updated · Card title: “Next project” link on /building/sir-pitches-a-lot/</li><li>Updated · Description: homepage card and Projects list</li><li>Updated · Description: opening line of its own page, and the page’s search description</li><li>Unchanged, by design · Page heading and browser tab title: still “Example: I Built a Recipe Card Maker in an Afternoon” (confirmed). These belong to the page file. To change them, edit the title line at the top of src/pages/building/example-recipe-card-maker.astro.</li><li>Unchanged, by design · The write-up itself.</li></ul>
+<p class="rv-note">21 other pages were rebuilt byte-for-byte identical.</p></section>
+<section class="rv-step"><h2><span>3</span> Publish writing</h2>
+<p><strong>What Ken does:</strong> The existing writing workflow: one record in src/data/writing.ts and the essay’s page file.</p>
+<pre tabindex="0">src/data/writing.ts                                 |  8 ++++++++
+ .../example-a-week-of-asking-ai-first/index.astro   | 21 +++++++++++++++++++++
+ 2 files changed, 29 insertions(+)</pre>
+<p><a href="patches/03-publish-writing.patch">Read the exact change (03-publish-writing.patch)</a></p>
+
+<h3>What updated by itself</h3>
+<ul><li><strong>New page:</strong> <a href="site/writing/example-a-week-of-asking-ai-first/">/writing/example-a-week-of-asking-ai-first/</a></li><li><a href="site/">Homepage</a>: More to watch / And to read</li><li><a href="site/writing/">/writing/</a>: Writing list</li><li><a href="site/writing/ashe-family-coat-of-arms/">/writing/ashe-family-coat-of-arms/</a>: Next item</li></ul>
+
+<p class="rv-note">24 other pages were rebuilt byte-for-byte identical.</p></section>
+<section class="rv-step"><h2><span>4</span> Publish a video on YouTube</h2>
+<p><strong>What Ken does:</strong> Nothing on the website. The video sync reads the channel feed, adds the video to the archive and fetches its thumbnail.</p>
+<pre tabindex="0">node round-5/tools/sync-videos.mjs   (no website file edited by hand)</pre>
+
+<p>The sync ran against an example feed listing one new upload. Its output: {"feed":"ok","inFeed":1,"added":["EXAMPLE0001"],"updated":[],"thumbnails":[],"thumbnailsChanged":[],"thumbnailsKept":[],"thumbnailsPending":["EXAMPLE0001"],"checked":1,"total":17,"changed":true}. The archive copy went from 16 to 17 videos; the 16 older ones stayed although this feed listed only one. The made-up video has no thumbnail on YouTube, so its card shows the plain frame used when a picture is missing.</p>
+<h3>What updated by itself</h3>
+<ul><li><a href="site/">Homepage</a>: Featured piece, Project cards, More to watch / And to read</li><li><a href="site/videos/">/videos/</a>: Latest video, All videos</li><li><a href="site/building/example-recipe-card-maker/">/building/example-recipe-card-maker/</a>: Page opening, Page body</li></ul>
+
+<p class="rv-note">25 other pages were rebuilt byte-for-byte identical.</p></section>
+<section class="rv-step"><h2><span>5</span> Change the homepage feature</h2>
+<p><strong>What Ken does:</strong> Change one line in the homepage settings file.</p>
+<pre tabindex="0">content/editorial.json:  "featured": "building:example-recipe-card-maker"</pre>
+
+
+<h3>What updated by itself</h3>
+<ul><li><a href="site/">Homepage</a>: Featured piece, More to watch / And to read</li></ul>
+<h3>Checked in the result</h3><ul><li>The featured piece is now labelled “Featured project · Dec 2026”, not “Latest video”.</li></ul>
+<p class="rv-note">27 other pages were rebuilt byte-for-byte identical.</p></section>
+<section class="rv-step"><h2><span>6</span> Hide an item from featured areas</h2>
+<p><strong>What Ken does:</strong> Add its id to the hide list in the same settings file. Its page and archive entry stay.</p>
+<pre tabindex="0">content/editorial.json:  "hide": ["writing:example-a-week-of-asking-ai-first"]</pre>
+
+
+<h3>What updated by itself</h3>
+<ul><li><a href="site/">Homepage</a>: More to watch / And to read</li></ul>
+<h3>Checked in the result</h3><ul><li>The essay’s page still exists (confirmed) and it is still in the Writing list (confirmed).</li></ul>
+<p class="rv-note">27 other pages were rebuilt byte-for-byte identical.</p></section>
+<p class="rv-note">Generated by <code>node round-5/demo/run.mjs</code>. The video step needs the proposed scheduled workflow to happen by itself in production; that workflow is not installed.</p>
+</main></body></html>
