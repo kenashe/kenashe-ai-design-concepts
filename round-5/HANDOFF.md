@@ -5,6 +5,20 @@ introduction, gives projects without pictures a proper presentation, polishes th
 update and editorial problems found in review. It is still a design concept: production was only read, nothing was
 deployed there, and Rounds 1 to 4 are unchanged in the same repository.
 
+## Where to see it
+
+* **Preview:** https://raw.githack.com/kenashe/kenashe-ai-design-concepts/main/round-5/ (review page), with the
+  prototype at `…/round-5/site/` and the update demonstration at `…/round-5/demo/`.
+* **How it is hosted:** a free third-party service that serves the files of the public repository as they are.
+  It shows its own "One more step" notice once per visit (press "Open the page"), and it adds its own Cloudflare
+  measurement script to pages it serves. Neither is part of the prototype. It sends `X-Robots-Tag: none`, and every
+  page keeps its own `noindex`.
+* **Why not GitHub Pages:** it is still switched off for the repository (the address returns 404) and my access is
+  refused when I try to switch it on ("Resource not accessible by personal access token"). To get a clean address
+  with no notice: repository Settings, Pages, "Deploy from a branch", `main`, `/ (root)`, Save. The same files will
+  then be at `https://kenashe.github.io/kenashe-ai-design-concepts/round-5/`.
+* **Local preview from the ZIP:** `cd site && python3 -m http.server 8000`, then open `http://localhost:8000/round-5/`.
+
 ## What changed, mapped to your brief
 
 **1. Positioning and visual direction.** The approved wording is used exactly and is checked by a test: name,
@@ -133,7 +147,10 @@ prototype's.
 * The video player in both browsers, with a stand-in for YouTube: opens in place on large pictures and in a viewer
   on small ones; Escape and the Close button close it; the player is removed on close; focus returns to the video
   that was opened; the "Watch on YouTube" fallback is present, including when YouTube is unreachable.
-* The preview address was opened and its links followed after publishing (results on the review page).
+* The preview address, after publishing: all 29 pages opened in Chromium 148 with no missing images, no failed
+  requests and no console errors; all 72 internal links answered; a project opened from the homepage and Back
+  both ran as transitions there. It was also opened in a second, cloud-hosted Chrome 158, where the Videos page
+  rendered and the player opened in place.
 
 **Automated tests** (23 pass): eight for the video sync, fifteen for the site, including every case in section 5.
 
@@ -144,8 +161,9 @@ cleanly; Astro's own check was not run).
 
 * **Safari, iPhone and iPad.** Safari's engine cannot run in my environment. Safari 18.2 and later support this
   transition, but I have not seen it there. Please try the preview on your own devices.
-* **Real video playback.** The real YouTube player loaded in Chromium, but YouTube answered this machine with
-  "Sign in to confirm you're not a bot", so I never saw a video play inside the page.
+* **Real video playback.** The real YouTube player loaded inside the page in both Chromium 148 and the cloud
+  Chrome 158, but YouTube answered both data-centre browsers with "Sign in to confirm you're not a bot", so I never
+  saw a video play. On an ordinary home connection it should play; please press play once on the preview.
 * **Real phones and screen readers.** Touch was emulated. No screen reader was run.
 * **The scheduled workflow.** It has never run, because it is not installed.
 * **Production's build** with these changes (see the Astro limit above).
@@ -154,8 +172,8 @@ cleanly; Astro's own check was not run).
 
 * 5 of 19 projects have a picture or a video to borrow one from. Text cards now make the rest look intended, but a
   real image per project would still add the most.
-* The preview is served from the public repository by a free third-party service, because GitHub Pages is still
-  switched off for the repository and my access cannot switch it on.
+* The preview is served by a third-party service with its own one-time notice (see "Where to see it"). Switching
+  on GitHub Pages removes that.
 * Project and essay bodies are a copy of your published pages; some diagrams and inline clips were simplified.
 * Links to pages outside the prototype (Digest archive, Newsroom, legal pages, RSS) go to the live site.
 * The seven smaller builds have no write-ups on the live site either, so they are shown without links.

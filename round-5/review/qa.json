@@ -2718,14 +2718,14 @@
     "taps": [],
     "h1": 1,
     "overflow": 0,
-    "height": 25142,
+    "height": 25715,
     "broken": [],
     "noalt": 0,
     "responsive": "0/20",
     "lazy": 20,
     "robots": "noindex, nofollow, noarchive",
     "canonical": false,
-    "text": 30191
+    "text": 31586
    },
    "820": {
     "min": 14,
@@ -2734,14 +2734,14 @@
     "taps": [],
     "h1": 1,
     "overflow": 0,
-    "height": 24745,
+    "height": 25290,
     "broken": [],
     "noalt": 0,
     "responsive": "0/20",
     "lazy": 20,
     "robots": "noindex, nofollow, noarchive",
     "canonical": false,
-    "text": 30191
+    "text": 31586
    },
    "390": {
     "min": 14,
@@ -2750,14 +2750,14 @@
     "taps": [],
     "h1": 1,
     "overflow": 0,
-    "height": 34202,
+    "height": 35260,
     "broken": [],
     "noalt": 0,
     "responsive": "0/20",
     "lazy": 20,
     "robots": "noindex, nofollow, noarchive",
     "canonical": false,
-    "text": 30191
+    "text": 31586
    },
    "320": {
     "min": 14,
@@ -2766,24 +2766,24 @@
     "taps": [],
     "h1": 1,
     "overflow": 0,
-    "height": 36748,
+    "height": 38105,
     "broken": [],
     "noalt": 0,
     "responsive": "0/20",
     "lazy": 20,
     "robots": "noindex, nofollow, noarchive",
     "canonical": false,
-    "text": 30191
+    "text": 31586
    }
   },
   "hosts": [],
-  "initial_kb": 634,
+  "initial_kb": 636,
   "requests": 11,
   "dead_links": [],
   "tab_stops": 45,
   "focus_not_visible": [],
   "nojs": {
-   "text": 30191,
+   "text": 31586,
    "nav": 0,
    "links": 74,
    "h1": 1
@@ -2791,7 +2791,7 @@
   "hosts_blocked": {
    "errors": [],
    "broken_images": 0,
-   "text": 30191
+   "text": 31586
   },
   "reduced_motion_longest_transition_s": 0,
   "firefox": {

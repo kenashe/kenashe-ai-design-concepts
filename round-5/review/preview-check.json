@@ -1,0 +1,272 @@
+{
+ "base": "https://raw.githack.com/kenashe/kenashe-ai-design-concepts/main/round-5/",
+ "pages": {
+  "(review page)": {
+   "status": 200,
+   "h1": "Round 5: Round 4, refined",
+   "broken": 0,
+   "imgs": 20,
+   "robots": "noindex, nofollow, noarchive",
+   "bad": [],
+   "errors": []
+  },
+  "demo/": {
+   "status": 200,
+   "h1": "Updating the site, demonstrated",
+   "broken": 0,
+   "imgs": 0,
+   "robots": "noindex, nofollow, noarchive",
+   "bad": [],
+   "errors": []
+  },
+  "demo/site/": {
+   "status": 200,
+   "h1": "Ken Ashe",
+   "broken": 0,
+   "imgs": 10,
+   "robots": "noindex, nofollow, noarchive",
+   "bad": [],
+   "errors": []
+  },
+  "site/": {
+   "status": 200,
+   "h1": "Ken Ashe",
+   "broken": 0,
+   "imgs": 11,
+   "robots": "noindex, nofollow, noarchive",
+   "bad": [],
+   "errors": []
+  },
+  "site/about/": {
+   "status": 200,
+   "h1": "Ken Ashe",
+   "broken": 0,
+   "imgs": 1,
+   "robots": "noindex, nofollow, noarchive",
+   "bad": [],
+   "errors": []
+  },
+  "site/building/": {
+   "status": 200,
+   "h1": "Projects",
+   "broken": 0,
+   "imgs": 5,
+   "robots": "noindex, nofollow, noarchive",
+   "bad": [],
+   "errors": []
+  },
+  "site/building/ai-agent-economy/": {
+   "status": 200,
+   "h1": "I Built Two AI Agents That Buy and Sell ",
+   "broken": 0,
+   "imgs": 5,
+   "robots": "noindex, nofollow, noarchive",
+   "bad": [],
+   "errors": []
+  },
+  "site/building/ai-explainer-producer/": {
+   "status": 200,
+   "h1": "I Built an AI Agent That Makes Explainer",
+   "broken": 0,
+   "imgs": 8,
+   "robots": "noindex, nofollow, noarchive",
+   "bad": [],
+   "errors": []
+  },
+  "site/building/ai-ugc-video-lab/": {
+   "status": 200,
+   "h1": "Building an AI UGC Video Agent",
+   "broken": 0,
+   "imgs": 1,
+   "robots": "noindex, nofollow, noarchive",
+   "bad": [],
+   "errors": []
+  },
+  "site/building/ai-werewolf/": {
+   "status": 200,
+   "h1": "AI Werewolf",
+   "broken": 0,
+   "imgs": 3,
+   "robots": "noindex, nofollow, noarchive",
+   "bad": [],
+   "errors": []
+  },
+  "site/building/autonomous-ai-blog/": {
+   "status": 200,
+   "h1": "Autonomous AI Blog",
+   "broken": 0,
+   "imgs": 3,
+   "robots": "noindex, nofollow, noarchive",
+   "bad": [],
+   "errors": []
+  },
+  "site/building/autonomous-seo-agent/": {
+   "status": 200,
+   "h1": "Autonomous SEO Agent",
+   "broken": 0,
+   "imgs": 3,
+   "robots": "noindex, nofollow, noarchive",
+   "bad": [],
+   "errors": []
+  },
+  "site/building/rebuilding-the-image-pipeline/": {
+   "status": 200,
+   "h1": "Rebuilding the Image Pipeline Behind Ken",
+   "broken": 0,
+   "imgs": 0,
+   "robots": "noindex, nofollow, noarchive",
+   "bad": [],
+   "errors": []
+  },
+  "site/building/returning-your-things/": {
+   "status": 200,
+   "h1": "Returning Your Things",
+   "broken": 0,
+   "imgs": 3,
+   "robots": "noindex, nofollow, noarchive",
+   "bad": [],
+   "errors": []
+  },
+  "site/building/sir-pitches-a-lot/": {
+   "status": 200,
+   "h1": "Sir Pitches-a-Lot",
+   "broken": 0,
+   "imgs": 0,
+   "robots": "noindex, nofollow, noarchive",
+   "bad": [],
+   "errors": []
+  },
+  "site/building/vetstack/": {
+   "status": 200,
+   "h1": "VetStack",
+   "broken": 0,
+   "imgs": 0,
+   "robots": "noindex, nofollow, noarchive",
+   "bad": [],
+   "errors": []
+  },
+  "site/building/x-article-toolkit/": {
+   "status": 200,
+   "h1": "X article toolkit",
+   "broken": 0,
+   "imgs": 0,
+   "robots": "noindex, nofollow, noarchive",
+   "bad": [],
+   "errors": []
+  },
+  "site/building/zerohuman/": {
+   "status": 200,
+   "h1": "ZeroHuman: A Business Only AI Agents Can",
+   "broken": 0,
+   "imgs": 3,
+   "robots": "noindex, nofollow, noarchive",
+   "bad": [],
+   "errors": []
+  },
+  "site/videos/": {
+   "status": 200,
+   "h1": "Videos",
+   "broken": 0,
+   "imgs": 16,
+   "robots": "noindex, nofollow, noarchive",
+   "bad": [],
+   "errors": []
+  },
+  "site/writing/": {
+   "status": 200,
+   "h1": "Writing",
+   "broken": 0,
+   "imgs": 9,
+   "robots": "noindex, nofollow, noarchive",
+   "bad": [],
+   "errors": []
+  },
+  "site/writing/4-tips-for-making-ai-videos-that-feel-like-films/": {
+   "status": 200,
+   "h1": "4 Tips for Making AI Videos That Feel Li",
+   "broken": 0,
+   "imgs": 8,
+   "robots": "noindex, nofollow, noarchive",
+   "bad": [],
+   "errors": []
+  },
+  "site/writing/ai-agents-reasoning-from-events-that-never-happened/": {
+   "status": 200,
+   "h1": "AI agents can sound strategic while reas",
+   "broken": 0,
+   "imgs": 2,
+   "robots": "noindex, nofollow, noarchive",
+   "bad": [],
+   "errors": []
+  },
+  "site/writing/ai-editor-trusted-least/": {
+   "status": 200,
+   "h1": "I Used AI to Make My First Video. The AI",
+   "broken": 0,
+   "imgs": 3,
+   "robots": "noindex, nofollow, noarchive",
+   "bad": [],
+   "errors": []
+  },
+  "site/writing/ashe-family-coat-of-arms/": {
+   "status": 200,
+   "h1": "The Ashe Family Coat of Arms: A Cockatri",
+   "broken": 0,
+   "imgs": 6,
+   "robots": "noindex, nofollow, noarchive",
+   "bad": [],
+   "errors": []
+  },
+  "site/writing/bambu-lab-burr-puzzle-solution/": {
+   "status": 200,
+   "h1": "How to Solve the Bambu Lab Burr Puzzle (",
+   "broken": 0,
+   "imgs": 4,
+   "robots": "noindex, nofollow, noarchive",
+   "bad": [],
+   "errors": []
+  },
+  "site/writing/iphone-18-pro-att-activation-failure/": {
+   "status": 200,
+   "h1": "My iPhone 18 Pro Upgrade Failed. Then My",
+   "broken": 0,
+   "imgs": 4,
+   "robots": "noindex, nofollow, noarchive",
+   "bad": [],
+   "errors": []
+  },
+  "site/writing/my-automated-blog-got-cited/": {
+   "status": 200,
+   "h1": "My automated blog got cited. Am I helpin",
+   "broken": 0,
+   "imgs": 3,
+   "robots": "noindex, nofollow, noarchive",
+   "bad": [],
+   "errors": []
+  },
+  "site/writing/the-digest-is-the-system/": {
+   "status": 200,
+   "h1": "The digest is the system. Building is th",
+   "broken": 0,
+   "imgs": 3,
+   "robots": "noindex, nofollow, noarchive",
+   "bad": [],
+   "errors": []
+  },
+  "site/writing/you-can-use-ai-to-learn-almost-anything-even-ai/": {
+   "status": 200,
+   "h1": "You Can Use AI to Learn Almost Anything.",
+   "broken": 0,
+   "imgs": 4,
+   "robots": "noindex, nofollow, noarchive",
+   "bad": [],
+   "errors": []
+  }
+ },
+ "links_checked": 72,
+ "dead": [],
+ "transition": "FTT",
+ "host_notices": 1,
+ "other_hosts": [],
+ "x_robots_tag": "none"
+}
